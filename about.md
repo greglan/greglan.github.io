@@ -6,3 +6,4 @@ permalink: /about/
 
 * [Github](https://github.com/greglan)
 * [Twitter](https://twitter.com/greglan3)
+
