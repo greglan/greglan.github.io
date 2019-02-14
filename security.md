@@ -1,6 +1,8 @@
 ---
 layout: category
 title: Security
+permalink: /security/
+sidebar_sort_order: 1
 ---
 
 <h2>Cryptography</h2>

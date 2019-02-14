@@ -1,6 +1,8 @@
 ---
 layout: category
 title: Networks
+permalink: /networks/
+sidebar_sort_order: 4
 ---
 
 <ul>

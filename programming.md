@@ -1,6 +1,8 @@
 ---
 layout: category
 title: Programming
+permalink: /programming/
+sidebar_sort_order: 2
 ---
 
 <ul>

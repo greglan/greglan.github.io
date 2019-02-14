@@ -1,6 +1,8 @@
 ---
 layout: category
 title: Electronics
+permalink: /electronics/
+sidebar_sort_order: 3
 ---
 
 <ul>
