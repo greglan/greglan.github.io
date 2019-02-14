@@ -16,13 +16,6 @@ permalink: /
 {% endfor %}
 
 
-
-
-
-
-
-
-{% comment %}
 <h1>Posts</h1>
 <ul>
   {% for post in site.posts %}
@@ -31,4 +24,3 @@ permalink: /
     </li>
   {% endfor %}
 </ul>
-{% endcomment %}

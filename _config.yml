@@ -23,12 +23,8 @@ markdown: kramdown
 
 incremental: true
 
-# theme: minima
 remote_theme: fongandrew/hydeout
-# theme: jekyll-theme-hydeout
-# theme: jekyll-theme-hacker
-# theme: jekyll-theme-hyde
-# remote_theme: poole/hyde
+theme: jekyll-theme-hydeout
 
 plugins:
   - jekyll-feed

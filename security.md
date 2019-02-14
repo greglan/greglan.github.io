@@ -1,7 +1,8 @@
 ---
-title: "Security related stuff"
-permalink: "/security/"
+layout: category
+title: Security
 ---
+
 <h2>Cryptography</h2>
 <ul>
   {% for page in site.security %}
