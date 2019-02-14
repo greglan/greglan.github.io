@@ -1,5 +1,6 @@
 ---
 title:  "Includes vulnerabilities"
+topic: "web"
 ---
 ## Introduction
 * LFI: Local file inclusion

@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "Path traversal vulnerabilities"
-date:   2019-1-1 16:57:56 +0100
+topic: "web"
 ---
 # Strategy
 * Better to request a default file readable by any user: `c:/windows/win.ini`, `/etc/passwd`

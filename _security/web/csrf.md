@@ -1,5 +1,6 @@
 ---
 title:  "Cross Site Request Forgeries (CSRF/XSRF)"
+topic: "web"
 ---
 ## Description
 * Force a user to execute actions on a web application in which he is authenticated

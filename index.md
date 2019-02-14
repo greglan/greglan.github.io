@@ -2,7 +2,6 @@
 layout: home
 permalink: /
 ---
-
 {% for collection in site.collections %}
 {% if collection.label != 'posts' %}
   <h1>{{ collection.label | capitalize }}</h1>
@@ -15,7 +14,6 @@ permalink: /
   </ul>
 {% endif %}
 {% endfor %}
-
 
 
 {% comment %}

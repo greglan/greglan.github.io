@@ -1,5 +1,6 @@
 ---
 title:  "XPath injections"
+topic: "web"
 ---
 # Introduction
 * XPath: XML Path Language. Interpreted language to navigate XML documents.

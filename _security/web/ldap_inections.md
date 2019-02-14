@@ -1,5 +1,6 @@
 ---
 title:  "LDAP injections"
+topic: "web"
 ---
 # Introduction
 * LDAP: Lightweight Directory Access Protocol

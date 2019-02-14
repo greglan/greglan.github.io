@@ -1,6 +1,6 @@
 ---
-layout: post
 title:  "SQL injections"
+topic: "web"
 ---
 # SQL memo
 ## Data types

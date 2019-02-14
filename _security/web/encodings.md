@@ -1,5 +1,6 @@
 ---
 title:  "Encoding cheat sheet"
+topic: "web"
 ---
 # URL encoding
 * Dot: `%2e`

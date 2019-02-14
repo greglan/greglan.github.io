@@ -1,5 +1,6 @@
 ---
 title:  "Cross Site Scripting (XSS)"
+topic: "web"
 ---
 # Introduction
 * Standard poc atttack string: `"><script>alert(document.cookie)</script>"`

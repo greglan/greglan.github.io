@@ -1,5 +1,6 @@
 ---
 title:  "NoSQL injections"
+topic: "web"
 ---
 # NoSQL cheatsheet
 ## Databases
