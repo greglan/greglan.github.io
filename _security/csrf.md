@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Cross Site Request Forgeries (CSRF/XSRF)"
-date:   2019-1-1 16:57:56 +0100
 ---
 ## Description
 * Force a user to execute actions on a web application in which he is authenticated
@@ -49,6 +47,6 @@ Should be unique per session. Added as hidden field or GET parameter.
 **Custom request headers**
 
 
-# Resources
+## Resources
 * https://www.owasp.org/index.php/Testing_for_CSRF_(OTG-SESS-005)
 * https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet

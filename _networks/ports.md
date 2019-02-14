@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Network ports"
-date:   2019-1-1 16:57:56 +0100
 ---
 Wake-on-lan: 9
 

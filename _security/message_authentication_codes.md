@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Message Authentication codes (MAC)"
-date:   2019-1-1 16:57:56 +0100
 ---
 # Introduction
 * Purpose: ensure authentication using a shared private key K

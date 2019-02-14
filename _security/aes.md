@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Advanced Encryption Standard (AES)"
-date:   2019-1-1 16:57:56 +0100
 ---
 * AES = Advanced Encryption Standard
 * Design: substitution-permutation network. Consequence: efficient both in

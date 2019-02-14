@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "SSL and TLS"
-date:   2019-1-1 16:57:56 +0100
 ---
 ## History
 ### Secure Sockets Layer (SSL)

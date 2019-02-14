@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "XPath injections"
-date:   2019-1-1 16:57:56 +0100
 ---
 # Introduction
 * XPath: XML Path Language. Interpreted language to navigate XML documents.

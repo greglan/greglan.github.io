@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "CAN protocol"
-date:   2019-1-1 16:57:56 +0100
 ---
 # CAN protocol
 

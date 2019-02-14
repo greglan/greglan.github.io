@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "LDAP injections"
-date:   2019-1-1 16:57:56 +0100
 ---
 # Introduction
 * LDAP: Lightweight Directory Access Protocol

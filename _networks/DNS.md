@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "DNS protocol"
-date:   2019-1-1 16:57:56 +0100
 ---
 * https://www.thegeekstuff.com/2012/02/dig-command-examples/
 * DNS MX records: https://en.wikipedia.org/wiki/MX_record

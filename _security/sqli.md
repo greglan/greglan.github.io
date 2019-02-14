@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "SQL injections"
-date:   2019-1-1 16:57:56 +0100
 ---
 # SQL memo
 ## Data types
@@ -12,7 +11,7 @@ date:   2019-1-1 16:57:56 +0100
 * **ENUM** and **SET**: string in a list
 
 ## Commands
-```
+{% highlight sql %}
 SHOW databases;
 CREATE database database_name;
 USE database_name;
@@ -24,7 +23,7 @@ ALTER TABLE users MODIFY password VARCHAR(41);
 UPDATE users SET password=password('better_pass_123') WHERE login='test_user';
 SELECT * FROM users WHERE login='test_user' AND password=password(better_pass_123');
 DROP TABLE users;
-```
+{% endhighlight %}
 
 
 

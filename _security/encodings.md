@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Encoding cheat sheet"
-date:   2019-1-1 16:57:56 +0100
 ---
 # URL encoding
 * Dot: `%2e`

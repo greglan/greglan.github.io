@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Cross Site Scripting (XSS)"
-date:   2019-1-1 16:57:56 +0100
 ---
 # Introduction
 * Standard poc atttack string: `"><script>alert(document.cookie)</script>"`
