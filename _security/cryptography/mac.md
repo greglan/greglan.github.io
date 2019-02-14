@@ -26,5 +26,9 @@ TODO
   * 2nd case: *K'=K* padded with 0s until block size
 * Construction: *hmac(m, K') = h( (K' + opad) \|\| h( (K' + ipad) \|\| m ) )*
 
+![HMAC construction for SHA-1](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/SHAhmac.svg/1280px-SHAhmac.svg.png)
+
+
+
 # Resources and references
 * [Wikipedia page](https://en.wikipedia.org/wiki/HMAC)

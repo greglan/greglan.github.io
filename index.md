@@ -16,6 +16,12 @@ permalink: /
 {% endfor %}
 
 
+
+
+
+
+
+
 {% comment %}
 <h1>Posts</h1>
 <ul>
