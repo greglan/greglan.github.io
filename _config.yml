@@ -26,12 +26,17 @@ copyright:  © 2019. All rights reserved.
 
 # Build settings
 markdown: kramdown
-#theme: minima
+
+incremental: true
+
+theme: minima
+# theme: jekyll-theme-hacker
 # theme: jekyll-theme-hyde
-remote_theme: owner/name
+# remote_theme: poole/hyde
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
