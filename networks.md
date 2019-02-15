@@ -12,3 +12,8 @@ sidebar_sort_order: 4
     </li>
   {% endfor %}
 </ul>
+
+
+# Resources and references
+* [Ethernet overview](https://searchnetworking.techtarget.com/definition/Ethernet)
+* [Token ring](https://searchnetworking.techtarget.com/definition/Token-Ring)
