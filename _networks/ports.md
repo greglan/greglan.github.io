@@ -1,5 +1,5 @@
 ---
-title:  "Network ports"
+title:  "Common port numbers"
 ---
 Wake-on-lan: 9
 
@@ -11,36 +11,36 @@ Telnet: 23
 
 SMTP: 25
 
+SMTP+SSL: 465
+
 DNS: 53
 
 DHCP/bootpc: 67/68
 
 HTTP: 80
 
-POP: 110
+HTTP+SSL: 443
 
 NTP: 123
 
 IMAP: 143
 
+POP: 110
+
 LDAP: 389
-HTTP+SSL: 443
-
-SMTP+SSL: 465
-
-IPsec key exchange: 500
 
 LDAP+SSL/TLS: 636
 
-Microsoft SQL: 1433
+IPsec key exchange: 500
 
+RDP: 3389
+
+IRC: 6667
+
+Microsoft SQL: 1433
 
 Oracle database: 1521
 
 MySQL: 33306
 
-RDP: 3389
-
 PostgreSQL: 5432
-
-IRC: 6667

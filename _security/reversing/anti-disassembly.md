@@ -9,7 +9,6 @@ topic: "reversing"
 ## Jump instructions with the same target
 ![jmp-same-target](/assets/jmp-same-target.svg)
 
-
 ## Unconditional conditional jump
 ![jmp-unconditional-conditional](/assets/jmp-unconditional-conditional.svg)
 

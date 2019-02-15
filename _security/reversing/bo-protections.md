@@ -31,16 +31,20 @@ Hardens ELF programs against loader memory area overwrites by having the loader 
 
 ## SMEP/SMAP
 * SMEP: Supervisor Mode Execution Protection. Used to prevent supervisor mode from unintentionally executing user-space code
-* SMAP: Supervisor Mode Access Prevention. Feature of some CPU implementations that allows supervisor mode programs to set user-space memory mappings so that access to those mappings from supervisor mode will cause a trap. Makes it harder for programs to "trick" the kernel into using instructions or data from a user-space program
+* SMAP: Supervisor Mode Access Prevention. Feature of some CPU that allows supervisor mode programs to set user-space memory mappings so that access to those mappings from supervisor mode will cause a trap. Makes it harder for programs to "trick" the kernel into using instructions or data from a user-space program
+* SMAP activation: CR4 control register
+* Drawback of SMAP: larger kernel size and slower userspace memory accesses
 
 ## Pointer obfuscation
 Some pointers stored in glibc are obfuscated via PTR_MANGLE/PTR_UNMANGLE macros internally in glibc, preventing libc function pointers from being overwritten during runtime.
 
 ## Fortify source
 
-## SafeSEH/DSEH
+## SafeSEH
+* Implemented since Windows XP SP2 and Windows Server 2003
 
 ## Control Flow Graph (CFG)
 
 ## Resources and references
 * [Hexcellent](http://security.cs.pub.ro/hexcellents/wiki/kb/exploiting/home)
+* [SMAP Wikipedia article](https://en.wikipedia.org/wiki/Supervisor_Mode_Access_Prevention)
