@@ -3,4 +3,43 @@ title:  "Format strings"
 topic: "reversing"
 ---
 
-## Unaligned jump
+## Introduction
+* Vulnerable functions: printf, fprintf, sprintf, snprintf, vfprintf, vprintf, vsprintf,  vsnprintf, setproctitle, syslog, err*, verr*, warn*, vwarn*
+* Format parameters
+
+| Parameter | Output | Type |
+|:---------:|:------:|:----:|
+| %d | Integer (int) | Value |
+| %u | Unsigned integer (unsigned int) | Value |
+| %x | Unsigned hexadecimal integer (unsigned int) | Value |
+| %s | String (const char*) | Reference |
+| %n | Number of bytes written (int*) | Reference |
+| %hn | Number of bytes written (int*) | Reference |
+* Padding possibilities: `%10d` and `%.10d`
+* Short int write:
+    * Better to avoid it in general
+    * useful for RISC systems that have alignment restrictions
+* Direct parameter access: `%m$d` for *m*-th parameter on the stack
+* BSD and derivates: `*` specifier
+* Vulnerability: user-spplied string printed using a vulnerable function
+* Detection of vulnerability: script TODO
+
+## Memory read
+### Stack read
+* Format string used: `%08x %08x %08x %08x` (8-digit padded)
+* Use: informations about the program control flow, local function variables
+
+### Arbitrary read
+* Format string used: `addr padding %s`, with padding necessary so that `%s` points to the beginning of the format string, i.e the address we want to dump
+* Use : create a coredump like image and reconstruct the binary from it
+* Alignment problem : add junk chars to align the address
+
+## Buffer overflow
+* Situation : `sprintf(buffer, ”%400s”, user_str)`. We can circumvent the 400 chars limitation by supplying a custom `user_str` that add an arbitrary number of characters such as `%410d`. We can then overwrite the buffer and hence perform a regular buffer overflow attack (we use the right padding to overwrite a saved EIP in the stack by overflowing the buffer)
+* Padding limitation
+* Determine the use of the C library remotely
+
+## Arbitrary write
+* Format string pattern: `addr stack_dump/padding %n`
+* Control of the counter written by `%n`: `%10u` for increase of 10
+* Write complex data : write data in several small writes (for instance byte per byte). Pattern: `Pattern: <stackpop><addr><addr+1><addr+2><addr+3><byte1><byte2><byte3><byte4>`
