@@ -15,13 +15,14 @@ topic: "reversing"
 | %s | String (const char*) | Reference |
 | %n | Number of bytes written (int*) | Reference |
 | %hn | Number of bytes written (int*) | Reference |
+
 * Padding possibilities: `%10d` and `%.10d`
 * Short int write:
     * Better to avoid it in general
     * useful for RISC systems that have alignment restrictions
 * Direct parameter access: `%m$d` for *m*-th parameter on the stack
 * BSD and derivates: `*` specifier
-* Vulnerability: user-spplied string printed using a vulnerable function
+* Vulnerability: user-supplied string printed using a vulnerable function
 * Detection of vulnerability: script TODO
 
 ## Memory read
