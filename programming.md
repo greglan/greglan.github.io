@@ -7,7 +7,7 @@ sidebar_sort_order: 2
 <h2>Algorithms</h2>
 <ul>
   {% for page in site.programming %}
-    {% if page.topic == "Algorithms" %}
+    {% if page.topic == "algorithms" %}
       <li>
         <a href="{{ page.url }}">{{ page.title }}</a>
       </li>

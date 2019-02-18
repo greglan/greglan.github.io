@@ -6,7 +6,7 @@ date:   2018-12-29 16:57:56 +0100
 TODO: links to data structures posts
 
 # Programming
-* Big-O notation, complexity analysis
+* Learn everything in the [programming section](/rpgoramming/)
 * Sorting: quicksort and mergesort. When to use one against the other
 * Hashtables: implementations. Array-only implementation.
 * Trees: basic construction, and traversals (DFS, BFS).  Difference between
@@ -44,6 +44,7 @@ Deadlocks and livelocks. How to avoid them ?
 
 
 # Security
+* Learn everything in the [security section](/security/)
 * Read security articles: KrebsOnSecurity. Know what's going on in the industry
 * Lingo: dictionaries of security acronyms. "25 most used cyber security
 buzzwords" or "most important cyber security acronyms". Idea of what SIEM, AD,
