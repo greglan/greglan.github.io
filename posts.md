@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Other posts
-sidebar_sort_order: 5
+sidebar_sort_order: 6
 ---
 These are posts that don't really fit in a specific category, at least for the moment.
 

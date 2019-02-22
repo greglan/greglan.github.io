@@ -60,6 +60,9 @@ collections:
   electronics:
     output: true
     permalink: /:collection/:name
+  system:
+    output: true
+    permalink: /:collection/:name
 
 defaults:
   - scope:
@@ -80,5 +83,10 @@ defaults:
   - scope:
       path: ""
       type: "electronics"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "system"
     values:
       layout: page

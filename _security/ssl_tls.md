@@ -44,6 +44,8 @@ CRIME, BEAST, POODLE attacks. Tricky to use because they need specific versions 
 
 
 ## Resources
-* https://jimshaver.net/2015/02/11/decrypting-tls-browser-traffic-with-wireshark-the-easy-way/. Based on the Pre Master Key. Allows to decipher the data between a client and the server provided an access on the client exists. Also depends on the server configuration (if seesion reuse is enabled ?)
+* [Analysing TLS with PFS](https://jimshaver.net/2015/02/11/decrypting-tls-browser-traffic-with-wireshark-the-easy-way/). Based on the Pre Master Key. Allows to decipher the data between a client and the server provided an access on the client exists. Also depends on the server configuration (if seesion reuse is enabled ?
+* [Decrypting TLS traffich with DHE](https://security.stackexchange.com/questions/71309/it-is-possible-to-decrypt-https-with-the-private-public-pair-if-it-uses-dhe)
 * [ANALYSES DES CONFIGURATIONS SSL/TLS DE SERVEURS SMTP](https://connect.ed-diamond.com/MISC/MISC-096/Analyses-des-configurations-SSL-TLS-de-serveurs-SMTP)
 * [Differences between TLS 1.2 and TLS 1.3](https://www.wolfssl.com/differences-between-tls-1-2-and-tls-1-3/)
+* [Potential flow in TLS 1.3](https://www.scmagazineuk.com/tls-13-vulnerability-enables-hackers-eavesdrop-encrypted-traffic/article/1525916)

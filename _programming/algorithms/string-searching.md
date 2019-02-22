@@ -35,7 +35,7 @@ $$hash(w) = \left( \sum_{k=0}^{m-1} w_k 2^{m-1-k} \right) \; mod \, q$$
 $$hash(y[j+1 \, ... \, j+m]) = rehash(y[j], y[j+m], y[j \, ... \, j+m-1])$$
 
 $$rehash(a,b,h) = \left( (h - a 2^{m-1}) \times 2 + b \right) \; mod \, q$$
-*
+
 
 ## Anaysis
 * Pre-computing complexity: $$\mathcal{O}(m)$$

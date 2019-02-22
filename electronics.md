@@ -2,7 +2,7 @@
 layout: category
 title: Electronics
 permalink: /electronics/
-sidebar_sort_order: 3
+sidebar_sort_order: 5
 ---
 
 <ul>
