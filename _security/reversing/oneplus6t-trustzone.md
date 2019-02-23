@@ -1,8 +1,11 @@
-
+---
+title:  "Reversing of the Onplus 6T trustzone"
+topic: "reversing"
+---
 
 # Vector tables
 ### EL3 vector table 1
-Almost all exception from this table have the same handler, `el3_handler`. The identification of the exception is performed by storing a code in the `TPIDRRO_EL0` register. The codes are given in the table below.
+Almost all exceptions from this table have the same handler, `el3_handler`. The identification of the exception is performed by storing a code in the `TPIDRRO_EL0` register. The codes are given in the table below.
 
 | Exception | Code |
 |:-:|:-:|

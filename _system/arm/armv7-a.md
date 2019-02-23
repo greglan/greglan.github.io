@@ -9,37 +9,51 @@ topic: "arm"
 * Link register: *R14 = LR*
 * Program counter: *R15 = PC*
 
+# Conditional code
+TODO
+
 # Stack types
-## Ascending
-## Full ascending
-## Descending
+## Reminder
+* Full stack: the stack points to the last element of the stack
+* Empty stack: the stack points to the next free element of the stack
+* Descending stack: grows from high addresses to low addresses
+* Ascending stack: grows from low addresses to high addresses
+
+TODO: stack instructions suffixes
+
 ## Full descending
+Default stack type on ARM.
+
+![full-descending-stack](/assets/arm-full-descending-stack.svg)
+
+## Empty descending
+
+![emtpy-descending-stack](/assets/arm-empty-descending-stack.svg)
+
+## Full ascending
+
+![full-ascending-stack](/assets/arm-full-ascending-stack.svg)
+
+## Empty ascending
+
+![empty-ascending-stack](/assets/empty-full-ascending-stack.svg)
+
 
 # ARM execution modes
-## User
-Unprivileged mode used to run user application. Basically userland
+* User: unprivileged mode used to run user application. Basically userland
+* Supervisor: protected mode used by the OS
+* System: privileged mode used by the OS
+* Abort: privileged mode used to handle an exception
+* Undefined: privileged mode used when an unknown instruction is encountered
+* IRQ: privileged mode used when handling an IRQ
+* FIQ: privileged mode used when handling an FIQ (high priority IRQ)
 
-## Supervisor
-Protected mode used by the OS
-
-## System
-Privileged mode used by the OS
-
-## Abort
-Privileged mode used to handle an exception
-
-## Undefined
-Privileged mode used when an unknown instruction is encountered
-
-## IRQ
-Privileged mode used when handling an IRQ
-
-## FIQ
-Privileged mode used when handling an FIQ (high priority IRQ)
-
-
-## Register bank
-
+## Register banking
+* R0 to R7, PC and CPSR shared by all modes
+* R8 to R12 shared by all modes except FIQ, which has its own registers
+* Each mode has its own SP, except User and System mode which have the same
+* User, System and Hypervisor modes have the same LR. All other modes have their own LR
+* All modes except User and System have their own SPSR
 
 
 # Vector table
@@ -54,3 +68,7 @@ Privileged mode used when handling an FIQ (high priority IRQ)
 | 0x14 | Unused | Unused | HVC/Trap | Unused |
 | 0x18 | IRQ | IRQ | IRQ | IRQ |
 | 0x1C | FIQ | FIQ | FIQ | FIQ |
+
+
+# Resources and references
+* [Stack instructions](http://www.keil.com/support/man/docs/armasm/armasm_dom1359731152499.htm)
