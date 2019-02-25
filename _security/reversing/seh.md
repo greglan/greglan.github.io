@@ -6,9 +6,12 @@ topic: "reversing"
 * Unhandled errors redirected to the default SEH.
 * Exception handling stack layout:
 
-* Evry frame has its own exception handler on the stack
+![stack-layout](/assets/seh.svg)
+
+
+* Every frame has its own exception handler on the stack
 * SEH record:
-  - pointer to the next SEH record ~ SEH record in preivous stack frame
+  - pointer to the next SEH record ~ SEH record in previous stack frame
   - pointer to the exception handler
 * Last record:
   - 0xffffffff
