@@ -32,3 +32,4 @@ sidebar_sort_order: 2
 * Fibonacci heaps
 * Red black trees
 * KD trees
+* [Recursivity vs Reentrancy](https://fr.wikipedia.org/wiki/R%C3%A9entrance)

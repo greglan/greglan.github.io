@@ -31,8 +31,27 @@ The second EL3 vector table has all its entries trapped, except for a synchronou
 
 
 ### EL1 vector table
-TODO
+Just like the EL3 vector table, each vector sets up a code in X0 to identify the exception. The general handling is done by `el1_handler`.
 
+| Exception | Code |
+|:-:|:-:|
+| Synchronous EL1 with SP_EL0 | 0x1C |
+| IRQ/vIRQ EL1 with SP_EL0 | 0x1D |
+| FIQ/vFIQ EL1 with SP_EL0 | 0x1E |
+| SError/vSError EL1 with SP_EL0 | 0x1F |
+| Synchronous EL1 with SP_EL1 | 0x20 |
+| SError/vSError EL1 with SP_EL1 | 0x23 |
+| SError/vSError AArch64 EL0  | 0x27 |
+| SError/vSError AArch32 EL0  | 0x2B |
+
+Every handler starts by checking the value of the `exception_el1_flag`. If it set, the execution goes on to `el1_handler`. Else, the current value of `TTBR0_EL1` is checked against a saved copy. If this value matches, execution goes on to `el1_handler`. Else, the saved `TTBR0_EL1` is restored and the cache is invalidated (TODO: research this).
+
+
+Many handlers for an EL1 exception follow the pattern described above. Additionally,  the `el1_exception_different_ttbr0_flag` is set if the `TTBR0_EL1` register was not the same as the copy.
+
+
+* IRQ/FIQ SP_EL1: save X16/X17
+* Synchronous/IRQ/FIQ/Serror aarch64 and aarch32 EL0: SMC 0x3C
 
 
 
@@ -60,7 +79,7 @@ Counter-timer physical count register is saved in a structure, which is 32 bytes
 
 # Structures
 ### core_regs_t (0x108 bytes)
-```
+```C
 struct core_regs_t {
     uint64_t x0;
     /* ... */
@@ -71,7 +90,7 @@ struct core_regs_t {
 ```
 
 ### sys_regs_t (0xF0 bytes)
-```
+```C
 struct sys_regs_t {
     uint64_t spsr_el1;
     uint64_t elr_el1;
@@ -107,7 +126,7 @@ struct sys_regs_t {
 ```
 
 ### fp_regs_t (0x210 bytes)
-```
+```C
 struct fp_regs_t {
     uint128_t q0;
     /* ... */
@@ -117,10 +136,19 @@ struct fp_regs_t {
 }
 ```
 
+### el3_struct_1
+```C
+struct el3_struct_1 {
+    uint32_t field_0;
+    uint32_t esr_el3;
+    uint64_t far_el3;
+}
+```
+
 
 # Function map
 
-![functions-map](/assets/oneplus6t-reversing-functions-map.png)
+![functions-map](/assets/oneplus6t-reversing-functions-map.svg)
 
 
 # Resources and references

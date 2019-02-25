@@ -11,13 +11,19 @@ topic: "reversing"
 
 ## Data Execution Prevention (DEP)
 * NX bit on stack segment: prevent execution of shellcode.
+  * NX bit: generic name
+  * Intel name: XD (eXecute Disable) bit
+  * AMD name: Enhanced Virus Protection (EVP)
+  * ARM name: XN (eXecute Never) bit
 * Solution: use existing code (ret2libc/ROP)
+* DEP on Windows since Windows XP SP2 and Windows 2003
 
 
 ## Stack smashing protection
 * Also called stack cookie/canary
 * GCC flag: `-fstack-protector`
 * Solution: non stack-based vulnerabilities
+* Used on Windows since Windows XP SP2 and Windows 2003
 
 ## Heap protector
 

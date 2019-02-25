@@ -36,7 +36,7 @@ Default stack type on ARM.
 
 ## Empty ascending
 
-![empty-ascending-stack](/assets/empty-full-ascending-stack.svg)
+![empty-ascending-stack](/assets/arm-empty-ascending-stack.svg)
 
 
 # ARM execution modes
