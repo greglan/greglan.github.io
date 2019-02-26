@@ -2,7 +2,7 @@
 layout: category
 title: Programming
 permalink: /programming/
-sidebar_sort_order: 2
+sidebar_sort_order: 40
 ---
 <h2>Algorithms</h2>
 <ul>

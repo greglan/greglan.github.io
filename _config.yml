@@ -63,6 +63,9 @@ collections:
   system:
     output: true
     permalink: /:collection/:name
+  qc:
+    output: true
+    permalink: /:collection/:name
 
 defaults:
   - scope:
@@ -88,5 +91,10 @@ defaults:
   - scope:
       path: ""
       type: "system"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "qc"
     values:
       layout: page

@@ -2,7 +2,7 @@
 layout: category
 title: System
 permalink: /system/
-sidebar_sort_order: 3
+sidebar_sort_order: 15
 ---
 <h2>ARM</h2>
 <ul>

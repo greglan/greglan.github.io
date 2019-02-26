@@ -2,7 +2,7 @@
 layout: category
 title: Security
 permalink: /security/
-sidebar_sort_order: 1
+sidebar_sort_order: 10
 ---
 
 <h2>Reversing and application exploitation</h2>
