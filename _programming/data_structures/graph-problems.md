@@ -1,6 +1,7 @@
 ---
 title:  "Graph problems"
 topic: "data_structures"
+tags: programming data_structures graphs
 ---
 
 # Shortest path

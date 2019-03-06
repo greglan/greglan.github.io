@@ -1,6 +1,7 @@
 ---
 title:  "ARMV7-A architecture"
 topic: "arm"
+tags: arm
 ---
 # Registers
 * General purpose registers: *R0*-*R1*

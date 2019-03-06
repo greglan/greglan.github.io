@@ -1,5 +1,6 @@
 ---
 title:  "Cheatsheet"
+tags: quantum_computing
 ---
 $$
 \newcommand{\bra}[1]{\left< #1 \right|}
@@ -9,26 +10,29 @@ $$
 $$
 
 # Definitions
-* Ket: $$\left\vert x \right>$$
-* Bra: $$\left< x \right\vert$$
-* Hadamard basis: $$\{\left\vert + \right>, \left\vert - \right> \}$$
+* Ket: $$\ket{x}>$$
+* Bra: $$\bra{x}$$
+* Hadamard basis: $$\{\ket{+}, \ket{-} \}$$
 
 # Mathematics
-* Bloch sphere coordinates: $$\left\vert \psi \right> = a_0 \left\vert 0 \right> + a_1 \left\vert 1 \right> = \cos \frac{\theta}{2} \left\vert 0 \right> + e^{i \Phi} \sin \frac{\theta}{2} \left\vert 0 \right>$$
-
+* *Adjoint/Hermitian conjugate* of $$A$$: $$A^\dagger$$
+* Hermitian/self-adjoint matrix: $$A = A^\dagger$$
+* Normal matrix: $$AA^\dagger = A^\dagger A$$
+* $$U$$ unitary iif $$U^\dagger U = I (= U U^\dagger)$$
+* Unitary operators preserve the inner product
+* Bloch sphere coordinates: $$\ket{\psi} = a_0 \ket{0} + a_1 \ket{1} = \cos \frac{\theta}{2} \ket{0} + e^{i \Phi} \sin \frac{\theta}{2} \ket{1}$$
 ![bloch-sphere-wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/423px-Bloch_Sphere.svg.png)
 
-* Unitary operators preserve the inner product
 
 # Notable states
 
-$$\left\vert + \right> = \frac{\left\vert 0 \right> + \left\vert 1 \right>}{\sqrt{2}}$$
+$$\ket{+} = \frac{\ket{0} + \ket{1}}{\sqrt{2}}$$
 
-$$\left\vert - \right> = \frac{\left\vert 0 \right> - \left\vert 1 \right>}{\sqrt{2}}$$
+$$\ket{-} = \frac{\ket{0} - \ket{1}}{\sqrt{2}}$$
 
-$$\left\vert i \right> = \frac{\left\vert 0 \right> + i \left\vert 1 \right>}{\sqrt{2}}$$
+$$\ket{i} = \frac{\ket{0} + i \ket{1}}{\sqrt{2}}$$
 
-$$\left\vert -i \right> = \frac{\left\vert 0 \right> - i \left\vert 1 \right>}{\sqrt{2}}$$
+$$\ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}$$
 
 
 # Notable matrices

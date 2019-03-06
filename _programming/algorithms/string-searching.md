@@ -1,6 +1,7 @@
 ---
 title:  "String searching algorithms"
 topic: "algorithms"
+tags: programming algorithms
 ---
 
 # Notations

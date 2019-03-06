@@ -1,5 +1,6 @@
 ---
 title:  "Grover's quantum search algorithm"
+tags: quantum_computing algorithms
 ---
 $$
 \newcommand{\bra}[1]{\left< #1 \right|}

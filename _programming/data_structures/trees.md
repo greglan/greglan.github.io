@@ -1,6 +1,7 @@
 ---
 title:  "Trees"
 topic: "data_structures"
+tags: programming data_structures trees
 ---
 
 ## Definitions

@@ -1,6 +1,7 @@
 ---
 title:  "Connecting to WPA protected wifi using the command line"
 topic: "linux"
+tags: linux networks
 ---
 ```bash
 ip link set wlan0 up

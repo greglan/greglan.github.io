@@ -1,6 +1,7 @@
 ---
 title:  "Message Authentication Codes (MAC)"
 topic: "cryptography"
+tags: security algorithms cryptography
 ---
 # Introduction
 * Purpose: ensure authentication using a shared private key *K*

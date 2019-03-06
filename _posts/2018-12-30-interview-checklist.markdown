@@ -2,6 +2,7 @@
 layout: post
 title:  "Checklist to prepare interviews"
 date:   2018-12-29 16:57:56 +0100
+tags: security programming system
 ---
 TODO: links to data structures posts
 

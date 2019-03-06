@@ -1,5 +1,6 @@
 ---
 title:  "Common port numbers"
+tags: networks
 ---
 Wake-on-lan: 9
 

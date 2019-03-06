@@ -1,6 +1,7 @@
 ---
 title:  "Quicksort"
 topic: "algorithms"
+tags: programming algorithms
 ---
 
 * Tri rapide/tri par segmentation

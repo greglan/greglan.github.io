@@ -1,6 +1,7 @@
 ---
 title:  "Graph algorithms"
 topic: "data_structures"
+tags: programming data_structures graphs
 ---
 
 # Implementation complexities

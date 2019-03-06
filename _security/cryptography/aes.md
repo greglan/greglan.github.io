@@ -1,6 +1,7 @@
 ---
 title:  "Advanced Encryption Standard (AES)"
 topic: "cryptography"
+tags: security algorithms cryptography
 ---
 
 # Introduction

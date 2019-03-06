@@ -1,6 +1,7 @@
 ---
 title:  "Merge sort"
 topic: "algorithms"
+tags: programming algorithms
 ---
 
 # Principle

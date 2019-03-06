@@ -1,6 +1,7 @@
 ---
 title:  "Binary heaps"
 topic: "data_structures"
+tags: programming data_structures trees
 ---
 
 ## Definition

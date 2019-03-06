@@ -1,5 +1,6 @@
 ---
 title:  "SPI protocol"
+tags: eletronics
 ---
 
 * SPI = Serial Peripheral Interface. Synchronous serial data protocol.

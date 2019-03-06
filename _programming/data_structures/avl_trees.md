@@ -1,6 +1,7 @@
 ---
 title:  "AVL trees"
 topic: "data_structures"
+tags: programming data_structures trees
 ---
 
 * Definition: for all nodes, the difference between the height of the left and right subtree is at most 1. Motivation : ensure the height of the tree is *log n* at each insert or delete operation. Ensures average complexity of *O(log n)*

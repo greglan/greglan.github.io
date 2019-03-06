@@ -1,6 +1,7 @@
 ---
 title:  "Block and stream ciphers"
 topic: "cryptography"
+tags: security cryptography
 ---
 
 # Block ciphers

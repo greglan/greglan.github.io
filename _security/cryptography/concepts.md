@@ -1,6 +1,7 @@
 ---
 title:  "A few concepts"
 topic: "cryptography"
+tags: security cryptography
 ---
 
 * Confusion property: each binary digit/bit of the ciphertext should depend on several parts of the key, obscuring the connections between the two.

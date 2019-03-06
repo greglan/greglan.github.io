@@ -1,5 +1,6 @@
 ---
 title:  "Introduction to quantum complexity"
+tags: quantum_computing complexity
 ---
 
 # Classical world
