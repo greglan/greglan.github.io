@@ -57,3 +57,4 @@ TODO
 # Resources and references
 * [1] Quantum Computing, A gentle introduction
 * [2] Quantum computation and quantum information
+* [Properties of hermitian conjugate](https://en.wikipedia.org/wiki/Conjugate_transpose)

@@ -1,0 +1,13 @@
+---
+title:  "Docker cheatsheet"
+tags: virtualization
+---
+# Images
+* Show images: `docker images ls --all`
+* Pull image: `docker pull [OPTIONS] NAME[:TAG|@DIGEST]`
+
+# Containers
+* List containers: `docker ps`
+* List containers: `docker container ls --all`
+* Run in background with container port 80 mapped to host 4000: `docker run -d -p 4000:80 friendlyhello`
+* Stop container: `docker container stop $CONTAINER_ID`

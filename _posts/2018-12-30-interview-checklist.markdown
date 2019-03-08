@@ -2,12 +2,12 @@
 layout: post
 title:  "Checklist to prepare interviews"
 date:   2018-12-29 16:57:56 +0100
-tags: security programming system
+tags:   security programming system
 ---
 TODO: links to data structures posts
 
 # Programming
-* Learn everything in the [programming section](/rpgoramming/)
+* Learn everything in the [programming section](/programming/)
 * Sorting: quicksort and mergesort. When to use one against the other
 * Hashtables: implementations. Array-only implementation.
 * Trees: basic construction, and traversals (DFS, BFS).  Difference between
@@ -32,10 +32,10 @@ problem. Be able to recognize them. NP-completeness.
 * Object-oriented design
 * Test-driven development
 * Scaling the above algorithms to the point where their memory constraints are
-violated (e.g., sorting a list too big to contain in memory; finding the most
-    common character in a string too big to contain in memory; etc.).
+violated (e.g., sorting a list too big to contain in memory; finding the most common character in a string too big to contain in memory; etc.).
 
 # Operating systems
+* Learn everything in the [system section](/system/). Most notably, everything related to architectures and operating systems.
 * Processes, threads. Resources for each.
 * Context switching. Initiation by the OS and the hardware. Scheduling basics.
 * Concurrency issues. Locks, mutexes, semaphores, monitors and how they work.
@@ -43,9 +43,9 @@ Deadlocks and livelocks. How to avoid them ?
 * Multicore concurrency constructs.
 * Find the most common email in a log file with a one-liner, etc...
 
-
 # Security
 * Learn everything in the [security section](/security/)
+* For an hardware security job, lokking at the [electronics section](/electronics/) might be useful
 * Read security articles: KrebsOnSecurity. Know what's going on in the industry
 * Lingo: dictionaries of security acronyms. "25 most used cyber security
 buzzwords" or "most important cyber security acronyms". Idea of what SIEM, AD,
@@ -56,3 +56,5 @@ and SOC are.
 * Combinatorics, probabilities basics. n-choose-k problems
 * Choose uniformly random element from list without knowing its length
 * Compute nth Fibonacci number in logarithmic time using matrix exponentiation, etc.).
+* Configuration of several HTTP servers
+* Knowledge of hypervisors

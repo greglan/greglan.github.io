@@ -1,5 +1,5 @@
 ---
-title:  "Reversing of the Onplus 6T trustzone"
+title:  "Reversing of the Oneplus 6T trustzone"
 topic: "reversing"
 ---
 

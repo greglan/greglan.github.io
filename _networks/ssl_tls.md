@@ -1,27 +1,26 @@
 ---
 title:  "SSL and TLS"
+tags: security networks
 ---
-## History
-### Secure Sockets Layer (SSL)
+
+
+# History
+## Secure Sockets Layer (SSL)
 * Not used anymore, many vulnerabilities
 * Replaced by TLS
 
-### Transport Layer Security (TLS)
+## Transport Layer Security (TLS)
 * TLS 1.0: adds PFS support using Diffie-Hellman
 * TLS 1.2 in 2008. Most used version.
 * TLS 1.3: not implemented yet. Focus on improving speed and security (removal
     of unsecure protocols: 3DES, AES + CBC, RC4 removed)
 
-## Typical connection
-* Handshake: choice of security protocols and keys
-* ClientHello: declare supported cryptographic algorithms
-* ServerHello: response to ClientHello.
-* ServerKeyExchange:
-* ClientKeyExchange:
-* ChangeCipherSpec:
-* Finished:
 
-## Perfect Forward Secrecy (PFS)
+# Connection steps
+TODO: insert/make image
+
+
+# Perfect Forward Secrecy (PFS)
 * Also known as *Forward Secrecy*
 * Feature of specific key agreement protocols
 * Ensures session keys will not be compromised even if the private key of the
@@ -34,16 +33,16 @@ Compromise of a single session key will not affect any data other than that
 exchanged in the specific session protected by that particular key.
 
 
-## Decrypting SSL trafic
-### With private key
+# Decrypting SSL trafic
+## With private key
 If **Perfect Forward Secrecy** is setup, the private key is not enough to get the stream in plain text.
 Cf [this link](https://security.stackexchange.com/questions/71309/it-is-possible-to-decrypt-https-with-the-private-public-pair-if-it-uses-dhe)
 
-### Without the private key
+## Without the private key
 CRIME, BEAST, POODLE attacks. Tricky to use because they need specific versions of SSL, ciphers and partly know what is being exchanged between the client and the server
 
 
-## Resources
+# Resources
 * [Analysing TLS with PFS](https://jimshaver.net/2015/02/11/decrypting-tls-browser-traffic-with-wireshark-the-easy-way/). Based on the Pre Master Key. Allows to decipher the data between a client and the server provided an access on the client exists. Also depends on the server configuration (if seesion reuse is enabled ?
 * [Decrypting TLS traffich with DHE](https://security.stackexchange.com/questions/71309/it-is-possible-to-decrypt-https-with-the-private-public-pair-if-it-uses-dhe)
 * [ANALYSES DES CONFIGURATIONS SSL/TLS DE SERVEURS SMTP](https://connect.ed-diamond.com/MISC/MISC-096/Analyses-des-configurations-SSL-TLS-de-serveurs-SMTP)

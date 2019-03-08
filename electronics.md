@@ -4,11 +4,8 @@ title: Electronics
 permalink: /electronics/
 sidebar_sort_order: 50
 ---
+{% include category-presentation.html target=site.electronics%}
 
-<ul>
-  {% for page in site.electronics %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+# TODO
+* CAN protocol
+* Describe past electronics projects

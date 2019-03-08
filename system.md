@@ -4,31 +4,10 @@ title: System
 permalink: /system/
 sidebar_sort_order: 15
 ---
-<h2>ARM</h2>
-<ul>
-  {% for page in site.system %}
-    {% if page.topic == "arm" %}
-      <li>
-        <a href="{{ page.url }}">{{ page.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
 
+{% include category-presentation.html target=site.system%}
 
-<h2>Data structures</h2>
-<ul>
-  {% for page in site.system %}
-    {% if page.topic == "linux" %}
-      <li>
-        <a href="{{ page.url }}">{{ page.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
-
-## TODO
+# TODO
 * Fibonacci heaps
 * Red black trees
 * KD trees
