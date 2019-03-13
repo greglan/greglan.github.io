@@ -13,5 +13,5 @@
 {% if other_topics %}
 # Unsorted
 {% for page in include.target %}
-{% if page.topic == topic %}* [{{page.title}}]({{ page.url }}){% endif %}{% endfor %}
+{% if page.topic == nil %}* [{{page.title}}]({{ page.url }}){% endif %}{% endfor %}
 {% endif %}

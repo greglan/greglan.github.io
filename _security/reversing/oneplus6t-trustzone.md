@@ -152,3 +152,6 @@ struct el3_struct_1 {
 
 
 # Resources and references
+* Source files of qseecom driver
+* [Kernel sources](https://github.com/OnePlusOSS/android_kernel_oneplus_sdm845/tree/oneplus/SDM845_P_9.0)
+* [Exploring Qualcomm's TrustZone implementation](https://bits-please.blogspot.com/2015/08/exploring-qualcomms-trustzone.html)

@@ -37,7 +37,7 @@ $$\ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}$$
 
 # Notable matrices
 
-$$ W =
+$$ X =
 \begin{bmatrix}
 0&1\\
 1&0

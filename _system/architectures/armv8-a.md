@@ -1,7 +1,7 @@
 ---
 title:  "ARMV8-A architecture"
-topic: "arm"
-tags: arm
+topic: "architectures"
+tags: arm architectures
 ---
 
 # AArch32 mode

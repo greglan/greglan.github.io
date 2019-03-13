@@ -13,3 +13,5 @@ sidebar_sort_order: 60
 * Simon's algorithm
 * Quantum teleportation
 * Superdense coding
+* Deutsch-Josza algorithm
+* Aplitude amplification

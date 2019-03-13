@@ -55,6 +55,8 @@ TODO
 
 
 # Resources and references
-* [1] Quantum Computing, A gentle introduction
-* [2] Quantum computation and quantum information
+* [1] Quantum computation and quantum information
+* [2] Quantum computing, a gentle introduction
+* [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
+* [4] [Wikipedia article](https://en.wikipedia.org/wiki/Grover%27s_algorithm)
 * [Properties of hermitian conjugate](https://en.wikipedia.org/wiki/Conjugate_transpose)

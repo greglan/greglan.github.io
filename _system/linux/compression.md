@@ -35,3 +35,9 @@ tar xjf archive_name.tar
 zip myzip file1 file2 file3  # Create file myzip.zip
 unzip file.zip
 ```
+
+# RAR files
+```bash
+unrar x archive.rar # Decompress
+rar a ArchiveName File_1 File_2 Dir_1 Dir_2 # Compress
+``
