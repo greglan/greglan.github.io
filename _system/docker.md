@@ -11,3 +11,6 @@ tags: virtualization
 * List containers: `docker container ls --all`
 * Run in background with container port 80 mapped to host 4000: `docker run -d -p 4000:80 friendlyhello`
 * Stop container: `docker container stop $CONTAINER_ID`
+
+# Resources and references
+* [Storage locations](https://forums.docker.com/t/can-i-store-docker-containers-on-two-different-mount-points-of-the-same-machine/21758)

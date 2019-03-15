@@ -10,17 +10,15 @@ $$
 $$
 
 # Definitions
-* Ket: $$\ket{x}>$$
+* Ket: $$\ket{x}$$
 * Bra: $$\bra{x}$$
 * Hadamard basis: $$\{\ket{+}, \ket{-} \}$$
 
-# Mathematics
-* *Adjoint/Hermitian conjugate* of $$A$$: $$A^\dagger$$
-* Hermitian/self-adjoint matrix: $$A = A^\dagger$$
-* Normal matrix: $$AA^\dagger = A^\dagger A$$
-* $$U$$ unitary iif $$U^\dagger U = I (= U U^\dagger)$$
-* Unitary operators preserve the inner product
+
+# Formulas
+* $$H^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x,y} (-1)^{x y} \ket{x} \bra{y}$$
 * Bloch sphere coordinates: $$\ket{\psi} = a_0 \ket{0} + a_1 \ket{1} = \cos \frac{\theta}{2} \ket{0} + e^{i \Phi} \sin \frac{\theta}{2} \ket{1}$$
+
 ![bloch-sphere-wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/423px-Bloch_Sphere.svg.png)
 
 
