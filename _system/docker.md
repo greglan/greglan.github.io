@@ -14,3 +14,4 @@ tags: virtualization
 
 # Resources and references
 * [Storage locations](https://forums.docker.com/t/can-i-store-docker-containers-on-two-different-mount-points-of-the-same-machine/21758)
+* [Security advices](https://snyk.io/blog/10-docker-image-security-best-practices/)

@@ -43,6 +43,7 @@ Hardens ELF programs against loader memory area overwrites by having the loader 
 * SMAP: Supervisor Mode Access Prevention. Feature of some CPU that allows supervisor mode programs to set user-space memory mappings so that access to those mappings from supervisor mode will cause a trap. Makes it harder for programs to "trick" the kernel into using instructions or data from a user-space program
 * SMAP activation: CR4 control register
 * Drawback of SMAP: larger kernel size and slower userspace memory accesses
+* [New CR4 bits protection](https://www.phoronix.com/scan.php?page=news_item&px=Linux-Protect-Special-CR4-Bits)
 
 # Pointer obfuscation
 Some pointers stored in glibc are obfuscated via PTR_MANGLE/PTR_UNMANGLE macros internally in glibc, preventing libc function pointers from being overwritten during runtime.
@@ -65,3 +66,4 @@ Some pointers stored in glibc are obfuscated via PTR_MANGLE/PTR_UNMANGLE macros 
 * Hagen Fritsch, *Buffer overflows on linux-x86-64*, Black Hat Europe.
 * Azeria Labs[https://azeria-labs.com/process-memory-and-memory-corruption/]
 * Exploiting Format String vulnerabilities, TESO security group
+* [Linux binary hardening review](https://capsule8.com/blog/millions-of-binaries-later-a-look-into-linux-hardening-in-the-wild/)

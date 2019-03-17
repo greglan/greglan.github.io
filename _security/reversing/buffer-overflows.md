@@ -14,7 +14,7 @@ topic: "reversing"
 ![stack-layout](/assets/C-func-stack-layout-x86.svg)
 
 
-# Stack buffer overflow
+# Stack based overflow
 ## Basic exploitation
 * EIP overwrite
 * NOP sled usage
@@ -27,3 +27,8 @@ topic: "reversing"
 * ROP
 
 ![techniques](/assets/binary-exploitation-techniques.svg)
+
+# Heap based overflow
+
+# Resources and references
+* [Azeria Labs heap exploitation tutorial](https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/)

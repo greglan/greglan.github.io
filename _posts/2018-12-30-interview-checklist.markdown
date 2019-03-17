@@ -49,7 +49,7 @@ Deadlocks and livelocks. How to avoid them ?
 * Read security articles: KrebsOnSecurity. Know what's going on in the industry
 * Lingo: dictionaries of security acronyms. "25 most used cyber security
 buzzwords" or "most important cyber security acronyms". Idea of what SIEM, AD,
-and SOC are.
+and SOC are. Common buzzword analysis [here](https://medium.com/@kshortridge/infosec-startup-buzzword-bingo-2019-edition-d067fb1316cb)
 * Most used security tools and softwares. Companies involved in development.
 
 # Others
