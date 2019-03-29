@@ -36,29 +36,50 @@ $$\ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}$$
 # Notable matrices
 
 $$ X =
-\begin{bmatrix}
+\begin{pmatrix}
 0&1\\
 1&0
-\end{bmatrix}
+\end{pmatrix}
 $$ (rotation of $$\pi$$ around the $$x$$ axis)
 
+$$ X(\theta) = e^{i x \theta / 2} =
+\begin{pmatrix}
+\cos \theta/2 & -i \sin \theta/2\\
+-i \sin \theta/2 &\cos \theta/2
+\end{pmatrix}
+$$ (rotation of $$\theta$$ around the $$x$$ axis)
+
 $$ Y =
-\begin{bmatrix}
+\begin{pmatrix}
 0&-i\\
 i&0
-\end{bmatrix}
+\end{pmatrix}
 $$ (rotation of $$\pi$$ around the $$y$$ axis)
 
+$$ Y(\theta) = e^{i y \theta / 2} =
+\begin{pmatrix}
+\cos \theta/2 & -\sin \theta/2\\
+\sin \theta/2 &\cos \theta/2
+\end{pmatrix}
+$$ (rotation of $$\theta$$ around the $$y$$ axis)
+
 $$ Z =
-\begin{bmatrix}
+\begin{pmatrix}
 1&0\\
 0&-1
-\end{bmatrix}
+\end{pmatrix}
 $$ (rotation of $$\pi$$ around the $$z$$ axis)
 
+$$ Z(\theta) =
+\begin{pmatrix}
+e^{i \theta /2} &0\\
+0& e^{i \theta /2}
+\end{pmatrix}
+$$ (rotation of $$\theta$$ around the $$z$$ axis)
+
 $$ H =  \frac{1}{\sqrt{2}}
-\begin{bmatrix}
+\begin{pmatrix}
 1&1\\
 1&-1
-\end{bmatrix}
+\end{pmatrix}
 $$ (rotation of $$\frac{\pi}{2}$$ around the $$y$$ axis and $$\pi$$ around the $$x$$ axis)

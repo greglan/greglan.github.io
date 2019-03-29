@@ -17,6 +17,11 @@ $$
 * Relative and global phases
 * Complex projective space $$CP^1$$
 * Extended complex plane
+* Dual vectors: bras
+* Inner products: brackets
+* Hamiltonian of a system: energy states are eigenvectors. Provides a default computational basis
+* Unitary operations rotate the Bloch sphere: rotations
+* Two orthogonal states are antiparallel on the Bloch sphere (opposite sides)
 
 
 # Outer product
@@ -37,6 +42,10 @@ $$
 * Normal matrix: $$AA^\dagger = A^\dagger A$$
 * Spectral decomposition: an operator $$M$$ is normal iff it is diagonalizable. Then, $$M = \sum_i \lambda_i \ket{i} \bra{i}$$ with $$\lambda_i$$ eigenvalues of $$M$$
 * A normal matrix $$A$$ is Hermitian iff $$Sp(A) \subset \mathbb{R}$$
+* Measurement operators are hermitian matrices. The observable values are the eigenvalues of the matrix
+* Rotation aaround the $$z$$ axis can be made usign rotations around the $$x$$ and $$y$$ axis (rotation of the Bloch sphere around $$y$$ changes the basis)
+* Measuring in another basis: apply an unitary to change the basis
+* Average value of an operator $$A$$ over the state $$\ket{\psi}$$: $$\bke{\psi}{A}{\psi}$$
 
 
 # Unitary matrices [1]
