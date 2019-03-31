@@ -1,7 +1,7 @@
 ---
 title:  "Various uncategorized utilities"
+topic: "unsorted"
 ---
-
 
 * Decode base64: `echo ‘base64 encoded text’ | base64 -d`
 * Create a dictionary from words on a webpage: `cewl http://test.com -w /root/tmp/dict.txt`

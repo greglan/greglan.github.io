@@ -1,5 +1,6 @@
 ---
 title:  "CAN protocol"
+topic: ""
 tags: electronics
 ---
 # CAN protocol

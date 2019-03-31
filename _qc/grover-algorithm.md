@@ -1,5 +1,6 @@
 ---
 title:  "Grover's quantum search algorithm"
+topic: ""
 tags: quantum_computing algorithms
 ---
 $$

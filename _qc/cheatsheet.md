@@ -1,5 +1,6 @@
 ---
 title:  "Cheatsheet"
+topic: ""
 tags: quantum_computing
 ---
 $$
