@@ -1,5 +1,5 @@
 ---
-title:  "A few concepts"
+title:  "Some cryptography concepts"
 topic: "cryptography"
 tags: security cryptography
 ---

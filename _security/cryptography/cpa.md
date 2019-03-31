@@ -1,5 +1,5 @@
 ---
-title:  "Correlation Power Analysis"
+title:  "Correlation Power Analysis (CPA)"
 topic: "cryptography"
 tags: security cryptography
 ---
@@ -65,5 +65,6 @@ Note that we're only working with absolute values here because we don't care abo
 
 # Resources and references
 * [CPA introduction](https://wiki.newae.com/Correlation_Power_Analysis)
+* [RSA example](https://wiki.newae.com/Tutorial_B11_Breaking_RSA)
 * [Difference between perfoming CPA in the first and last AES round](https://crypto.stackexchange.com/questions/47680/what-is-the-difference-between-perfoming-correlation-power-analysis-cpa-in-the)
 * [CPA example on AES 128](https://www.tandfonline.com/doi/full/10.1080/23742917.2016.1231523)
