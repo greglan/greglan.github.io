@@ -1,6 +1,6 @@
 ---
 title:  "Graph algorithms"
-topic: "data_structures"
+topic: "Data structures"
 tags: programming data_structures graphs
 ---
 

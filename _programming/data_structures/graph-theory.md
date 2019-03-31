@@ -1,6 +1,6 @@
 ---
 title:  "Graph theory"
-topic: "data_structures"
+topic: "Data structures"
 tags: programming data_structures graphs
 ---
 

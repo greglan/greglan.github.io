@@ -1,6 +1,6 @@
 ---
 title:  "Binary search trees"
-topic: "data_structures"
+topic: "Data structures"
 tags: programming data_structures trees
 ---
 

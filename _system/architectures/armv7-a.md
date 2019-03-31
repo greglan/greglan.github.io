@@ -1,5 +1,5 @@
 ---
-title:  "ARMV7-A architecture"
+title:  "ARMv7-A architecture"
 topic: "architectures"
 tags: arm architectures
 ---
@@ -11,7 +11,25 @@ tags: arm architectures
 * Program counter: *R15 = PC*
 
 # Conditional code
-TODO
+
+| Code | Meaning | Flags |
+|:----:|:-------:|:-----:|
+| eq    |Equal | Z==1 |
+| ne	|Not equal | Z==0 |
+| pl	|Positive or zero (plus) | N==0 |
+| mi	|Negative (minus) | N==1 |
+| vs	|Signed overflow (V set) | V==1 |
+| vc	|No signed overflow (V clear) | V==0 |
+| cs/hs	|Unsigned higher or same (carry set) | C==1 |
+| hi	|Unsigned higher | (C==1) && (Z==0) |
+| ge	|Signed greater than or equal | N==V |
+| gt	|Signed greater than | (Z==0) && (N==V) |
+| lt	|Signed less than | N!=V |
+| le	|Signed less than or equal | (Z==1) \|\| (N!=V) |
+| ls	|Unsigned lower or same | (C==0) \|\| (Z==1) |
+| cc/lo	|Unsigned lower (carry clear) | C==0 |
+| al/none|Always| None |
+
 
 # Stack types
 ## Reminder
@@ -73,3 +91,4 @@ Default stack type on ARM.
 
 # Resources and references
 * [Stack instructions](http://www.keil.com/support/man/docs/armasm/armasm_dom1359731152499.htm)
+* [Condition codes](https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes)
