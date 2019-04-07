@@ -28,3 +28,4 @@ sidebar_sort_order: 30
 # Resources and references
 * [Ethernet overview](https://searchnetworking.techtarget.com/definition/Ethernet)
 * [Token ring](https://searchnetworking.techtarget.com/definition/Token-Ring)
+* [IPfore](https://www.ipfire.org/features)

@@ -43,3 +43,4 @@ $$
 * [LiveOverflow on reversing RSA](https://www.youtube.com/watch?v=dcR1dkZJ7iU)
 * [LiveOverflow on RSA CPA](https://www.youtube.com/watch?v=bFfyROX7V0s)
 * [Another CPA attack](https://wiki.newae.com/Tutorial_B11_Breaking_RSA)
+* [RSA reversing](https://resources.infosecinstitute.com/breaking-software-protection-rsa/)

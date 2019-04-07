@@ -15,11 +15,12 @@ tags: programming data_structures graphs
 * Eigenvector centrality
 
 ## Clustering
-* Clustering coefficient: measure of the degree to which nodes in a graph tend to cluster together [1](https://en.wikipedia.org/wiki/Clustering_coefficient)
+* Clustering coefficient: measure of the degree to which nodes in a graph tend to cluster together [1]
 
 # Properties
 
 
 # Resources and references
-* [Wikipedia clustering coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient)
+* [[1] Wikipedia clustering coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient)
 * [Wikipedia distances in graph theory](https://en.wikipedia.org/wiki/Distance_(graph_theory))
+* [Graph clustering example](https://www.quora.com/What-is-graph-clustering)

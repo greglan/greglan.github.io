@@ -1,6 +1,6 @@
 ---
 title:  "EXIF data"
-topic: "unsorted"
+topic: "forensics"
 ---
 * EXIF = Exchangeable image fileformat
 * Tools:
