@@ -15,5 +15,12 @@ topic: "languages"
 # Arguments passing
 * [Object reference passing](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)
 * [Strings references](https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference)
+
+# Precision in Numpy
+* [Machine limits for floating point type](https://docs.scipy.org/doc/numpy/reference/generated/numpy.finfo.html)
+
+
+# Resources and references
+* [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 * [Advanced Python topics](http://sebastianraschka.com/Articles/2014_deep_python.html#else_clauses)
 * [Parralel computing with IPython](https://ipyparallel.readthedocs.io/en/latest/intro.html)
