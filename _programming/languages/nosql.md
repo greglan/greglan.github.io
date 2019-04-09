@@ -13,7 +13,8 @@ topic: "languages"
 * List collections: `show collections`
 * Create collection: `db.createCollection(name)`
 * Create collection with automatic `_id` field: `db.createCollection(name, {autoIndexId: true})`
-* Delete collection: `db.collection_name.drop()``
+* Delete collection: `db.collection_name.drop()`
+* Rename collection: `db.collection_name.renameCollection("new_collection_name")`
 
 # Operations examples
 ```
