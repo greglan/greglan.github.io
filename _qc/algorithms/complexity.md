@@ -1,6 +1,6 @@
 ---
 title:  "Introduction to quantum complexity"
-topic: ""
+topic: "Algorithms"
 tags: quantum_computing complexity
 ---
 

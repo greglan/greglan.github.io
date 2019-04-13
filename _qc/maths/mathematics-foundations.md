@@ -1,6 +1,6 @@
 ---
 title:  "Mathematical foundations"
-topic: ""
+topic: "Maths"
 tags: quantum_computing maths
 ---
 $$
@@ -23,7 +23,8 @@ $$
 * Hamiltonian of a system: energy states are eigenvectors. Provides a default computational basis
 * Unitary operations rotate the Bloch sphere: rotations
 * Two orthogonal states are antiparallel on the Bloch sphere (opposite sides)
-
+* Rotation around the $$z$$ axis can be made using rotations around the $$x$$ and $$y$$ axis (rotation of the Bloch sphere around $$y$$ changes the basis)
+* Measuring in another basis: apply an unitary to change the basis
 
 # Outer product
 * Completeness relation: $$\sum_i \ket{i} \bra{i} = I$$
@@ -31,37 +32,6 @@ $$
 $$
 A = I_W A I_V = \sum_{i,j} \ket{w_j} \bke{w_j}{A}{v_i} \bra{v_i} = \sum_{i,j} \bke{w_j}{A}{v_i} \ket{w_j} \bra{v_i}
 $$
-
-
-# Adjoints and Hermitians operators [1]
-* If $$A$$ linear operator on Hilbert space $$V$$, there exists a unique linear operator $$A^\dagger$$ such that $$\forall \ket{v}, \ket{w} \in V, \; (\ket{v}, A \ket{w}) = (A^\dagger \ket{v}, \ket{w})$$ [2, p69]
-* Adjoint/Hermitian conjugate of $$A$$: $$A^\dagger$$
-* By definition: $$\ket{v}^\dagger = \bra{v}$$
-* Anti-linearity
-* Hermitian/self-adjoint matrix: $$A = A^\dagger$$
-* Projectors are Hermitian
-* Normal matrix: $$AA^\dagger = A^\dagger A$$
-* Spectral decomposition: an operator $$M$$ is normal iff it is diagonalizable. Then, $$M = \sum_i \lambda_i \ket{i} \bra{i}$$ with $$\lambda_i$$ eigenvalues of $$M$$
-* A normal matrix $$A$$ is Hermitian iff $$Sp(A) \subset \mathbb{R}$$
-* Measurement operators are hermitian matrices. The observable values are the eigenvalues of the matrix
-* Rotation aaround the $$z$$ axis can be made usign rotations around the $$x$$ and $$y$$ axis (rotation of the Bloch sphere around $$y$$ changes the basis)
-* Measuring in another basis: apply an unitary to change the basis
-* Average value of an operator $$A$$ over the state $$\ket{\psi}$$: $$\bke{\psi}{A}{\psi}$$
-
-
-# Unitary matrices [1]
-* $$U$$ unitary iif $$U^\dagger U = U U^\dagger = I$$
-* A unitary matrix is normal
-* Inner product preservation
-* All eigenvalues of a unitary matrix have modulus 1
-
-
-# Positive operators [1]
-* Positive operator: $$\forall \ket{v}, \bke{v}{A}{v} \geqslant 0$$
-* Positive definite operator: $$\forall \ket{v}, \bke{v}{A}{v} > 0$$
-* Positive operators are Hermitian
-* Positive operators have positive eigenvalues
-* For all operators $$A$$, $$A^\dagger A$$ positive
 
 
 # Tensor products [1]
@@ -95,4 +65,3 @@ $$
 * [2] Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
 * [4] [Wikipedia article](https://en.wikipedia.org/wiki/Grover%27s_algorithm)
-* [Properties of hermitian conjugate](https://en.wikipedia.org/wiki/Conjugate_transpose)

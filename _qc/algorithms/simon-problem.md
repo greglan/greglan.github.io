@@ -1,6 +1,6 @@
 ---
 title:  "Simon's problem"
-topic: ""
+topic: "Algorithms"
 tags: quantum_computing algorithms
 ---
 $$
