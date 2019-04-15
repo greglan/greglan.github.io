@@ -1,0 +1,366 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: "Just another blog"
+  levels: one
+  folders:
+
+  - title: Security
+    output: web
+    folderitems:
+
+    - title: Resources and todos
+      url: /security.html
+      output: web
+      subfolders:
+      - title: Exploitation
+        output: web
+        subfolderitems:
+
+        - title: Exploitation tricks
+          url: /tricks.html
+          output: web
+
+        - title: Protections
+          url: /protections.html
+          output: web
+
+        - title: Stack-based buffer overflows
+          url: /stack-overflows.html
+          output: web
+
+        - title: Heap-based buffer overflows
+          url: /heap-overflows.html
+          output: web
+
+        - title: Format strings
+          url: /format-strings.html
+          output: web
+
+        - title: GDB cheatsheet
+          url: /gdb.html
+          output: web
+
+      - title: Reversing
+        output: web
+        subfolderitems:
+
+        - title: Binary structure
+          url: /binary-structure.html
+          output: web
+
+        - title: Structured Exception Handlers (SEH)
+          url: /seh.html
+          output: web
+
+        - title: Low level reversing
+          url: /low-level-re.html
+          output: web
+
+        - title: Anti-disassembly techniques
+          url: /anti-disassembly.html
+          output: web
+
+        - title: Radare2 cheatsheet
+          url: /radare2.html
+          output: web
+
+        - title: Oneplus 6T Trustzone
+          url: /oneplus6t-trustzone.html
+          output: web
+
+      - title: Web
+        output: web
+        subfolderitems:
+
+        - title: Cross Site Request Forgery (CSRF)
+          url: /csrf.html
+          output: web
+
+        - title: Cross Site Scripting (XSS)
+          url: /xss.html
+          output: web
+
+        - title: SQL injections
+          url: /sql-injections.html
+          output: web
+
+        - title: NoSQL injections
+          url: /nosql-injections.html
+          output: web
+
+        - title: LDAP injections
+          url: /ldap-injections.html
+          output: web
+
+        - title: XPath injections
+          url: /xpath-injections.html
+          output: web
+
+        - title: Include vulnerabilities
+          url: /includes.html
+          output: web
+
+        - title: Path traversals
+          url: /path-traversals.html
+          output: web
+
+        - title: Web encodings
+          url: /web-encodings.html
+          output: web
+
+        - title: Web tools
+          url: /web-tools.html
+          output: web
+
+      - title: Cryptography
+        output: web
+        subfolderitems:
+
+        - title: Concepts
+          url: /concepts.html
+          output: web
+
+        - title: Block and stream ciphers
+          url: /block-stream-ciphers.html
+          output: web
+
+        - title: Advanced Encryption Standard (AES)
+          url: /aes.html
+          output: web
+
+        - title: RSA
+          url: /rsa.html
+          output: web
+
+        - title: Message Authentication Codes (MAC)
+          url: /mac.html
+          output: web
+
+        - title: Correlation Power Analysis (CPA)
+          url: /cpa.html
+          output: web
+
+  - title: Programming
+    output: web
+    folderitems:
+
+    - title: Todos
+      url: /programming.html
+      output: web
+
+      subfolders:
+      - title: Algorithms
+        output: web
+        subfolderitems:
+
+        - title: Complexity analysis
+          url: /complexity-analysis.html
+          output: web
+
+        - title: Merge sort
+          url: /merge-sort.html
+          output: web
+
+        - title: Quick sort
+          url: /quicksort.html
+          output: web
+
+        - title: String searching
+          url: /string-searching.html
+          output: web
+
+      - title: Data structures
+        output: web
+        subfolderitems:
+
+        - title: Trees
+          url: /trees.html
+          output: web
+
+        - title: Binary search trees
+          url: /binary-search-trees.html
+          output: web
+
+        - title: Binary heaps
+          url: /binary-heaps.html
+          output: web
+
+        - title: AVL trees
+          url: /avl-trees.html
+          output: web
+
+        - title: Graph theory
+          url: /graph-theory.html
+          output: web
+
+        - title: Graph algorithms
+          url: /graph-algorithms.html
+          output: web
+
+        - title: Graph problems
+          url: /graph-problems.html
+          output: web
+
+      - title: Languages
+        output: web
+        subfolderitems:
+
+        - title: Python
+          url: /python.html
+          output: web
+
+        - title: NoSQL
+          url: /nosql.html
+          output: web
+
+  - title: System
+    output: web
+    folderitems:
+
+    - title: Index
+      url: /index-system.html
+      output: web
+
+      subfolders:
+      - title: Architectures
+        output: web
+        subfolderitems:
+
+        - title: ARMv7a
+          url: /armv7a.html
+
+        - title: ARMv8a
+          url: /armv8a.html
+
+        - title: x86
+          url: /x86a.html
+
+      - title: Linux
+        output: web
+        subfolderitems:
+
+        - title: Some utils
+          url: /linux-cmd-utils.html
+
+        - title: Compression
+          url: /compression.html
+
+        - title: Text editing
+          url: /text-editing.html
+
+        - title: ip
+          url: /ip-command.html
+
+        - title: Package management
+          url: /package-management.html
+
+        - title: Users and permissions
+          url: /user-permissions.html
+
+        - title: WPA connection fomr shell
+          url: /wpa-cmd.html
+
+        - title: GRUB commands
+          url: /grub-commands.html
+
+        - title: GPG
+          url: /gpg.html
+
+        - title: FSTAB file
+          url: /fstab.html
+
+        - title: Screen command
+          url: /screen-command.html
+
+      - title: Virtualization
+        output: web
+        subfolderitems:
+
+        - title: Docker
+          url: /docker.html
+
+        - title: Libvirt
+          url: /libvirt.html
+
+  - title: Networks
+    output: web
+    folderitems:
+
+    - title: Port numbers
+      url: /port-numbers.html
+      output: web
+
+    - title: DNS protocol
+      url: /dns-protocol.html
+      output: web
+
+    - title: 802.1x standard
+      url: /802.1x.html
+      output: web
+
+    - title: SSL/TLS
+      url: /ssl-tls.html
+      output: web
+
+    - title: Nmap
+      url: /nmap.html
+      output: web
+
+    - title: Wireshark
+      url: /wirehark.html
+      output: web
+
+    - title: Proxychains
+      url: /proxychains.html
+      output: web
+
+  - title: Quantum computing
+    output: web
+    folderitems:
+
+    - title: Todos
+      url: /quantum-computing-index.html
+      output: web
+
+    - title: Cheatsheet
+      url: /qc-cheatsheet.html
+      output: web
+
+      subfolders:
+      - title: Algorithms
+        output: web
+        subfolderitems:
+
+        - title: Grover's algorithm
+          url: /grover-algorithm.html
+          output: web
+
+        - title: Complexity theory
+          url: /quantum-complexity.html
+          output: web
+
+        - title: Maths
+        output: web
+        subfolderitems:
+
+        - title: Mathematics of quantum computing
+          url: /qc-maths.html
+          output: web
+
+        - title: Density operators
+          url: /density-operators.html
+          output: web
+
+  - title: Electronics
+    output: web
+    folderitems:
+
+    - title: SPI protocol
+      url: /spi.html
+      output: web
+
+    - title: CAN bus
+      url: /can-bus.html
+      output: web

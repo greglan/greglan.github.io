@@ -26,12 +26,28 @@ markdown: kramdown
 
 incremental: true
 
-remote_theme: fongandrew/hydeout
-theme: jekyll-theme-hydeout
+# remote_theme: pmarsceill/just-the-docs
+# theme: "just-the-docs"
+# search_enabled: true
+# permalink: "dark"
 
-plugins:
-  - jekyll-feed
-  # - jekyll-remote-theme
+repository: tomjoht/documentation-theme-jekyll
+
+output: web
+# this property is useful for conditional filtering of content that is separate from the PDF.
+
+topnav_title: Just another blog
+# this appears on the top navigation bar next to the home button
+
+site_title: Just another title that people rarely read
+# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+company_name: Just another blog
+# this appears in the footer
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -47,54 +63,121 @@ plugins:
 
 host: 0.0.0.0
 
+feedback_subject_line: Jekyll documentation theme
+
+feedback_email: tomjoht@gmail.com
+
+highlighter: rouge
+# library used for syntax highlighting
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
 collections:
-  security:
-    output: true
-    permalink: /:collection/:name
-  programming:
-    output: true
-    permalink: /:collection/:name
-  networks:
-    output: true
-    permalink: /:collection/:name
-  electronics:
-    output: true
-    permalink: /:collection/:name
-  system:
-    output: true
-    permalink: /:collection/:name
-  qc:
-    output: true
-    permalink: /:collection/:name
+  tooltips:
+    output: false
+# collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: "security"
+      type: "pages"
     values:
-      layout: page
-  - scope:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+  -
+    scope:
       path: ""
-      type: "programming"
+      type: "tooltips"
     values:
-      layout: page
-  - scope:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
+  -
+    scope:
       path: ""
-      type: "networks"
+      type: "posts"
     values:
-      layout: page
-  - scope:
-      path: ""
-      type: "electronics"
-    values:
-      layout: page
-  - scope:
-      path: ""
-      type: "system"
-    values:
-      layout: page
-  - scope:
-      path: ""
-      type: "qc"
-    values:
-      layout: page
+      layout: "post"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+
+# these are defaults used for the frontmatter for these file types
+
+sidebars:
+- home_sidebar
+- mydoc_sidebar
+- product1_sidebar
+- product2_sidebar
+- other
+
+description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+# the description is used in the feed.xml file
+
+# needed for sitemap.xml file only
+# url: http://idratherbewriting.com
+# baseurl: /documentation-theme-jekyll
+
+# collections:
+#   security:
+#     output: true
+#     permalink: /:collection/:name
+#   programming:
+#     output: true
+#     permalink: /:collection/:name
+#   networks:
+#     output: true
+#     permalink: /:collection/:name
+#   electronics:
+#     output: true
+#     permalink: /:collection/:name
+#   system:
+#     output: true
+#     permalink: /:collection/:name
+#   qc:
+#     output: true
+#     permalink: /:collection/:name
+#
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "security"
+#     values:
+#       layout: page
+#   - scope:
+#       path: ""
+#       type: "programming"
+#     values:
+#       layout: page
+#   - scope:
+#       path: ""
+#       type: "networks"
+#     values:
+#       layout: page
+#   - scope:
+#       path: ""
+#       type: "electronics"
+#     values:
+#       layout: page
+#   - scope:
+#       path: ""
+#       type: "system"
+#     values:
+#       layout: page
+#   - scope:
+#       path: ""
+#       type: "qc"
+#     values:
+#       layout: page
