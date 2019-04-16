@@ -4,10 +4,11 @@ title: Quantum computing resources and TODOs
 permalink: "quantum-computing-index.html"
 ---
 
-* Shor's algorithm
-* Grover's analysis
-* Simon's algorithm
 * Quantum teleportation
 * Superdense coding
+* Amplitude amplification
+* Grover's optimality
+* Simon's algorithm
+* Quantum Fourier transform
 * Deutsch-Josza algorithm
-* Aplitude amplification
+* Shor's algorithm

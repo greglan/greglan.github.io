@@ -7,7 +7,6 @@ permalink: "index-networks.html"
 ## TODO
 * Tor
 * Vidalia
-* privoxy
 * dnscrypt
 * [ipset](https://wiki.archlinux.org/index.php/Ipset)
 * pfsense

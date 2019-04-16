@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "Some tools"
+title:  "Web security tools"
 permalink: "web-tools.html"
 tags: [security, web]
-summary: ""
+summary: "Some tools for related to web security"
 ---
 
 

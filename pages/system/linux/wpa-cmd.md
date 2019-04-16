@@ -1,8 +1,9 @@
 ---
 layout: page
-title:  "Connecting to WPA protected wifi using the command line"
+title:  "Connecting to WIFI from the terminal"
 permalink: "wpa-cmd.html"
 tags: [linux, networks]
+summary: "Memo about connecting to WIFI networks from the terminal"
 ---
 
 ## Manual connection
@@ -17,4 +18,4 @@ sudo dhclient wlan0
 ```
 
 ## nmcli
-List avaialable networks : `nmcli device wifi list`
+List available networks : `nmcli device wifi list`

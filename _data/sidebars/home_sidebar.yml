@@ -10,7 +10,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Resources and todos
+    - title: Resources
       url: /index-security.html
       output: web
       subfolders:
@@ -51,7 +51,7 @@ entries:
           url: /binary-structure.html
           output: web
 
-        - title: Structured Exception Handlers (SEH)
+        - title: Structured Exception Handlers
           url: /seh.html
           output: web
 
@@ -75,11 +75,11 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Cross Site Request Forgery (CSRF)
+        - title: Cross Site Request Forgery
           url: /csrf.html
           output: web
 
-        - title: Cross Site Scripting (XSS)
+        - title: Cross Site Scripting
           url: /xss.html
           output: web
 
@@ -107,11 +107,11 @@ entries:
           url: /path-traversals.html
           output: web
 
-        - title: Web encodings
+        - title: Encodings cheatsheet
           url: /web-encodings.html
           output: web
 
-        - title: Web tools
+        - title: Some tools
           url: /web-tools.html
           output: web
 
@@ -127,7 +127,7 @@ entries:
           url: /block-stream-ciphers.html
           output: web
 
-        - title: Advanced Encryption Standard (AES)
+        - title: Advanced Encryption Standard
           url: /aes.html
           output: web
 
@@ -135,11 +135,11 @@ entries:
           url: /rsa.html
           output: web
 
-        - title: Message Authentication Codes (MAC)
+        - title: Message Authentication Codes
           url: /mac.html
           output: web
 
-        - title: Correlation Power Analysis (CPA)
+        - title: Correlation Power Analysis
           url: /cpa.html
           output: web
 
@@ -361,15 +361,15 @@ entries:
       url: /wirehark.html
       output: web
 
-    - title: Proxychains
-      url: /proxychains.html
+    - title: Proxies and cie
+      url: /proxies.html
       output: web
 
   - title: Quantum computing
     output: web
     folderitems:
 
-    - title: Resources
+    - title: Resources and todos
       url: /quantum-computing-index.html
       output: web
 
@@ -402,7 +402,7 @@ entries:
           url: /qc-maths.html
           output: web
 
-        - title: Common matrices
+        - title: Matrices
           url: /matrices.html
           output: web
 

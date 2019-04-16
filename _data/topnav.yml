@@ -1,11 +1,55 @@
+# Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Browse by tags
+      folderitems:
+        - title: Security
+          url: /tag_security.html
+
+        - title: Exploitation
+          url: /tag_exploitation.html
+
+        - title: Cryptography
+          url: /tag_cryptography.html
+
+        - title: Reversing
+          url: /tag_reversing.html
+
+        - title: Programming
+          url: /tag_programming.html
+
+        - title: Web
+          url: /tag_web.html
+
+        - title: Injections
+          url: /tag_injections.html
+
+        - title: Algorithms
+          url: /tag_algorithms.html
+
+        - title: Linux
+          url: /tag_linux.html
+
+        - title: Maths
+          url: /tag_maths.html
+
+        - title: Virtualization
+          url: /tag_virtualization.html
+
+        - title: System
+          url: /tag_system.html
+
+        - title: ARM architecture
+          url: /tag_arm.html
+
+        - title: Electronics
+          url: /tag_electronics.html
+
 ## Topnav single links
-## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 topnav:
 - title: Topnav
   items:
-    - title: GitHub profile
-      external_url: https://github.com/greglan
-    - title: Twitter
-      external_url: https://twitter.com/greglan3
+
     - title: About
       url: /about.html

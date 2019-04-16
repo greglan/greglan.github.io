@@ -3,6 +3,7 @@ layout: page
 title:  "ip command cheatsheet"
 permalink: "ip-command.html"
 tags: [linux, networks]
+summary: "Usage examples of the ip command"
 ---
 
 * Enable/disable an interface: `ip link set eth0 up/down`
