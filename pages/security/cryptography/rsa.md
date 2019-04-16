@@ -3,12 +3,13 @@ layout: page
 title:  "RSA"
 permalink: "rsa.html"
 tags: [security, algorithms, cryptography]
+summary: ""
 ---
 $$
 \newcommand{\P}{\mathbb{P}}
 $$
 
-# Principle
+## Principle
 * Message $$m$$
 * Modulus $$n$$
 * Public key exponent:$$e$$
@@ -17,28 +18,28 @@ $$
 * Private key: $$(n, d)$$
 * $$m^{ed} \equiv m \mod n$$
 
-# Key generation
+## Key generation
 * Choose $$p, q \in \P$$
 * Key length $$n = pq$$
 
-# Encryption
+## Encryption
 * Un-padded plaintext: $$M$$
 * Padded plaintext: $$m$$
 * Turn the message $$M$$ into an integer $$m$$ using a padding scheme.
 * Consequence: $$0 \leqslant m < n$$
 * Ciphertext $$c = m^e \equiv \mod n$$
 
-# Implementation
+## Implementation
 * $$p$$ and $$q$$ chosen at random and similar in magnitude. Should differ in length by a few digits to make factoring harder
 
 
-# Reversing
+## Reversing
 * Large integers represented as arrays
 * Large integers manipulation, so additions and other basic operations will have their own functions.
 * Modular exponentiation -> square exponentiation: to check if an integer is even, check the last digit
 
 
-# Resources and references
+## Resources and references
 * [Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 * [LiveOverflow on RSA basics](https://www.youtube.com/watch?v=sYCzu04ftaY)
 * [LiveOverflow on reversing RSA](https://www.youtube.com/watch?v=dcR1dkZJ7iU)

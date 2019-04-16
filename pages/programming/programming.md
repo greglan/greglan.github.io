@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Programming todos
+title: Programming resources
 permalink: "programming.html"
 ---
 
-# TODO
 * Fibonacci heaps
 * Red black trees
 * KD trees

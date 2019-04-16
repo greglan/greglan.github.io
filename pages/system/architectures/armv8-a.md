@@ -5,12 +5,12 @@ permalink: "armv8a.html"
 tags: [architecture, arm]
 ---
 
-# AArch32 mode
+## AArch32 mode
 * Basically equivalent to ARMv7-A architecture. 32 bits execution mode.
 * Can only be changed at reset, or when changing exception levels
 
-# AArch64 mode
-## Core registers
+## AArch64 mode
+### Core registers
 
 | 64 bits name | Low 32 bits name | ARMv7 name |
 |:------------:|:----------------:|:----------:|
@@ -29,14 +29,14 @@ tags: [architecture, arm]
 * Stack accesses are always 16-byte aligned
 
 
-# Exception levels (privileges)
+## Exception levels (privileges)
 * Monitor: EL3. Always secure.
 * Hypervisor: EL2. May be only non-secure or both.
 * OS/privileged: EL1. Can be both secure (S-EL1) and non secure (NS-EL1)
 * User: EL0. Can be both secure (S-EL0) and non secure (NS-EL0)
 * Secure and non secure states controlled by bit 0 of the *SCR* register
 
-# Exceptions
+## Exceptions
 * Synchronous exceptions:
     - generated as a result of direct execution of attempted execution of an instruction
     - return address guaranteed to indicate the instruction that caused the exception
@@ -44,7 +44,7 @@ tags: [architecture, arm]
     - not generated as a result of direct execution or attempted execution of the instruction stream
     - return address not guaranteed to indicate the instruction that caused the exception
 
-## Vector table
+### Vector table
 
 | Exception origin | Synchronous | IRQ/vIRQ | FIQ/vFIQ | SError/vSError |
 |:----------------:|:-----------:|:--------:|:--------:|:--------------:|
@@ -54,6 +54,6 @@ tags: [architecture, arm]
 | Inferior AArch32 EL | 0x600 | 0x680 | 0x700 | 0x780 |
 
 
-# Resources and references
+## Resources and references
 * [Introduction to AArch64](https://quequero.org/2014/04/introduction-to-arm-architecture/)
 * ARM architecture reference manual ARMv8

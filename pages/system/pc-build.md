@@ -1,12 +1,12 @@
 ---
 layout: page
 title: PC Build guide
-summary: "A memo about the list of things to consideer when building a system"
+summary: "A memo about the list of things to consider when building a system"
 permalink: "hw-pc.html"
 ---
 
 
-# CPU
+## CPU
 * Socket type: must agree with the motherboard choice
 * Number of cores
 * Max frequency
@@ -17,10 +17,10 @@ permalink: "hw-pc.html"
 * Dissipated power
 
 
-# Graphic card
+## Graphic card
 TODO
 
-# Motherboard
+## Motherboard
 * Format: ATX/EATX
 * Good brands: AsRock, Gigabyte, Asus
 * Overclocking support
@@ -34,7 +34,7 @@ TODO
 * Chipset
 
 
-# RAM
+## RAM
 * Capacity
 * Frequency: the higher the better. But how important is this ?
 * Memory technology: why doest it matter ? Compatibility with the motherboard ?
@@ -42,13 +42,13 @@ TODO
 * CAS: the lower the better. But how important is this ?
 
 
-# Storage
+## Storage
 * This is limiting the VMs usability when several VMs are used simultaneously. The solution is to used RAID to increase throughput as well as enabling data redundancy.
 * HDD brands: WD, Seagate. Format: 3.5”
 
 
 
-# Power supply
+## Power supply
 * Size format
 * Watt capability
 * Max amp on the +12v output
@@ -56,14 +56,14 @@ TODO
 * Pins provided: MB, GPU
 
 
-# Water Cooling
+## Water Cooling
 * Size
 * Noise
 * Efficiency
 * Good option: Corsair Hydro Series H60
 
 
-# Case
+## Case
 * Dimensions
 * Weight
 * Motherboard size

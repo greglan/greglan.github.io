@@ -2,8 +2,10 @@
 layout: page
 title:  "LDAP injections"
 permalink: "ldap-injections.html"
+tags: [security, web, injections]
+summary: ""
 ---
-# Introduction
+## Introduction
 * LDAP: Lightweight Directory Access Protocol
 * Used to access directory services over a network. Directory: hierarchically organized data store
 * Examples:
@@ -17,7 +19,7 @@ permalink: "ldap-injections.html"
 * Rarely return informative error message: blind LDAP injection
 
 
-# Detection
+## Detection
 * Available informations: results returned, HTTP 500 error
 * Differentiating between SQL and LDAP: wildcard character `*`
 * Number of closing brackets: `)))))))))`. May break something else, so need to make sure we're dealing with LDAP before
@@ -27,7 +29,7 @@ permalink: "ldap-injections.html"
   * `*))%00`
 
 
-# Injections
+## Injections
 * Wildcard: `)(department=*)`
 ```
 (|(department=London searchterm)(departement=Reading searchterm))       # Original query

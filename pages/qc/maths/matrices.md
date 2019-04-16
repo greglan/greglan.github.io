@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title:  "Matrices"
-topic: "Maths"
-tags: quantum_computing maths
-nav_exclude: true
+permalink: "matrices.html"
+summary: "Definitions and properties of some particular matrices used in quantum mechanics"
 ---
 
 $$
@@ -17,7 +16,7 @@ $$
 $$
 
 
-# Adjoints and Hermitians operators [1]
+## Adjoints and Hermitians operators [1]
 * If $$A$$ linear operator on Hilbert space $$V$$, there exists a unique linear operator $$A^\dagger$$ such that $$\forall \ket{v}, \ket{w} \in V, \; (\ket{v}, A \ket{w}) = (A^\dagger \ket{v}, \ket{w})$$ [2, p69]
 * Adjoint/Hermitian conjugate of $$A$$: $$A^\dagger$$
 * By definition: $$\ket{v}^\dagger = \bra{v}$$
@@ -31,14 +30,14 @@ $$
 * Average value of an operator $$A$$ over the state $$\ket{\psi}$$: $$\bke{\psi}{A}{\psi}$$
 
 
-# Unitary matrices [1]
+## Unitary matrices [1]
 * $$U$$ unitary: $$U^\dagger U = U U^\dagger = I$$
 * A unitary matrix is normal
 * Inner product preservation
 * All eigenvalues of a unitary matrix have modulus 1
 
 
-# Positive operators [1]
+## Positive operators [1]
 * Positive operator: $$\forall \ket{v}, \bke{v}{A}{v} \geqslant 0$$
 * Positive definite operator: $$\forall \ket{v}, \bke{v}{A}{v} > 0$$
 * Positive operators are Hermitian
@@ -46,7 +45,7 @@ $$
 * For all operators $$A$$, $$A^\dagger A$$ positive
 
 
-# Resources and references
+## Resources and references
 * [1] Quantum computation and quantum information
 * [2] Quantum computing, a gentle introduction
 * [Properties of hermitian conjugate](https://en.wikipedia.org/wiki/Conjugate_transpose)

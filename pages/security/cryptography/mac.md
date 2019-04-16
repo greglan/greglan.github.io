@@ -3,16 +3,17 @@ layout: page
 title:  "Message Authentication Codes (MAC)"
 permalink: "mac.html"
 tags: [security, algorithms, cryptography]
+summary: ""
 ---
-# Introduction
+## Introduction
 * Purpose: ensure authentication using a shared private key *K*
 * Principle: send a pair *(s,m)*, with m the message and *s=MAC(m, K)*
 
 
-# MAC construction using block ciphers
+## MAC construction using block ciphers
 TODO
 
-# HMAC (Hash-based MAC)
+## HMAC (Hash-based MAC)
 * Uses: IPSec, TLS
 * Notations:
   * *+*: bitwise XOR
@@ -32,5 +33,5 @@ TODO
 
 
 
-# Resources and references
+## Resources and references
 * [Wikipedia page](https://en.wikipedia.org/wiki/HMAC)

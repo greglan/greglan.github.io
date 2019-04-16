@@ -1,9 +1,8 @@
 ---
-title: "Mobile Pages"
+title: "Pages about networking"
+tagName: networks
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
-sidebar: mydoc_sidebar
+permalink: tag_networks.html
 folder: tags
 ---
 {% include taglogic.html %}

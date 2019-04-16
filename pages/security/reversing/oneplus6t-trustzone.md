@@ -2,9 +2,11 @@
 layout: page
 title:  "Reversing of the Oneplus 6T trustzone"
 permalink: "oneplus6t-trustzone.html"
+tags: [security, reversing, arm]
+summary: ""
 ---
 
-# Vector tables
+## Vector tables
 ### EL3 vector table 1
 Almost all exceptions from this table have the same handler, `el3_handler`. The identification of the exception is performed by storing a code in the `TPIDRRO_EL0` register. The codes are given in the table below.
 
@@ -59,7 +61,7 @@ Many handlers for an EL1 exception follow the pattern described above. Additiona
 
 
 
-# SMC handling from lower EL
+## SMC handling from lower EL
 This is handled by `smc_handler_lower_el`.
 
 ### Vocabulary
@@ -72,13 +74,13 @@ Executed if `X0=0x17` and `X1=256`. The register `X2` contains the operation to 
 
 
 
-# Timer
+## Timer
 Counter-timer physical count register is saved in a structure, which is 32 bytes long. The offset 0x10 of that per-cpu structure is the CNTPCT register. This is used in some exception handling routines (el3_handler, start...).
 
 
 
 
-# Structures
+## Structures
 ### core_regs_t (0x108 bytes)
 ```C
 struct core_regs_t {
@@ -147,12 +149,12 @@ struct el3_struct_1 {
 ```
 
 
-# Function map
+## Function map
 
 ![functions-map](/assets/oneplus6t-reversing-functions-map.svg)
 
 
-# Resources and references
+## Resources and references
 * Source files of qseecom driver
 * [Kernel sources](https://github.com/OnePlusOSS/android_kernel_oneplus_sdm845/tree/oneplus/SDM845_P_9.0)
 * [Exploring Qualcomm's TrustZone implementation](https://bits-please.blogspot.com/2015/08/exploring-qualcomms-trustzone.html)

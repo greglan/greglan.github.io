@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title:  "Mathematics of quantum computing"
 permalink: "qc-maths.html"
+summary: "A quick look at different mathematical tools used in quantum mechanics"
 ---
 $$
 \newcommand{\C}{\mathbb{C}}
@@ -14,7 +15,7 @@ $$
 $$
 
 
-# Generalities
+## Generalities
 * Relative and global phases
 * Complex projective space $$CP^1$$
 * Extended complex plane
@@ -26,7 +27,7 @@ $$
 * Rotation around the $$z$$ axis can be made using rotations around the $$x$$ and $$y$$ axis (rotation of the Bloch sphere around $$y$$ changes the basis)
 * Measuring in another basis: apply an unitary to change the basis
 
-# Outer product
+## Outer product
 * Completeness relation: $$\sum_i \ket{i} \bra{i} = I$$
 * Outer product representation of operator $$A:V \to W$$, with $$\{\ket{v_i}\}$$ and $$\{\ket{w_j}\}$$ basis of $$V$$ and $$W$$:
 $$
@@ -34,7 +35,7 @@ A = I_W A I_V = \sum_{i,j} \ket{w_j} \bke{w_j}{A}{v_i} \bra{v_i} = \sum_{i,j} \b
 $$
 
 
-# Tensor products [1]
+## Tensor products [1]
 * Tensor product space: if $$\dimension V = n$$ and $$\dimension W = m$$, $$\dimension V \otimes W = nm$$
 * Basis of $$V \otimes W$$: $$\{\ket{i} \otimes \ket{j} \}$$ where $$\{\ket{i}\}$$ basis of $$V$$ and $$\{\ket{j}\}$$ basis of $$W$$
 * Notations for vectors: $$\ket{u} \otimes \ket{v} = \ket{uv}$$
@@ -60,7 +61,7 @@ $$
 * Tensor product of projectors operators: projectors
 
 
-# Resources and references
+## Resources and references
 * [1] Quantum computation and quantum information
 * [2] Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011

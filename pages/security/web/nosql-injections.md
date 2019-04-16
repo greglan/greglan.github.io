@@ -3,13 +3,14 @@ layout: page
 title:  "NoSQL injections"
 permalink: "nosql-injections.html"
 tags: [security, injections, web]
+summary: ""
 ---
 
-# NoSQL OR injections
+## NoSQL OR injections
 * `login=admin',$or:[{},{'a'='a&pass='}]`
 * `find( {'$where' : 'function() { return artist == "Weezer"; }'} )`
 
-# PHP array injections
+## PHP array injections
 * PHP associative arrays: `$collection->find(array('login' => 'test'))` equivalent to `find({'login': 'test'})`
 * Automatic array creation: if `page.php?param[foo]=bar` then `param == array('foo' => 'bar')`
 * If `db->logins->find(array(“username”=>$_POST[“username”],
@@ -17,5 +18,5 @@ tags: [security, injections, web]
 array(“$ne” => 1));` equivalent to `{ username: { $ne: 1 }, password: { $ne: 1 } }`
 
 
-# Resources and references
+## Resources and references
 * [NoSQL cheatsheet](/programming/nosql)

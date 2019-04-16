@@ -2,8 +2,10 @@
 layout: page
 title:  "Encoding cheatsheet"
 permalink: "web-encodings.html"
+tags: [security, web]
+summary: ""
 ---
-# URL encoding
+## URL encoding
 * Dot: `%2e`
 * Forward slash: `%2f`
 * Backslash: `%5c`
@@ -19,7 +21,7 @@ permalink: "web-encodings.html"
  Quote: `%27`
 
 
-# Double encoding
+## Double encoding
 * Encodes user request parameters twice in hexadecimal format. Possible to bypass security filters that only decode user input once. The second decoding process is executed by the backend platform or modules that properly handle encoded data, but don't have the corresponding security checks in place.
 * Quote: `' -> %27 -> %2527'`
 * Dot: `%252e`
@@ -30,22 +32,22 @@ permalink: "web-encodings.html"
 * PHP filter: `php://filter/convert.base64-encode/resource=index -> php%253A%252F%252Ffilter%252Fconvert%252Ebase64-encode%252Fresource%253Dindex`
 
 
-# 16-bit unicode
+## 16-bit unicode
 * Dot: `%u002e`
 * Forward slash: `%2215`
 * Backslash: `%2216`
 
 
-# Overlong UTF-8 unicode
+## Overlong UTF-8 unicode
 * Dot: `%c0%2e, %e0%40%ae, %c0ae`
 * Forward slash: `%c0%af, %e0%80%af, %c0%2f`
 * Backslash: `%c0%5c, %c0%80%5c`
 
 
-# HTML encoding
+## HTML encoding
 * Forward slash: `&#47`
 * `<script>`: `&lt;script&gt;`
 
 
-# Resources
+## Resources
 * [OWASP double encoding](https://www.owasp.org/index.php/Double_Encoding)

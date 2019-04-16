@@ -3,9 +3,10 @@ layout: page
 title:  "Trees"
 permalink: "trees.html"
 tags: [programming, data_structures, trees]
+summary: "Definitions, properties and common algorithms on trees"
 ---
 
-# Definitions
+## Definitions
 * **Using graph formalism**: directed graph *T=(V,E)* where vertices are the nodes of the tree and edges of the form *(x,y)* where *y* is the child of *x*
 * **Recursive definition**
 * Arbre enraciné: arbre possèdant une racine et orienté, c'est à dire muni d'une hiérarchie. (conception usuelle).
@@ -26,11 +27,11 @@ tags: [programming, data_structures, trees]
 
 
 
-# Properties
+## Properties
 Un arbre binaire localement complet de taille $n$ possède $n+1$ feuilles.
 
 
-# Algorithms
+## Algorithms
 *	Creation of a tree
 *	Testing if a tree is empty
 *	Récupération des fils.

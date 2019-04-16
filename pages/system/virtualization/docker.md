@@ -3,6 +3,7 @@ layout: page
 title:  "Docker cheatsheet"
 permalink: "docker.html"
 tags: [system, virtualization]
+summary: "Various information about Docker"
 ---
 ## Images
 * Show images: `docker images ls --all`

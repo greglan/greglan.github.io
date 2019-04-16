@@ -2,7 +2,9 @@
 layout: page
 title:  "Various steganography techniques"
 permalink: "steganography.html"
+tags: [security, forensics]
+summary: ""
 ---
-# Resources and references
+## Resources and references
 * [Null cipher](https://www.geeksforgeeks.org/null-cipher/)
 * [OCR in Python](https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/)

@@ -1,9 +1,8 @@
 ---
-title: "News"
-tagName: news
+title: "Pages about mathematics"
+tagName: maths
 search: exclude
-permalink: tag_news.html
-sidebar: mydoc_sidebar
+permalink: tag_maths.html
 folder: tags
 ---
 {% include taglogic.html %}

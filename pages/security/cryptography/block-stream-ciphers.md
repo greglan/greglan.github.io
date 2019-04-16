@@ -3,9 +3,10 @@ layout: page
 title:  "Block and stream ciphers"
 permalink: "block-stream-ciphers.html"
 tags: [security, cryptography]
+summary: ""
 ---
 
-# Block ciphers
+## Block ciphers
 * Operate on a block of data at a time
 * Mode of operation: how to "repeatedly apply a cipher's single-block operation to securely transform amounts of data larger than a block"
 * Initialization Vector (IV)/starting variable.
@@ -14,7 +15,7 @@ tags: [security, cryptography]
 * CBC drawback: encryption can't be serialized
 * Examples: DES, RC5, AES, Blowfish
 
-# Stream ciphers
+## Stream ciphers
 * Encrypt one bit or byte at a time
 * Faster than block ciphers
 * Easier/cheaper to implement in hardware than block ciphers
@@ -25,7 +26,7 @@ tags: [security, cryptography]
 * Examples: Trivium, ChaCha/Salsa20, RC4
 
 
-# Resources and references
+## Resources and references
 * [Stack overflow question](https://security.stackexchange.com/questions/334/advantages-and-disadvantages-of-stream-versus-block-ciphers)
 * [Wikipedia on block ciphers modes of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
 * [Trivium](https://en.wikipedia.org/wiki/Trivium_(cipher))

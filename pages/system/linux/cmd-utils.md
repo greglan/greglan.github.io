@@ -6,7 +6,7 @@ tags: [linux]
 ---
 
 
-# Envar
+## Envar
 * List all envar: `env`
 * List envar of a process: `cat /proc/1234/environ`
 * Make a bash variable an env: `export VARNAME`
@@ -16,7 +16,7 @@ tags: [linux]
     $HOME, $PWD, $TERM, $USER, $UID, $LOGNAME, $DISPLAY
 * `PATH` modification: `export PATH=$PATH:/home/user/bin`
 
-# Process
+## Process
 * List all processes: `ps -ax`
 * Detailed version: `ps -axl`
 * Tree representation: `ps -axf`
@@ -32,13 +32,13 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 ```
 * TODO: `top`
 
-# Search
+## Search
 * Todo: `locate, updatedb`
 * Find commands in common directories: `whereis`
 * Find commands in `$PATH`: `which`
 * Find files everywhere: `find -name test /`
 
-# Streams
+## Streams
 * stdin -> 0
 * stdout -> 1
 * stderr -> 2
@@ -48,13 +48,13 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 * Redirect and overwrite: `>`
 * Append to file: `>>`
 
-# X system
+## X system
 * Display format: `address_or_name:ServNum.ScreenNum`
 * `export DISPLAY=name:0.0`
 * Allow connections form host machine: `xhost +machine`
 
 
-# Unsorted
+## Unsorted
 * Terminal info: `stty -a`
 * Output date: `date +%H:%M`
 * Clear the copy and cache buffers: `sysctl --write vm.drop_caches=3`
@@ -63,7 +63,7 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 
 
 
-# TODO:
+## TODO
 * cat
 * grep (exr rationnelles)
 * sort

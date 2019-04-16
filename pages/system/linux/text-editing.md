@@ -5,7 +5,7 @@ permalink: "text-editing.html"
 tags: [linux]
 ---
 
-# Grep
+## Grep
 * Usage: `grep -A n -B m -i expr file` with
     * -A: number of lines after match
     * -B: number of lines before match
@@ -16,20 +16,20 @@ tags: [linux]
     * Chars from 'a' to 'z': `[a-z]`
     * Strings "ab" or "ac": `{ab,ac}`
 
-# SED
+## SED
 In each command, we skip precising the input file for clarity.
 
-## Basics
+### Basics
 * Replace: sed 's/pattern1/pattern2/'
 * -i flag: edit files in place
 
-## File spacing
+### File spacing
 * Insert a blank line between existing lines: `sed G`
 * Remove blank lines (opposite of preceding): `sed 'n;d'`
 * Insert a blank line above every line which matches "regex": `sed '/regex/{x;p;x;}'`
 * Insert a blank line below every line which matches "regex": `sed '/regex/G'`
 * Insert a blank line above and below every line which matches "regex": `sed '/regex/{x;p;x;G;}'`
 
-# Other
+## Other
 * Replace 'a' char by 'b' and output the result on stdout: `tr 'a' 'b' < input.txt`
 * [cut examples](https://www.thegeekstuff.com/2013/06/cut-command-examples/)

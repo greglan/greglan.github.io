@@ -2,8 +2,11 @@
 layout: page
 title:  "SPI protocol"
 permalink: "spi.html"
+summary: "Presentation of the SPI protocol"
+tags: [electronics]
 ---
 
+## Introduction
 * SPI = Serial Peripheral Interface. Synchronous serial data protocol.
 * Master/salve architecture
 * MISO (Master In Slave Out) pin: data line from slave to master
@@ -17,6 +20,6 @@ permalink: "spi.html"
   * Clock speed
 * 4 different modes according to the configuration
 
-# Resources and references
+## Resources and references
 * [Wikipedia article](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
 * [Sparkfun article](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all)

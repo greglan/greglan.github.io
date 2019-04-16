@@ -3,9 +3,10 @@ layout: page
 title:  "Graph algorithms"
 permalink: "graph-algorithms.html"
 tags: [programming, data_structures, graphs, algorithms]
+summary: "Common algorithms on graphs"
 ---
 
-# Implementation complexities
+## Implementation complexities
 
 | Implementation | Adjacency matrix | Adjacency list | Binary tree forest |
 |:--------------:|:----------------:|:--------------:|:------------------:|
@@ -16,7 +17,7 @@ tags: [programming, data_structures, graphs, algorithms]
 | Enumeration | $$\mathcal{O}(\vert V \vert)$$ | $$\mathcal{O}(m/n)$$ | $$\mathcal{O}(m/n)$$ |
 
 
-# Depth first search
+## Depth first search
 * Complexity: $$\mathcal{O}(\vert V \vert + \vert E \vert)$$
 * Implémentation: recursive and imperative
 * Visit every nodes reachable from the starting node
@@ -34,7 +35,7 @@ visit(v):
 ```
 
 
-# Breadth first search
+## Breadth first search
 * Complexity: $$\mathcal{O}(\vert V \vert + \vert E \vert)$$
 * Nodes are visited by increasing distance to the starting node
 * The length of the paths obtained are minimal. Induction proof
@@ -61,8 +62,8 @@ BFS(G, s):
 ```
 
 
-# Dijkstra
-## Initialization
+## Dijkstra
+### Initialization
 ```
 Init(G, s):
     for each vertex in G:
@@ -71,7 +72,7 @@ Init(G, s):
     d[s] = 0
 ```
 
-## Edge relaxation
+### Edge relaxation
 ```
 Relax(u, v, w):
     if d[v] > d[u] + w(u, v):
@@ -79,7 +80,7 @@ Relax(u, v, w):
         p[v] = u
 ```
 
-## Edge pseudo-relaxation
+### Edge pseudo-relaxation
 ```
 PseudoRelax(u, v, w):
     if d[v] > w(u, v):
@@ -87,7 +88,7 @@ PseudoRelax(u, v, w):
         p[v] = u
 ```
 
-## Dijkstra algorithm
+### Dijkstra algorithm
 * Hypothesis: only for paths of positive weight
 * Complexity: $$\mathcal{O}(\vert E \vert + \vert V \vert \log \vert V \vert)$$ (Fibonacci queues)
 ```
@@ -106,7 +107,7 @@ Dijkstra(G, w, s):
 ```
 
 
-# Bellman-Ford
+## Bellman-Ford
 * Hypothesis: none, works for paths of weight both positive and negative
 * Complexity: $$\mathcal{O}(\vert V \vert \vert E \vert)$$
 * Drawback: high complexity for a high number of edges

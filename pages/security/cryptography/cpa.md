@@ -3,9 +3,10 @@ layout: page
 title:  "Correlation Power Analysis (CPA)"
 permalink: "cpa.html"
 tags: [security, cryptography]
+summary: ""
 ---
 
-# Introduction
+## Introduction
 * Allows to find a secret key stored on a device
 * Requires a traces of power consumption for different plaintexts
 * Steps:
@@ -15,7 +16,7 @@ tags: [security, cryptography]
   - Decide which subkey correlates best to the traces
   - Put together the best subkey guesses to obtain the full secret key
 
-# Power consumption model
+## Power consumption model
 * Two components to power consumptions in electronics: static power and dynamic power
 * Static power consumption: power required to keep the device running. Depends on the number of transistors inside for instance
 * Dynamic power consumption: depends on the data moving around inside the device. A bit changed from 0 to 1 induces some current to charge the data line
@@ -23,7 +24,7 @@ tags: [security, cryptography]
 * Hamming distance $$H$$: number of different bits in two numbers. $$H(x,y) = W(x \wedge y)$$
 * If at some point in the encryption algorithm we replace $$x$$ with $$y$$, then the power consumption is likely to be proportional to $$H(x,y)$$
 
-# Pearson's correlation coefficient
+## Pearson's correlation coefficient
 * Describes how closely the random variables $$X$$ and $$Y$$ are related. Always in $$[-1,1]$$:
   - If $$Y$$ always increases when $$X$$ increases, will be 1
   - If $$Y$$ always decreases when $$X$$ increases, will be -1
@@ -35,7 +36,7 @@ $$
 $$
 
 
-# Attack principle
+## Attack principle
 **Computing the correlations**
 $$ r_{i,j} =
 \frac{
@@ -64,7 +65,7 @@ For each subkey i, find the highest value of $$|r_{i,j}|$$. This will discard th
 Looking at the maximum values for each subkey, find the highest value of $$|r_i|$$. The location $$i$$ of this maximum is our best guess: it correlated more closely with the traces than any other guess.
 Note that we're only working with absolute values here because we don't care about the sign of the relationship. All we need to know is that a linear correlation exists.
 
-# Resources and references
+## Resources and references
 * [CPA introduction](https://wiki.newae.com/Correlation_Power_Analysis)
 * [RSA example](https://wiki.newae.com/Tutorial_B11_Breaking_RSA)
 * [Difference between perfoming CPA in the first and last AES round](https://crypto.stackexchange.com/questions/47680/what-is-the-difference-between-perfoming-correlation-power-analysis-cpa-in-the)

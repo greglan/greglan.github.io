@@ -8,7 +8,7 @@ tags: [linux]
 
 The following assume GRUB 2 is used. Type `ls` to list the partitions found
 
-# Windows-like OS
+## Windows-like OS
 ```
 set root = (hd1,msdos2)
 insmod ntfs
@@ -16,7 +16,7 @@ chainloader +1
 boot
 ```
 
-# Linux-like OS
+## Linux-like OS
 Note: the prompt might be just "grub>"
 ```
 (grub rescue> set prefix=(hd0,msdos3)/boot/grub)

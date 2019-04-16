@@ -2,7 +2,10 @@
 layout: page
 title:  "Structured Exception Handlers (SEH)"
 permalink: "seh.html"
+tags: [security, reversing]
+summary: ""
 ---
+
 * Default SEH: prints *"The application has encountered a problem and needs to close"*
 * Unhandled errors redirected to the default SEH.
 * Exception handling stack layout:

@@ -2,7 +2,8 @@
 layout: post
 title:  "Checklist to prepare interviews"
 date:   2018-12-29 16:57:56 +0100
-tags:   security programming system
+tags:   [security, programming, system]
+summary: "A list of things to know organized by topics"
 ---
 TODO: links to data structures posts
 

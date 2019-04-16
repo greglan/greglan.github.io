@@ -3,22 +3,23 @@ layout: page
 title:  "NoSQL cheatsheet"
 permalink: "nosql.html"
 tags: [programming, web]
+summary: ""
 ---
 
-# Databases
+## Databases
 * List databases: `show dbs`
 * Specify database: `use database_name`
 * Check current database: `db`
 * Delete database: `db.dropDatabase()`
 
-# Collections
+## Collections
 * List collections: `show collections`
 * Create collection: `db.createCollection(name)`
 * Create collection with automatic `_id` field: `db.createCollection(name, {autoIndexId: true})`
 * Delete collection: `db.collection_name.drop()`
 * Rename collection: `db.collection_name.renameCollection("new_collection_name")`
 
-# Operations examples
+## Operations examples
 ```
 db.logins.find();
 db.logins.find({}).pretty(); // Find all documents
@@ -34,5 +35,5 @@ db.logins.distinct("username", query); // Show all possible values of the field
 ```
 
 
-# Resources and references
+## Resources and references
 * [NoSQL cheatsheet](/programming/nosql)

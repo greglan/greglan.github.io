@@ -2,6 +2,8 @@
 layout: page
 title:  "Anti disassembly techniques"
 permalink: "anti-disassembly.html"
+tags: [security, reversing]
+summary: ""
 ---
 
 ## Linear vs flow-oriented disassembly

@@ -2,8 +2,10 @@
 layout: page
 title:  "Radare2 cheatsheet"
 permalink: "radare2.html"
+tags: [security, reversing]
+summary: ""
 ---
-# Debugging
+## Debugging
 * Commands start with `d`
 * Open a file with debugging enabled: `r2 -d file.bin`
 * Reopen file in debug mode with args: `ood`
@@ -11,14 +13,14 @@ permalink: "radare2.html"
 * Step into: `F7`
 * Start/continue: `F9`
 
-# Variables
+## Variables
 * Show function variables: `afvd`
 * Rename function variable: `afvn new_name old_name`
 
-# Project
+## Project
 * Save project: `Ps name`
 * Open project: `Po name`
 
 
-# Others
+## Others
 * Change theme in visual mode: `R`

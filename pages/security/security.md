@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Security resources and todos
-permalink: "security.html"
+permalink: "index-security.html"
 summary: "Various links to good security articles or interesting things to look at"
 ---
 

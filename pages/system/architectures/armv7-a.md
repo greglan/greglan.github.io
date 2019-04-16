@@ -4,14 +4,14 @@ title:  "ARMv7-A architecture"
 permalink: "armv7a.html"
 tags: [architecture, arm]
 ---
-# Registers
+## Registers
 * General purpose registers: *R0*-*R1*
 * Frame pointer: *R11 =  FP*
 * Stack pointer: *R13 = SP*
 * Link register: *R14 = LR*
 * Program counter: *R15 = PC*
 
-# Conditional code
+## Conditional code
 
 | Code | Meaning | Flags |
 |:----:|:-------:|:-----:|
@@ -32,8 +32,8 @@ tags: [architecture, arm]
 | al/none|Always| None |
 
 
-# Stack types
-## Reminder
+## Stack types
+### Reminder
 * Full stack: the stack points to the last element of the stack
 * Empty stack: the stack points to the next free element of the stack
 * Descending stack: grows from high addresses to low addresses
@@ -41,25 +41,25 @@ tags: [architecture, arm]
 
 TODO: stack instructions suffixes
 
-## Full descending
+### Full descending
 Default stack type on ARM.
 
 ![full-descending-stack](/assets/arm-full-descending-stack.svg)
 
-## Empty descending
+### Empty descending
 
 ![emtpy-descending-stack](/assets/arm-empty-descending-stack.svg)
 
-## Full ascending
+### Full ascending
 
 ![full-ascending-stack](/assets/arm-full-ascending-stack.svg)
 
-## Empty ascending
+### Empty ascending
 
 ![empty-ascending-stack](/assets/arm-empty-ascending-stack.svg)
 
 
-# ARM execution modes
+## ARM execution modes
 * User: unprivileged mode used to run user application. Basically userland
 * Supervisor: protected mode used by the OS
 * System: privileged mode used by the OS
@@ -68,7 +68,7 @@ Default stack type on ARM.
 * IRQ: privileged mode used when handling an IRQ
 * FIQ: privileged mode used when handling an FIQ (high priority IRQ)
 
-## Register banking
+### Register banking
 * R0 to R7, PC and CPSR shared by all modes
 * R8 to R12 shared by all modes except FIQ, which has its own registers
 * Each mode has its own SP, except User and System mode which have the same
@@ -76,7 +76,7 @@ Default stack type on ARM.
 * All modes except User and System have their own SPSR
 
 
-# Vector table
+## Vector table
 
 | Offset | NW exception | SW exception | NW with hypervisor exception | Monitor mode exception |
 |:------------:|:----------------:|
@@ -90,6 +90,6 @@ Default stack type on ARM.
 | 0x1C | FIQ | FIQ | FIQ | FIQ |
 
 
-# Resources and references
+## Resources and references
 * [Stack instructions](http://www.keil.com/support/man/docs/armasm/armasm_dom1359731152499.htm)
 * [Condition codes](https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes)

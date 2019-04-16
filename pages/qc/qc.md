@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Quantum computing todos
+title: Quantum computing resources and TODOs
 permalink: "quantum-computing-index.html"
 ---
 
-# TODO
 * Shor's algorithm
 * Grover's analysis
 * Simon's algorithm

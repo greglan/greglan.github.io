@@ -2,6 +2,7 @@
 layout: post
 title:  "Article published in MISC"
 tags: security
+summary: "Overview of the work I published in the MISC magazine"
 ---
 
 I published in the French security magazine [MISC](https://connect.ed-diamond.com/MISC) with a classmate. The summary of the article is available [here](https://connect.ed-diamond.com/MISC/MISC-099/Fabriquer-sa-propre-enclave-a-base-de-FPGA).

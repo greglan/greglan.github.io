@@ -2,7 +2,7 @@
 
 entries:
 - title: Sidebar
-  product: "Just another blog"
+  product: "Navigation"
   levels: one
   folders:
 
@@ -11,9 +11,10 @@ entries:
     folderitems:
 
     - title: Resources and todos
-      url: /security.html
+      url: /index-security.html
       output: web
       subfolders:
+
       - title: Exploitation
         output: web
         subfolderitems:
@@ -55,7 +56,7 @@ entries:
           output: web
 
         - title: Low level reversing
-          url: /low-level-re.html
+          url: /embedded-re.html
           output: web
 
         - title: Anti-disassembly techniques
@@ -142,11 +143,35 @@ entries:
           url: /cpa.html
           output: web
 
+      - title: Pentesting
+        output: web
+        subfolderitems:
+
+        - title: Metasploit
+          url: /metasploit.html
+          output: web
+
+        - title: Tricks
+          url: /pentensting-tricks.html
+          output: web
+
+      - title: Forensics
+        output: web
+        subfolderitems:
+
+        - title: Steganography
+          url: /steganography.html
+          output: web
+
+        - title: EXIF data
+          url: /exif-data.html
+          output: web
+
   - title: Programming
     output: web
     folderitems:
 
-    - title: Todos
+    - title: Resources
       url: /programming.html
       output: web
 
@@ -223,6 +248,10 @@ entries:
       url: /index-system.html
       output: web
 
+    - title: PC build guide
+      url: /hw-pc.html
+      output: web
+
       subfolders:
       - title: Architectures
         output: web
@@ -230,12 +259,15 @@ entries:
 
         - title: ARMv7a
           url: /armv7a.html
+          output: web
 
         - title: ARMv8a
           url: /armv8a.html
+          output: web
 
         - title: x86
           url: /x86a.html
+          output: web
 
       - title: Linux
         output: web
@@ -243,36 +275,47 @@ entries:
 
         - title: Some utils
           url: /linux-cmd-utils.html
+          output: web
 
         - title: Compression
           url: /compression.html
+          output: web
 
         - title: Text editing
           url: /text-editing.html
+          output: web
 
         - title: ip
           url: /ip-command.html
+          output: web
 
         - title: Package management
           url: /package-management.html
+          output: web
 
         - title: Users and permissions
           url: /user-permissions.html
+          output: web
 
         - title: WPA connection fomr shell
           url: /wpa-cmd.html
+          output: web
 
         - title: GRUB commands
           url: /grub-commands.html
+          output: web
 
         - title: GPG
           url: /gpg.html
+          output: web
 
         - title: FSTAB file
           url: /fstab.html
+          output: web
 
         - title: Screen command
           url: /screen-command.html
+          output: web
 
       - title: Virtualization
         output: web
@@ -280,13 +323,19 @@ entries:
 
         - title: Docker
           url: /docker.html
+          output: web
 
         - title: Libvirt
           url: /libvirt.html
+          output: web
 
   - title: Networks
     output: web
     folderitems:
+
+    - title: Resources
+      url: /index-networks.html
+      output: web
 
     - title: Port numbers
       url: /port-numbers.html
@@ -320,7 +369,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Todos
+    - title: Resources
       url: /quantum-computing-index.html
       output: web
 
@@ -333,20 +382,28 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Grover's algorithm
-          url: /grover-algorithm.html
-          output: web
-
         - title: Complexity theory
           url: /quantum-complexity.html
           output: web
 
-        - title: Maths
+        - title: Grover's algorithm
+          url: /grover-algorithm.html
+          output: web
+
+        - title: Simon's problem
+          url: /simon-problem.html
+          output: web
+
+      - title: Maths
         output: web
         subfolderitems:
 
         - title: Mathematics of quantum computing
           url: /qc-maths.html
+          output: web
+
+        - title: Common matrices
+          url: /matrices.html
           output: web
 
         - title: Density operators
@@ -356,6 +413,10 @@ entries:
   - title: Electronics
     output: web
     folderitems:
+
+    - title: Resources
+      url: /index-electronics.html
+      output: web
 
     - title: SPI protocol
       url: /spi.html

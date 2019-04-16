@@ -5,7 +5,7 @@ permalink: "wpa-cmd.html"
 tags: [linux, networks]
 ---
 
-# Manual connection
+## Manual connection
 ```bash
 ip link set wlan0 up
 iw wlan0 scan
@@ -16,5 +16,5 @@ iw wlan0 link # Check connection
 sudo dhclient wlan0
 ```
 
-# nmcli
+## nmcli
 List avaialable networks : `nmcli device wifi list`

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Networks todos
-permalink: "networks.html"
+title: Networks todos and resources
+permalink: "index-networks.html"
 ---
 
-# TODO
+## TODO
 * Tor
 * Vidalia
 * privoxy
@@ -20,7 +20,7 @@ permalink: "networks.html"
 * [Scapy](https://www.hackers-arise.com/single-post/2017/01/16/Reconnaissance-Scanning-and-DoSing-with-Scapy)
 
 
-# Resources and references
+## Resources and references
 * [Ethernet overview](https://searchnetworking.techtarget.com/definition/Ethernet)
 * [Token ring](https://searchnetworking.techtarget.com/definition/Token-Ring)
 * [IPfore](https://www.ipfire.org/features)

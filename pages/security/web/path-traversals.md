@@ -2,8 +2,10 @@
 layout: page
 title:  "Path traversal vulnerabilities"
 permalink: "path-traversals.html"
+tags: [security, web]
+summary: ""
 ---
-# Strategy
+## Strategy
 * Better to request a default file readable by any user: `c:/windows/win.ini`, `/etc/passwd`
 * If read access, chain `../` until file found: `../etc/passwd`, `../../etc/passwd` ...
 * If write access, try to write a file which should be writable by any user, and one that souldn't be writable by anyone.
@@ -15,7 +17,7 @@ permalink: "path-traversals.html"
 * Use a large number of traversal sequence: ok to go above the root of the FS
 * Test for both forward/backslashes whatever the OS detected
 
-## Detection
+### Detection
 * Areas related to uploading or downloading files (from/to user or another server)
 * Areas displaying files
 * URLs which seem to indicate a file or a directory
@@ -27,7 +29,7 @@ permalink: "path-traversals.html"
   * Sun's Solaris: **truss**
 * Try with a subdirectory: `include=/bar.php` and `include=/folder/../bar.php`
 
-## Goals
+### Goals
 * Read sensitive data
 * Read passwords
 * Read logs: usernames, session tokens
@@ -37,7 +39,7 @@ permalink: "path-traversals.html"
 * Write custom scripts: user's startup folders, `in.ftpd`, web directory
 
 
-# Tactics
+## Tactics
 * URL encoding:
   * dot: `%2e`
   * forward slash: `%2f`
@@ -51,4 +53,3 @@ permalink: "path-traversals.html"
   * forward slash: `%252f`
   * backslash: `%255c`
 * Overlong UTF-8 encoding
-*

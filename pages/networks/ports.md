@@ -3,6 +3,7 @@ layout: page
 title:  "Common port numbers"
 permalink: "port-numbers.html"
 tags: networks
+summary: "List of common network ports"
 ---
 Wake-on-lan: 9
 

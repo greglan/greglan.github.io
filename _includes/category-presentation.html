@@ -1,7 +1,0 @@
-{% assign topics = include.target | map: "topic" | uniq%}
-
-{% for topic in topics %}
-{% if topic != empty %}# {{ topic | capitalize }}{% endif %}
-{% for page in include.target %}{% if page.topic == topic %}
-* [{{page.title}}]({{ page.url }}){% endif %}{% endfor %}
-{% endfor %}

@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "Cheatsheet"
-summary: "Some formulas and definitions"
+title:  "Quantum computing cheatsheet"
 permalink: "qc-cheatsheet.html"
+summary: "Some formulas and definitions"
 ---
 $$
 \newcommand{\bra}[1]{\left< #1 \right|}
@@ -11,20 +11,20 @@ $$
 \newcommand{\bke}[3]{\left< #1 \middle| #2 \middle| #3 \right>}
 $$
 
-# Definitions
+## Definitions
 * Ket: $$\ket{x}$$
 * Bra: $$\bra{x}$$
 * Hadamard basis: $$\{\ket{+}, \ket{-} \}$$
 
 
-# Formulas
+## Formulas
 * $$H^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x,y} (-1)^{x y} \ket{x} \bra{y}$$
 * Bloch sphere coordinates: $$\ket{\psi} = a_0 \ket{0} + a_1 \ket{1} = \cos \frac{\theta}{2} \ket{0} + e^{i \Phi} \sin \frac{\theta}{2} \ket{1}$$
 
 ![bloch-sphere-wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/423px-Bloch_Sphere.svg.png)
 
 
-# Notable states
+## Notable states
 
 $$\ket{+} = \frac{\ket{0} + \ket{1}}{\sqrt{2}}$$
 
@@ -35,8 +35,8 @@ $$\ket{i} = \frac{\ket{0} + i \ket{1}}{\sqrt{2}}$$
 $$\ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}$$
 
 
-# Notable matrices
-## Pauli matrices
+## Notable matrices
+### Pauli matrices
 $$ \sigma_1 = X =
 \begin{pmatrix}
 0&1\\
@@ -59,7 +59,7 @@ $$ \sigma_3 = Z =
 $$ (rotation of $$\pi$$ around the $$z$$ axis)
 
 
-## Rotations
+### Rotations
 $$ X(\theta) = e^{i x \theta / 2} =
 \begin{pmatrix}
 \cos \theta/2 & -i \sin \theta/2\\

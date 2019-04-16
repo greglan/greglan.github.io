@@ -2,6 +2,8 @@
 layout: page
 title:  "Cross Site Request Forgeries (CSRF/XSRF)"
 permalink: "csrf.html"
+tags: [security, web]
+summary: ""
 ---
 ## Description
 * Force a user to execute actions on a web application in which he is authenticated
@@ -29,7 +31,7 @@ req.send("arg=value");
 
 ## Prevention
 **Why does it work ?**:
-a request to a website automatically include any credentials associated with the site (session cookie).  
+A request to a website automatically include any credentials associated with the site (session cookie).  
 Consequence: the website cannot differentiate between the forged request and the legitimate request.  
 Solution: a token/identifier not accessible by the attacker which is not sent with forged requests.  
 

@@ -3,6 +3,7 @@ layout: page
 title:  "Libvirt"
 permalink: "libvirt.html"
 tags: [virtualization, linux]
+summary: "A libvirt/virsh cheatsheet"
 ---
 
 
