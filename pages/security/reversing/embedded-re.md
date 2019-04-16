@@ -3,7 +3,7 @@ layout: page
 title:  "Embedded reversing techniques"
 permalink: "embedded-re.html"
 tags: [security, reversing, arm]
-summary: "A couple of things to keep in mmind when doing embedded reversing"
+summary: "A couple of things to keep in mind for embedded reversing"
 ---
 
 ## Memory

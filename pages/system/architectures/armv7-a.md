@@ -2,7 +2,8 @@
 layout: page
 title:  "ARMv7-A architecture"
 permalink: "armv7a.html"
-tags: [architecture, arm]
+tags: [architectures, arm]
+summary: "Various information about the ARMv7-A architecture"
 ---
 ## Registers
 * General purpose registers: *R0*-*R1*

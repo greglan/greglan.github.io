@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
 title: Other posts
-sidebar_sort_order: 90
 ---
 These are posts that don't really fit in a specific category.
 

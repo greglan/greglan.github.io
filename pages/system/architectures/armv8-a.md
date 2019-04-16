@@ -2,7 +2,8 @@
 layout: page
 title:  "ARMv8-A architecture"
 permalink: "armv8a.html"
-tags: [architecture, arm]
+tags: [architectures, arm]
+summary: "Various information about the ARMv7-A architecture"
 ---
 
 ## AArch32 mode

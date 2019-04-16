@@ -33,7 +33,3 @@ db.logins.find({key1: {$gt: value1}}); // Greater than
 db.logins.find({key1: {$gte: value1}}); // Greater than or equal
 db.logins.distinct("username", query); // Show all possible values of the field
 ```
-
-
-## Resources and references
-* [NoSQL cheatsheet](/programming/nosql)

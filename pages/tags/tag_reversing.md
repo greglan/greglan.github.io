@@ -2,7 +2,7 @@
 title: "Pages about reversing"
 tagName: reversing
 search: exclude
-permalink: tag_reversings.html
+permalink: tag_reversing.html
 folder: tags
 ---
 {% include taglogic.html %}

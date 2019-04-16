@@ -2,6 +2,7 @@
 layout: page
 title:  "Mathematics of quantum computing"
 permalink: "qc-maths.html"
+tags: [maths, quantum]
 summary: "A quick look at different mathematical tools used in quantum mechanics"
 ---
 $$

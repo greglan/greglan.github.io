@@ -3,8 +3,8 @@ layout: page
 title:  "Command lines cheatsheet"
 permalink: "linux-cmd-utils.html"
 tags: [linux]
+summary: "Various information about the use of a Linux terminal"
 ---
-
 
 ## Envar
 * List all envar: `env`

@@ -2,6 +2,7 @@
 layout: page
 title:  "Quantum computing cheatsheet"
 permalink: "qc-cheatsheet.html"
+tags: [maths, quantum]
 summary: "Some formulas and definitions"
 ---
 $$

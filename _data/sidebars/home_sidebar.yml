@@ -236,6 +236,10 @@ entries:
           url: /python.html
           output: web
 
+        - title: SQL
+          url: /sql.html
+          output: web
+
         - title: NoSQL
           url: /nosql.html
           output: web
@@ -243,10 +247,6 @@ entries:
   - title: System
     output: web
     folderitems:
-
-    - title: Index
-      url: /index-system.html
-      output: web
 
     - title: PC build guide
       url: /hw-pc.html
@@ -285,7 +285,7 @@ entries:
           url: /text-editing.html
           output: web
 
-        - title: ip
+        - title: ip command
           url: /ip-command.html
           output: web
 
@@ -297,15 +297,15 @@ entries:
           url: /user-permissions.html
           output: web
 
-        - title: WPA connection fomr shell
+        - title: Wifi connection from shell
           url: /wpa-cmd.html
           output: web
 
-        - title: GRUB commands
+        - title: GRUB shell commands
           url: /grub-commands.html
           output: web
 
-        - title: GPG
+        - title: GPG cheatsheet
           url: /gpg.html
           output: web
 

@@ -3,6 +3,7 @@ layout: page
 title:  "Text manipulation cheatsheet"
 permalink: "text-editing.html"
 tags: [linux]
+summary: "Examples of text editing using the terminal"
 ---
 
 ## Grep

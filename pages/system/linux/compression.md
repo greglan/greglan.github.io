@@ -3,8 +3,8 @@ layout: page
 title:  "Compression cheatsheet"
 permalink: "compression.html"
 tags: [linux]
+summary: "Usage of several compression utilities"
 ---
-
 
 ## Tar
 ```

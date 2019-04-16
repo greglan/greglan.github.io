@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "RSA"
+title:  "RSA cryptosystem"
 permalink: "rsa.html"
-tags: [security, algorithms, cryptography]
+tags: [security, algorithms, cryptography, maths]
 summary: ""
 ---
 $$

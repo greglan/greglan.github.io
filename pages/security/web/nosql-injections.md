@@ -19,4 +19,4 @@ array(“$ne” => 1));` equivalent to `{ username: { $ne: 1 }, password: { $ne:
 
 
 ## Resources and references
-* [NoSQL cheatsheet](/programming/nosql)
+* [NoSQL cheatsheet](nosql.html)

@@ -3,6 +3,7 @@ layout: page
 title:  "GPG cheatsheet"
 permalink: "gpg.html"
 tags: [linux]
+summary: "Memo of the main commands of gpg"
 ---
 
 * Export

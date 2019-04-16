@@ -43,6 +43,9 @@ topnav_dropdowns:
         - title: ARM architecture
           url: /tag_arm.html
 
+        - title: Architectures
+          url: /tag_architectures.html
+
         - title: Electronics
           url: /tag_electronics.html
 

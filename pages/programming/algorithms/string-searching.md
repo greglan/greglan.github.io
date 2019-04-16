@@ -72,3 +72,7 @@ TODO
 
 ## Automata research
 TODO
+
+
+## Resources and references
+* [Implementation in Python](https://github.com/greglan/python_scripts/tree/master/algorithms/string_searching)

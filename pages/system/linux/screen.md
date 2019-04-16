@@ -3,6 +3,7 @@ layout: page
 title:  "Screen cheatsheet"
 permalink: "screen-command.html"
 tags: [linux]
+summary: "Memo of the screen command"
 ---
 
 * Create a session named console1: `screen -S console1`

@@ -3,6 +3,7 @@ layout: page
 title:  "/etc/fstab cheatsheet"
 permalink: "fstab.html"
 tags: [linux]
+summary: "Description of the options found in the /etc/fstab file"
 ---
 
 `sync/async`: all I/O to the file system should be done (a)synchronously.

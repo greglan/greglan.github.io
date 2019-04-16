@@ -22,7 +22,9 @@ summary: ""
 
 
 ## Command line argument parsing
-```
+```python
+import argparse
+
 parser = argparse.ArgumentParser(description="Program description")
 parser.add_argument("--cmd_name", dest="variable_name", help="Help for this arg")
 parser.add_argument("--iter", type=int)

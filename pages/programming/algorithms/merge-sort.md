@@ -14,3 +14,7 @@ summary: ""
 ## Analysis
 * $$T(n) = 2 T\left( \frac{n}{2} \right) + O(n)$$
 * Master Theorem: $$T(n) = O(n \log n)$$
+
+
+## Resources and references
+* [An implementation in Python](https://github.com/greglan/python_scripts/blob/master/algorithms/sorting/merge_sort.py)

@@ -2,6 +2,7 @@
 layout: post
 title:  "Article published in MISC"
 tags: security
+permalink: "misc-article.html"
 summary: "Overview of the work I published in the MISC magazine"
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 title:  "Density operators"
 permalink: "density-operators.html"
+tags: [maths, quantum]
 summary: ""
 ---
 $$

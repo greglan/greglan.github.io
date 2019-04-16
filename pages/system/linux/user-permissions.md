@@ -3,6 +3,7 @@ layout: page
 title: "Users and permissions"
 permalink: "user-permissions.html"
 tags: [linux]
+summary: "Memo about the management of users, groups and permissions in Linux"
 ---
 
 ## Users
