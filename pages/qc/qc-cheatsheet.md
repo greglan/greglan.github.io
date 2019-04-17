@@ -1,16 +1,12 @@
 ---
 layout: page
-title:  "Quantum computing cheatsheet"
+title:  "Quantum cheatsheet"
 permalink: "qc-cheatsheet.html"
 tags: [maths, quantum]
 summary: "Some formulas and definitions"
 ---
-$$
-\newcommand{\bra}[1]{\left< #1 \right|}
-\newcommand{\ket}[1]{\left| #1 \right>}
-\newcommand{\bk}[2]{\left< #1 \middle| #2 \right>}
-\newcommand{\bke}[3]{\left< #1 \middle| #2 \middle| #3 \right>}
-$$
+{% include latex-commands.html %}
+
 
 ## Definitions
 * Ket: $$\ket{x}$$
@@ -19,7 +15,8 @@ $$
 
 
 ## Formulas
-* $$H^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x,y} (-1)^{x y} \ket{x} \bra{y}$$
+* Walsh-Hadamard transform: $$H^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x,y} (-1)^{x y} \ket{x} \bra{y}$$
+* Von Neumann entropy of a density operator: $$S(\rho) = - \tr (\rho \log_2 \rho) = - \sum_i \lambda_i \log_2 \lambda_i$$
 * Bloch sphere coordinates: $$\ket{\psi} = a_0 \ket{0} + a_1 \ket{1} = \cos \frac{\theta}{2} \ket{0} + e^{i \Phi} \sin \frac{\theta}{2} \ket{1}$$
 
 ![bloch-sphere-wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/423px-Bloch_Sphere.svg.png)

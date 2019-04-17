@@ -4,12 +4,8 @@ title:  "Grover's quantum search algorithm"
 permalink: "grover-algorithm.html"
 summary: ""
 ---
-$$
-\newcommand{\bra}[1]{\left< #1 \right|}
-\newcommand{\ket}[1]{\left| #1 \right>}
-\newcommand{\bk}[2]{\left< #1 \middle| #2 \right>}
-\newcommand{\bke}[3]{\left< #1 \middle| #2 \middle| #3 \right>}
-$$
+{% include latex-commands.html %}
+
 
 ## Introduction
 * Devised by Lov Grover in 1996
@@ -57,5 +53,7 @@ $$
 
 
 ## Resources and references
+* [1] Quantum computation and quantum information
+* [2] Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
 * [4] [Wikipedia article](https://en.wikipedia.org/wiki/Grover%27s_algorithm)

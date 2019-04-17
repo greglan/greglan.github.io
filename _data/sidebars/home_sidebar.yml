@@ -163,10 +163,6 @@ entries:
           url: /steganography.html
           output: web
 
-        - title: EXIF data
-          url: /exif-data.html
-          output: web
-
   - title: Programming
     output: web
     folderitems:
@@ -365,7 +361,7 @@ entries:
       url: /proxies.html
       output: web
 
-  - title: Quantum computing
+  - title: Quantum things
     output: web
     folderitems:
 
@@ -398,7 +394,7 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Mathematics of quantum computing
+        - title: Basics
           url: /qc-maths.html
           output: web
 

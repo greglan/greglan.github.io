@@ -34,6 +34,9 @@ topnav_dropdowns:
         - title: Maths
           url: /tag_maths.html
 
+        - title: Quantum
+          url: /tag_quantum.html
+
         - title: Virtualization
           url: /tag_virtualization.html
 

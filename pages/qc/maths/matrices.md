@@ -6,15 +6,7 @@ tags: [maths, quantum]
 summary: "Definitions and properties of some particular matrices used in quantum mechanics"
 ---
 
-$$
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\R}{\mathbb{R}}
-\DeclareMathOperator{\dimension}{dim}
-\newcommand{\bra}[1]{\left< #1 \right|}
-\newcommand{\ket}[1]{\left| #1 \right>}
-\newcommand{\bk}[2]{\left< #1 \middle| #2 \right>}
-\newcommand{\bke}[3]{\left< #1 \middle| #2 \middle| #3 \right>}
-$$
+{% include latex-commands.html %}
 
 
 ## Adjoints and Hermitians operators [1]
