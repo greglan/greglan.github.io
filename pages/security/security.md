@@ -20,6 +20,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Collection of CVEs exploits](https://github.com/niklasb/sploits)
 
 ## General
+* [PE format](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
 * [Distinguishing between encrypted and compressed data](http://www.devttys0.com/2013/06/differentiate-encryption-from-compression-using-math/)
 * [Hackndo](https://beta.hackndo.com/archives/)
 * [Bios wiki](https://teambi0s.gitlab.io/bi0s-wiki/)

@@ -9,7 +9,7 @@ summary: "Presentation of several steganography techniques"
 ## LSB encoding
 * Can be used with PNG files: change the LSB of the RGB values. No practical impact for the human eye
 
-```
+```python
 file = open(filename, 'rb')
 file.seek(start_offset)  # Skip headers and cie
 raw_data = file.read()

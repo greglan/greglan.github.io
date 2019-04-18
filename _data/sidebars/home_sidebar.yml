@@ -163,6 +163,14 @@ entries:
           url: /steganography.html
           output: web
 
+        - title: File formats
+          url: /file-formats.html
+          output: web
+
+        - title: Tools
+          url: /forensics-tools.html
+          output: web
+
   - title: Programming
     output: web
     folderitems:

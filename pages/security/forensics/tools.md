@@ -6,10 +6,9 @@ tags: [security, forensics]
 summary: "Tools and useful commands for forensics"
 ---
 
-
-## File manipulation
+## Binary file manipulation
 * Extract file from 202 bytes offset: `dd if=input of=extracted bs=1 skip=202`
-
+* Display file as binary: `xxd -b file`
 
 ## Steghide
 ```bash
