@@ -21,3 +21,7 @@ steghide --help
 * Used to analyze images in different planes by taking off bits of the image.
 * Install: `wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar`
 * Launch: `java -jar stegsolve.jar`
+
+
+## Resources and references
+* [DumpIt for Windows memory dumps](https://www.aldeid.com/wiki/Dumpit)

@@ -18,4 +18,5 @@ sudo dhclient wlan0
 ```
 
 ## nmcli
-List available networks : `nmcli device wifi list`
+* List available networks : `nmcli device wifi list`
+* Delete saved connection: `nmcli connection delete name`

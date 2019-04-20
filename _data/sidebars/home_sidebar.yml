@@ -171,6 +171,10 @@ entries:
           url: /forensics-tools.html
           output: web
 
+        - title: Volatility
+          url: /forensics-volatility.html
+          output: web
+
   - title: Programming
     output: web
     folderitems:
@@ -341,6 +345,10 @@ entries:
       url: /index-networks.html
       output: web
 
+    - title: OSI model
+      url: /osi-model.html
+      output: web
+
     - title: Port numbers
       url: /port-numbers.html
       output: web
@@ -420,6 +428,10 @@ entries:
 
     - title: Resources
       url: /index-electronics.html
+      output: web
+
+    - title: Amplitude Shift Keying
+      url: /ask.html
       output: web
 
     - title: SPI protocol

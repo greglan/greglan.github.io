@@ -14,6 +14,7 @@ tags: [linux]
 * List installed packages: `pacman -Q`
 * List explicitly installed packages: `pacman -Qe`
 * Find the package associated with a file: `pacman -Qo /path/to/file`
+* Find the files associated with a package: `paman -Ql package_name`
 
 
 
