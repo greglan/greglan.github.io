@@ -3,7 +3,7 @@ layout: page
 title:  "Reversing of the Oneplus 6T trustzone"
 permalink: "oneplus6t-trustzone.html"
 tags: [security, reversing, arm]
-summary: ""
+summary: "A introduction to the Trustzone implementation on the Oneplus 6T"
 ---
 
 ## Vector tables

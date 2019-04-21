@@ -31,7 +31,7 @@ $$
 
 ## Tensor products [1]
 * Tensor product space: if $$\dimension V = n$$ and $$\dimension W = m$$, $$\dimension V \otimes W = nm$$
-* Basis of $$V \otimes W$$: $$\{\ket{i} \otimes \ket{j} \}$$ where $$\{\ket{i}\}$$ basis of $$V$$ and $$\{\ket{j}\}$$ basis of $$W$$
+* Basis of $$V \otimes W$$: $$\{\ket{i} \otimes \ket{j} \}$$ where $$\{\ket{i}\}$$ basis of $$V$$ and $$\{\ket{j}\}$$ basis of $$W$$ [4, p72]
 * Notations for vectors: $$\ket{u} \otimes \ket{v} = \ket{uv}$$
 * Properties:
 $$\forall (z, \ket{v}, \ket{w}) \in \C \times V \times W, \; z(\ket{v} \otimes \ket{w}) = (z \ket{v}) \otimes \ket{w} = \ket{v} \otimes (z \ket{w})$$
@@ -59,4 +59,4 @@ $$
 * [1] Quantum computation and quantum information
 * [2] Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
-* [4] [Wikipedia article](https://en.wikipedia.org/wiki/Grover%27s_algorithm)
+* [4] Quantum computing : lecture notes, Ronald de Wolf

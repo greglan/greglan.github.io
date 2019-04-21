@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PC Build guide
-summary: "A memo about the list of things to consider when building a system"
+summary: "A memo about the list of things to consider when building or buying a new system. This is mainly oriented towards desktop builds"
 permalink: "hw-pc.html"
 ---
 
@@ -33,35 +33,29 @@ TODO
 * Socket type: depends on CPU choice
 * Chipset
 
-
-## RAM
+## RAM
 * Capacity
 * Frequency: the higher the better. But how important is this ?
 * Memory technology: why doest it matter ? Compatibility with the motherboard ?
 * Pins: what is this ?
 * CAS: the lower the better. But how important is this ?
 
-
-## Storage
+## Storage
 * This is limiting the VMs usability when several VMs are used simultaneously. The solution is to used RAID to increase throughput as well as enabling data redundancy.
 * HDD brands: WD, Seagate. Format: 3.5”
 
-
-
-## Power supply
+## Power supply
 * Size format
 * Watt capability
 * Max amp on the +12v output
 * Warranty
 * Pins provided: MB, GPU
 
-
-## Water Cooling
+## Water Cooling
 * Size
 * Noise
 * Efficiency
 * Good option: Corsair Hydro Series H60
-
 
 ## Case
 * Dimensions
