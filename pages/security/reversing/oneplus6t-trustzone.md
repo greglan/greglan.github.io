@@ -151,7 +151,7 @@ struct el3_struct_1 {
 
 ## Function map
 
-![functions-map](/assets/oneplus6t-reversing-functions-map.svg)
+![functions-map](/images/oneplus6t-reversing-functions-map.svg)
 
 
 ## Resources and references

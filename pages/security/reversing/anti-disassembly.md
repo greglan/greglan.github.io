@@ -3,22 +3,23 @@ layout: page
 title:  "Anti disassembly techniques"
 permalink: "anti-disassembly.html"
 tags: [security, reversing]
-summary: ""
+summary: "This article presents some techniques used to prevent a disassembler from showing 'relevant' code to the reverser"
 ---
 
 ## Linear vs flow-oriented disassembly
 * Linear disassembly: iterate over a block of code by disassembling one instruction at a time. Next instruction determined by the size of the last disassembled instruction
+* Flow oriented disassembly: the disassembler tries to follow the program's execution flow to only disassemble the relevant part of the program
 
 ## Jump instructions with the same target
-![jmp-same-target](/assets/jmp-same-target.svg)
+![jmp-same-target](/images/jmp-same-target.svg)
 
 ## Unconditional conditional jump
-![jmp-unconditional-conditional](/assets/jmp-unconditional-conditional.svg)
+![jmp-unconditional-conditional](/images/jmp-unconditional-conditional.svg)
 
 ## Impossible disassemblies
-![impossible-disassembly-1](/assets/impossible-disassembly-1.svg)
+![impossible-disassembly-1](/images/impossible-disassembly-1.svg)
 
-![impossible-disassembly-2](/assets/impossible-disassembly-2.svg)
+![impossible-disassembly-2](/images/impossible-disassembly-2.svg)
 
 
 ## Return pointer

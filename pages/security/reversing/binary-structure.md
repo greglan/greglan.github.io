@@ -13,9 +13,9 @@ summary: ""
 * Storage of a string: terminated by a null byte: 0x00 != '0' (ASCII)
 * Assembly for a C function call
 
-![memory-map](/assets/binary-memory-map.svg)
+![memory-map](/images/binary-memory-map.svg)
 
-![stack-layout](/assets/C-func-stack-layout-x86.svg)
+![stack-layout](/images/C-func-stack-layout-x86.svg)
 
 
 ## Resources and references

@@ -45,19 +45,19 @@ TODO: stack instructions suffixes
 ### Full descending
 Default stack type on ARM.
 
-![full-descending-stack](/assets/arm-full-descending-stack.svg)
+![full-descending-stack](/images/arm-full-descending-stack.svg)
 
 ### Empty descending
 
-![emtpy-descending-stack](/assets/arm-empty-descending-stack.svg)
+![emtpy-descending-stack](/images/arm-empty-descending-stack.svg)
 
 ### Full ascending
 
-![full-ascending-stack](/assets/arm-full-ascending-stack.svg)
+![full-ascending-stack](/images/arm-full-ascending-stack.svg)
 
 ### Empty ascending
 
-![empty-ascending-stack](/assets/arm-empty-ascending-stack.svg)
+![empty-ascending-stack](/images/arm-empty-ascending-stack.svg)
 
 
 ## ARM execution modes

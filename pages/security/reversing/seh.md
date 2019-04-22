@@ -10,7 +10,7 @@ summary: ""
 * Unhandled errors redirected to the default SEH.
 * Exception handling stack layout:
 
-![stack-layout](/assets/seh.svg)
+![stack-layout](/images/seh.svg)
 
 
 * Every frame has its own exception handler on the stack
@@ -22,3 +22,9 @@ summary: ""
   - Pointer to the default exception handler (`MSVCRT!exhandler`)
 * TEB/TIB in `main()`'s function data: `mov dword ptr fs:[0], esp`
 * Since Windows XP SP1: registers XORed before call to exception handler
+
+
+## Resources and references
+* [SafeSEH flag](https://docs.microsoft.com/en-us/cpp/build/reference/safeseh-image-has-safe-exception-handlers?view=vs-2017)
+* [SafeSEH inner workings](https://reverseengineering.stackexchange.com/questions/11297/how-does-windows-safeseh-mechanism-work)
+* [Wikipedia article](https://en.wikipedia.org/wiki/Microsoft-specific_exception_handling_mechanisms)

@@ -55,7 +55,7 @@ entries:
           url: /seh.html
           output: web
 
-        - title: Low level reversing
+        - title: Embedded reversing
           url: /embedded-re.html
           output: web
 
