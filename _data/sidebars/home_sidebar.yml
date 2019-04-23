@@ -47,8 +47,8 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Binary structure
-          url: /binary-structure.html
+        - title: ELF format
+          url: /elf.html
           output: web
 
         - title: Structured Exception Handlers
@@ -420,6 +420,14 @@ entries:
 
         - title: Density operators
           url: /density-operators.html
+          output: web
+
+      - title: Protocols
+        output: web
+        subfolderitems:
+
+        - title: BB84
+          url: /bb84-protocol.html
           output: web
 
   - title: Electronics

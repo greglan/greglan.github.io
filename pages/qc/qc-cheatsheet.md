@@ -17,6 +17,7 @@ summary: "Some formulas and definitions"
 ## Formulas
 * Walsh-Hadamard transform: $$H^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x,y} (-1)^{x y} \ket{x} \bra{y}$$
 * Von Neumann entropy of a density operator: $$S(\rho) = - \tr (\rho \log_2 \rho) = - \sum_i \lambda_i \log_2 \lambda_i$$
+* If $$n$$ real unit vector, rotation about the $$\hat{n}$$ axis: $$R_\hat{n} = e^{-i \theta \hat{n}\cdot\hat{\sigma}} = \cos(\frac{\theta}{2}) I - i \sin(\frac{\theta}{2}) \left(n_x \sigma_x + n_y \sigma_y + n_z \sigma_z \right)$$
 * Bloch sphere coordinates: $$\ket{\psi} = a_0 \ket{0} + a_1 \ket{1} = \cos \frac{\theta}{2} \ket{0} + e^{i \Phi} \sin \frac{\theta}{2} \ket{1}$$
 
 ![bloch-sphere-wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/423px-Bloch_Sphere.svg.png)
@@ -85,3 +86,9 @@ $$ H =  \frac{1}{\sqrt{2}}
 1&-1
 \end{pmatrix}
 $$ (rotation of $$\frac{\pi}{2}$$ around the $$y$$ axis and $$\pi$$ around the $$x$$ axis)
+
+
+## Commutation relations for the Pauli matrices
+$$
+[\sigma_x, \sigma_y] = 2i \sigma_z, \qquad [\sigma_y, \sigma_z] = 2i \sigma_x, \qquad [\sigma_z, \sigma_x] = 2i \sigma_y
+$$
