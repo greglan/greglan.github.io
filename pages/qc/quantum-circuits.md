@@ -39,7 +39,7 @@ e^{i \alpha} & 0\\
 $$ (rotation of $$2\alpha$$ about the $$z$$ axis)
 
 ### Decomposition
-Any single qubit transformation $$Q$$ can be written as $$Q=K(\delta)T(\alpha)R(\beta)T(\gamma)$
+Any single qubit transformation $$Q$$ can be written as $$Q=K(\delta)T(\alpha)R(\beta)T(\gamma)$$
 
 
 ## Single-qubit transformations controlled by a single qubit [1, p86]
