@@ -2,7 +2,7 @@
 layout: page
 title:  "The BB84 protocol"
 permalink: "bb84-protocol.html"
-tags: [maths, quantum]
+tags: [security, quantum]
 summary: "A simple key distribution protocol"
 ---
 

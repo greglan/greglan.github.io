@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Quantum cheatsheet"
-permalink: "qc-cheatsheet.html"
+permalink: "quantum-cheatsheet.html"
 tags: [maths, quantum]
 summary: "Some formulas and definitions"
 ---

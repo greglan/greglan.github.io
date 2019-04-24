@@ -386,7 +386,11 @@ entries:
       output: web
 
     - title: Cheatsheet
-      url: /qc-cheatsheet.html
+      url: /quantum-cheatsheet.html
+      output: web
+
+    - title: Quantum circuits
+      url: /quantum-circuits.html
       output: web
 
       subfolders:
@@ -425,6 +429,14 @@ entries:
       - title: Protocols
         output: web
         subfolderitems:
+
+        - title: Superdense coding
+          url: /superdense-coding.html
+          output: web
+
+        - title: Quantum teleportation
+          url: /quantum-teleportation.html
+          output: web
 
         - title: BB84
           url: /bb84-protocol.html

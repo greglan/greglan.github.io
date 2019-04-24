@@ -36,6 +36,19 @@ finally:
     # Code always executed no matter what happened before
 ```
 
+## Object dumping using pickle
+```python
+import pickle
+
+file = open("file.pkl", 'wb')
+pickle.dump(object, file, pickle.HIGHEST_PROTOCOL)
+file.close()
+
+file = open("file.pkl", 'rb')
+object = pickle.load(file)
+file.close()
+```
+
 
 ## Command line argument parsing
 ```python
