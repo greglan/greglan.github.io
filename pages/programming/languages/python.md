@@ -68,3 +68,4 @@ if args.variable_name is not None:
 * [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 * [Advanced Python topics](http://sebastianraschka.com/Articles/2014_deep_python.html#else_clauses)
 * [Parralel computing with IPython](https://ipyparallel.readthedocs.io/en/latest/intro.html)
+* [OCR with Python](https://www.quora.com/What-is-the-best-Python-OCR-library)

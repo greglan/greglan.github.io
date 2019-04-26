@@ -7,13 +7,6 @@ summary: "Some formulas and definitions"
 ---
 {% include latex-commands.html %}
 
-
-## Definitions
-* Ket: $$\ket{x}$$
-* Bra: $$\bra{x}$$
-* Hadamard basis: $$\{\ket{+}, \ket{-} \}$$
-
-
 ## Formulas
 * Walsh-Hadamard transform: $$H^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x,y} (-1)^{x y} \ket{x} \bra{y}$$
 * Von Neumann entropy of a density operator: $$S(\rho) = - \tr (\rho \log_2 \rho) = - \sum_i \lambda_i \log_2 \lambda_i$$
@@ -22,16 +15,16 @@ summary: "Some formulas and definitions"
 
 ![bloch-sphere-wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/423px-Bloch_Sphere.svg.png)
 
+### Commutation relations for the Pauli matrices
 
-## Notable states
+$$
+[\sigma_x, \sigma_y] = 2i \sigma_z, \quad [\sigma_y, \sigma_z] = 2i \sigma_x, \quad [\sigma_z, \sigma_x] = 2i \sigma_y
+$$
 
-$$\ket{+} = \frac{\ket{0} + \ket{1}}{\sqrt{2}}$$
-
-$$\ket{-} = \frac{\ket{0} - \ket{1}}{\sqrt{2}}$$
-
-$$\ket{i} = \frac{\ket{0} + i \ket{1}}{\sqrt{2}}$$
-
-$$\ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}$$
+$$
+\sigma_x \, \sigma_y = i \sigma_z, \quad \sigma_y \, \sigma_z = i \sigma_x, \quad \sigma_z \, \sigma_x = i \sigma_y\\
+\sigma_y \, \sigma_x = -i \sigma_z, \quad \sigma_z \, \sigma_y = -i \sigma_x, \quad \sigma_x \, \sigma_z = -i \sigma_y
+$$
 
 
 ## Notable matrices
@@ -88,7 +81,16 @@ $$ H =  \frac{1}{\sqrt{2}}
 $$ (rotation of $$\frac{\pi}{2}$$ around the $$y$$ axis and $$\pi$$ around the $$x$$ axis)
 
 
-## Commutation relations for the Pauli matrices
+## Notable states
+
 $$
-[\sigma_x, \sigma_y] = 2i \sigma_z, \qquad [\sigma_y, \sigma_z] = 2i \sigma_x, \qquad [\sigma_z, \sigma_x] = 2i \sigma_y
+\ket{+} = \frac{\ket{0} + \ket{1}}{\sqrt{2}}, \quad
+
+\ket{-} = \frac{\ket{0} - \ket{1}}{\sqrt{2}}, \quad
+
+\ket{i} = \frac{\ket{0} + i \ket{1}}{\sqrt{2}}, \quad
+
+\ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}
 $$
+
+* Hadamard basis: $$\{\ket{+}, \ket{-} \}$$
