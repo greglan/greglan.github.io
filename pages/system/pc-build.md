@@ -2,6 +2,7 @@
 layout: page
 title: PC Build guide
 summary: "A memo about the list of things to consider when building or buying a new system. This is mainly oriented towards desktop builds but there are some thoughts about ultrabooks laptops along the way."
+tags: [system]
 permalink: "hw-pc.html"
 ---
 

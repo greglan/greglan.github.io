@@ -256,6 +256,14 @@ entries:
     output: web
     folderitems:
 
+    - title: Windows setup guide
+      url: /windows-setup.html
+      output: web
+
+    - title: Software setup guide
+      url: /software-setup.html
+      output: web
+
     - title: PC build guide
       url: /hw-pc.html
       output: web
