@@ -17,6 +17,8 @@ permalink: "index-networks.html"
 * ping of death
 * fragroute
 * [Scapy](https://www.hackers-arise.com/single-post/2017/01/16/Reconnaissance-Scanning-and-DoSing-with-Scapy)
+* Definition of a router
+* GIX: Global Internet eXchange. France IX in France. Neutral internet exchange point
 
 
 ## Resources and references

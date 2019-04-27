@@ -23,6 +23,7 @@ tags: [linux]
 apt-get source package_name
 apt-get build-dep package_name # Download the dependencies' source
 apt-cache search package_name
+add-apt-repository --remove ppa:PPA_Name/ppa  # Remove a PPA
 ```
 
 ## Other

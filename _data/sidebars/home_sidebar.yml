@@ -361,6 +361,14 @@ entries:
       url: /port-numbers.html
       output: web
 
+    - title: ICMP protocol
+      url: /icmp-protocol.html
+      output: web
+
+    - title: TCP/IP protocol
+      url: /tcp-ip-protocol.html
+      output: web
+
     - title: DNS protocol
       url: /dns-protocol.html
       output: web

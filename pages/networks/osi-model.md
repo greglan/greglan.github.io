@@ -19,6 +19,39 @@ summary: "Description of the OSI model and other basics of networks"
 * Theoretical model, not really respected in practice (see TCP/IP model)
 
 
+## Addressing and routing
+### Intermediate nodes and routing
+* Full mesh: growth of the number of links as the square of the number of nodes
+* Layer 3 interconnecting nodes: routers, gateways. Messages: packets
+* Layer 2 interconnecting nodes: switches. Messages: frames
+* Dumbbell topology:often used in simulation because of a potential bottleneck link
+* Routing table.
+* Flat address space: no hierarchy in the storage of the addresses in the routing table
+* Hierarchical addressing: addresses decomposed in a prefix and the rest
+* Common number of packets received by seconds: more than a million
+* Routing loops:
+  - bad router configuration
+  - propagation of new routing information. Happens in case of link failure or link recovery.
+
+### Addresses organization
+#### Flat address space
+* Advantage: simple address assignment
+* Precaution: need to make sure the address is not already in use
+* Downside: routing table grows linearly with the number of nodes
+
+#### Hierarchical addressing
+* Packet switching: no state, no resource reservation
+* Circuit switching (commutation de circuit): resource reservation, signalling
+* TCP=connection $$\neq$$ circuit switching
+
+  The IP routing doesn't "understand" the TCP connection. The routers don't need to be synced.
+
+  $$\neq$$ mobile networks: each point needs to be synced.
+
+
+
+
+
 ## Resources and references
 * [Wikipedia article](https://en.wikipedia.org/wiki/OSI_model)
 * [Logical Link Control (LLC)](https://en.wikipedia.org/wiki/Logical_link_control)
