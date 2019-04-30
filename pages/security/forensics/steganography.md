@@ -40,5 +40,6 @@ for i in range(0, len(LSBs), 8):  # Print byte-per-byte, so 8 bits steps
 
 ## Resources and references
 * [LSB encodings](http://www.eiron.net/thesis/)
+* [LSB encoding tool](https://github.com/RobinDavid/LSB-Steganography)
 * [Null cipher](https://www.geeksforgeeks.org/null-cipher/)
 * [OCR in Python](https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/)

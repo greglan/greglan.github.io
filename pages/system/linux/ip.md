@@ -19,3 +19,9 @@ summary: "Usage examples of the ip command"
 * Remove a static route: `ip route del 10.10.20.0/24`
 * Add a default gateway: `ip route add default via 192.168.1.254`
 * Show neighbour/ARP table: `ip neigh/n show`
+* Reset interface:
+```bash
+ip link set dev $INTERFACE down
+sleep 1
+ip link set dev $INTERFACE up
+```

@@ -1,3 +1,9 @@
+---
+layout: page
+title:  "Shor's algorithm"
+permalink: "shor-algorithm.html"
+summary: ""
+---
 {% include latex-commands.html %}
 
 

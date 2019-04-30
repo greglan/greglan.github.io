@@ -33,3 +33,4 @@ summary: "Review of common file formats and their signatures"
 
 ## Resources and references
 * [PNG format](https://teambi0s.gitlab.io/bi0s-wiki/forensics/image-forensics/#portable-network-graphics-png)
+* [FAT32 format](http://www.file-recovery.com/recovery-file-system-FAT32-features.htm)

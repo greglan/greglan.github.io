@@ -69,3 +69,4 @@ if args.variable_name is not None:
 * [Advanced Python topics](http://sebastianraschka.com/Articles/2014_deep_python.html#else_clauses)
 * [Parralel computing with IPython](https://ipyparallel.readthedocs.io/en/latest/intro.html)
 * [OCR with Python](https://www.quora.com/What-is-the-best-Python-OCR-library)
+* [Tree plots in Python](https://plot.ly/python/tree-plots/)

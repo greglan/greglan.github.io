@@ -101,3 +101,5 @@ permalink: "hw-pc.html"
 # Resources and references
 * [1] [RAM frequency vs timing](https://www.youtube.com/watch?v=_WsfeuWI7mU)
 * [2] [GPU and deep learning](https://blog.slavv.com/picking-a-gpu-for-deep-learning-3d4795c273b9)
+* RGB lightning guides on [pcgamer.com](https://www.pcgamer.com/a-beginners-guide-to-rgb-lighting-your-pc/), [ArsTechnica](https://arstechnica.com/gadgets/2017/09/how-to-build-rgb-pc/) and [Linus Tech Tips](https://linustechtips.com/main/topic/927212-ultimate-guide-to-fan-rpm-rgb-ecosystems/)
+* [Add new hard drive to mirror existing LVM drive with RAID1](https://askubuntu.com/questions/55968/add-new-hard-drive-to-mirror-existing-lvm-drive-with-raid1)

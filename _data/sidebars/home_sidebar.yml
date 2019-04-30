@@ -252,6 +252,14 @@ entries:
           url: /nosql.html
           output: web
 
+        - title: BASH
+          url: /bash.html
+          output: web
+
+        - title: x86 assembly
+          url: /x86-assembly.html
+          output: web
+
   - title: System
     output: web
     folderitems:
@@ -262,6 +270,10 @@ entries:
 
     - title: Software setup guide
       url: /software-setup.html
+      output: web
+
+    - title: Android Debug Bridge
+      url: /adb.html
       output: web
 
     - title: PC build guide
@@ -345,6 +357,10 @@ entries:
           url: /libvirt.html
           output: web
 
+        - title: Hyper-V
+          url: /hyper-v.html
+          output: web
+
   - title: Networks
     output: web
     folderitems:
@@ -377,8 +393,16 @@ entries:
       url: /802.1x.html
       output: web
 
+    - title: SSH
+      url: /ssh.html
+      output: web
+
     - title: SSL/TLS
       url: /ssl-tls.html
+      output: web
+
+    - title: VPNs
+      url: /vpn.html
       output: web
 
     - title: Nmap
@@ -409,6 +433,10 @@ entries:
       url: /quantum-circuits.html
       output: web
 
+    - title: Quantum computers
+      url: /quantum-computers.html
+      output: web
+
       subfolders:
       - title: Algorithms
         output: web
@@ -426,6 +454,10 @@ entries:
           url: /simon-problem.html
           output: web
 
+        - title: Shor's problem
+          url: /simon-problem.html
+          output: web
+
       - title: Maths
         output: web
         subfolderitems:
@@ -440,6 +472,10 @@ entries:
 
         - title: Density operators
           url: /density-operators.html
+          output: web
+
+        - title: Quantum Fourier transform
+          url: /qft.html
           output: web
 
       - title: Protocols

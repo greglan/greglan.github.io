@@ -1,3 +1,11 @@
+---
+layout: page
+title:  "Quantum computers"
+permalink: "quantum-computers.html"
+tags: [quantum]
+summary: "This page presents the circuit model for quantum computation as well as the implementation of basic gates"
+---
+
 # Misc
 * Not really quantum computers, rather quantum accelerator (similar in architecture to GPUs, FPGAs...)
 * Multiple runs of an algorithm to approach a deterministic result

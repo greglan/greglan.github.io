@@ -6,7 +6,7 @@ tags: [system, windows]
 permalink: "windows-setup.html"
 ---
 
-# Setup
+## Setup
 * Prepare partition setup and align them on GiB
 * (Wipe previous install and reinstall it: removes preinstalled bloatwares.)
 * No Microsoft account
@@ -29,7 +29,7 @@ permalink: "windows-setup.html"
 
 
 
-# Security measures
+## Security measures
 * Set UAC to full.
 * Use random hardware mac address
 * Account setup: admin/user
@@ -38,18 +38,18 @@ permalink: "windows-setup.html"
 
 
 
-# Softwares
-## Utils
+## Softwares
+### Utils
 * Daemon Tools Lite
 * 7zip
 * Openvpn
 
-## Media
+### Media
 * Microsoft Office
 * VLC
 * Deluge
 
-## Hacking
+### Hacking
 * Ollydbg 1.10 & 2.01. Default to execute as admin
 * IDA
 * x32dbg/x64dbg
@@ -61,7 +61,7 @@ permalink: "windows-setup.html"
 * UPX packer
 * Yara
 
-## Programming
+### Programming
 * NASM. Add it to path.
 * JDK
 * Atmel Studio
@@ -71,7 +71,7 @@ permalink: "windows-setup.html"
     * Python 2 virtualenv
     * Do the opposite for the versions?
 
-## System
+### System
 * Spybot
 * Malwarebyte
 * Glasswire

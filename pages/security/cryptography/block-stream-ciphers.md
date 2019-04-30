@@ -33,3 +33,5 @@ summary: ""
 * [ChaCha](https://en.wikipedia.org/wiki/Salsa20)
 * [RC4](https://en.wikipedia.org/wiki/RC4)
 * [Blowfish](https://en.wikipedia.org/wiki/Blowfish_(cipher))
+* [Symmetric Block Cipher Versus Stream Cipher](https://blogs.getcertifiedgetahead.com/symmetric-block-cipher-versus-stream-cipher/)
+* [GCM vs CBC mode of operation](https://www.privateinternetaccess.com/helpdesk/kb/articles/what-s-the-difference-between-aes-cbc-and-aes-gcm)
