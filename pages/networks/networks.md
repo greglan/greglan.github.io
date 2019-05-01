@@ -7,12 +7,11 @@ permalink: "index-networks.html"
 ## TODO
 * Tor
 * Vidalia
-* dnscrypt
 * [ipset](https://wiki.archlinux.org/index.php/Ipset)
 * pfsense
 * WEP, WPAs
 * Pixie attack on WPS
-* nmap, lynix, maltego
+* lynix, maltego
 * land attacks
 * ping of death
 * fragroute

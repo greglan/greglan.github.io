@@ -14,14 +14,14 @@ summary: ""
 ## Attack payloads
 * HTML tags: `<img src="url">`, `<iframe src="url">`, `<script src="url">`
 * Image object:
-```
+```html
 <script>
 var img = new Image();
 img.src = "url";
 </script>
 ```
 * `XMLHttp` object:
-```
+```javascript
 var req = new XMLHttpRequest();
 req.open("POST", url, true);
 req.onreadystatechange = function () {alert(req.responseText)};

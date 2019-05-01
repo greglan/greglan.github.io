@@ -294,7 +294,7 @@ entries:
           output: web
 
         - title: x86
-          url: /x86a.html
+          url: /x86.html
           output: web
 
       - title: Linux
