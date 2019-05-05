@@ -16,7 +16,8 @@ $$
 * Public key: $$(n, e)$$
 * Private key exponent $$d$$
 * Private key: $$(n, d)$$
-* $$m^{ed} \equiv m \mod n$$
+
+$$m^{ed} \equiv m \mod n$$
 
 ## Key generation
 * Choose $$p, q \in \P$$

@@ -37,6 +37,21 @@ summary: "Definitions and properties of some particular matrices used in quantum
 * Positive operators have positive eigenvalues
 * For all operators $$A$$, $$A^\dagger A$$ positive
 
+## Polar and singular value decompositions [1, p78]
+### Polar decomposition
+* If $$A$$ linear operator, then there exists unitary $$U$$ and unique positive operators $$J, K$$ such that
+
+  $$A = UJ = KU, \quad J = \sqrt{A^\dagger A}, \quad K= \sqrt{AA^\dagger}$$
+
+  If $$A$$ invertible, $$U$$ is unique
+* Left polar decomposition: $$A = UJ$$
+* Right polar decomposition: $$A = KU$$
+
+### Singular values decomposition
+* If $$A$$ square matrix, there exists unitary $$U, V$$ and diagonal matrix $$D$$ with positive values such that:
+
+  $$A = UDV$$
+* Singular values: diagonal elements of $$D$$
 
 ## Resources and references
 * [1] Quantum computation and quantum information

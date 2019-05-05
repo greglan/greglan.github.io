@@ -8,12 +8,34 @@ summary: ""
 
 ## Block ciphers
 * Operate on a block of data at a time
-* Mode of operation: how to "repeatedly apply a cipher's single-block operation to securely transform amounts of data larger than a block"
-* Initialization Vector (IV)/starting variable.
-* Padding
-* Cipher Block Chaining (CBC) mode: each block of plaintext is XORed with the previous ciphertext block before being encrypted. Requires an IV for the first block. Most used mode of operation.
-* CBC drawback: encryption can't be serialized
 * Examples: DES, RC5, AES, Blowfish
+* Mode of operation: how to "repeatedly apply a cipher's single-block operation
+to securely transform amounts of data larger than a block"
+* Initialization Vector (IV)/starting variable: required by most mode of
+operations. Allows to randomize the ciphertext should the same plaintext be
+encrypted several times
+
+  Should be non-repeating
+
+  Depending on the mode, should also be random
+* Padding
+
+### ECB mode
+* Each block of data is encrypted separately
+* Drawback: lacks the diffusion property because the same plaintext result in the
+ same ciphertext. Hence, data patterns are not well-hidden
+* Not reliable for use
+
+### Cipher Block Chaining (CBC) mode
+* Each block of plaintext is XORed with the previous ciphertext block before being encrypted
+* Requires an IV for the first block
+* Most used mode of operation
+* Drawbacks: encryption can't be serialized, susceptible to padding oracle attacks such as POODLE
+
+### Output Feedback (OFB) mode
+* Principle: generate keystream blocks to XOR with the plaintexts. Bascially acts like a stream cipher 
+* Advantage: allows some error correcting codes to work when applied before encryption
+* Drawback: no parallel decryption possible
 
 ## Stream ciphers
 * Encrypt one bit or byte at a time

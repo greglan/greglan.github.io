@@ -41,4 +41,10 @@ unzip file.zip
 ```bash
 unrar x archive.rar # Decompress
 rar a ArchiveName File_1 File_2 Dir_1 Dir_2 # Compress
-``
+```
+
+ ## xz
+```bash
+xz -k file    # Create file.xz and keep file (without -k flag, file is deleted)
+xz -d file.xz # Create file
+```

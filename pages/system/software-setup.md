@@ -25,12 +25,12 @@ permalink: "software-setup.html"
 
 
 ## Jetbrains softwares  
+* Zoom with mouse wheel
 * Default settings for UML diagrams: settings, Tools, Diagrams. Fields, Constructors, Methods, Dependencies
-* Setup keyboard shortcut for single line comment
-* Setup keyboard shortcut for block line comment
-* Setup keyboard shortcut to close current tab
-* Setup keyboard shortcut to close all tabs except focused
-* Setup keyboard shortcut to move a line on top of/below another
+* Setup keyboard shortcut for single line/block comment
+* Setup keyboard shortcut to close current editor tab
+* Setup keyboard shortcut to close all tabs except focused editor tab
+* Setup keyboard shortcut to move a line up/down
 * Setup keyboard shortcut to duplicate a line
 
 

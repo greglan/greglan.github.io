@@ -22,6 +22,7 @@ summary: ""
   - Pointer to the default exception handler (`MSVCRT!exhandler`)
 * TEB/TIB in `main()`'s function data: `mov dword ptr fs:[0], esp`
 * Since Windows XP SP1: registers XORed before call to exception handler
+* SafeSEH: implemented since Windows XP SP2 and Windows Server 2003
 
 
 ## Resources and references
