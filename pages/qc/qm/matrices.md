@@ -53,6 +53,9 @@ summary: "Definitions and properties of some particular matrices used in quantum
   $$A = UDV$$
 * Singular values: diagonal elements of $$D$$
 
+## Schmidt decomposition [1, p109]
+
+
 ## Resources and references
 * [1] Quantum computation and quantum information
 * [2] Quantum computing, a gentle introduction

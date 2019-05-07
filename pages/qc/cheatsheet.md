@@ -93,4 +93,12 @@ $$
 \ket{-i} = \frac{\ket{0} - i \ket{1}}{\sqrt{2}}
 $$
 
+$$
+\ket{GHZ_n} = \frac{1}{\sqrt{2}}(\ket{0}^{\otimes n} + \ket{1}^{\otimes n}) \quad \text{(Greenberger–Horne–Zeilinger state)}
+$$
+
+$$
+\ket{W_n} = \frac{1}{\sqrt{n}}( \ket{100 \dots 0} + \ket{010 \dots 0} + \dots + \ket{000 \dots 1}) \quad \text{(W state)}
+$$
+
 * Hadamard basis: $$\{\ket{+}, \ket{-} \}$$

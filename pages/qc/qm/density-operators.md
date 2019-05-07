@@ -36,6 +36,7 @@ In this page we consider a composite quantum system $$X = A \otimes B$$.
     - it is positive
     - its trace is 1
 * Density operator and unitary evolution: $$\rho \xrightarrow[]{U} U \rho U^\dagger = \sum_i p_i U\ket{\psi_i} \bra{\psi_i} U^\dagger$$ [1, p99]
+* Joint state of a composite system: $$ \rho = \rho_1 \otimes \dots \otimes \rho_n$$ [1, p102]
 * Criterion for differentiating between pure and mixed states:
 
   If $$\rho$$ density operator, $$\tr(\rho^2) \leqslant 1$$. Equality if $$\rho$$ pure state. [1, p103]
@@ -47,7 +48,7 @@ In this section we consider a measurement operator $$M_m$$ associated to the res
 * Probability of getting result $$m$$: $$p(m) = \sum_i p(m \vert i)p_i = \tr (M_m^\dagger M_m \rho )$$ [1, p99]
 * State after getting result $$m$$: $$\ket{\psi_i^m} = \frac{M_m \ket{\psi_i}}{\sqrt{\left\vert \bke{\psi_i}{M_m^\dagger M_m}{\psi_i} \right\vert^2}}$$ [1, p99]
 * Density operator of the ensemble of state after getting result $$m$$: $$\rho_m = \frac{M_m \rho M_m^\dagger}{\tr ( M_m^\dagger M_m \rho )}$$ [1, p100]
-* Density operator of the system prepared in the state $$\rho_i$$ with probability p_i: $$\rho = \sum_i p_i \rho_i$$ [1, p100]
+* Density operator of the system prepared in the state $$\rho_i$$ with probability $$p_i:$$ $$\rho = \sum_i p_i \rho_i$$ [1, p100]
 * Density operator of the complete system using measurements: $$\rho = \sum_m p(m) \rho_m = \sum_m M_m \rho M_m^\dagger$$ [1, p101]
 
 

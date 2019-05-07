@@ -458,7 +458,7 @@ entries:
           url: /simon-problem.html
           output: web
 
-      - title: Maths
+      - title: Quantum mechanics
         output: web
         subfolderitems:
 
