@@ -5,7 +5,6 @@ permalink: "bb84-protocol.html"
 tags: [security, quantum]
 summary: "A simple key distribution protocol"
 ---
-
 {% include latex-commands.html %}
 
 ## Introduction

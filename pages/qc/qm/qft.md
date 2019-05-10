@@ -5,10 +5,10 @@ permalink: "qft.html"
 tags: [maths, quantum]
 summary: "From the classical Fourier transform to the Quantum Fourier transform and its applications"
 ---
+{% include latex-commands.html %}
+
 In this page we consider a vector $$x = [x_0, \dots, x_{N-1}]$$ of length $$N$$,
 and the computational basis $$\ket{j}$$.
-
-{% include latex-commands.html %}
 
 ## Classical discrete Fourier transform (DFT)
 * Maps the vector $$x$$ to a vector $$y$$ such that:
