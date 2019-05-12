@@ -71,6 +71,10 @@ entries:
           url: /oneplus6t-trustzone.html
           output: web
 
+        - title: UPX packer
+          url: /upx.html
+          output: web
+
       - title: Web
         output: web
         subfolderitems:

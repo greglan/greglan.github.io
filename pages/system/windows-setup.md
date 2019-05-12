@@ -26,6 +26,7 @@ permalink: "windows-setup.html"
 * Disable System Restore
 * Customize contextual menu
 * Disable Onedrive at startup
+* Goto settings, privacy, background apps, and disable all the crap
 
 
 
