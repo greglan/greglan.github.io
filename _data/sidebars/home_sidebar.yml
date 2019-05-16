@@ -297,6 +297,10 @@ entries:
           url: /pi-calculus.html
           output: web
 
+        - title: Formal logic
+          url: /formal-logic.html
+          output: web
+
   - title: System
     output: web
     folderitems:
