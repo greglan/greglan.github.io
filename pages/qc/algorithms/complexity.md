@@ -7,7 +7,7 @@ summary: "Theory of quantum complexity analysis"
 
 ## Classical world
 * P: decision problems that can be solved in polynomial time by a deterministic Turing machine
-* PSAPCE: decision problems that can be solved by a Turing machine (doesn't matter if whether deterministic or not, see Savitch's theorem) using polynomial space
+* PSPACE: decision problems that can be solved by a Turing machine (doesn't matter if whether deterministic or not, see Savitch's theorem) using polynomial space
 * Savitch's theorem: deterministic Turing machines require only quadratically more space to solve the same problems as non deterministic Turing machines
 * NP: problems that require a non deterministic machine to be solved efficiently. Exponential time on a deterministic Turing machine.
 * NP complete (NPC): hardest problems of NP. Every problem in NP can be reduced to a problem in NPC
@@ -23,3 +23,5 @@ summary: "Theory of quantum complexity analysis"
 
 
 ## Resources and references
+* [1] *Nielsen & Chuang*, Quantum computation and quantum information
+* [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction

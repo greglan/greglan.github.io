@@ -8,22 +8,34 @@ $$
 \newcommand{\mcal}{\mathcal{M}}
 $$
 
-## Definition [1]
-A Turing machine is a tuple $$\mcal = (Q, \Sigma, \Gamma, E, q_0, F, \#)$$ where:
+## Definitions [1]
+### Definition of a Turing machine
+A Turing machine is a tuple $$\mcal = (Q, \Sigma, \Gamma, E, q_0, F, b)$$ where:
 * $$Q$$: finite non-empty set of states (états de contrôle)
-* $$\Sigma$$: input alphabet. Finite
-* $$\Gamma$$: output alphabet (alphabet de bande). $$\Sigma \subset \Gamma$$
-* $$E$$: transitions $$(p, a, q, b, x) \equiv p,a \to q,b,x$$ with $$(p,q) \in Q^2, (a,b) \in \Gamma^2$$ and $$x \in \{ \triangleleft,\triangleright \}$$
+* $$\Sigma \subset \Gamma \backslash \{ b \}$$: input symbols (alphabet d'entrée). Finite
+* $$\Gamma$$: tape alphabet symbols (alphabet de bande). $$\Sigma \subset \Gamma$$
+* $$E$$: transitions $$(p, a, q, b, x) \equiv p,a \to q,b,x$$ with $$(p,q) \in
+Q^2, (a,b) \in \Gamma^2$$ and $$x \in \{ \triangleleft,\triangleright \}$$
 * $$q_0 \in Q$$: initial state
 * $$F$$: set of final states/accepting states.
+* $$b \in \Gamma$$: blank symbol
 
-We define $$\#$$ to be the blank symbol. We have $$\# \notin \Sigma$$ and $$\# \in \Gamma$$
+Additionally, we can define a transition function $$\delta: Q\backslash F \times
+\Sigma \to Q \times \Sigma \times \{ \triangleleft,\triangleright \}$$ instead
+of $$E$$.
+
+### Deterministic Turing machine
+
 
 ## Properties
+### Normalization
+### Equivalence with multi tape machines
+### Equivalence with deterministic Turing machines
 ### Church-Turing thesis
 * *A function on the natural numbers can be calculated by an effective method, if
  and only if it is computable by a Turing machine*
 * Relation to $$\lambda$$-calculus and general recursive functions
+
 
 ## Universal Turing Machines (UTM)
 * There exists a Turing Machine that can simulate any other Turing Machine

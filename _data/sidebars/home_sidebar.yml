@@ -179,12 +179,12 @@ entries:
           url: /forensics-volatility.html
           output: web
 
-  - title: Programming
+  - title: Computer science
     output: web
     folderitems:
 
-    - title: Resources
-      url: /programming.html
+    - title: Index
+      url: /cs.html
       output: web
 
       subfolders:
@@ -240,7 +240,7 @@ entries:
           url: /graph-problems.html
           output: web
 
-      - title: Languages
+      - title: Programming languages
         output: web
         subfolderitems:
 
@@ -264,17 +264,38 @@ entries:
           url: /x86-assembly.html
           output: web
 
-    - title: Computability
-      url: /computability.html
-      output: web
 
-    - title: Turing machines
-      url: /turing-machines.html
-      output: web
+      - title: Theory
+        output: web
+        subfolderitems:
 
-    - title: Pi calculus
-      url: /pi-calculus.html
-      output: web
+        - title: Regular languages
+          url: /regular-languages.html
+          output: web
+
+        - title: Grammars
+          url: /grammars.html
+          output: web
+
+        - title: Finite state automata
+          url: /finite-state-automata.html
+          output: web
+
+        - title: Cellular automata
+          url: /cellular-automata.html
+          output: web
+
+        - title: Turing machines
+          url: /turing-machines.html
+          output: web
+
+        - title: Computability
+          url: /computability.html
+          output: web
+
+        - title: Pi calculus
+          url: /pi-calculus.html
+          output: web
 
   - title: System
     output: web
