@@ -66,8 +66,8 @@ summary: ""
 * Précondition la plus faible de la structure while/do. Interprétation.
 
 
-## Définitions
-* **Littéral** Variable logique ou négation d'une variable logique.
+## Definitions
+* **Littéral**: Variable logique ou négation d'une variable logique.
 * **Forme normale conjonctive**: conjonction de disjonctions faisant intervenir seulement des littéraux et des opérations logiques.
 * **Forme prenexe**: formule de la forme $$\varphi = Q_1x1 ... Q_nx_n \psi$$ avec $$\forall i, \; Q_i \in \{\exists, \forall \}, x_i \in \mathcal{V}$$ et $$\psi$$ formule logique.
 * **Affectation**: Application de $$\mathcal{V} \to \{0,1\}$$ qui affecte aux variables leur valeurs.
