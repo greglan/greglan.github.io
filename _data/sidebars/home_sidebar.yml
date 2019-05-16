@@ -264,6 +264,18 @@ entries:
           url: /x86-assembly.html
           output: web
 
+    - title: Computability
+      url: /computability.html
+      output: web
+
+    - title: Turing machines
+      url: /turing-machines.html
+      output: web
+
+    - title: Pi calculus
+      url: /pi-calculus.html
+      output: web
+
   - title: System
     output: web
     folderitems:

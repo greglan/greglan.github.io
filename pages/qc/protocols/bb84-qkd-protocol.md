@@ -41,5 +41,5 @@ summary: "A simple key distribution protocol"
 
 
 # Resources and references
-* [1] Quantum computing, A gentle introduction
+* [1] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [3] Introduction à l'information quantique, Y.Leroyer and G.Sénizergues

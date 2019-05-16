@@ -22,6 +22,6 @@ summary: "A protocol for sending two classical bit using one qubit and a previou
 * Decoding procedure: apply $$(H \otimes I) Cnot$$ and measurement in the standard basis
 
 ## Resources and references
-* Quantum computing: A gentle introduction, p81
-* Quantum computation and quantum information, p97
+* *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction p81
+* *Nielsen & Chuang*, Quantum computation and quantum information p97
 * [Wikipedia article](https://en.wikipedia.org/wiki/Superdense_coding)

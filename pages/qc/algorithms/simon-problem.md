@@ -15,7 +15,7 @@ summary: ""
 
 
 ## Resources and references
-* [1] Quantum computation and quantum information
-* [2] Quantum computing, a gentle introduction
+* [1] *Nielsen & Chuang*, Quantum computation and quantum information
+* [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
 * [4] [Wikipedia article](https://en.wikipedia.org/wiki/Simon%27s_problem)

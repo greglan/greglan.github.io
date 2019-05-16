@@ -20,11 +20,11 @@ In this page we consider a composite quantum system $$X = A \otimes B$$.
 ## Trace and partial trace
 * Expression of the trace: $$\tr(M) = \sum_i \bke{v_i}{M}{v_i}$$ where $$\ket{v_i}$$ is the basis with respect to which the matrix $$M$$ is written [2, p209]
 * $$ \bke{\psi_1}{M}{\psi_2} = \tr(\ket{\psi_2} \bra{\psi_1}M)$$ [2, p209]
-* Partial trace over system $$B$$:
+* Partial trace over system $$B$$ [1, p105]:
 
   $$\forall(\ket{a_1},\ket{a_2},\ket{b_1},\ket{b_2}) \in A^2 \times B^2, \quad
 \tr_B(\ket{a_1} \bra{a_2} \otimes \ket{b_1} \bra{b_2}) \equiv
-\ket{a_1} \bra{a_2} \tr_B(\ket{b_1} \bra{b_2})$$
+\ket{a_1} \bra{a_2} \tr_B(\ket{b_1} \bra{b_2}) = \ket{a_1} \bra{a_2} \bk{b_2}{b_1}$$
 
 
 ## Definition
@@ -68,6 +68,6 @@ In this section we define $$\rho^S$$ the density operator on a system $$S$$.
   Consequence: the boundary of the sphere are pure states [2]
 
 ## Resources and references
-* [1] Quantum computation and quantum information, Nielsen & Chuang
-* [2] Quantum computing, a gentle introduction
+* [1] *Nielsen & Chuang*, Quantum computation and quantum information
+* [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [Density matrices on Wikipedia](https://en.wikipedia.org/wiki/Density_matrix)

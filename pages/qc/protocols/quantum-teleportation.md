@@ -27,6 +27,6 @@ summary: "A protocol for sending one qubit and using classical bits and a previo
 
 
 ## Resources and references
-* Quantum computing: A gentle introduction, p82
-* Quantum computation and quantum information, p26
+* *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction p82
+* *Nielsen & Chuang*, Quantum computation and quantum information p26
 * [Wikipedia article](https://en.wikipedia.org/wiki/Quantum_teleportation)

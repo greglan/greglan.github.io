@@ -52,4 +52,4 @@ Any single qubit transformation $$Q$$ can be written as $$Q=K(\delta)T(\alpha)R(
 
 
 ## Resources and references
-* [1] Quantum computing: a gentle introduction
+* [1] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction

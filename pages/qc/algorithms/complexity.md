@@ -20,3 +20,6 @@ summary: "Theory of quantum complexity analysis"
 ## Quantum world
 * BQP: Bounded error Quantum Polynomial time (extension of BPP). Problems solvable in polynomial time by a probabilistic quantum Turing machine with the same error bound defined by BPP
 * Suspected that $$P \subset BQP$$. Would mean that quantum computers can solve some problems in polynomial time that cannot be solved efficiently on classical computers.
+
+
+## Resources and references
