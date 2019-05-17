@@ -18,10 +18,12 @@ $$
 * Regular expressions: another way of specifying languages without the use of
 sets [2, p19]
 * Recursive definition [2, p21]:
-    - $$\emptyset$$: empty language
-    - $$\epsilon$$: language $$\set{\epsilon}$$
-    - $$a$$ for $$a \in \Sigma$$: language $$\set{a}$$
-    - ...
+    - $$\emptyset$$: RE for the empty language
+    - $$\epsilon$$: RE for the language $$\set{\epsilon}$$
+    - $$a$$ for $$a \in \Sigma$$: RE for the language $$\set{a}$$
+    - $$R_1 \vert R_2$$ for $$R_1,R_2$$ RE for languages $$L_A,L_2$$: RE for the language $$L_1 \cup L_2$$
+    - $$R_1 R_2$$ for $$R_1,R_2$$ RE for languages $$L_A,L_2$$: RE for the language $$L_1 \dot L_2$$
+    - $$R^*$$ for $$R$$ RE for language $$L$$: RE for the language $$L^*$
 
 
 ## Langages réguliers

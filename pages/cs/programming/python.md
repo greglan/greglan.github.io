@@ -3,17 +3,24 @@ layout: page
 title:  "Python"
 permalink: "python.html"
 tags: [programming]
-summary: "Some things about Python and a cheatsheet of some common codes"
+summary: "Some things about Python and a cheat-sheet of some common codes"
 ---
 
-## Virtual environment and cie
+## Administration
+### Virtual environment and cie
 * Install `virtualenvwrapper`
 * Set `WORKON_HOME` envar in `.profile`
 * Create specific virtualenv for each purpose
-* Advantage: keeps the system packages isolated and safe
+* Advantage: keeps the system packages isolated and safe. Enable to use specific
+version of packages
 * Never install packages using `sudo pip` !
 * Never install packages using pip if not in a virtualenv !
 * [A comparison between tools for virtual environments](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
+* [Jupyter and virtual envs](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
+
+### Jupyter
+* [Add a virtualenv to a Jupyter notebook: install ](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
+* [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
 
 
 ## Arguments passing to functions
@@ -22,7 +29,9 @@ summary: "Some things about Python and a cheatsheet of some common codes"
 * [Example](https://github.com/greglan/python_scripts/blob/master/utils/references-example.py)
 
 
-## Examples
+## Code examples
+* [Command line argument parsing]()
+
 ### Files and directories
 ```python
 import os
@@ -85,19 +94,6 @@ object = pickle.load(file)
 file.close()
 ```
 
-### Command line argument parsing
-```python
-import argparse
-
-parser = argparse.ArgumentParser(description="Program description")
-parser.add_argument("--cmd_name", dest="variable_name", help="Help for this arg")
-parser.add_argument("--iter", type=int)
-args = parser.parse_args()
-
-if args.variable_name is not None:
-    print("Arg set")
-```
-
 
 ## Resources and references
 * [Machine limits for floating point type in Numpy](https://docs.scipy.org/doc/numpy/reference/generated/numpy.finfo.html)
@@ -106,3 +102,4 @@ if args.variable_name is not None:
 * [Parallel computing with IPython](https://ipyparallel.readthedocs.io/en/latest/intro.html)
 * [OCR with Python](https://www.quora.com/What-is-the-best-Python-OCR-library)
 * [Tree plots in Python](https://plot.ly/python/tree-plots/)
+* [Jupyter Docker stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/)

@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Grammars"
-permalink: "grammars.html"
+title:  "Formal grammars"
+permalink: "formal-grammars.html"
 summary: ""
 ---
 
@@ -19,6 +19,6 @@ summary: ""
 * Langages réguliers, expression régulière, automates d'états finis. (p69)
 * Arbre de dérivation syntaxique. (p71)
 * Grammaire ambigüe. Conséquence. Résolutions. (p74)
-* Grammaire de $$L=(a|ab)^*aa$$ (p69)
+* Grammaire de $$L=(a \vert ab)^*aa$$ (p69)
 * Grammaire de $$L=\{a^n b^n , \, n\in \mathbb{N} \}$$ (Wikipédia: Grammaire non contextuelle, exemple 1)
-* Grammaire de $$L=\{w \in \{a,b\}^*, \, / \; |w|_a \neq |w|_b \}$$ (Wikipédia: Grammaire non contextuelle, exemple 3)
+* Grammaire de $$L=\{w \in \{a,b\}^*, \, / \; \vert w \vert_a \neq \vert w \vert_b \}$$ (Wikipédia: Grammaire non contextuelle, exemple 3)

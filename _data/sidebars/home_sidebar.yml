@@ -240,7 +240,7 @@ entries:
           url: /graph-problems.html
           output: web
 
-      - title: Programming languages
+      - title: Programming
         output: web
         subfolderitems:
 
@@ -273,8 +273,8 @@ entries:
           url: /regular-languages.html
           output: web
 
-        - title: Grammars
-          url: /grammars.html
+        - title: Formal grammars
+          url: /formal-grammars.html
           output: web
 
         - title: Finite state automata

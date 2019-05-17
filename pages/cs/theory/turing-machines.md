@@ -24,6 +24,11 @@ Additionally, we can define a transition function $$\delta: Q\backslash F \times
 \Sigma \to Q \times \Sigma \times \{ \triangleleft,\triangleright \}$$ instead
 of $$E$$.
 
+### Configuration graph [1, p145]
+* Set of vertices is the set of configurations of the Turing Machine
+* Calculus: path in this graph
+* Infinite graph. Interested in a subset
+
 ### Deterministic Turing machine
 
 
