@@ -313,10 +313,6 @@ entries:
       url: /software-setup.html
       output: web
 
-    - title: Android Debug Bridge
-      url: /adb.html
-      output: web
-
     - title: PC build guide
       url: /hw-pc.html
       output: web
@@ -401,6 +397,10 @@ entries:
         - title: Hyper-V
           url: /hyper-v.html
           output: web
+
+    - title: Android Debug Bridge
+      url: /adb.html
+      output: web
 
   - title: Networks
     output: web
@@ -495,8 +495,8 @@ entries:
           url: /simon-problem.html
           output: web
 
-        - title: Shor's problem
-          url: /simon-problem.html
+        - title: Shor's algorithm
+          url: /shor-algorithm.html
           output: web
 
       - title: Quantum mechanics

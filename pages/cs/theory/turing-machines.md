@@ -6,11 +6,13 @@ summary: ""
 ---
 $$
 \newcommand{\mcal}{\mathcal{M}}
+\newcommand{\Mcal}{\mathcal{M}}
+\newcommand{\set}[1]{\{ #1 \}}
 $$
 
 ## Definitions [1]
 ### Definition of a Turing machine
-A Turing machine is a tuple $$\mcal = (Q, \Sigma, \Gamma, E, q_0, F, b)$$ where:
+A Turing machine is a tuple $$\Mcal = (Q, \Sigma, \Gamma, E, q_0, F, b)$$ where:
 * $$Q$$: finite non-empty set of states (états de contrôle)
 * $$\Sigma \subset \Gamma \backslash \{ b \}$$: input symbols (alphabet d'entrée). Finite
 * $$\Gamma$$: tape alphabet symbols (alphabet de bande). $$\Sigma \subset \Gamma$$
@@ -34,6 +36,23 @@ of $$E$$.
 
 ## Properties
 ### Normalization
+#### Formulation
+For any Turing machine $$\Mcal$$, there exists a Turing machine $$\Mcal'$$ such
+that:
+* they accept the same language: $$L(\Mcal)=L(\Mcal')$$
+* $$\Mcal'$$ blocks if and only if $$\Mcal$$ blocks
+* $$\Mcal'$$ has two states $$q^-, q^+$$ such that:
+  - the set of final states of $$\Mcal'$$ is $$F' = \set{q^+}$$
+  - $$\Mcal'$$ blocks only on $$q^-$$ and $$q^+$$
+
+#### Additional properties
+* If $$\Mcal$$ is deterministic, $$\Mcal'$$ is deterministic
+* Every computation in $$\Mcal'$$ is one step greater than the same computation
+in $$\Mcal$$
+* If $$\Mcal$$ doesn't have any infinite computation, $$\Mcal'$$ either
+
+#### Proof
+
 ### Equivalence with multi tape machines
 ### Equivalence with deterministic Turing machines
 ### Church-Turing thesis
@@ -53,3 +72,4 @@ of $$E$$.
 * [Turing machine article on Wikipedia](https://en.wikipedia.org/wiki/Turing_machine)
 * [Church-Turing thesis](https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis)
 * [UTM on Wikipedia](https://en.wikipedia.org/wiki/Universal_Turing_machine)
+* [Configuration graph on Wikipedia](https://en.wikipedia.org/wiki/Configuration_graph)
