@@ -1,0 +1,13 @@
+\documentclass[preview]{standalone}
+\usepackage[braket, qm]{qcircuit}
+
+\begin{document}
+\begin{tabular}{c}
+\Qcircuit @C=1.5em @R=1.5em {
+	& \lstick{\ket{q_1}} & \qswap & \rstick{\ket{q_2}} \qw \\
+	& \lstick{\ket{q_2}} & \qswap \qwx & \rstick{\ket{q_1}} \qw
+}
+\hspace{0.4cm}
+\vspace{0.3cm}
+\end{tabular}
+\end{document}

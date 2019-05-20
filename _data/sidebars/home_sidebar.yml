@@ -547,6 +547,10 @@ entries:
       url: /ask.html
       output: web
 
+    - title: Bluetooth
+      url: /bluetooth.html
+      output: web
+
     - title: SPI protocol
       url: /spi.html
       output: web

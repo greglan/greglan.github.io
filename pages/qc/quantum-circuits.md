@@ -9,14 +9,19 @@ summary: "This page presents the circuit model for quantum computation as well a
 
 ## Basic gates and notations
 ### Controlled NOT gate
+![cnot](/images/quantum/cnot.png)
 
 ### Controlled unitary gate
+![controlled-unitary](/images/quantum/controlled-unitary.png)
 
 ### Swap gate
+![swap](/images/quantum/swap.png)
 
 ### Toffoli gate
+![toffoli](/images/quantum/toffoli.png)
 
 ### Fredkin gate
+![fredkin](/images/quantum/fredkin.png)
 
 
 ## Single qubit transformations [1, p84]

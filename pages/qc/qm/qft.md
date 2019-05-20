@@ -19,7 +19,21 @@ and the computational basis $$\ket{j}$$.
   Remark: for $$N=2$$, $$F_2 = H$$ the Hadamard matrix
 * Fourier coefficients of $$x$$: values $$y_k$$ [2, p153]
 * Complexity of the discrete Fourier transform [3]
-* Fast Fourier Transform (FFT): efficient implementation of the DFT when $$N = 2^n$$ for some integer $$n$$ [2, p154]
+
+### Fast Fourier Transform (FFT)
+* Efficient implementation of the DFT when $$N = 2^n$$ for some integer $$n$$ [2, p154]
+* Decomposition [2, p155]
+
+  $$F^{(k)} = \frac{1}{\sqrt{2}}
+  \begin{pmatrix}
+  I^{(k-1)} & D^{(k-1)} \\
+  I^{(k-1)} & -D^{(k-1)}  
+  \end{pmatrix}
+  \begin{pmatrix}
+  F^{(k-1)} & 0 \\
+  0 & F^{(k-1)}  
+  \end{pmatrix}
+  R^{(k)}$$
 * Complexity of the FFT: $$O(nN)$$ [2, p155] [3]
 
 ## Quantum Fourier Transform (QFT)
@@ -33,6 +47,6 @@ and the computational basis $$\ket{j}$$.
 
 
 ## Resources and references
-* [1] Quantum computation and quantum information
-* [2] Quantum computing, a gentle introduction
+* [1] *Nielsen & Chuang*, Quantum computation and quantum information
+* [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [3] Quantum computing : lecture notes, Ronald de Wolf

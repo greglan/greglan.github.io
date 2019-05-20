@@ -1,0 +1,13 @@
+\documentclass[preview]{standalone}
+\usepackage[braket, qm]{qcircuit}
+
+\begin{document}
+\begin{tabular}{c}
+\Qcircuit @C=1.5em @R=1em {
+	& \lstick{\ket{c}} & \ctrl{1} & \rstick{\ket{c}} \qw \\
+	& \lstick{\ket{t}} & \targ & \rstick{\ket{c \oplus t}} \qw
+}
+\hspace{1cm}
+\vspace{1pt}
+\end{tabular}
+\end{document}
