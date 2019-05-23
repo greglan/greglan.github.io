@@ -156,7 +156,11 @@ entries:
           output: web
 
         - title: Tricks
-          url: /pentensting-tricks.html
+          url: /pentesting-tricks.html
+          output: web
+
+        - title: WIFI hacking
+          url: /pentesting-wifi.html
           output: web
 
       - title: Forensics

@@ -18,6 +18,8 @@ summary: "Various links to good security articles or interesting things to look 
 * [Binary exploitation course](https://github.com/RPISEC/MBE)
 * [Some CVEs PoC](https://github.com/mirchr/security-research)
 * [Collection of CVEs exploits](https://github.com/niklasb/sploits)
+* [Zombieload attack](https://zombieloadattack.com/)
+* [MDS hadware vulnerability in Intel CPUs](https://mdsattacks.com/)
 
 ## General
 * [PE format](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)

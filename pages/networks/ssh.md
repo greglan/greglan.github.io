@@ -47,3 +47,4 @@ Host *
 
 ## Resources and references
 * [SSH filtering bypass](https://www.verot.net/socks.htm?lang=en-GB)
+* [SSH hardening with 2FA](https://gist.github.com/lizthegrey/9c21673f33186a9cc775464afbdce820)
