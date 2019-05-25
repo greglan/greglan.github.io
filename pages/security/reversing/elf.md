@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  Executable and Linking Format (ELF)"
+title:  Executable and Linking Format (ELF)
 permalink: "elf.html"
 tags: [security, reversing]
-summary: ""
+summary: "Structure of ELF files and useful commands"
 ---
 
 ## Misc

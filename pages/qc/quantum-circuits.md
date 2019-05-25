@@ -3,7 +3,7 @@ layout: page
 title:  "Quantum circuits"
 permalink: "quantum-circuits.html"
 tags: [quantum]
-summary: "This page presents the circuit model for quantum computation as well as the implementation of basic gates"
+summary: ""
 ---
 {% include latex-commands.html %}
 

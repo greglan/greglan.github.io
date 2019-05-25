@@ -30,6 +30,7 @@ output: web
 topnav_title: Just another blog
 site_title: Just another title that people rarely read
 company_name: Just another blog
+color_accent: blue
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
