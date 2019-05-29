@@ -80,6 +80,21 @@ $$ H =  \frac{1}{\sqrt{2}}
 \end{pmatrix}
 $$ (rotation of $$\frac{\pi}{2}$$ around the $$y$$ axis and $$\pi$$ around the $$x$$ axis)
 
+### Other
+$$ S =
+\begin{pmatrix}
+1&0\\
+0&i
+\end{pmatrix}
+$$ (phase gate)
+
+$$ T =
+\begin{pmatrix}
+1&0\\
+0&e^{i \pi /4}
+\end{pmatrix}
+$$ ($$\pi/8$$ gate)
+
 
 ## Notable states
 
