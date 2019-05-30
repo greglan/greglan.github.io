@@ -26,3 +26,5 @@ summary: "Review of Volatility and some plugins"
 ## Resources and references
 * [Volatility wiki](https://github.com/volatilityfoundation/volatility/wiki)
 * [Teambios wiki](https://teambi0s.gitlab.io/bi0s-wiki/forensics/volatility/)
+* [Article on hackers-rise.com](https://www.hackers-arise.com/single-post/2016/09/27/Digital-Forensics-Part-2-Live-Memory-Acquisition-and-Analysis)
+* [Extracting hostnames](https://www.aldeid.com/wiki/Volatility/Retrieve-hostname)

@@ -24,3 +24,4 @@ permalink: "index-networks.html"
 * [Ethernet overview](https://searchnetworking.techtarget.com/definition/Ethernet)
 * [Token ring](https://searchnetworking.techtarget.com/definition/Token-Ring)
 * [IPfore](https://www.ipfire.org/features)
+* [Splunk tool for network monitoring](https://www.hackers-arise.com/single-post/2016/05/27/Splunk-for-Security-Monitoring-Part-1)

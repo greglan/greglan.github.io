@@ -20,10 +20,14 @@ summary: "Various links to good security articles or interesting things to look 
 * [Collection of CVEs exploits](https://github.com/niklasb/sploits)
 * [Zombieload attack](https://zombieloadattack.com/)
 * [MDS hadware vulnerability in Intel CPUs](https://mdsattacks.com/)
+* [Password-Protected Reverse Shell ARM Linux shellcode](https://medium.com/syscall59/shellcode-for-iot-a-password-protected-reverse-shell-linux-arm-a18fcda4853b)
 
-## General
+## Reversing
 * [PE format](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
 * [Distinguishing between encrypted and compressed data](http://www.devttys0.com/2013/06/differentiate-encryption-from-compression-using-math/)
+* [Practical binary analysis book](https://practicalbinaryanalysis.com/file/pba-toc.pdf)
+
+## General
 * [Hackndo](https://beta.hackndo.com/archives/)
 * [Bios wiki](https://teambi0s.gitlab.io/bi0s-wiki/)
 * [Virgil](https://booj.gitbook.io/virgil/)
@@ -43,3 +47,4 @@ summary: "Various links to good security articles or interesting things to look 
 * [Hexcellents wiki](http://security.cs.pub.ro/hexcellents/wiki/home)
 * [FuzzySecurity tutorials](https://www.fuzzysecurity.com/tutorials.html)
 * [OSIRIS Lab](https://github.com/osirislab/Hack-Night)
+* [OSINT](https://www.hackers-arise.com/osint)
