@@ -48,3 +48,6 @@ summary: "Various links to good security articles or interesting things to look 
 * [FuzzySecurity tutorials](https://www.fuzzysecurity.com/tutorials.html)
 * [OSIRIS Lab](https://github.com/osirislab/Hack-Night)
 * [OSINT](https://www.hackers-arise.com/osint)
+* [STICC 2019 presentations](https://www.sstic.org/2019/programme/)
+* [XML external entity injection](https://portswigger.net/web-security/xxe)
+* [Web security](https://portswigger.net/web-security)

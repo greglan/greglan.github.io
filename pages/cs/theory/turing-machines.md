@@ -56,8 +56,14 @@ in $$\Mcal$$
 ### Equivalence with multi tape machines
 ### Equivalence with deterministic Turing machines
 ### Church-Turing thesis
-* *A function on the natural numbers can be calculated by an effective method, if
- and only if it is computable by a Turing machine*
+* Church-Turing thesis: anything that can be computed can be computed by a
+  Turing machine
+* Strong Church-Turing thesis: anything that can be computed can be computed
+  efficiently by a Turing machine
+* Physical Church-Turing thesis: anything that can be computed by a physical
+  system can be computed by a Turing machine
+* Strong physical Church-Turing thesis: anything that can be computed by a physical
+  system can be computed efficiently by a Turing machine
 * Relation to $$\lambda$$-calculus and general recursive functions
 
 

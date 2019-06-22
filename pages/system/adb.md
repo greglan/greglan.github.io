@@ -11,6 +11,10 @@ adb shell
 
 adb install appname.apk
 adb push appname.apk /data/app
+adb shell "pm list packages -f test"
+adb monkey -p com.package.name -v 500
+adb am start -n com.package.name/.MainActivity
+adb am start -n com.package.name/com.package.name.ActivityName
 adb pull /data/app/appname.apk
 
 cd data/app

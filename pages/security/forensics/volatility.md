@@ -22,9 +22,11 @@ summary: "Review of Volatility and some plugins"
 * dumpfiles: TODO
 * envars: show the processes' envars
 * hashdump: returns the hashes of the domain credentials
+* Find the Windows hostname: *envars* plugin grepped with `COMPUTERNAME`
 
 ## Resources and references
 * [Volatility wiki](https://github.com/volatilityfoundation/volatility/wiki)
 * [Teambios wiki](https://teambi0s.gitlab.io/bi0s-wiki/forensics/volatility/)
 * [Article on hackers-rise.com](https://www.hackers-arise.com/single-post/2016/09/27/Digital-Forensics-Part-2-Live-Memory-Acquisition-and-Analysis)
 * [Extracting hostnames](https://www.aldeid.com/wiki/Volatility/Retrieve-hostname)
+* [Malware hunting](https://technical.nttsecurity.com/post/102egyy/hunting-malware-with-memory-analysis)
