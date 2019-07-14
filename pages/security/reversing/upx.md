@@ -8,8 +8,9 @@ summary: "A guide to UPX and its manual unpacking"
 
 ## UPX algorithm
 ### Packing
-* Creates `UPX0, UPX1` and `UPX2` sections. Good indicator that the file is packed with UPX
-* Very few imports: good indicator that the file is packed
+* Creates `UPX0, UPX1` and `UPX2` sections
+* Very few imports
+* Previous points: good indicators that the file is packed
 
 ### Unpacking
 * Execution start at the new EP

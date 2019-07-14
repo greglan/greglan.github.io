@@ -50,3 +50,4 @@ $$
 * [Cellular automaton on Wikipedia](https://en.wikipedia.org/wiki/Cellular_automaton)
 * [Elementary cellular automaton on Wikipedia](https://en.wikipedia.org/wiki/Elementary_cellular_automaton)
 * [*Pablo Arrighi, Giuseppe Di Molfetta, Nathanaël Eon*, A gauge-invariant reversible cellular automaton](https://arxiv.org/abs/1802.07644)
+* [Computation, Dynamics and the Phase-Transition by Jeremy Avnet](https://theory.org/complexity/cdpt/html/cdpt.html)

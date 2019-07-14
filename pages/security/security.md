@@ -21,11 +21,32 @@ summary: "Various links to good security articles or interesting things to look 
 * [Zombieload attack](https://zombieloadattack.com/)
 * [MDS hadware vulnerability in Intel CPUs](https://mdsattacks.com/)
 * [Password-Protected Reverse Shell ARM Linux shellcode](https://medium.com/syscall59/shellcode-for-iot-a-password-protected-reverse-shell-linux-arm-a18fcda4853b)
+* [Introduction to AFL](https://m.habr.com/en/company/dsec/blog/449134/)
+* [Collection of vulnerable binaries](https://github.com/atxsinn3r/VulnCases)
+* [LLVM sanitizer tutorial](https://github.com/trailofbits/llvm-sanitizer-tutorial)
+* [EFI exploitation](https://m.habr.com/ru/post/446238/)
+* [Bugbounty targets](https://nedwill.github.io/blog/jekyll/update/2019/04/08/picking-a-target.html)
+* [Apache CVE poc](https://github.com/cfreal/exploits/tree/master/CVE-2019-0211-apache)
 
 ## Reversing
 * [PE format](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
 * [Distinguishing between encrypted and compressed data](http://www.devttys0.com/2013/06/differentiate-encryption-from-compression-using-math/)
 * [Practical binary analysis book](https://practicalbinaryanalysis.com/file/pba-toc.pdf)
+* [EFI reversing serie](https://erfur.github.io/down_the_rabbit_hole_pt1/)
+* [Cracking IDA's installer](https://devco.re/blog/2019/06/21/operation-crack-hacking-IDA-Pro-installer-PRNG-from-an-unusual-way-en/)
+* [Ghidra plugin for crypto](https://github.com/d3v1l401/FindCrypt-Ghidra/blob/master/README.md)
+* [Unicorn Engine tutorial](http://eternal.red/2018/unicorn-engine-tutorial/)
+* [A blog about reversing](https://rohailaone.home.blog/)
+
+### Malware
+* [Analysis of Gootkit](https://connect.ed-diamond.com/MISC/MISC-100/Analyse-du-malware-bancaire-Gootkit-et-de-ses-mecanismes-de-protection)
+* [PE-sieve](https://github.com/hasherezade/pe-sieve) [and Hollows Hunter tools](https://github.com/hasherezade/hollows_hunter)
+* [mXtract tool](https://github.com/rek7/mXtract)
+* [Smokeloader](https://research.checkpoint.com/2019-resurgence-of-smokeloader/)
+
+## Web
+* [Web security](https://portswigger.net/web-security)
+* [XML External Entity injections](https://portswigger.net/web-security/xxe)
 
 ## General
 * [Hackndo](https://beta.hackndo.com/archives/)
@@ -49,5 +70,8 @@ summary: "Various links to good security articles or interesting things to look 
 * [OSIRIS Lab](https://github.com/osirislab/Hack-Night)
 * [OSINT](https://www.hackers-arise.com/osint)
 * [STICC 2019 presentations](https://www.sstic.org/2019/programme/)
-* [XML external entity injection](https://portswigger.net/web-security/xxe)
-* [Web security](https://portswigger.net/web-security)
+* [Archwiki on Security](https://wiki.archlinux.org/index.php/Security)
+* [Social engineering](https://www.social-engineer.org/framework/general-discussion/)
+* [Open security training](http://opensecuritytraining.info/)
+* [Guide to reversing](http://www.hexacorn.com/blog/2019/04/11/reversing-w-o-reversing-how-to-become-alex-in-practice/)
+* [Commando VM](https://github.com/fireeye/commando-vm)

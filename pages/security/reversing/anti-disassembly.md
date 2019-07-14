@@ -77,3 +77,5 @@ normal_code:
 
 ## Resources and references
 * Practical Malware Analysis, Chapter 15
+* [Anti-debugging with ptrace](https://www.aldeid.com/wiki/Ptrace-anti-debugging)
+* [Two solutions to ptrace anti-debug](https://aaronyoo.github.io/ptrace-anti-debug.html)
