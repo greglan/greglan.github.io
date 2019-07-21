@@ -27,6 +27,13 @@ summary: "Various links to good security articles or interesting things to look 
 * [EFI exploitation](https://m.habr.com/ru/post/446238/)
 * [Bugbounty targets](https://nedwill.github.io/blog/jekyll/update/2019/04/08/picking-a-target.html)
 * [Apache CVE poc](https://github.com/cfreal/exploits/tree/master/CVE-2019-0211-apache)
+* [Reverse shell tool using OpenSSL](https://github.com/TheSecondSun/Revssl)
+* [OpenSSL reverse shell tutorial](https://medium.com/@int0x33/day-43-reverse-shell-with-openssl-1ee2574aa998)
+* [Examples of bug bounty scenarios](https://medium.com/a-bugz-life/the-bugs-are-out-there-hiding-in-plain-sight-12d056613ea3)
+* [Tips about bug bounties](https://gynvael.coldwind.pl/?id=659)
+* [Use after free POC in Windows](https://cpr-zero.checkpoint.com/vulns/cprid-2129/)
+* [Pwndbg plugin for GDB](https://github.com/pwndbg/pwndbg)
+* [Writeup of a Dell local escalation vulnerability](https://d4stiny.github.io/Local-Privilege-Escalation-on-most-Dell-computers/)
 
 ## Reversing
 * [PE format](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
@@ -37,12 +44,19 @@ summary: "Various links to good security articles or interesting things to look 
 * [Ghidra plugin for crypto](https://github.com/d3v1l401/FindCrypt-Ghidra/blob/master/README.md)
 * [Unicorn Engine tutorial](http://eternal.red/2018/unicorn-engine-tutorial/)
 * [A blog about reversing](https://rohailaone.home.blog/)
+* [Tips about reversing](https://gynvael.coldwind.pl/?id=664)
+* [Windows doc in the PE format](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format)
+* [Compiler Explorer](https://godbolt.org/)
+* [Many file formats illustrated](https://github.com/corkami/pics/tree/master/binary)
 
 ### Malware
 * [Analysis of Gootkit](https://connect.ed-diamond.com/MISC/MISC-100/Analyse-du-malware-bancaire-Gootkit-et-de-ses-mecanismes-de-protection)
 * [PE-sieve](https://github.com/hasherezade/pe-sieve) [and Hollows Hunter tools](https://github.com/hasherezade/hollows_hunter)
 * [mXtract tool](https://github.com/rek7/mXtract)
 * [Smokeloader](https://research.checkpoint.com/2019-resurgence-of-smokeloader/)
+* [Process Hacker tool](https://processhacker.sourceforge.io/)
+* [Process Explorer tool](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+* [process Monitor tool](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
 
 ## Web
 * [Web security](https://portswigger.net/web-security)
@@ -75,3 +89,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Open security training](http://opensecuritytraining.info/)
 * [Guide to reversing](http://www.hexacorn.com/blog/2019/04/11/reversing-w-o-reversing-how-to-become-alex-in-practice/)
 * [Commando VM](https://github.com/fireeye/commando-vm)
+* [Microsoft Message Analyzer tool](https://www.microsoft.com/en-us/download/details.aspx?id=44226)
+* [Some tips](https://outoftheheap.com/tricks.php)
+* [TOCTOU attacks](https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use)
+* [Collection of short security articles](https://medium.com/@int0x33)

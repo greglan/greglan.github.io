@@ -39,3 +39,8 @@ summary: "A libvirt/virsh cheatsheet"
 
 ### Other VMs
 * Separate isolated network
+
+
+## Resources and references
+* [Snapshot backing with qcow2 format](https://dustymabe.com/2015/01/11/qemu-img-backing-files-a-poor-mans-snapshotrollback/)
+* [Guide to snapshot with qcow2](http://azertech.net/content/kvm-qemu-qcow2-qemu-img-and-snapshots)

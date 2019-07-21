@@ -16,4 +16,4 @@ summary: ""
 * [1] *Nielsen & Chuang*, Quantum computation and quantum information
 * [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
-* [4] [Wikipedia article](https://en.wikipedia.org/wiki/Grover%27s_algorithm)
+* [4] [Wikipedia article](https://en.wikipedia.org/wiki/Shor%27s_algorithm)

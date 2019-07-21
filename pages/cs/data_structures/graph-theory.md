@@ -26,7 +26,12 @@ summary: "Definitions, analysis and properties of graphs"
 * [Clustering coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient):
 measure of the degree to which nodes in a graph tend to cluster together
 
+### Other
+* Density $$\rho = \frac{||G||}{}
+
 ## Properties
+* $$d(v_i) = \sum_{j=1}^n a_{ij}$$
+* $$\sum_{v \in V} d(v) = 2 ||G||$$
 
 
 ## Resources and references

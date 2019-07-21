@@ -12,17 +12,18 @@ mainly the page about [quantum complexity theory](/quantum-complexity.html).
 Future things to study and/or write about:
 * Fibonacci heaps
 * Red black trees
-* KD trees
-*	Lemme de l'étoile.
-*	Lemme d'Arden.
-*	Focntion de transition étendue.
-*	Automates produits.
-*	Automate racine.
+* Union find
+* Lemme de l'étoile.
+* Lemme d'Arden.
+* Fonction de transition étendue.
+* Automates produits.
+* Automate racine.
 
 ## Useful links and resources
 * [Cool stuff to do](https://github.com/donnemartin/data-science-ipython-notebooks)
 * [Recursivity vs Reentrancy](https://fr.wikipedia.org/wiki/R%C3%A9entrance)
 * [Quantum and machine learning](https://towardsdatascience.com/neural-quantum-states-4793fdf67b13)
+* [Hypervisor developement](https://revers.engineering/7-days-to-virtualization-a-series-on-hypervisor-development/)
 
 ### Tools
 * [VIM tutorial](https://www.linux.com/LEARN/VIM-101-BEGINNERS-GUIDE-VIM)

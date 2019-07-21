@@ -41,3 +41,4 @@ summary: "A guide to UPX and its manual unpacking"
 * [POPA/POPAD instructions](https://c9x.me/x86/html/file_module_x86_id_249.html)
 * [PUSHA/PUSHAD instructions](https://c9x.me/x86/html/file_module_x86_id_270.html)
 * [Dumping an EXE using x32dbg](https://www.unknowncheats.me/forum/general-programming-and-reversing/211590-dump-exe-file-using-x32dbg.html)
+* [Many unpacking tutorials](https://tuts4you.com/download/category/11//)

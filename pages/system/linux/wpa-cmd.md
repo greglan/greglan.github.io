@@ -19,4 +19,5 @@ sudo dhclient wlan0
 
 ## nmcli
 * List available networks : `nmcli device wifi list`
+* Connect to `$ESSID` using `$password`: `nmcli device wifi connect $ESSID password $password`
 * Delete saved connection: `nmcli connection delete name`
