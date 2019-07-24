@@ -1,7 +1,9 @@
 ---
 layout: page
 title:  "General Windows setup guide"
-summary: "A guide for setting up a Windows system. Some sections may be skipped depending on the kind of usage the installation is for and the hardware it runs on"
+summary: "A guide for setting up a Windows system. Some sections may be skipped
+depending on the kind of usage the installation is for and the hardware it runs
+on"
 tags: [system, windows]
 permalink: "windows-setup.html"
 ---
@@ -11,7 +13,9 @@ permalink: "windows-setup.html"
 * (Wipe previous install and reinstall it: removes preinstalled bloatwares.)
 * No Microsoft account
 * Verify partition alignment
-* Windows and drivers updates. Performing drivers updates first will prevent Windows from trying to install potentially better but still obsolete drivers than the one natively installed
+* Windows and drivers updates. Performing drivers updates first will prevent
+Windows from trying to install potentially better but still obsolete drivers
+than the one natively installed
 * Follow the "Security measures" section below
 * Update drivers
 * Update BIOS
@@ -19,7 +23,8 @@ permalink: "windows-setup.html"
 * Disable Pre-and Superfetch
 * Start installing softwares
 * Setup explorer to open on "Computer"
-* Disable automatic pinning of frequently used items in "quick access"
+* Disable automatic pinning of frequently used items in "quick access" and
+unzip the items already pinned
 * Display extensions
 * Disable Pagefile
 * Disable Hibernation

@@ -41,6 +41,26 @@ summary: "A libvirt/virsh cheatsheet"
 * Separate isolated network
 
 
+## Setting up a Windows 10 VM
+* Download the Virtio drivers from [here](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads)
+* Setup Virtio disk and Virtio ethernet adapter
+* Add two CDROMs, one for the Windows ISO, the other for the Virtio drivers ISO
+* Start install. Choose Windows Pro (more features such as RDP)
+* Choose custom install. Choose *Load Drivers*. For each of the driver below,
+select *Browser* and goto *disk:/driver_name/w10/amd64*:
+  - *viostor* to detect the disk
+  - *qxldod* for display
+  - *NetKVM* for network
+  - *vioser/qemupciserial* for QEMU/guest communication
+  - Optionally *guest-agent*
+ * Process to install.
+ * Once rebooted, choose the correct region.
+ * Update
+
+
 ## Resources and references
 * [Snapshot backing with qcow2 format](https://dustymabe.com/2015/01/11/qemu-img-backing-files-a-poor-mans-snapshotrollback/)
 * [Guide to snapshot with qcow2](http://azertech.net/content/kvm-qemu-qcow2-qemu-img-and-snapshots)
+* [Reclaiming qcow2 space](https://www.jamescoyle.net/how-to/323-reclaim-disk-space-from-a-sparse-image-file-qcow2-vmdk)
+* [Short descriptions of the Virtio drivers](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-iso-contents)
+* [Virtio Balloon driver](https://rwmj.wordpress.com/2010/07/17/virtio-balloon/)

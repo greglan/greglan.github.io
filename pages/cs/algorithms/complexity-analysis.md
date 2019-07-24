@@ -27,10 +27,15 @@ Given $$ T(n)=aT\left({\frac {n}{b}}\right)+O(n^{k})$$ for $$a \geq 1$$ , $$b > 
 * If $$ a=b^{k}$$, then $$T(n)=O(n^{k}\cdot \log n)$$ (steady state)
 * If $$ a>b^{k}$$, then $$T(n)=O(n^{\log_{b}a} )$$ (bottom heavy)
 
-## Binary search
+
+## Examples
+* Gauss reduction: $$O(n^3)$$
+* GCD of $$a$$ and $$b$$: $$O(\log a + b)$$
+
+### Binary search
 * Master theorem (approximative): $$T(n) = \Theta(\log n )$$
 * Real complexity: $$1 + \lfloor \log_2(n) \rfloor$$
 
-## Gauss reduction
 
-## GCD
+## Resources and references
+* [Complexity of the Gauss reduction](https://en.wikipedia.org/wiki/Gaussian_elimination#Computational_efficiency)

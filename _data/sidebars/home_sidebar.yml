@@ -297,10 +297,6 @@ entries:
           url: /computability.html
           output: web
 
-        - title: Pi calculus
-          url: /pi-calculus.html
-          output: web
-
         - title: Formal logic
           url: /formal-logic.html
           output: web
@@ -455,7 +451,7 @@ entries:
       output: web
 
     - title: Wireshark
-      url: /wirehark.html
+      url: /wireshark.html
       output: web
 
     - title: Proxies and cie

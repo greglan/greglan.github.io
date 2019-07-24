@@ -17,7 +17,8 @@ $$
 
   The cells are numbered using an integer $$i \in \Z$$
 * States of cells in finite set $$\Sigma$$
-* Configuration: function $$c: \Z^d \to \Sigma$$, that returns for each cell its state
+* Configuration: function $$c: \Z^d \to \Sigma$$, that returns for each cell its
+state
 * Global evolution: $$F: \Sigma^{\Z^d} \to \Sigma^{\Z^d}$$. In other words, a
   global evolution is a mapping from one configuration function to another.
   Describes the evolution in time of the cellular automaton
@@ -41,13 +42,17 @@ $$
 * Symmetry
 * There is a decomposition of $$F$$ in subcircuits.
 * A cellular automaton is Turing-complete
-* In an elementary cellular automaton, some rules are Turing complete, others are not
-
-## Gauge-invariant cellular automata
+* In an elementary cellular automaton, some rules are Turing complete, others
+are not
+* Rule 110 is Turing-complete
 
 
 ## Resources and references
-* [Cellular automaton on Wikipedia](https://en.wikipedia.org/wiki/Cellular_automaton)
-* [Elementary cellular automaton on Wikipedia](https://en.wikipedia.org/wiki/Elementary_cellular_automaton)
-* [*Pablo Arrighi, Giuseppe Di Molfetta, Nathanaël Eon*, A gauge-invariant reversible cellular automaton](https://arxiv.org/abs/1802.07644)
-* [Computation, Dynamics and the Phase-Transition by Jeremy Avnet](https://theory.org/complexity/cdpt/html/cdpt.html)
+* [Cellular automaton on Wikipedia](https://en.wikipedia.org/wiki/Cellular_autom
+    aton)
+* [Elementary cellular automaton on Wikipedia](https://en.wikipedia.org/wiki/Ele
+    mentary_cellular_automaton)
+* [*Pablo Arrighi, Giuseppe Di Molfetta, Nathanaël Eon*, A gauge-invariant
+reversible cellular automaton](https://arxiv.org/abs/1802.07644)
+* [Computation, Dynamics and the Phase-Transition by Jeremy Avnet](https://
+theory.org/complexity/cdpt/html/cdpt.html)

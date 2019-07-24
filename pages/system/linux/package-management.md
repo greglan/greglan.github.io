@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Package management cheatsheet"
-permalink: "packages-management.html"
+permalink: "package-management.html"
 summary: "Some useful commands when dealing with packages"
 tags: [linux]
 ---

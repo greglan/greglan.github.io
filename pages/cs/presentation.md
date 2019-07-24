@@ -31,3 +31,8 @@ Future things to study and/or write about:
 * [Difference between VI and VIM](https://askubuntu.com/questions/418396/what-is-the-difference-between-vi-and-vim)
 * [VIM tips](https://vim.fandom.com/wiki/Best_Vim_Tips)
 * [VIM and sudo trick](https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work)
+
+### Pi calculus
+* [A good introduction](http://frapu.de/bpm/piintro.html)
+* [Another introduction with more context](https://scienceblogs.com/goodmath/2007/04/16/back-to-calculus-a-better-intr-1)
+* [Wikipedia article](https://en.wikipedia.org/wiki/%CE%A0-calculus)
