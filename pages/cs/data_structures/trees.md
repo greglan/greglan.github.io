@@ -7,7 +7,7 @@ summary: "Definitions, properties and common algorithms on trees"
 ---
 
 ## Definitions
-* **Using graph formalism**: directed graph *T=(V,E)* where vertices are the nodes of the tree and edges of the form *(x,y)* where *y* is the child of *x*
+* **Using graph formalism**: directed graph $$T=(V,E)$$ where vertices are the nodes of the tree and edges of the form $$(x,y)$$ where $$y$$ is the child of $$x$$
 * **Recursive definition**
 * Arbre enraciné: arbre possèdant une racine et orienté, c'est à dire muni d'une hiérarchie. (conception usuelle).
 *	**Root**: only node which doesn't have a parent
@@ -15,14 +15,14 @@ summary: "Definitions, properties and common algorithms on trees"
 *	Noeud interne.
 *	Degré d'un noeud: nombre de fils.
 *	Arité : Maximum des degrés.
-*	Arbre $n$-aire : arbre d'arité $n$.
+*	Arbre $$n$$-aire : arbre d'arité $n$.
 *	Taille d'un arbre : nombre de ses noeuds internes (y compris la racine)
 *	Profondeur d'un noeud : nombre de noeuds le séparant de la racine (en comptant le noeud en question). Convention: racine de profondeur 0.
 *	Hauteur d'un arbre : profondeur maximale de ses noeud.
 *	Full binary tree / Arbre binaire localement complet: binary tree where every nodes have 0 or 2 children
 *	Perfect binary tree / Arbre binaire complet: arbre localement complet dont toutes les feuilles sont à la même hauteur. De manière équivalente, l'arbre est rempli de la gauche vers la droite.
 *	Arbre dégénéré ou filiforme : chaque noeud possède 1 ou 0 fils.
-*	**Forest**: set of *n* trees
+*	**Forest**: set of $$n$$ trees
 *	Arbre equilibré au sens AVL : pour tout noeud $n$, les hauteurs des sous-arbres gauche et droit de $n$ différent d'au plus 1.
 
 

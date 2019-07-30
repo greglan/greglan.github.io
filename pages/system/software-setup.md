@@ -40,6 +40,7 @@ permalink: "software-setup.html"
 * Cookies module
 * HTTPS everywhere module
 * Noscript module
+* Proxy changer: [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) module
 
 
 ### Chrome

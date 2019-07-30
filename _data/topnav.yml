@@ -53,9 +53,9 @@ topnav_dropdowns:
           url: /tag_electronics.html
 
 ## Topnav single links
-topnav:
-- title: Topnav
-  items:
-
-    - title: About
-      url: /about.html
+# topnav:
+# - title: Topnav
+#   items:
+#
+#     - title: About
+#       url: /about.html
