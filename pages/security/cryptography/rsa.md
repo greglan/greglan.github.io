@@ -9,15 +9,22 @@ $$
 \newcommand{\P}{\mathbb{P}}
 $$
 
-## Principle
-* Message $$m$$
-* Modulus $$n$$
-* Public key exponent:$$e$$
-* Public key: $$(n, e)$$
-* Private key exponent $$d$$
-* Private key: $$(n, d)$$
+## Introduction
+* RSA: Rivest Shamir Adleman
+* Designed in 1977
+* First public-key encryption scheme
+* Can also be used for digital signing
 
-$$m^{ed} \equiv m \mod n$$
+## Principle
+* Message $$m$$, cipher text $$c$$
+* Modulus $$n = pq$$ with $$p,q \in \P$$
+* Public key exponent: $$e$$ (inverse of the private key exponent)
+* Public key: $$(n, e)$$
+* Private key exponent $$d$$ (inverse of the public key exponent)
+* Private key: $$(n, d)$$
+* Encryption of plaintext: $$c = m^e \mod n$$
+* Decryption of cipher text: $$c^d \mod n = m^{ed} \mod n = m \mod n$$
+
 
 ## Key generation
 * Choose $$p, q \in \P$$

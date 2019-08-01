@@ -8,7 +8,7 @@ summary: ""
 
 ## Introduction
 * Allows to find a secret key stored on a device
-* Requires a traces of power consumption for different plaintexts
+* Requires traces of power consumption for different plaintexts
 * Steps:
   - Design a model of the device's power consumption at one specific point in the encryption algorithm
   - Consider every possible option for the subkey. For each guess and each trace, use the known plaintext and the guessed subkey to calculate the power consumption according to the model.

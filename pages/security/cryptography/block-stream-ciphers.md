@@ -20,11 +20,15 @@ encrypted several times
   Depending on the mode, should also be random
 * Padding
 
-### ECB mode
+### Electronic Codebook (ECB) mode
 * Each block of data is encrypted separately
 * Drawback: lacks the diffusion property because the same plaintext result in the
  same ciphertext. Hence, data patterns are not well-hidden
-* Not reliable for use
+* Not reliable for use: compare
+[this image](https://en.wikipedia.org/wiki/File:Tux.jpg) encrypted with
+[ECB mode](https://en.wikipedia.org/wiki/File:Tux_ecb.jpg) and another
+[more secure mode](https://en.wikipedia.org/wiki/File:Tux_secure.jpg)
+
 
 ### Cipher Block Chaining (CBC) mode
 * Each block of plaintext is XORed with the previous ciphertext block before being encrypted
@@ -33,7 +37,7 @@ encrypted several times
 * Drawbacks: encryption can't be serialized, susceptible to padding oracle attacks such as POODLE
 
 ### Output Feedback (OFB) mode
-* Principle: generate keystream blocks to XOR with the plaintexts. Bascially acts like a stream cipher 
+* Principle: generate keystream blocks to XOR with the plaintexts. Bascially acts like a stream cipher
 * Advantage: allows some error correcting codes to work when applied before encryption
 * Drawback: no parallel decryption possible
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Some cryptography concepts"
-permalink: "concepts.html"
+permalink: "introduction.html"
 tags: [security, cryptography]
 summary: "Presentation of some basic concepts of cryptography"
 ---
@@ -36,6 +36,9 @@ and OpenPGP. Public domain
 ### Asymmetric encryption
 * Around 1000 times slower that symmetric encryption. Advantage: good for
 sharing keys
+* Trapdoor function: function that takes a number $$x$$ to another number
+$$y$$ in the same range such that computing $$x \to y$$ is easy but $$y \to x$$
+is practically impossible without the private key [1, p182]
 * Diffie-Hellman: allows to generate keys without having to exchange the keys
 * RSA: by Rivest, Shamir, and Adleman. Uses factorization of very large prime
 numbers as the relationship between the two keys
@@ -54,15 +57,28 @@ numbers as the relationship between the two keys
  deprecated for that purpose
 
 ## Cryptanalysis
-### Passive techniques
+* Kerckhoff's principle: the security of the cipher should rely only on the key,
+and not on the secrecy of the cipher.
+
+### Black box models [1, p11]
+#### Passive techniques
 * Ciphertext only attacks. Very low chances of a successful cryptanalysis
 * Known plaintext attacks. Example of vulnerable ciphers: PKZIP, XOR
 
-### Active attacks
+#### Active attacks
 * Chosen plaintext attacks: the attacker can encrypt at will
 * Chosen cipher text attacks: the attacker can both encrypt and decrypt at will
+
+### Grey box models [1, p12]
+* Assume access to the cipher's implementation
+* Side channel: source of information that depends on the implementation of the
+ciphers (time, power consumption, noise...)
+* Side channel attacks: non-invasive. Don't alter the operation of the cipher
+* Invasive attacks: more advanced and powerful. Requires special equipment
+(laser fault injections, chip reversing...)
 
 ## Resources and references
 * [Confusion and diffusion properties](https://en.wikipedia.org/wiki/Confusion_and_diffusion)
 * [Attack models fro cryptanalysis](https://www.hackers-arise.com/single-post/2019/04/30/Cryptography-Basics-Part-2-Attack-Models-for-Cryptanalysis)
 * [Cryptography basics](https://www.hackers-arise.com/cryptography-basics)
+* [1] *Jean-Philippe Aumasson*, Serious Cryptography
