@@ -93,3 +93,4 @@ summary: "Various links to good security articles or interesting things to look 
 * [Some tips](https://outoftheheap.com/tricks.php)
 * [TOCTOU attacks](https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use)
 * [Collection of short security articles](https://medium.com/@int0x33)
+* [GTFO](https://www.alchemistowl.org/pocorgtfo/)

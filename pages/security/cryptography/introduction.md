@@ -78,7 +78,8 @@ ciphers (time, power consumption, noise...)
 (laser fault injections, chip reversing...)
 
 ## Resources and references
+* [1] *Jean-Philippe Aumasson*, Serious Cryptography
 * [Confusion and diffusion properties](https://en.wikipedia.org/wiki/Confusion_and_diffusion)
 * [Attack models fro cryptanalysis](https://www.hackers-arise.com/single-post/2019/04/30/Cryptography-Basics-Part-2-Attack-Models-for-Cryptanalysis)
 * [Cryptography basics](https://www.hackers-arise.com/cryptography-basics)
-* [1] *Jean-Philippe Aumasson*, Serious Cryptography
+* [A crypto cheatsheet](https://pequalsnp-team.github.io/cheatsheet/crypto-101)

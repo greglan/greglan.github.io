@@ -34,10 +34,12 @@ problem. Be able to recognize them. NP-completeness.
 * Object-oriented design
 * Test-driven development
 * Scaling the above algorithms to the point where their memory constraints are
-violated (e.g., sorting a list too big to contain in memory; finding the most common character in a string too big to contain in memory; etc.).
+violated (e.g., sorting a list too big to contain in memory; finding the most
+    common character in a string too big to contain in memory; etc.).
 
 # Operating systems
-* Learn everything in the [system section](tag_system.html). Most notably, everything related to architectures and operating systems.
+* Learn everything in the [system section](tag_system.html). Most notably,
+everything related to architectures and operating systems.
 * Processes, threads. Resources for each.
 * Context switching. Initiation by the OS and the hardware. Scheduling basics.
 * Concurrency issues. Locks, mutexes, semaphores, monitors and how they work.
@@ -47,16 +49,19 @@ Deadlocks and livelocks. How to avoid them ?
 
 # Security
 * Learn everything in the [security section](tag_security.html)
-* For an hardware security job, looking at the [electronics section](tag_electronics.html) might be useful
+* For an hardware security job, looking at the
+[electronics section](tag_electronics.html) might be useful
 * Read security articles: KrebsOnSecurity. Know what's going on in the industry
 * Lingo: dictionaries of security acronyms. "25 most used cyber security
 buzzwords" or "most important cyber security acronyms". Idea of what SIEM, AD,
-and SOC are. Common buzzword analysis [here](https://medium.com/@kshortridge/infosec-startup-buzzword-bingo-2019-edition-d067fb1316cb)
+and SOC are. Common buzzword analysis
+[here](https://medium.com/@kshortridge/infosec-startup-buzzword-bingo-2019-edition-d067fb1316cb)
 * Most used security tools and softwares. Companies involved in development.
 
 # Others
 * Combinatorics, probabilities basics. n-choose-k problems
 * Choose uniformly random element from list without knowing its length
-* Compute nth Fibonacci number in logarithmic time using matrix exponentiation, etc.).
+* Compute nth Fibonacci number in logarithmic time using matrix exponentiation,
+etc.).
 * Configuration of several HTTP servers
 * Knowledge of hypervisors

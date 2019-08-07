@@ -43,3 +43,8 @@ for i in range(0, len(LSBs), 8):  # Print byte-per-byte, so 8 bits steps
 * [LSB encoding tool](https://github.com/RobinDavid/LSB-Steganography)
 * [Null cipher](https://www.geeksforgeeks.org/null-cipher/)
 * [OCR in Python](https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/)
+* [Binwalk, PNG files and Zlib](https://security.stackexchange.com/questions/144530/what-to-do-with-output-files-from-binwalk)
+* [Comprehensive guide to image steganography](https://pequalsnp-team.github.io/cheatsheet/steganography-101)
+* [Some stega writeups](https://0day.work/sunshine-ctf-2016-writeups/)
+* [A writeup about a PNG stega chall](https://blog.rootshell.be/2015/04/29/hack-in-paris-challenge-wrap-up/)
+* [Collection of techniques](https://www.reddit.com/r/crypto/comments/5l2i40/detecting_png_steganography/)

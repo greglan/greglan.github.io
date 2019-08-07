@@ -34,3 +34,4 @@ In each command, we skip precising the input file for clarity.
 ## Other
 * Replace 'a' char by 'b' and output the result on stdout: `tr 'a' 'b' < input.txt`
 * [cut examples](https://www.thegeekstuff.com/2013/06/cut-command-examples/)
+* [Sed examples](http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html)

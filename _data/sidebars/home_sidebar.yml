@@ -139,6 +139,10 @@ entries:
           url: /rsa.html
           output: web
 
+        - title: Hashes
+          url: /hashes.html
+          output: web
+
         - title: Message Authentication Codes
           url: /mac.html
           output: web

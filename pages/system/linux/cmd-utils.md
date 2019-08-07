@@ -83,3 +83,4 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 * ps
 * finger
 * mail
+* [Hard links](https://bertvv.github.io/notes-to-self/2015/10/18/the-number-of-hard-links-in-ls--l/)

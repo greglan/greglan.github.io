@@ -24,6 +24,20 @@ summary: "Structure of ELF files and useful commands"
 ![memory-map](/images/binary-memory-map.svg)
 
 
+
+## Relocation [2]
+* Process of connecting symbolic references with symbolic definitions
+* Call to a function points to the PLT
+* PLT: resolve the function's real address at runtime
+
+### Position Independent Executables (PIE)
+* Randomizes text and PLT/GOT sections. Consequence: no static locations
+* Libraries are PIC. Always randomized, even without PIE
+* [Article about x86 PIC](https://ewontfix.com/18/)
+* [What is *get_pc_thunk_bx*](https://stackoverflow.com/questions/6679846/what-is-i686-get-pc-thunk-bx-why-do-we-need-this-call)
+* [PIC utility function in x86](https://reverseengineering.stackexchange.com/questions/20826/how-does-the-x86-instruction-call-135b-x86-get-pc-thunk-ax-work)
+
+
 ## Tools
 * Addresses of symbols: `nm`
 * Debugging information: `objdump -g`
@@ -38,8 +52,8 @@ summary: "Structure of ELF files and useful commands"
 
 ## Resources and references
 * [ELF format](https://greek0.net/elf.html)
-* [ELF relocation](https://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html)
+* [[2] ELF relocation](https://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html)
+* [Global Offset tables](http://bottomupcs.sourceforge.net/csbu/x3824.htm)
+* [Program startup in Linux](http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html)
 * [ELF analysis](https://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/)
 * [Another article on ELFs](http://fluxius.handgrep.se/2011/10/20/the-art-of-elf-analysises-and-exploitations/)
-* [Program startup in Linux](http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html)
-* [Global Offset tables](http://bottomupcs.sourceforge.net/csbu/x3824.htm)
