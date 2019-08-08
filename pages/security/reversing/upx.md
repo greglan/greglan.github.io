@@ -7,33 +7,33 @@ summary: "A guide to UPX and its manual unpacking"
 ---
 
 ## UPX algorithm
-### Packing
-* Creates `UPX0, UPX1` and `UPX2` sections
+### Fingerprint
+* `UPX0, UPX1` and `UPX2` sections
 * Very few imports
-* Previous points: good indicators that the file is packed
+* Recognized by PEiD
 
-### Unpacking
+### Unpacking process
 * Execution start at the new EP
-* Registers saved using `PUSHAD`
+* Registers saved using `PUSHAD/PUSHA`
 * Unpacking stub executed and program decompressed
 * Resolve the IAT of the decompressed program
-* Registers restored using `POPAD`
+* Registers restored using `POPAD/POPA`
 * Jump to unpacked code (OEP)
 
 ## Manual unpacking
-* Find the OEP
-* Break at OEP and dump file
-* Fix the IAT
-
 ### Finding the OEP
 * After `PUSHAD` and `POPAD`, jmp to OEP
 * Hardware breakpoint method
+* Stepping
 
 ### Dumping the file
-* Ollydbg using plugin
-* x32/x64dbg
+* Breakpoint at OEP
+* Ollydbg using the OllyDmp plugin
+* x32/x64dbg with the built-in Scylla plugin
 
 ### Fixing the IAT
+* Can be done using ImportREC, or automatically with the Scylla plugin for
+x32/x64dbg
 
 ## Resources and references
 * [Manual unpacking of UPX](https://securityxploded.com/unpackingupx.php)
