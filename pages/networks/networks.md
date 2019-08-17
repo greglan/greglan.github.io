@@ -19,6 +19,9 @@ permalink: "index-networks.html"
 * Definition of a router
 * GIX: Global Internet eXchange. France IX in France. Neutral internet exchange point
 
+## Useful commands
+* List listening ports: `ss -antp`
+
 
 ## Resources and references
 * [Ethernet overview](https://searchnetworking.techtarget.com/definition/Ethernet)

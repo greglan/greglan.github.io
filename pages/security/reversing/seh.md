@@ -28,4 +28,5 @@ summary: ""
 ## Resources and references
 * [SafeSEH flag](https://docs.microsoft.com/en-us/cpp/build/reference/safeseh-image-has-safe-exception-handlers?view=vs-2017)
 * [SafeSEH inner workings](https://reverseengineering.stackexchange.com/questions/11297/how-does-windows-safeseh-mechanism-work)
+* [SafeSEH](https://scx010c075.blogspot.com/2012/02/more-about-seh-and-safeseh.html)
 * [Wikipedia article](https://en.wikipedia.org/wiki/Microsoft-specific_exception_handling_mechanisms)

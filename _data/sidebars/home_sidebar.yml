@@ -51,6 +51,10 @@ entries:
           url: /elf.html
           output: web
 
+        - title: PE format
+          url: /pe.html
+          output: web
+
         - title: Structured Exception Handlers
           url: /seh.html
           output: web
@@ -71,8 +75,8 @@ entries:
           url: /oneplus6t-trustzone.html
           output: web
 
-        - title: UPX packer
-          url: /upx.html
+        - title: Unpacking tips
+          url: /unpacking.html
           output: web
 
       - title: Web

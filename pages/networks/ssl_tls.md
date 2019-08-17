@@ -20,7 +20,7 @@ summary: "Overview of the SSL/TLS protocols"
 
 
 ## Connection steps
-TODO: insert/make image
+See [this link](https://tls.ulfheim.net/)
 
 
 ## Perfect Forward Secrecy (PFS)

@@ -164,3 +164,4 @@ _start:
 ## Resources and references
 * [Intel x86 architecture](/x86.html)
 * [Move string instructions](http://faculty.kfupm.edu.sa/COE/aimane/assembly/pagegen.aspx-ThemeID=1&m185_20.htm)
+* [A pretty good AT&T syntax cheatsheet](http://tuttlem.github.io/2014/03/25/assembly-syntax-intel-at-t.html)
