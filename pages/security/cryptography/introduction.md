@@ -6,15 +6,17 @@ tags: [security, cryptography]
 summary: "Presentation of some basic concepts of cryptography"
 ---
 
-## Confusion and diffusion properties
-* Confusion property: each binary digit/bit of the ciphertext should depend on
+## Cryptographic properties
+* Confusion: each binary digit/bit of the ciphertext should depend on
 several parts of the key, obscuring the connections between the two.
-* Diffusion property: if we change a single bit of the plaintext, then
+* Diffusion: if we change a single bit of the plaintext, then
 (statistically) half of the bits in the ciphertext should change, and similarly,
  if we change one bit of the ciphertext, then approximately one half of the
  plaintext bits should change. Since a bit can have only two states, when they
  are all re-evaluated and changed from one seemingly random position to another,
  half of the bits will have changed state.
+* Malleability: given a cipher text, the attacker can build another valid cipher
+text that is related to the original plain text. Undesirable property
 
 
 ## Symmetric and asymmetric encryption

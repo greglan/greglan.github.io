@@ -14,6 +14,10 @@ $$
 * Designed in 1977
 * First public-key encryption scheme
 * Can also be used for digital signing
+* Base on a *trap-door* function: transforms an input $$x$$ into an $$y$$ in the
+same range such that computing $$y$$ from $$x$$ is easy using the public key,
+but computing $$x$$ from $$y$$ is practically impossible unless the private key
+is known [1]
 
 ## Principle
 * Message $$m$$, cipher text $$c$$
@@ -27,8 +31,19 @@ $$
 
 
 ## Key generation
-* Choose $$p, q \in \P$$
+* Choose $$p, q \in \P$$ at random and similar in magnitude.
+  Should differ in length by a few digits to make factoring harder
 * Key length $$n = pq$$
+* Compute $$\varphi(n) = (p-1) (q-1)$$
+* Choose a random public exponent $$e$$ prime in $$\mathbb{Z}_n^*$$ (hence $$e$$
+  has an inverse modulo $$\varphi(n)$$).
+
+  Note that this means that $$e \leq \varphi(n)$$
+* Compute the private exponent $$d$$ as the inverse of $$e$$ in
+  $$\mathbb{Z}_n^*$$
+
+  This can be done using the Euclidean algorithm to find to integers $$d,a$$ such
+  that $$ed + a \varphi(n) = 1$$
 
 ## Encryption
 * Un-padded plaintext: $$M$$
@@ -37,8 +52,16 @@ $$
 * Consequence: $$0 \leqslant m < n$$
 * Ciphertext $$c = m^e \equiv \mod n$$
 
-## Implementation
-* $$p$$ and $$q$$ chosen at random and similar in magnitude. Should differ in length by a few digits to make factoring harder
+
+## Security
+* First risk: ability to factor $$n$$ in $$p,q$$. Then the cryptosystem would
+  be broken.
+
+  Hence $$n$$ should be big enough (2048 bits ok, but 4096 bits preferred)
+  to make factoring harder.
+
+  $$p$$ and $$q$$ should be random and unrelated primes of similar sizes.
+* Second risk: ability to compute $$x$$ from $$x^e \mod n$$
 
 
 ## Reversing
@@ -48,6 +71,7 @@ $$
 
 
 ## Resources and references
+* [1] *Jean-Philippe Aumasson*, Serious Cryptography
 * [Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 * [LiveOverflow on RSA basics](https://www.youtube.com/watch?v=sYCzu04ftaY)
 * [LiveOverflow on reversing RSA](https://www.youtube.com/watch?v=dcR1dkZJ7iU)

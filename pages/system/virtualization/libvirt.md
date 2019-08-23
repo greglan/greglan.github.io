@@ -27,8 +27,7 @@ summary: "A libvirt/virsh cheatsheet"
 * Image run: `qemu-system-x86_64 -m 4G -smp $NB_CORES --enable-kvm IE11-Win8.1.qcow2`
 
 
-## Lab setup
-### Regular VMs (not security sensitive)
+## VM setup
 * Use default NAT network
 * Install RDP server instead of crappy spice
 * Enable SSH access:
@@ -36,9 +35,6 @@ summary: "A libvirt/virsh cheatsheet"
   - Enable pubkey auth
   - Add entries in host's ssh_config
 * Add entries in `/etc/hosts` for bost host and VMs
-
-### Other VMs
-* Separate isolated network
 
 
 ## Setting up a Windows 10 VM
@@ -64,3 +60,5 @@ select *Browser* and goto *disk:/driver_name/w10/amd64*:
 * [Reclaiming qcow2 space](https://www.jamescoyle.net/how-to/323-reclaim-disk-space-from-a-sparse-image-file-qcow2-vmdk)
 * [Short descriptions of the Virtio drivers](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-iso-contents)
 * [Virtio Balloon driver](https://rwmj.wordpress.com/2010/07/17/virtio-balloon/)
+* [Networking options](https://wiki.libvirt.org/page/Networking)
+* [Networking handbook](https://jamielinux.com/docs/libvirt-networking-handbook/)

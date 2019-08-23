@@ -28,6 +28,7 @@ what matters is the PE header information. We could label the *.data* section as
 *.text*.
 
 ### Header
+* MS-DOS header magic: *MZ = 0x4D 0x5A*
 
 ## Tools
 
@@ -35,3 +36,5 @@ what matters is the PE header information. We could label the *.data* section as
 
 
 ## Resources and references
+* [Peering Inside the PE](https://docs.microsoft.com/en-us/previous-versions/ms809762(v=msdn.10))
+* [An In-Depth Look into the Win32 Portable Executable File Format](https://bytepointer.com/resources/pietrek_in_depth_look_into_pe_format_pt1.htm)
