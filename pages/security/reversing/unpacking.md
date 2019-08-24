@@ -26,16 +26,19 @@ summary: "A guide to manual unpacking"
 
 ## Manual unpacking
 ### Finding the OEP
-* Hardware breakpoint method on the stack: after the `PUSHAD/PUSHA` instruction, follow `ESP` in dump. Then
-  right click on the first *DWORD* and select
+* Hardware breakpoint method on the stack: after the `PUSHAD/PUSHA` instruction,
+  follow `ESP` in dump. Then right click on the first *DWORD* and select
   *Breakpoint->Hardware->On access->DWORD*.
 * Stepping until finding a `POPAD/POPA` instruction
 * Searching for `POPAD/POPA` instructions in IDA
-* Looking for cross sections jumps
+* Looking for cross sections jumps: trace condition ins x64dbg:
+  `eip < out0 || eip >= out1` according to
+  [this](https://forum.exetools.com/showthread.php?t=18603)
 * Break on a function of the unpacked program (*GetVersion, GetCommandLineA,
-MessageBox*...) and work your way back to the OEP. Beware of software
-breakpoints on code that will be decrypted.
-* Common calls to *GetVersion* and *GetCommandLineA* near OEPs
+  MessageBox*...) and work your way back to the OEP. Beware of software
+  breakpoints on code that will be decrypted.
+* Common calls to *GetVersion*, *GetCommandLineA*, *GetModuleHandle* and
+  *LoadLibrary/GetProcaddress* loops near OEPs
 * Common Visual C entrypoint:
 ```
 push ebp
@@ -47,7 +50,12 @@ mov eax, dword ptr fs:[0]
 push eax
 mov dword ptr fs:[0], esp
 ```
-
+* The tail jump is usually followed by *0x00* bytes to ensure the section is
+  aligned
+* Breakpoints on *LoadLibrary* and *GetProcAddress* because they are often used
+  to import required library and fix the IAT
+* Check when a section is not modified anymore: means the unpacking is done
+* Monitor sections that are written to, and then executed
 
 ### Dumping the file
 * Breakpoint at OEP
@@ -64,12 +72,10 @@ mov dword ptr fs:[0], esp
 * Click *Fix Dump* and select the previously dumped binary
 
 ## Resources and references
-* [Unpacking with Anthracene tutorials](https://tuts4you.com/download/category/85//)
-* [Manual unpacking of UPX](https://securityxploded.com/unpackingupx.php)
-* [Another manual unpacking of UPX](http://www.behindthefirewalls.com/2013/12/unpacking-upx-file-manually-with-ollydbg.html)
-* [An example of unpacking](https://reverseengineering.stackexchange.com/questions/6773/unpacking-a-backdoor-program-for-studying)
-* [POPA/POPAD instructions](https://c9x.me/x86/html/file_module_x86_id_249.html)
 * [PUSHA/PUSHAD instructions](https://c9x.me/x86/html/file_module_x86_id_270.html)
-* [Dumping an EXE using x32dbg](https://www.unknowncheats.me/forum/general-programming-and-reversing/211590-dump-exe-file-using-x32dbg.html)
+* [POPA/POPAD instructions](https://c9x.me/x86/html/file_module_x86_id_249.html)
+* [Unpacking with Anthracene tutorials](https://tuts4you.com/download/category/85//)
+* [An example of a manual unpacking of UPX](http://www.behindthefirewalls.com/2013/12/unpacking-upx-file-manually-with-ollydbg.html)
 * [Many unpacking tutorials](https://tuts4you.com/download/category/11/)
 * [64 bits unpacking](https://www.virusbulletin.com/virusbulletin/2012/07/unpacking-x64-pe-binaries-introduction-part-1)
+* [Various tips](http://vkremez.weebly.com/cyber-security/unpacking-malware-background)
