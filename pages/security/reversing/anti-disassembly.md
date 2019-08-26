@@ -45,14 +45,16 @@ struct _EXCEPTION_REGISTRATION {
     DWORD handler;
 }
 ```
-* FS segment register used to access the Thread Environment Block (TEB). First structure in the TEB: Thread Information Block (TIB). First element of the TIB: pointer to the SEH chain
+* FS segment register used to access the Thread Environment Block (TEB).
+  First structure in the TEB: Thread Information Block (TIB).
+  First element of the TIB: pointer to the SEH chain
 * Add a record at the top of the chain
 ```nasm
 push ExceptionHandler
 push fs:[0]
 mov fs:[0], esp
 ```
-* Remove custom handler: need to remove two handler because one is automatically added
+* Remove custom handler: need to remove two handler because one is automatically added by the OS
 ```nasm
 mov esp, [esp+8]
 mov eax, fs:[0]
@@ -75,7 +77,8 @@ normal_code:
   retn
 ```
 
+## Tricks
+* Patch bytes into NOPs using `PatchByte(0x11223344, 0x90)` in IDA
+
 ## Resources and references
 * Practical Malware Analysis, Chapter 15
-* [Anti-debugging with ptrace](https://www.aldeid.com/wiki/Ptrace-anti-debugging)
-* [Two solutions to ptrace anti-debug](https://aaronyoo.github.io/ptrace-anti-debug.html)

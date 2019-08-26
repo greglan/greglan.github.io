@@ -36,7 +36,6 @@ summary: "Various links to good security articles or interesting things to look 
 * [Writeup of a Dell local escalation vulnerability](https://d4stiny.github.io/Local-Privilege-Escalation-on-most-Dell-computers/)
 
 ## Reversing
-* [PE format](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
 * [Distinguishing between encrypted and compressed data](http://www.devttys0.com/2013/06/differentiate-encryption-from-compression-using-math/)
 * [Practical binary analysis book](https://practicalbinaryanalysis.com/file/pba-toc.pdf)
 * [EFI reversing serie](https://erfur.github.io/down_the_rabbit_hole_pt1/)
@@ -45,7 +44,6 @@ summary: "Various links to good security articles or interesting things to look 
 * [Unicorn Engine tutorial](http://eternal.red/2018/unicorn-engine-tutorial/)
 * [A blog about reversing](https://rohailaone.home.blog/)
 * [Tips about reversing](https://gynvael.coldwind.pl/?id=664)
-* [Windows doc in the PE format](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format)
 * [Compiler Explorer](https://godbolt.org/)
 * [Many file formats illustrated](https://github.com/corkami/pics/tree/master/binary)
 

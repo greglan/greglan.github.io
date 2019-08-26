@@ -67,6 +67,10 @@ entries:
           url: /anti-disassembly.html
           output: web
 
+        - title: Anti-debugging techniques
+          url: /anti-debugging.html
+          output: web
+
         - title: Radare2 cheatsheet
           url: /radare2.html
           output: web
