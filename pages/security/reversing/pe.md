@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  PE files
+title:  Portable Executable (PE) format
 permalink: "pe.html"
 tags: [security, reversing]
 summary: "Structure of PE files"

@@ -57,6 +57,54 @@ je DebuggerPresent
 * *BeingDebugged* field can be automatically hidden with *Hide Debugger,
   Hidedebug and PhantOm* plugins for OllyDbg
 
+
+## ProcessHeap flag
+* First heap created in a PE contains a header with the fields *ForceFlags* and
+  *Flags*.
+
+  They are used by the kernel to determine if the heap was created within a
+  debugger
+
+  *Flags* usually equal to *ForceFlags* but ORed with *0x02*
+* Sample code:
+```asm
+mov eax, large fs:30h
+mov eax, dword ptr [eax + 18h]
+cmp dword ptr ds:[eax + 10h], 0  ; ForceFlags on Windows XP
+cmp dword ptr ds:[eax + 44h], 0  ; ForceFlags on Windows 7 for 32 bits apps
+cmp dword ptr ds:[eax + 0Ch], 0  ; Flags on Windows XP
+cmp dword ptr ds:[eax + 40h], 0  ; Flags on Windows 7
+jne Debugger Detected
+```
+* Can be defeated with plugins, or by disabling debug heaps in WinDbg
+
+## NtGlobalFlag
+* Heaps created by a program started by a debugger are different
+* Sample code:
+```asm
+mov eax, large fs:30h               ; Get the PEB
+cmp dword ptr ds:[eax+68h], 70h     ; Check offset 0x68 of the PEB
+jz debuggerDetected
+```
+* Debug heaps can be disabled in WinDbg, or with plugins for other debuggers
+
+## System residues
+* Registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\
+  AeDebug` specifies the default debugger to open when a crash occurs
+
+  Default value: `Dr. Watson`. A change can indicate the presence of debugging
+  tools
+* Search for an open window named "OLLYDBG":
+```C
+if (FindWindow("OLLYDBG", 0) == NULL)
+    // No debugger
+else
+    // Debugger
+```
+* Files, directoris and paths of common debuggers can be found by browsing the
+  filesystem
+* A process listing can reveal the presence of a debugger
+
 ## Resources and references
 * *Practical Malware Analysis*, Chapter 16
 * [Anti-debugging with ptrace](https://www.aldeid.com/wiki/Ptrace-anti-debugging)
