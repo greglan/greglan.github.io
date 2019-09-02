@@ -30,6 +30,8 @@ else // Value changed because no debugger was present
   RunMaliciousPayload();
 ```
 
+
+
 ## Checking the PEB
 * One *PEB* per running process
 * Contains the process' environment data (envar..., loaded modules, debugger
@@ -39,14 +41,14 @@ else // Value changed because no debugger was present
   debugger
 * Sample codes:
 
-```asm
+```nasm
 mov eax, dword ptr fs:[30h]
 mov ebx, byte ptr [eax+2]
 test ebx, ebx
 jz NoDebuggerPresent
 ```
 
-```asm
+```nasm
 push dword ptr fs:[30h]
 pop edx
 cmp byte ptr [edx+2], 1
@@ -58,6 +60,7 @@ je DebuggerPresent
   Hidedebug and PhantOm* plugins for OllyDbg
 
 
+
 ## ProcessHeap flag
 * First heap created in a PE contains a header with the fields *ForceFlags* and
   *Flags*.
@@ -67,7 +70,7 @@ je DebuggerPresent
 
   *Flags* usually equal to *ForceFlags* but ORed with *0x02*
 * Sample code:
-```asm
+```nasm
 mov eax, large fs:30h
 mov eax, dword ptr [eax + 18h]
 cmp dword ptr ds:[eax + 10h], 0  ; ForceFlags on Windows XP
@@ -78,15 +81,19 @@ jne Debugger Detected
 ```
 * Can be defeated with plugins, or by disabling debug heaps in WinDbg
 
+
+
 ## NtGlobalFlag
 * Heaps created by a program started by a debugger are different
 * Sample code:
-```asm
+```nasm
 mov eax, large fs:30h               ; Get the PEB
 cmp dword ptr ds:[eax+68h], 70h     ; Check offset 0x68 of the PEB
 jz debuggerDetected
 ```
 * Debug heaps can be disabled in WinDbg, or with plugins for other debuggers
+
+
 
 ## System residues
 * Registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\
@@ -104,6 +111,68 @@ else
 * Files, directoris and paths of common debuggers can be found by browsing the
   filesystem
 * A process listing can reveal the presence of a debugger
+
+
+
+## INT scans
+* `INT 3` (*0xCC*) used by debuggers for software breakpoints.
+
+  Works by replacing the running instruction and call the debug exception
+  handler.
+* `INT immediate` (*0xCD value/register*) can also be used, but less frequent
+* Sample code for scanning the program for *0xCC* bytes at startup:
+```nasm
+call $+5
+pop edi     ; Puts EIP in EDI
+sub edi, 5  ; Adjustt EIP to point to the beginning of the code (call instruction)
+mov ecx, 400h
+mov eax, 0CCh   ; Opcode to look for: INT 3
+repne scasb     ; Byte per byte
+jz DebuggerDetected
+```
+* Can be defeated by hardware breakpoints, execution flow modification or patching
+
+
+
+## Cheksums
+* Usually performed on a section of code
+* Less common than INT scans
+* Checksums: CRC or MD5. Pattern: loop over the instructions ended by a
+  comparison with an expected value
+* Can be defeated by hardware breakpoints, execution flow modification or patching
+
+
+
+## Timing checks
+* Most popular way of detecting a debugger
+* Works by recording two timestamps and comparing them
+* Possible to raise exceptions between two timestamps
+* `rdtsc` (opcode *0x0F31*) returns the number of ticks since the last system
+  reboot as 64 bits in `EDX:EAX`
+
+```nasm
+rdtsc           ; Get first timestamp
+xor ecx, ecx
+add ecx, eax    ; Save first timestamp in ecx
+
+rdtsc           ; Get second timestamp
+sub eax, ecx    ; Number of ticks elapsed in eax
+
+cmp eax, 0x0fff  ; if (eax < 0x0fff)
+jb NoDebugger
+
+rdtsc
+push eax        ; Push a random value
+ret             ; and return to it
+```
+* *QueryPerformanceCounter* query the high-resolution performance counters twice
+  to get a time difference
+* *GetTickCount* returns the number of milliseconds that have elapsed since the
+  last reboot
+* Can be defeated by not single-stepping/using breakpoints near the timing
+  checks. Else, alter execution flow manually or patch
+
+
 
 ## Resources and references
 * *Practical Malware Analysis*, Chapter 16

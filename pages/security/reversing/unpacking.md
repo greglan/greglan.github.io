@@ -40,7 +40,7 @@ summary: "A guide to manual unpacking"
 * Common calls to *GetVersion*, *GetCommandLineA*, *GetModuleHandle* and
   *LoadLibrary/GetProcaddress* loops near OEPs
 * Common Visual C entrypoint:
-```
+```nasm
 push ebp
 mov ebp, esp
 push -1

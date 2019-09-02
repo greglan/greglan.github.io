@@ -3,14 +3,16 @@ layout: page
 title:  "DNS protocol"
 permalink: "dns-protocol.html"
 tags: [networks]
-summary: "A quick introduction to DNS"
+summary: "A quick introduction to the DNS protocol"
 ---
 
 ## Introduction
 * DNS = Domain Name System
 * A record: address record. 32 bits IPv4 address
-* PTR record: pointer record. Pointer to a canonical name. DNS processing isn't performed, only the name is returned
-* MX record: mail exchange record. Maps a domain to a list of message transfer agents for that domain
+* PTR record: pointer record. Pointer to a canonical name. DNS processing isn't
+  performed, only the name is returned
+* MX record: mail exchange record. Maps a domain to a list of message transfer
+  agents for that domain
 
 
 ## Dig examples
@@ -25,14 +27,23 @@ dig @192.168.1.1 example.com mx # Use 192.168.1.1 to perform an MX record query
 dig @192.168.1.1 -x 10.10.10.10 # Reverse lookup DNS query to determine the name
 ```
 
+
+## DNS security
+* DNS-over-TLS wraps DNS queries into a TLS session. Uses port 853
+* DNS-over-HTTPS makes DNS queries using HTTPS. Uses port 443
+* DNSSEC provides authentication and integrity of DNS records but not
+  confidentiality
+* [Example of manual DNSSEC validation](https://wiki.archlinux.org/index.php/DNSSEC#Basic_DNSSEC_validation)
+* Specific DNS resolvers must be installed to automatically used DNSSEC
+* [DNSCrypt](https://dnscrypt.info/) prevents DNS spoofing
+
+
 ## Resources and references
 * [Wikipedia page on DNS](https://en.wikipedia.org/wiki/Domain_Name_System)
 * [List of DNS records](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
 * [DNS MX records](https://en.wikipedia.org/wiki/MX_record)
 * [Dig examples](https://www.thegeekstuff.com/2012/02/dig-command-examples/)
-* [DNSSEC](https://fr.wikipedia.org/wiki/Domain_Name_System_Security_Extensions)
-* [DNS-over-TLS](https://en.wikipedia.org/wiki/DNS_over_TLS)
-* [DNS-over-HTTPS](https://en.wikipedia.org/wiki/DNS_over_HTTPS)
 * [Difference between DNS-over-TLS and DNS-over-HTTPS](https://www.thesslstore.com/blog/dns-over-tls-vs-dns-over-https/)
-* [CloudFlare DNS](https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/)
 * [Overview of DNS security](https://www.cloudflare.com/learning/dns/dns-security/)
+* [Setting up CloudFlare's DNS](https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/)
+* [DNS resolver supporting various security extensions](https://wiki.archlinux.org/index.php/Dnscrypt-proxy)
