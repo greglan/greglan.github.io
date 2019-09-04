@@ -51,11 +51,15 @@ entries:
           url: /elf.html
           output: web
 
+        - title: Glibc heaps
+          url: /glibc-heaps.html
+          output: web
+
         - title: PE format
           url: /pe.html
           output: web
 
-        - title: Structured Exception Handlers
+        - title: SEH
           url: /seh.html
           output: web
 

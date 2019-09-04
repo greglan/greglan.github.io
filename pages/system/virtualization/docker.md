@@ -19,7 +19,7 @@ summary: "Various information about Docker"
 * Start container (previously exited): `docker start container_id`
 * Run command in container: `docker exec -it <container name> <command>`
 
-### Informations
+### Information
 * List containers: `docker ps`
 * List containers: `docker container ls --all`
 * List all existed containers: `docker ps -f "status=exited"`

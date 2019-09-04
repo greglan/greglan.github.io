@@ -28,7 +28,8 @@ summary: "Review of common file formats and their signatures"
 ## Various file signatures
 * ZIP: `50 4B 03 04`, `50 4B 05 06`
 * ELF: `7F 45 4c 46`
-* PE: TODO
+* MS-DOS header: `4D 5A` (MZ)
+* PE: `45 50 00 00` (PE)
 
 
 ## Resources and references

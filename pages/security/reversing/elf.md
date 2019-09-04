@@ -25,7 +25,9 @@ summary: "Structure of ELF files and useful commands"
 * Linking routine overwrite the .got.plt section with the correct function
 address for later uses
 * Both .got and .got.plt are set to writable in the ELF file
-
+* Performed by `dl_linux_resolve()` on Linux and `_dl_bind_start()` on OpenBSD
+  and FreeBSD
+* Can be prevented by setting the `LD_BIND_NOW` variable
 
 ## Position Independent Executables (PIE)
 * Randomizes text and PLT/GOT sections. Consequence: no static locations
@@ -38,7 +40,11 @@ address for later uses
 
 ## Tools
 * Addresses of symbols: `nm`
-* Display sections: `readelf -S prog`
+* Show program header table: `readelf -l filename`
+* Show section header table `readelf -S filename`
+* Display relocations:` readelf -r filename`
+* Display dynamic relocation entries: `objdump -R filename`
+* Check the stack flags: `readelf -l prog_name | grep GNU_STACK`
 * Debugging information: `objdump -g`
 * Headers: `objdump -x`
 * Remove any debugging information: `strip`
