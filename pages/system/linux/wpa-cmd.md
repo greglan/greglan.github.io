@@ -21,3 +21,8 @@ sudo dhclient wlan0
 * List available networks : `nmcli device wifi list`
 * Connect to `$ESSID` using `$password`: `nmcli device wifi connect $ESSID password $password`
 * Delete saved connection: `nmcli connection delete name`
+
+
+## Resources and references
+* For the problem "Secrets were required but not provided" error, see the second
+  answer to this [question]()

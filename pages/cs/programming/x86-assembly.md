@@ -62,6 +62,18 @@ rep stosb
 | PUSH | 0x68 |
 | PUSH 0x76543210 | 0x6801325476 |
 
+
+## Jumps
+
+|Instruction| Meaning|
+|:---------:|:--------:|
+| JA | Jump if above (unsigned) |
+| JG | Jump if greater (signed) |
+| JG | Jump if less (signed) |
+| JB | Jump if below (signed) |
+
+
+
 ## Examples
 ### Makefile
 ```make

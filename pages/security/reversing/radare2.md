@@ -45,6 +45,7 @@ summary: ""
 * Comment: `;[-]comment`
 * Make mark (shortcut to address): `m<key>`
 * Goto mark: `'<key>`
+* Update variables name: select var, then 'd' and then 'n'
 
 ### Graph mode
 * Change theme: `R`

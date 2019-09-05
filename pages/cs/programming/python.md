@@ -31,6 +31,8 @@ version of packages
 
 ## Code examples
 * [Command line argument parsing]()
+* [Socket programming in python 3.7](https://docs.python.org/3/library/socket.html#example)
+* [Socket programming in python 2.7](https://docs.python.org/2/library/socket.html#example)
 
 ### Files and directories
 ```python

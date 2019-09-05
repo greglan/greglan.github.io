@@ -11,6 +11,8 @@ summary: "Description of the TCP/IP protocol"
 * Client to server: SYN, SEQ(SEQ-CLIENT)
 * Server to client: SYN/ACK(ACK-SERVER=SEQ-CLIENT+1), SEQ(SEQ-SERVER)
 * Client to server: ACK(SEQ-SERVER+1), SEQ(SEQ-CLIENT+1)
+* Also see this [video](https://www.youtube.com/watch?v=0EHo0HsTKJw&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=28)
+  for a good summary
 
 ## IP
 ### Introduction
