@@ -2,11 +2,12 @@
 layout: page
 title:  "Structured Exception Handlers (SEH)"
 permalink: "seh.html"
-tags: [security, reversing]
+tags: [security, reversing, windows]
 summary: "Presentation of the SEH mechanism on Windows"
 ---
 
 ## Introduction
+* SEH: designed to handle software and hardware exceptions in Windows
 * SEH chain: list of functions designed to handle exceptions within the thread [4]
 * Default SEH: prints *"The application has encountered a problem and needs to
   close"*.
@@ -15,18 +16,15 @@ summary: "Presentation of the SEH mechanism on Windows"
 
 
 ## Internals
-* Linked list of `_EXCEPTION_REGISTRATION` structures
+* SEH chain: linked list of `_EXCEPTION_REGISTRATION` structures (SEH record)
 ```C
-struct _EXCEPTION_REGISTRATION {
-    DWORD prev;
-    DWORD handler;
+struct _EXCEPTION_REGISTRATION_RECORD {
+    struct _EXCEPTION_REGISTRATION_RECORD* prev;    // DWORD pointer to the next SEH record
+    DWORD handler;                                  // Pointer to the exception handler
 }
 ```
-* SEH record:
-  - pointer to the next SEH record ~ SEH record in previous stack frame
-  - pointer to the exception handler
 * Last record:
-  - 0xffffffff
+  - prev = 0xffffffff
   - Pointer to the default exception handler (`MSVCRT!exhandler`)
 * Every frame has its own exception handler on the stack
 * *FS* segment register used to access the *Thread Environment Block (TEB)*.
@@ -53,8 +51,21 @@ mov eax, [eax]
 mov fs:[0], eax
 add esp, 8
 ```
+* `except_handler`: user-defined callback function invoked by the OS
 
-## Security
+```C
+EXCEPTION_DISPOSITION _cdecl _except_handler
+(
+    struct _EXCEPTION_RECORD*   _ExceptionRecord,   // Information about the exception (exception number, address where it occurred...)
+    void*                       _EstablisherFrame,  // Adress of the exception record
+    struct _CONTEXT*            _ContextRecord,     // CPU registers when exception occurred
+    void*                       _DispatcherContext
+);
+```
+
+![seh-chain](/images/seh.svg)
+
+## SafeSEH
 * Since Windows XP SP1: registers XORed before call to exception handler
 * SafeSEH: implemented since Windows XP SP2 and Windows Server 2003 [3]
 * Prevents the addition of third-party exception handlers at runtime.

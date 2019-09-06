@@ -22,6 +22,7 @@ summary: "Review of Volatility and some plugins"
 * dumpfiles: TODO
 * envars: show the processes' envars
 * hashdump: returns the hashes of the domain credentials
+* Taking screenshots: `volatility -f dump --profile=Win7SP0x86 screenshot -D screens/`
 * Find the Windows hostname: *envars* plugin grepped with `COMPUTERNAME`
 
 ## Resources and references
