@@ -68,6 +68,7 @@ address for later uses
 * [ELF format](https://greek0.net/elf.html)
 * [[2] ELF relocation](https://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html)
 * [[3] ELF relocation in x64](http://www.mindfruit.co.uk/2012/06/relocations-relocations.html)
+* [Program layout in memory](https://manybutfinite.com/post/anatomy-of-a-program-in-memory/)
 * [Global Offset tables](http://bottomupcs.sourceforge.net/csbu/x3824.htm)
 * [Program startup in Linux](http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html)
 * [ELF analysis](https://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/)

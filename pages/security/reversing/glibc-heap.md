@@ -53,5 +53,8 @@ summary: ""
 ## Resources and references
 * [[1] Azeria Labs tutorial part 1](https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/)
 * [glibc reference](https://sourceware.org/glibc/wiki/MallocInternals)
+* [SploitFUN: Understaning glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
+* [SploitFUN: malloc syscalls](https://sploitfun.wordpress.com/2015/02/11/syscalls-used-by-malloc/)
 * Google Chrome heap allocator: [PartitionAlloc](https://chromium.googlesource.com/chromium/src/+/HEAD/base/allocator/partition_allocator/PartitionAlloc.md)
 * FreeBSD heap allocator: [jemalloc](https://github.com/jemalloc/jemalloc/wiki/Background)
+* [A Gynvael stream](https://www.youtube.com/watch?v=OwQk9Ti4mg4)
