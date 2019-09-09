@@ -27,12 +27,8 @@ entries:
           url: /protections.html
           output: web
 
-        - title: Stack-based buffer overflows
-          url: /stack-overflows.html
-          output: web
-
-        - title: Heap-based buffer overflows
-          url: /heap-overflows.html
+        - title: Heap exploitation
+          url: /heap-exploitation.html
           output: web
 
         - title: Format strings

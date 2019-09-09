@@ -2,8 +2,8 @@
 layout: page
 title:  "Glibc's heap implementation"
 permalink: "glibc-heaps.html"
-tags: [security, reversin]
-summary: ""
+tags: [security, reversing]
+summary: "A detailed look into the standard Linux heap implementation"
 ---
 ## glibc implementation
 * Linux's default heap allocator
@@ -47,11 +47,28 @@ summary: ""
 
 
 ### Chunk metada
-* [Implementation](https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=blob;f=malloc/malloc.c;h=6e766d11bc85b6480fa5c9f2a76559f8acf9deb5;hb=HEAD#l1033)
+#### In-use chunk
+* If the chunk before the current one is unused, `prev_size` contains the length
+  of the chunk before.
+
+  Else, `prev_size` part of the data of the previous chunk
+* Chunks are 8-byte aligned, so the three lowest bits of `size` are unused.
+
+  Lowest bit: `PREV_INUSE`. Set if the repvious chunk is in use
+
+![in-use-chunk](https://sourceware.org/glibc/wiki/MallocInternals?action=AttachFile&do=get&target=MallocInternals-chunk-inuse.svg)
+
+#### Freed chunk
+* `fwd/bck`: pointer to forward/backward chunks in a doubly linked list
+
+![freed-chunk](https://sourceware.org/glibc/wiki/MallocInternals?action=AttachFile&do=get&target=MallocInternals-chunk-free.svg)
+
+
 
 
 ## Resources and references
 * [[1] Azeria Labs tutorial part 1](https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/)
+* [Chunk implementation](https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=blob;f=malloc/malloc.c;h=6e766d11bc85b6480fa5c9f2a76559f8acf9deb5;hb=HEAD#l1033)
 * [glibc reference](https://sourceware.org/glibc/wiki/MallocInternals)
 * [SploitFUN: Understaning glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
 * [SploitFUN: malloc syscalls](https://sploitfun.wordpress.com/2015/02/11/syscalls-used-by-malloc/)
