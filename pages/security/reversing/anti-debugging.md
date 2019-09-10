@@ -7,16 +7,16 @@ summary: "A review of common anti-debugging techniques"
 ---
 
 ## Windows API functions
-* *IsDebuggerPresent*: searches the *PEB* for the *IsDebugged* field. Non-zero
+* `IsDebuggerPresent`: searches the *PEB* for the `IsDebugged` field. Non-zero
   value returned if a debugger is present
-* *CheckRemoteDebuggerPresent*: similar to *IsDebuggerPresent* in its operation,
+* `CheckRemoteDebuggerPresent`: similar to `IsDebuggerPresent` in its operation,
   but can be used to test any local process.
   Takes a process handle as parameter.
-* *NtQueryInformationProcess*: function from *NTDLL.dll*. First parameter:
+* `NtQueryInformationProcess`: function from *NTDLL.dll*. First parameter:
   process handle. Second parameter indicates the type of information to
-  retrieve. For the value *ProcessDebugPort=0x7*, a non-zero value is
+  retrieve. For the value `ProcessDebugPort=0x7`, a non-zero value is
   returned if a debugger present.
-* *OutputDebugString*: used to send a string to a debugger. Sample code:
+* `OutputDebugString`: used to send a string to a debugger. Sample code:
 
 ```C
 DWORD errorValue = 12345;
@@ -37,7 +37,7 @@ else // Value changed because no debugger was present
 * Contains the process' environment data (envar..., loaded modules, debugger
   status...)
 
-  In particular, the third byte *BeingDebugged* indicates the presence of a
+  In particular, the third byte `BeingDebugged` indicates the presence of a
   debugger
 * Sample codes:
 
@@ -56,19 +56,19 @@ je DebuggerPresent
 ```
 
 * Can be accessed by `fs:[0x30]`
-* *BeingDebugged* field can be automatically hidden with *Hide Debugger,
+* `BeingDebugged` field can be automatically hidden with *Hide Debugger,
   Hidedebug and PhantOm* plugins for OllyDbg
 
 
 
 ## ProcessHeap flag
-* First heap created in a PE contains a header with the fields *ForceFlags* and
-  *Flags*.
+* First heap created in a PE contains a header with the fields `ForceFlags` and
+  `Flags`.
 
   They are used by the kernel to determine if the heap was created within a
   debugger
 
-  *Flags* usually equal to *ForceFlags* but ORed with *0x02*
+  `Flags` usually equal to `ForceFlags` but ORed with *0x02*
 * Sample code:
 ```nasm
 mov eax, large fs:30h
@@ -165,13 +165,27 @@ rdtsc
 push eax        ; Push a random value
 ret             ; and return to it
 ```
-* *QueryPerformanceCounter* query the high-resolution performance counters twice
+* `QueryPerformanceCounter` query the high-resolution performance counters twice
   to get a time difference
-* *GetTickCount* returns the number of milliseconds that have elapsed since the
+* `GetTickCount` returns the number of milliseconds that have elapsed since the
   last reboot
 * Can be defeated by not single-stepping/using breakpoints near the timing
   checks. Else, alter execution flow manually or patch
 
+
+
+## TLS callbacks
+* TLS: *Thread Local Storage*. Windows storage class local to each thread which
+  doesn't use the stack.
+
+  Allows callback functions to initialize/dispose of TLS objects
+* Can be used to execute code before the main EP defined in the PE header; so can
+  be missed by debuggers.
+* When TLS used, presence of a `.tls` section. Normal programs do not use this
+  section, so strong indicator. As a consequence, less and less used by malware
+* Using IDA: CTRL+E to display all the possible entrypoints
+* Debuggers can be setup to pause at TLS callbacks (OllyDbg: go to debugging
+  events and select *Make first pause at system breakpoint*)
 
 
 ## Resources and references

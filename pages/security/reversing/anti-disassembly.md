@@ -38,16 +38,8 @@ summary: "This article presents some techniques used to prevent a disassembler f
 ```
 
 ## SEH
-* SEH = Structured Exception Handling. Linked list of `_EXCEPTION_REGISTRATION` structures
-```C
-struct _EXCEPTION_REGISTRATION {
-    DWORD prev;
-    DWORD handler;
-}
-```
-* FS segment register used to access the Thread Environment Block (TEB).
-  First structure in the TEB: Thread Information Block (TIB).
-  First element of the TIB: pointer to the SEH chain
+* See the [SEH page](/seh.html) for more information
+* Principle: setup a custom handler and raise an exception to return to it
 * Add a record at the top of the chain
 ```nasm
 push ExceptionHandler

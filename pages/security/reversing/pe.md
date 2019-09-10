@@ -10,7 +10,7 @@ summary: "Structure of PE files"
 ### Sections
 The sections encountered are usually the following:
 * *.text*: contains the executable code. Should be the only executable section
-* *.data*: contains import/export information and other read only data globally
+* *.rdata*: contains import/export information and other read only data globally
 accessible within the program
 * *.data*: contains the program's (code) global data
 * *.rsrc*: contains resources used by the program that are not considered part

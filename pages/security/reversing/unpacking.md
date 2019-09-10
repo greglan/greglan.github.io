@@ -13,14 +13,17 @@ summary: "A guide to manual unpacking"
 * Unpacking stub executed and program decompressed
 * Resolve the IAT of the decompressed program
 * Registers restored using `POPAD/POPA`
-* Jump to unpacked code (OEP)
+* *Tail jump*: jump to unpacked code (OEP)
 
 
 ## Detection
-* Very few imports
+* Very few imports (especially if only `LoadLibrary` and `GetProcAddress` are
+  present)
 * Few strings
-* Recognized by *PEiD* as packed
+* Recognized by *PEiD/OllyDbg/IDA* as packed
+* Large portion of code not marked as code by IDA's analysis
 * Section have a virtual size much larger than the raw size
+* High entropy
 * UPX: presence of *UPX0, UPX* and *UPX2* sections
 
 

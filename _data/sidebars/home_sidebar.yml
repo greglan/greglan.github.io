@@ -264,6 +264,10 @@ entries:
           url: /python.html
           output: web
 
+        - title: x86 assembly
+          url: /x86-assembly.html
+          output: web
+
         - title: SQL
           url: /sql.html
           output: web
@@ -276,8 +280,8 @@ entries:
           url: /bash.html
           output: web
 
-        - title: x86 assembly
-          url: /x86-assembly.html
+        - title: Ruby
+          url: /ruby.html
           output: web
 
 
@@ -319,6 +323,10 @@ entries:
 
     - title: Windows setup guide
       url: /windows-setup.html
+      output: web
+
+    - title: WIndows API
+      url: /windows-api.html
       output: web
 
     - title: Software setup guide
