@@ -83,6 +83,10 @@ entries:
           url: /unpacking.html
           output: web
 
+        - title: Process hollowing
+          url: /process-hollowing.html
+          output: web
+
       - title: Web
         output: web
         subfolderitems:
