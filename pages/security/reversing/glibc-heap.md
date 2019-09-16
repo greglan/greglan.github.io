@@ -48,6 +48,7 @@ summary: "A detailed look into the standard Linux heap implementation"
 
 ### Chunk metada
 #### In-use chunk
+* See the [implementation code](https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=blob;f=malloc/malloc.c;h=6e766d11bc85b6480fa5c9f2a76559f8acf9deb5;hb=HEAD#l1033)
 * If the chunk before the current one is unused, `prev_size` contains the length
   of the chunk before.
 
@@ -68,10 +69,10 @@ summary: "A detailed look into the standard Linux heap implementation"
 
 ## Resources and references
 * [[1] Azeria Labs tutorial part 1](https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/)
-* [Chunk implementation](https://sourceware.org/git/gitweb.cgi?p=glibc.git;a=blob;f=malloc/malloc.c;h=6e766d11bc85b6480fa5c9f2a76559f8acf9deb5;hb=HEAD#l1033)
-* [glibc reference](https://sourceware.org/glibc/wiki/MallocInternals)
-* [SploitFUN: Understaning glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
+* [Malloc internals](https://sourceware.org/glibc/wiki/MallocInternals)
 * [SploitFUN: malloc syscalls](https://sploitfun.wordpress.com/2015/02/11/syscalls-used-by-malloc/)
+* [SploitFUN: Understaning glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
+* [Diving into Glibc heap](https://heap-exploitation.dhavalkapil.com/diving_into_glibc_heap/)
 * Google Chrome heap allocator: [PartitionAlloc](https://chromium.googlesource.com/chromium/src/+/HEAD/base/allocator/partition_allocator/PartitionAlloc.md)
 * FreeBSD heap allocator: [jemalloc](https://github.com/jemalloc/jemalloc/wiki/Background)
 * [A Gynvael stream](https://www.youtube.com/watch?v=OwQk9Ti4mg4)

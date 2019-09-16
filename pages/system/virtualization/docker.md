@@ -30,3 +30,4 @@ summary: "Various information about Docker"
 * [Security advices](https://snyk.io/blog/10-docker-image-security-best-practices/)
 * [MongoDB on Docker](https://docs.docker.com/samples/library/mongo/)
 * [Difference between save and export commands](https://stackoverflow.com/questions/22655867/what-is-the-difference-between-save-and-export-in-docker/22656763#22656763)
+* [Docker example of apt-cacher-ng](https://docs.docker.com/engine/examples/apt-cacher-ng/)

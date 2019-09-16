@@ -35,7 +35,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Pwndbg plugin for GDB](https://github.com/pwndbg/pwndbg)
 * [Writeup of a Dell local escalation vulnerability](https://d4stiny.github.io/Local-Privilege-Escalation-on-most-Dell-computers/)
 * [Java Serialization exploitation](https://www.rapid7.com/research/report/exploiting-jsos/)
-* [A great blog about exploitation]
+* [A great blog about exploitation](https://ctf-wiki.github.io/ctf-wiki/)
 
 ## Reversing
 * [Distinguishing between encrypted and compressed data](http://www.devttys0.com/2013/06/differentiate-encryption-from-compression-using-math/)
@@ -94,3 +94,4 @@ summary: "Various links to good security articles or interesting things to look 
 * [TOCTOU attacks](https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use)
 * [Collection of short security articles](https://medium.com/@int0x33)
 * [GTFO](https://www.alchemistowl.org/pocorgtfo/)
+* [Trail of bits on CTF](https://trailofbits.github.io/ctf/)
