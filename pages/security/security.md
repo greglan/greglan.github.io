@@ -31,7 +31,6 @@ summary: "Various links to good security articles or interesting things to look 
 * [OpenSSL reverse shell tutorial](https://medium.com/@int0x33/day-43-reverse-shell-with-openssl-1ee2574aa998)
 * [Examples of bug bounty scenarios](https://medium.com/a-bugz-life/the-bugs-are-out-there-hiding-in-plain-sight-12d056613ea3)
 * [Tips about bug bounties](https://gynvael.coldwind.pl/?id=659)
-* [Use after free POC in Windows](https://cpr-zero.checkpoint.com/vulns/cprid-2129/)
 * [Pwndbg plugin for GDB](https://github.com/pwndbg/pwndbg)
 * [Writeup of a Dell local escalation vulnerability](https://d4stiny.github.io/Local-Privilege-Escalation-on-most-Dell-computers/)
 * [Java Serialization exploitation](https://www.rapid7.com/research/report/exploiting-jsos/)

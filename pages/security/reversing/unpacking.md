@@ -23,7 +23,7 @@ summary: "A guide to manual unpacking"
 * Recognized by *PEiD/OllyDbg/IDA* as packed
 * Large portion of code not marked as code by IDA's analysis
 * Section have a virtual size much larger than the raw size
-* High entropy
+* High entropy. Can be checked with *radare2* using `iS entropy` or *binwalk*
 * UPX: presence of *UPX0, UPX* and *UPX2* sections
 
 
@@ -82,3 +82,4 @@ mov dword ptr fs:[0], esp
 * [Many unpacking tutorials](https://tuts4you.com/download/category/11/)
 * [64 bits unpacking](https://www.virusbulletin.com/virusbulletin/2012/07/unpacking-x64-pe-binaries-introduction-part-1)
 * [Various tips](http://vkremez.weebly.com/cyber-security/unpacking-malware-background)
+* [Visualizing ELF files](https://reverseengineering.stackexchange.com/questions/6003/visualizing-elf-binaries)
