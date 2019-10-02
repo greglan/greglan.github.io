@@ -358,6 +358,10 @@ entries:
           url: /x86.html
           output: web
 
+        - title: Concepts
+          url: /computer-architecture.html
+          output: web
+
       - title: Linux
         output: web
         subfolderitems:
