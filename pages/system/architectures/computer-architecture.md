@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Computer architecture concepts"
+title:  "Introduction to computer architecture concepts"
 permalink: "computer-architecture.html"
 tags: [architectures]
 summary: "Various concepts related to modern CPUs architecture"
@@ -96,6 +96,11 @@ div r4, r5, r6
   time
 
 ## Benchmarking
+
+## Other
+* [TLB](https://en.wikipedia.org/wiki/Translation_lookaside_buffer): Translation Lookaside Buffer. Part of the MMU, caches the memory locations
+* NPU: Neural Processing Unit
+* Reason for the shift from CISC to RISC: easier to spot dependencies
 
 ## Resources and references
 * [Superscalar architectures on Wikipedia](https://en.wikipedia.org/wiki/Superscalar_processor)

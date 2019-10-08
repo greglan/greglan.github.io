@@ -346,6 +346,18 @@ entries:
         output: web
         subfolderitems:
 
+        - title: Introduction
+          url: /computer-architecture.html
+          output: web
+
+        - title: Pipelined processors
+          url: /pipelined-cpus.html
+          output: web
+
+        - title: Superscalar processors
+          url: /superscalar-cpus.html
+          output: web
+
         - title: ARMv7a
           url: /armv7a.html
           output: web
@@ -356,10 +368,6 @@ entries:
 
         - title: x86
           url: /x86.html
-          output: web
-
-        - title: Concepts
-          url: /computer-architecture.html
           output: web
 
       - title: Linux
@@ -486,6 +494,14 @@ entries:
       url: /proxies.html
       output: web
 
+  - title: Information theory
+    output: web
+    folderitems:
+
+    - title: Introduction
+      url: /information-theory-intro.html
+      output: web
+
   - title: Quantum things
     output: web
     folderitems:
@@ -571,18 +587,31 @@ entries:
       url: /index-electronics.html
       output: web
 
-    - title: Amplitude Shift Keying
-      url: /ask.html
-      output: web
+      subfolders:
+      - title: Communication systems
+        output: web
+        subfolderitems:
 
-    - title: Bluetooth
-      url: /bluetooth.html
-      output: web
+        - title: Introduction
+          url: /communication-systems-intro.html
+          output: web
 
-    - title: SPI protocol
-      url: /spi.html
-      output: web
+      - title: Embedded systems
+        output: web
+        subfolderitems:
 
-    - title: CAN bus
-      url: /can-bus.html
-      output: web
+        - title: Amplitude Shift Keying
+          url: /ask.html
+          output: web
+
+        - title: Bluetooth
+          url: /bluetooth.html
+          output: web
+
+        - title: SPI protocol
+          url: /spi.html
+          output: web
+
+        - title: CAN bus
+          url: /can-bus.html
+          output: web

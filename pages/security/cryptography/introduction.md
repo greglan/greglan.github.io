@@ -61,6 +61,8 @@ numbers as the relationship between the two keys
 ## Cryptanalysis
 * Kerckhoff's principle: the security of the cipher should rely only on the key,
 and not on the secrecy of the cipher.
+* If we want a good cryptanalysis to be done on the cipher, we have to publish
+  it so that we can perform the most comprehensive cryptanalysis.
 
 ### Black box models [1, p11]
 #### Passive techniques
