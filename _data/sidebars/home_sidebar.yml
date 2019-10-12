@@ -139,6 +139,10 @@ entries:
           url: /introduction.html
           output: web
 
+        - title: One Time Pad
+          url: /one-time-pad.html
+          output: web
+
         - title: Block and stream ciphers
           url: /block-stream-ciphers.html
           output: web
@@ -588,6 +592,26 @@ entries:
       output: web
 
       subfolders:
+      - title: Logic
+        output: web
+        subfolderitems:
+
+        - title: Flip-flops
+          output: web
+          url: /flip-flops.html
+
+        - title: Registers
+          output: web
+          url: /registers.html
+
+        - title: Counters
+          output: web
+          url: /counters.html
+
+        - title: Memories
+          output: web
+          url: /memory-technologies.html
+
       - title: Communication systems
         output: web
         subfolderitems:

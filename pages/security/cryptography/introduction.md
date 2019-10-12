@@ -58,11 +58,35 @@ numbers as the relationship between the two keys
  certificate exchanges in SSL, but because of recently discovered flaws, is being
  deprecated for that purpose
 
+## Perfect secrecy [2]
+* Captures the idea that an attacker doesn't learn anything from the ciphertext
+* Hypothesis: the message space is the cipher space and the length of the
+  message is known to the attacker
+* 
+
 ## Cryptanalysis
 * Kerckhoff's principle: the security of the cipher should rely only on the key,
 and not on the secrecy of the cipher.
 * If we want a good cryptanalysis to be done on the cipher, we have to publish
   it so that we can perform the most comprehensive cryptanalysis.
+### Key recovery
+Security is always defined relative to the two following questions:
+* What are the opponent's capabilities ?
+* What are the goals of the adversary ? One of them is key recovery, according to
+  Kerchoff's principle
+
+
+* Security game $$KR-PAS_E(A)$$ with $$A$$ adversary.
+  The normal person generates a key $$K^* \leftarrow Kg$$
+  The adversary wins the game if the guessed
+  key $$R$$ of $$A$$ is equal to $$K$$
+
+  KR-OKCA/KR-1KCA: Key recovery against One Time Known ciphertext Attack
+* KR-1KPA: Key recovery against known Plaintext Attack
+* KR-AKCA is stronger than KR-PAS, because if we have the first one, we have the other
+* The One-Time pad is not KR-AKPA secure, because if we have both the message and the ciphertext, then we have the key
+* KR-ACPA: Key recovery against one time chosen plaintext attack
+
 
 ### Black box models [1, p11]
 #### Passive techniques
@@ -83,6 +107,7 @@ ciphers (time, power consumption, noise...)
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
+* [2] *Francois Dupressoir*
 * [Confusion and diffusion properties](https://en.wikipedia.org/wiki/Confusion_and_diffusion)
 * [Attack models fro cryptanalysis](https://www.hackers-arise.com/single-post/2019/04/30/Cryptography-Basics-Part-2-Attack-Models-for-Cryptanalysis)
 * [Cryptography basics](https://www.hackers-arise.com/cryptography-basics)
