@@ -6,13 +6,15 @@ summary: "Presentation of the SPI protocol"
 tags: [electronics]
 ---
 
-## Introduction
+## Pins
 * SPI = Serial Peripheral Interface. Synchronous serial data protocol.
 * Master/salve architecture
 * MISO (Master In Slave Out) pin: data line from slave to master
 * MOSI (Master Out Slave In) pin: data line from master to slave
 * SCK (Serial ClocK) pin
 * SS (Slave Select) pin
+
+## Characteristics
 * Different implementation by different devices. Several modes possible according to configuration!
   * data shifted in/out on rising or falling edge of SCK
   * SCK idle when high or low

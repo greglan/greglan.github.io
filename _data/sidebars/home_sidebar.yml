@@ -624,6 +624,10 @@ entries:
           url: /communication-systems-intro.html
           output: web
 
+        - title: Amplitude modulation
+          url: /amplitude-modulation.html
+          output: web
+
       - title: Embedded systems
         output: web
         subfolderitems:
