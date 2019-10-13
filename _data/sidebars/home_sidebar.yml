@@ -640,6 +640,18 @@ entries:
           url: /spi.html
           output: web
 
+        - title: UART protocol
+          url: /uart.html
+          output: web
+
         - title: CAN bus
           url: /can-bus.html
+          output: web
+
+        - title: Arduino
+          url: /arduino.html
+          output: web
+
+        - title: FPGAs
+          url: /fpga.html
           output: web

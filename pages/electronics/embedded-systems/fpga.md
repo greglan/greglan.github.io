@@ -20,4 +20,4 @@ summary: "A introduction to FPGAs"
 
 
 ## Resources and references
-* [[1] A course of VHDL](https://seis.bristol.ac.uk/~eeidbp/courses/ECAD/index.htm)
+* [[1] A introductory course in VHDL](https://seis.bristol.ac.uk/~eeidbp/courses/ECAD/index.htm)
