@@ -362,6 +362,10 @@ entries:
           url: /superscalar-cpus.html
           output: web
 
+        - title: Branch processing
+          url: /branch-processing.html
+          output: web
+
         - title: ARMv7a
           url: /armv7a.html
           output: web
