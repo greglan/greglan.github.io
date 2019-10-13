@@ -15,10 +15,11 @@ summary: "Some things about Python and a cheat-sheet of some common codes"
 version of packages
 * Never install packages using `sudo pip` !
 * Never install packages using pip if not in a virtualenv !
+* [Quick summary of virtualenvwrapper commands](https://wiki.archlinux.org/index.php/Python/Virtual_environment#Basic_usage), and [how to remove a virtualenv](https://stackoverflow.com/questions/11005457/how-do-i-remove-delete-a-virtualenv/18624789#18624789)
 * [A comparison between tools for virtual environments](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
-* [Jupyter and virtual envs](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
 
 ### Jupyter
+* [Jupyter and virtual envs](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
 * [Add a virtualenv to a Jupyter notebook: install ](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
 * [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
 
