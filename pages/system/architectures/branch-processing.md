@@ -69,3 +69,12 @@ summary: "Architectural view of branch processing"
   decode unit) and predicting the outcome of conditional branches.
 
   Other method: eliminate the branches altogether using *guarded execution*
+
+## Branch processing
+* Try to detect branches in the instruction stream beyond the issue window
+* Allows time to process the branch and minimize the number of instructions that
+  need to be aborted in the even of the branch being taken.
+* Modern CPUs must detect branches as soon as possible and also try to predict
+  the outcome of conditional branches
+
+## Branch prediction

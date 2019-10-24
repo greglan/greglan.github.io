@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Quantum cheatsheet"
+title:  "Quantum information theory cheatsheet"
 permalink: "quantum-cheatsheet.html"
 tags: [maths, quantum]
 summary: "Some formulas and definitions"
@@ -117,3 +117,5 @@ $$
 $$
 
 * Hadamard basis: $$\{\ket{+}, \ket{-} \}$$
+
+* Bell states: $$\ket{\beta_{xy}} = \frac{\ket{0y} + (-1)^x \ket{1\bar{y}}}{\sqrt{2}} $$
