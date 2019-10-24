@@ -35,12 +35,15 @@ In this page we consider a composite quantum system $$X = A \otimes B$$.
   An operator is a density operator iff:
     - it is positive
     - its trace is 1
+* A state $$\rho$$ such that $$\tr (\rho) \neq 1$$ is an *invalid state*
 * Density operator and unitary evolution: $$\rho \xrightarrow[]{U} U \rho U^\dagger = \sum_i p_i U\ket{\psi_i} \bra{\psi_i} U^\dagger$$ [1, p99]
 * Joint state of a composite system: $$ \rho = \rho_1 \otimes \dots \otimes \rho_n$$ [1, p102]
 * Criterion for differentiating between pure and mixed states:
 
   If $$\rho$$ density operator, $$\tr(\rho^2) \leqslant 1$$. Equality if $$\rho$$ pure state. [1, p103]
-
+* Other formulation [3]:
+  - rank$$(\rho) = 1 \Leftrightarrow \rho$$ is a pure state
+  - rank$$(\rho) > 1 \Leftrightarrow \rho$$ is a mixed state
 
 ## Density operators and measurements
 In this section we consider a measurement operator $$M_m$$ associated to the result $$m$$ and an ensemble of pure states $$\{p_i, \ket{\psi_i} \}$$
@@ -61,13 +64,18 @@ In this section we define $$\rho^S$$ the density operator on a system $$S$$.
 
 ## Geometric interpretation
 * Any density operator can be written as $$\frac{1}{2}(I + x \sigma_x + y \sigma_y + z \sigma_z), \quad (x,y,z) \in \R^3$$ [1, p105] [2, p215]
+
+  $$(x,y,z)$$ is called the Block vector [3]
 * Determinant: $$\det(\rho) = \frac{1}{4}(1 - r^2) \geqslant 0$$ where $$r^2 = x^2 + y^2 + z^2$$
 * Density operators are in the Bloch sphere
 * Boundary of the sphere: $$r = 0$$, so one eigenvalue is 1 and the others are 0, so the operator is a projector
 
   Consequence: the boundary of the sphere are pure states [2]
 
+  The maximally mixed state has $$x=y=z=0$$ and is at the center of the sphere [3]
+
 ## Resources and references
 * [1] *Nielsen & Chuang*, Quantum computation and quantum information
 * [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
+* [3] Quantum cryptography, EDX
 * [Density matrices on Wikipedia](https://en.wikipedia.org/wiki/Density_matrix)

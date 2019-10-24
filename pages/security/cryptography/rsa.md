@@ -52,6 +52,13 @@ is known [1]
 * Turn the message $$M$$ into an integer $$m$$ using a padding scheme.
 * Consequence: $$0 \leqslant m < n$$
 * Ciphertext $$c = m^e \equiv \mod n$$
+
+## Decryption
+* Inverse calculation in Python:
+```python
+from Crypto.util import inverse
+d = inverse(e, phi)
+```
 * Decryption using openssl: `openssl rsautl -inkey private.key -decrypt -in message.enc`
 
 
@@ -84,3 +91,4 @@ is known [1]
 * [FactorDB](http://factordb.com/)
 * [RSA tool example use](https://m0x39.blogspot.com/2012/12/0x00-introduction-this-post-is-going-to.html)
 * [Crypto CTF writeups](https://www.youtube.com/watch?v=bAlF22mIYNk)
+* [Python pycrypto lib](https://pypi.org/project/pycrypto/)

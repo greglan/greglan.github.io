@@ -11,10 +11,15 @@ summary: "A introduction to FPGAs"
 
 
 ## Components
-* DSP cores
+* DSP cores: can provide multipliers and multiplier accumulate (implements
+  *ab+c*). 
 * Slices, CLBs, IOBs
 * CLB: Configurable Logic Blocks. Implement the logic
-* LUT: Look Up Table.
+* LUT: Look Up Table. Also called *Function Generators* (FGs)
+
+  Capacity limited by the number of inputs, not by the complexity
+* *Fast Carry Logic*: provides simple and fast arithmetic logic
+* *MULT_AND Gate*: provides efficient multiply and add implmentation
 * FF: Flip-Flop. Can also be used as latches
 * DCM blocks: Digital Clock Management
 

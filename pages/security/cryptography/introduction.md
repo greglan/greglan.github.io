@@ -5,6 +5,72 @@ permalink: "introduction.html"
 tags: [security, cryptography]
 summary: "Presentation of some basic concepts of cryptography"
 ---
+$$
+\newcommand{\P}{\mathbb{P}}
+$$
+
+## Encryption scheme
+* Encryption scheme: encryption algorithm $$E$$, decryption algorithm $$D$$ and
+  key generation algorithm $$Kg$$
+* *Correctness*: $$m = D(E(m, k), k)$$
+* *Security*: $$\P(M=m \vert C = c) = \P(M=m)$$ (an eavesdropper gain no
+  information)
+
+### Perfect secrecy [2]
+* Captures the idea that an attacker doesn't learn anything from the ciphertext
+* Hypothesis: the message space is the cipher space and the length of the
+  message is known to the attacker
+* Formal definition: $$\forall m,c, \quad \P(M^*=m \vert C^* = c) = \P(M^* = m)$$
+* Equivalent definition: we have
+  $$\P(m \vert c) = \frac{\P(m,c)}{\P(c)} = \frac{\P(c \vert m) \P(m)}{\P(c)}$$
+  and $$\P(m \vert c) = \P(m)$$, so that
+  $$\frac{\P(c \vert m) \P(m)}{\P(c)} = \P(m)$$
+  which amounts to $$\P(c \vert m) = \P(c)$$
+
+
+## Cryptanalysis
+* Kerckhoff's principle: the security of the cipher should rely only on the key,
+and not on the secrecy of the cipher.
+* If we want a good cryptanalysis to be done on the cipher, we have to publish
+  it so that we can perform the most comprehensive cryptanalysis.
+### Key recovery
+Security is always defined relative to the two following questions:
+* What are the opponent's capabilities ?
+* What are the goals of the adversary ? One of them is key recovery, according
+  to Kerchoff's principle
+
+
+* Security game $$KR-PAS_E(A)$$ with $$A$$ adversary.
+  The normal person generates a key $$K^* \leftarrow Kg$$
+  The adversary wins the game if the guessed
+  key $$R$$ of $$A$$ is equal to $$K$$
+
+  KR-OKCA/KR-1KCA: Key recovery against One Time Known ciphertext Attack
+* KR-1KPA: Key recovery against known Plaintext Attack
+* KR-AKCA is stronger than KR-PAS, because if we have the first one, we have the
+  other
+* The One-Time pad is not KR-AKPA secure, because if we have both the message
+  and the ciphertext, then we have the key
+* KR-ACPA: Key recovery against one time chosen plaintext attack
+
+
+### Black box models [1, p11]
+#### Passive techniques
+* Ciphertext only attacks. Very low chances of a successful cryptanalysis
+* Known plaintext attacks. Example of vulnerable ciphers: PKZIP, XOR
+
+#### Active attacks
+* Chosen plaintext attacks: the attacker can encrypt at will
+* Chosen cipher text attacks: the attacker can both encrypt and decrypt at will
+
+### Grey box models [1, p12]
+* Assume access to the cipher's implementation
+* Side channel: source of information that depends on the implementation of the
+ciphers (time, power consumption, noise...)
+* Side channel attacks: non-invasive. Don't alter the operation of the cipher
+* Invasive attacks: more advanced and powerful. Requires special equipment
+(laser fault injections, chip reversing...)
+
 
 ## Cryptographic properties
 * Confusion: each binary digit/bit of the ciphertext should depend on
@@ -57,53 +123,6 @@ numbers as the relationship between the two keys
  160-bit digest usually rendered in 40-character hexadecimal. Often used for
  certificate exchanges in SSL, but because of recently discovered flaws, is being
  deprecated for that purpose
-
-## Perfect secrecy [2]
-* Captures the idea that an attacker doesn't learn anything from the ciphertext
-* Hypothesis: the message space is the cipher space and the length of the
-  message is known to the attacker
-* 
-
-## Cryptanalysis
-* Kerckhoff's principle: the security of the cipher should rely only on the key,
-and not on the secrecy of the cipher.
-* If we want a good cryptanalysis to be done on the cipher, we have to publish
-  it so that we can perform the most comprehensive cryptanalysis.
-### Key recovery
-Security is always defined relative to the two following questions:
-* What are the opponent's capabilities ?
-* What are the goals of the adversary ? One of them is key recovery, according to
-  Kerchoff's principle
-
-
-* Security game $$KR-PAS_E(A)$$ with $$A$$ adversary.
-  The normal person generates a key $$K^* \leftarrow Kg$$
-  The adversary wins the game if the guessed
-  key $$R$$ of $$A$$ is equal to $$K$$
-
-  KR-OKCA/KR-1KCA: Key recovery against One Time Known ciphertext Attack
-* KR-1KPA: Key recovery against known Plaintext Attack
-* KR-AKCA is stronger than KR-PAS, because if we have the first one, we have the other
-* The One-Time pad is not KR-AKPA secure, because if we have both the message and the ciphertext, then we have the key
-* KR-ACPA: Key recovery against one time chosen plaintext attack
-
-
-### Black box models [1, p11]
-#### Passive techniques
-* Ciphertext only attacks. Very low chances of a successful cryptanalysis
-* Known plaintext attacks. Example of vulnerable ciphers: PKZIP, XOR
-
-#### Active attacks
-* Chosen plaintext attacks: the attacker can encrypt at will
-* Chosen cipher text attacks: the attacker can both encrypt and decrypt at will
-
-### Grey box models [1, p12]
-* Assume access to the cipher's implementation
-* Side channel: source of information that depends on the implementation of the
-ciphers (time, power consumption, noise...)
-* Side channel attacks: non-invasive. Don't alter the operation of the cipher
-* Invasive attacks: more advanced and powerful. Requires special equipment
-(laser fault injections, chip reversing...)
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography

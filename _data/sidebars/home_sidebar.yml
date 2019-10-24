@@ -418,8 +418,8 @@ entries:
           url: /gpg.html
           output: web
 
-        - title: FSTAB file
-          url: /fstab.html
+        - title: Partition management
+          url: /partition-management.html
           output: web
 
         - title: Screen command
@@ -510,6 +510,15 @@ entries:
       url: /information-theory-intro.html
       output: web
 
+      subfolders:
+      - title: Coding theory
+        output: web
+        subfolderitems:
+
+        - title: Block codes
+          url: /block-codes.html
+          output: web
+
   - title: Quantum things
     output: web
     folderitems:
@@ -587,7 +596,7 @@ entries:
           url: /bb84-protocol.html
           output: web
 
-  - title: Electronics
+  - title: Hardware
     output: web
     folderitems:
 

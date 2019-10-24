@@ -26,6 +26,44 @@ for i in range(0, len(LSBs), 8):  # Print byte-per-byte, so 8 bits steps
     result += chr(int(binary, 2))  # Convert to char
 ```
 
+## Plane extraction
+Taken from [John Hammond](https://www.youtube.com/watch?v=fkCZxOI_w-c):
+```python
+from PIL import Image
+
+img = Image.open('file.png')
+data = img.load()
+
+def get_plane(img, ,channel, index = 0):
+  if channel in img.mode:
+    new_img = Image.new('1', img.size)
+    new_data = new_img.load()
+    img_data = img.load()
+    channel_index = img.mode.index(channel)
+
+    for x in range(img.size[0]):
+      for y in range(img.size[1]):
+        color = img_data[x,y]
+        channel = color[channel_index]
+
+        plane = bin(channel)[2:].zfill(8) # Pad to 8 bits
+
+        try:
+          new_img_data[x,y] = 255 * int(plane[abs(index)-7])
+        except IndexError:
+          pass
+
+    return new_img
+
+new_img = get_plane(img, 'R', 0) # Get red color
+new_img.show()
+
+for channel in img.mode:
+  for plane in range(8):
+    test = get_plane(img, channel, plane)
+    test.save(f'{channel}-{plane}.png')
+```
+
 ## EXIF data
 * EXIF = Exchangeable Image Fileformat
 * Metadata embedded in many image file
