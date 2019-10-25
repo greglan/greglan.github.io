@@ -51,6 +51,8 @@ summary: ""
 * Apply the Grover's iteration $$R = \frac{\pi}{4} \sqrt{2^n}$$ times: $$G^R \ket{\psi_0} \simeq \ket{x_0}$$
 * Measure the register and obtain $$x_0$$ with probability $$O(1)$$
 
+## Optimality
+
 
 ## Resources and references
 * [1] *Nielsen & Chuang*, Quantum computation and quantum information

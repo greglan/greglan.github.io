@@ -78,3 +78,36 @@ summary: "Architectural view of branch processing"
   the outcome of conditional branches
 
 ## Branch prediction
+### Fixed prediction
+* Two fixed prediction schemes: assume all conditional branches are taken, or
+  assume all conditional branches are not taken
+
+### Static prediction
+* *Opcode based*: some branches opcode are assumed to be taken
+* *Displacement based*: backward branches are assumed to be taken, while forward
+  branches are not. Usefulness: loop-closing branches are all taken except for
+  the last iteration
+* *Compiler based*: compiler makes prediction according to the control structure
+  of the program. Information encoded in a special *predict bit* in each branche
+  instruction
+
+### Dynamic prediction
+* Prediction made on the basis of the *branch history*
+* Branch history composed of a variable number of bits which can be stored
+  alongside the entries in the instruction cache or in a *branch address cache*
+  if one is present
+* 2-bit prediction scheme: Smith algorithm
+* 3-bit prediction scheme: record the last 3 branches. TO predict the next
+  branch, simply use a majority rule
+
+## Speculative execution
+* Deals with technique to recover as efficiently as possible from a misprediction.
+* To recover from a mispredicted taken path, CPU must remember the address of
+  the sequential continuation. Even better if the sequential instructions have
+  already been fetched
+* Same desired features in case of a mispredicted sequential path: remember the
+  address of the target branch, and even have the target branch instructions
+  prefetched.
+* Solution: provide several instruction buffers for each path
+
+## Guarded execution

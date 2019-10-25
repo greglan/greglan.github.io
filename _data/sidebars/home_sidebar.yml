@@ -519,7 +519,7 @@ entries:
           url: /block-codes.html
           output: web
 
-  - title: Quantum things
+  - title: Quantum
     output: web
     folderitems:
 
@@ -546,6 +546,10 @@ entries:
 
         - title: Complexity theory
           url: /quantum-complexity.html
+          output: web
+
+        - title: Deutsch-Jozsa algorithm
+          url: /deutsch-jozsa.html
           output: web
 
         - title: Grover's algorithm
