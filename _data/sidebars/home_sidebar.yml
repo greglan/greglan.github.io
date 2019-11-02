@@ -350,8 +350,8 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Introduction
-          url: /computer-architecture.html
+        - title: Instruction Level Parallelism
+          url: /instruction-level-parallelism.html
           output: web
 
         - title: Pipelined processors
@@ -387,7 +387,7 @@ entries:
           output: web
 
         - title: Compression
-          url: /compression.html
+          url: /compression-cheatsheet.html
           output: web
 
         - title: Text editing
@@ -508,6 +508,14 @@ entries:
 
     - title: Introduction
       url: /information-theory-intro.html
+      output: web
+
+    - title: Entropy
+      url: /entropy.html
+      output: web
+
+    - title: Compression theory
+      url: /compression-theory.html
       output: web
 
       subfolders:

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Compression cheatsheet"
-permalink: "compression.html"
+permalink: "compression-cheatsheet.html"
 tags: [linux]
 summary: "Usage of several compression utilities"
 ---

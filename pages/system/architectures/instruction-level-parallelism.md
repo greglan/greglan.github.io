@@ -1,30 +1,44 @@
 ---
 layout: page
-title:  "Introduction to computer architecture concepts"
-permalink: "computer-architecture.html"
+title:  "Introduction Level Parallelism (ILP)"
+permalink: "instruction-level-parallelism.html"
 tags: [architectures]
-summary: "Various concepts related to modern CPUs architecture"
+summary: "An introduction to ILP"
 ---
+
+## Introduction
+* Instruction Level Parallelism: set of techniques to execute several
+  instructions at the same time.
+* Pipelined operation allows several instructions to be executed at each stage
+  of the pipeline
+* Parallel operation: several instructions executed by different execution units
 
 ## Pipelined execution
 * Typical pipeline: *Fetch -> Decode -> Execute -> Writeback*
 
-  Allow to execute 4 instructions concurrently
-* Each operation performed concurrently by a specific module
+  Allows to execute 4 instructions concurrently because each operation is
+  performed concurrently by a specific module
 * Different pipelines for different instruction types (branches, integers
   instructions, load/store instructions, FP instructions...)
+* FP pipelines typically used two execution stages
+
+  Load/store instructions use address generation and cache stages
+
+  Branch instructions use prediction stages
 
 ## Dependencies
 ### Data dependencies
 * RAW (read after write) dependency: also called flow-dependencies, arise because
   of the structure of the algorithm
-* Example where the second instruction is RAW dependent (load-use dependency e.g
+
+  Example where the second instruction is RAW dependent (*load-use dependency* e.g
+  shared operand) on the first:
 ```nasm
-shared operand) on the first:
 ldr r1, #val
 add r2, r1, r1  ; Can't be executed before the previous line
 ```
-* Another example but for a define-use RAW dependency:
+
+  Another example but for a *define-use* RAW dependency:
 ```nasm
 mul r1, r2, r3
 add r4, r1, r1
@@ -93,7 +107,10 @@ div r4, r5, r6
   'very long' instructions composed of a group (typically 4 or 8) of standard
   length instructions.
 * All the instrutions in a group are issued to the execution units at the same
-  time
+  time.
+
+  Requires a specific design of the fetch/decode/issue units to allow the
+  processing of several instructions at the same time.
 
 ## Benchmarking
 
