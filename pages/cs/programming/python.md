@@ -20,9 +20,12 @@ version of packages
 
 ### Jupyter
 * [Jupyter and virtual envs](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
-* [Add a virtualenv to a Jupyter notebook: install ](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
 * [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
-
+* Launch jupyter notebook: `jupyter notebook`
+* Change the kernel of a notebook: launch the notebook, then *kernel->Change kernel*
+* Remove a kernel: `jupyter kernelspec uninstall kernel_name`
+* [A short guide to Jupyter extensions](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231)
+* [Official guide for Jupyter contrib nbextensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 
 ## Arguments passing to functions
 * [Object reference passing](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)
