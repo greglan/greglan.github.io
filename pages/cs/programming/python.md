@@ -20,6 +20,7 @@ version of packages
 
 ### Jupyter
 * [Jupyter and virtual envs](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
+* [Another method for Jupyter inside a venv](https://www.codingforentrepreneurs.com/blog/install-jupyter-notebooks-virtualenv)
 * [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
 * Launch jupyter notebook: `jupyter notebook`
 * Change the kernel of a notebook: launch the notebook, then *kernel->Change kernel*

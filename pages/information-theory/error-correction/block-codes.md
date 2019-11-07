@@ -60,15 +60,41 @@ summary: "Introduction to block codes"
   All linear block codes have an equivalent systematic form
 
   Advantage: decoding is straightforward if not error
-* Parity check matrix: dimension, interpretation, uniqueness
+* Parity check matrix: dimension, uniqueness
+
+  Interpretation: dual space
 
   Characterization: for any codeword $$c$$ we have $$c H^t = G H^t = 0$$
 
   Form of the matrix for systematic codes: $$H = \begin{pmatrix}
     -P^t& I_{n-k}
   \end{pmatrix}$$.
-* Syndrome of a creceived word $$r$$: $$s = r H^t$$. Length: $$n-k$$.
+* Syndrome of a received word $$r$$: $$s = r H^t$$. Length: $$n-k$$.
 
   Syndrome with error pattern: $$s = (c+e)H^t = e H^t$$
+
+  Limitation: if error pattern is a valid codeword, then the received codeword
+  is also a valid codeword
+* The lower the coderate the better the error correction capabilities
+
+### Specific codes
+* Dual codes: $$n-k$$ dimensional subspace
+
+  Generator matrix: parity matrix. Parity matrix: generator matrix. Can be made
+  systematic using regular techniques.
+* Number of possible syndromes:
+
+  Number of possible patterns with $$t$$ errors:
+* Hamming bound: $$(n,k)$$ with $$t$$ error case, binary case
+
+  $$q-1$$ error patterns because $$0$$ is not an error
+* Perfect code: code with equality in the Hamming Bound
+
+  Example of perfect binary codes
+* Singleton bound. Example of codes meeting the Singleton Bound.
+* Probability of $$r$$ errors in $$n$$ bits in a BSC
+
+  Probability of codeword failure: $$\P(r >t)$$. Limit for small $$p$$.
+* $$p_\text{dec} = \text{BER} = \frac{3}{n} \P_\text{blk error}$$
 
 ## Resources and references

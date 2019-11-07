@@ -518,6 +518,10 @@ entries:
       url: /compression-theory.html
       output: web
 
+    - title: Channel capacity
+      url: /channel-capacity.html
+      output: web
+
       subfolders:
       - title: Coding theory
         output: web
@@ -527,7 +531,7 @@ entries:
           url: /block-codes.html
           output: web
 
-  - title: Quantum
+  - title: Quantum Information
     output: web
     folderitems:
 
