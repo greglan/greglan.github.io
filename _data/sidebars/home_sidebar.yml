@@ -531,6 +531,10 @@ entries:
           url: /block-codes.html
           output: web
 
+        - title: Cyclic codes
+          url: /cyclic-codes.html
+          output: web
+
   - title: Quantum Information
     output: web
     folderitems:
