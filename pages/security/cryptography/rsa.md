@@ -54,9 +54,9 @@ is known [1]
 * Ciphertext $$c = m^e \equiv \mod n$$
 
 ## Decryption
-* Inverse calculation in Python:
+* Inverse calculation in Python (from *pycrypto* package):
 ```python
-from Crypto.util import inverse
+from Crypto.Util.number import inverse
 d = inverse(e, phi)
 ```
 * Decryption using openssl: `openssl rsautl -inkey private.key -decrypt -in message.enc`
@@ -92,3 +92,4 @@ d = inverse(e, phi)
 * [RSA tool example use](https://m0x39.blogspot.com/2012/12/0x00-introduction-this-post-is-going-to.html)
 * [Crypto CTF writeups](https://www.youtube.com/watch?v=bAlF22mIYNk)
 * [Python pycrypto lib](https://pypi.org/project/pycrypto/)
+* [Openssl commands](https://raymii.org/s/tutorials/Encrypt_and_decrypt_files_to_public_keys_via_the_OpenSSL_Command_Line.html)

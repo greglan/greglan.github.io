@@ -596,6 +596,10 @@ entries:
           url: /density-operators.html
           output: web
 
+        - title: No Sgnalling
+          url: /no-signalling.html
+          output: web
+
         - title: Quantum Fourier transform
           url: /qft.html
           output: web
@@ -655,6 +659,14 @@ entries:
 
         - title: Amplitude modulation
           url: /amplitude-modulation.html
+          output: web
+
+        - title: Frequency modulation
+          url: /frequency-modulation.html
+          output: web
+
+        - title: Optical communications
+          url: /optic-communications.html
           output: web
 
       - title: Embedded systems

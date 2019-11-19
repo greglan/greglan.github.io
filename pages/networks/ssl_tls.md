@@ -51,3 +51,4 @@ CRIME, BEAST, POODLE attacks. Tricky to use because they need specific versions 
 * [ANALYSES DES CONFIGURATIONS SSL/TLS DE SERVEURS SMTP](https://connect.ed-diamond.com/MISC/MISC-096/Analyses-des-configurations-SSL-TLS-de-serveurs-SMTP)
 * [Differences between TLS 1.2 and TLS 1.3](https://www.wolfssl.com/differences-between-tls-1-2-and-tls-1-3/)
 * [Potential flow in TLS 1.3](https://www.scmagazineuk.com/tls-13-vulnerability-enables-hackers-eavesdrop-encrypted-traffic/article/1525916)
+* [Delegated credentials in TLS](https://thehackernews.com/2019/11/delegated-credentials-for-tls.html)
