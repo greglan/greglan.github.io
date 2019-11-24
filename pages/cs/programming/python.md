@@ -19,10 +19,11 @@ version of packages
 * [A comparison between tools for virtual environments](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
 
 ### Jupyter
-* [Jupyter and virtual envs](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
-* [Another method for Jupyter inside a venv](https://www.codingforentrepreneurs.com/blog/install-jupyter-notebooks-virtualenv)
+* [Method for Jupyter inside a venv](https://www.codingforentrepreneurs.com/blog/install-jupyter-notebooks-virtualenv). Deactivate and reactivate the venv before launching the Jupyter notebook for the first time.
 * [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
 * Launch jupyter notebook: `jupyter notebook`
+  
+  Launch jupyter notebook using a virtualenv: `workon venv_name && jupyter notebook`
 * Change the kernel of a notebook: launch the notebook, then *kernel->Change kernel*
 * Remove a kernel: `jupyter kernelspec uninstall kernel_name`
 * [A short guide to Jupyter extensions](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231)

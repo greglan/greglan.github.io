@@ -3,7 +3,7 @@ layout: page
 title:  "Amplitude Modulation"
 permalink: "amplitude-modulation.html"
 tags: [electronics]
-summary: "Introduction to Amplitude Modulation"
+summary: "Introduction to amplitude modulation"
 ---
 $$
 \newcommand{\snr}{\text{SNR}}
@@ -42,6 +42,7 @@ $$
 * Expression of $$(\snr)_{\text{out}}$$:
   $$(\snr)_{\text{out}} = \frac{A_c^2 P}{2B N_0}$$
 * Figure of merit: $$\frac{(\snr)_{\text{out}}}{(\snr)_C} = 1$$
+* Demodulation is coherent only
 
 ## Full AM
 * Expression of modulated signal:
