@@ -43,7 +43,6 @@ $$
   $$(\snr)_{\text{out}} = \frac{A_c^2 P}{2B N_0}$$
 * Figure of merit: $$\frac{(\snr)_{\text{out}}}{(\snr)_C} = 1$$
 
-
 ## Full AM
 * Expression of modulated signal:
   $$s(t) = A_c (\frac{m(t)}{A_C} + 1) \cos 2 \pi f_c t$$

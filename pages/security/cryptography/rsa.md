@@ -7,17 +7,23 @@ summary: ""
 ---
 $$
 \newcommand{\P}{\mathbb{P}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
 $$
 
 ## Introduction
-* RSA: Rivest Shamir Adleman
-* Designed in 1977
+* RSA: Rivest Shamir Adleman. Designed in 1977
 * First public-key encryption scheme
-* Can also be used for digital signing
+  
+  Can also be used for digital signing
 * Base on a *trap-door* function: transforms an input $$x$$ into an $$y$$ in the
 same range such that computing $$y$$ from $$x$$ is easy using the public key,
 but computing $$x$$ from $$y$$ is practically impossible unless the private key
 is known [1]
+* Euler's $$\varphi$$ function: $$\varphi(n) = \# \{0 < k < n, \; gcd(k,n)=1 \}$$
+  
+  Examples: $$\varphi(7) = \# \{1, 2, 3, 4, 5, 6\} = 6$$, $$\varphi(8) = \# \{1, 3, 5, 7 \} = 4$$
+* Fermat's little theorem: $$\forall a \in \Z, \; \forall n > 1, \; gcd(a,n)=1 \Rightarrow a^{\varphi(n)} = 1 \mod n$$
 
 ## Principle
 * Message $$m$$, cipher text $$c$$
@@ -36,11 +42,11 @@ is known [1]
 * Key length $$n = pq$$
 * Compute $$\varphi(n) = (p-1) (q-1)$$
 * Choose a random public exponent $$e$$ prime in $$\mathbb{Z}_n^*$$ (hence $$e$$
-  has an inverse modulo $$\varphi(n)$$).
+  has an inverse modulo $$\varphi(n)$$ because coprime with $$\varphi(n)$$).
 
   Note that this means that $$e \leq \varphi(n)$$
 * Compute the private exponent $$d$$ as the inverse of $$e$$ in
-  $$\mathbb{Z}_n^*$$
+  $$\mathbb{Z}_n^*$$ (which exists because $$e$$ coprime with $$\varphi(n)$$)
 
   This can be done using the Euclidean algorithm to find to integers $$d,a$$ such
   that $$ed + a \varphi(n) = 1$$
@@ -51,9 +57,12 @@ is known [1]
 * Padded plaintext: $$m$$
 * Turn the message $$M$$ into an integer $$m$$ using a padding scheme.
 * Consequence: $$0 \leqslant m < n$$
-* Ciphertext $$c = m^e \equiv \mod n$$
+* Ciphertext $$c = m^e \mod n$$
 
 ## Decryption
+* For $$m$$ invertible with modulo $$n$$, we have $$m^{\varphi(n)} = 1 \mod n$$.
+  
+  Decryption: $$c^d \mod n = m^{ed} \mod n = m^{1+k \varphi(n)} \mod n = m \mod n$$
 * Inverse calculation in Python (from *pycrypto* package):
 ```python
 from Crypto.Util.number import inverse

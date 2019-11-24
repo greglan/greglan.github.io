@@ -665,6 +665,10 @@ entries:
           url: /frequency-modulation.html
           output: web
 
+        - title: Digital communications
+          url: /digital-communications.html
+          output: web
+
         - title: Optical communications
           url: /optic-communications.html
           output: web
