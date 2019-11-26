@@ -25,31 +25,25 @@ is known [1]
   Examples: $$\varphi(7) = \# \{1, 2, 3, 4, 5, 6\} = 6$$, $$\varphi(8) = \# \{1, 3, 5, 7 \} = 4$$
 * Fermat's little theorem: $$\forall a \in \Z, \; \forall n > 1, \; gcd(a,n)=1 \Rightarrow a^{\varphi(n)} = 1 \mod n$$
 
-## Principle
-* Message $$m$$, cipher text $$c$$
-* Modulus $$n = pq$$ with $$p,q \in \P$$
-* Public key exponent: $$e$$ (inverse of the private key exponent)
-* Public key: $$(n, e)$$
-* Private key exponent $$d$$ (inverse of the public key exponent)
-* Private key: $$(n, d)$$
-* Encryption of plaintext: $$c = m^e \mod n$$
-* Decryption of cipher text: $$c^d \mod n = m^{ed} \mod n = m \mod n$$
-
 
 ## Key generation
 * Choose $$p, q \in \P$$ at random and similar in magnitude.
   Should differ in length by a few digits to make factoring harder
-* Key length $$n = pq$$
+* Key length $$n = pq$$. Also called *modulus*.
 * Compute $$\varphi(n) = (p-1) (q-1)$$
-* Choose a random public exponent $$e$$ prime in $$\mathbb{Z}_n^*$$ (hence $$e$$
+* Choose a random *public key exponent* $$e$$ prime in $$\mathbb{Z}_n^*$$ (hence $$e$$
   has an inverse modulo $$\varphi(n)$$ because coprime with $$\varphi(n)$$).
 
   Note that this means that $$e \leq \varphi(n)$$
-* Compute the private exponent $$d$$ as the inverse of $$e$$ in
+
+  Public key: $$(e, n)$$
+* Compute the *private key exponent* $$d$$ as the inverse of $$e$$ in
   $$\mathbb{Z}_n^*$$ (which exists because $$e$$ coprime with $$\varphi(n)$$)
 
   This can be done using the Euclidean algorithm to find to integers $$d,a$$ such
   that $$ed + a \varphi(n) = 1$$
+
+  Private key: $$(n, d)$$
 * Read public key information: `openssl rsa -pubin -inform PEM -text -noout -in key.pub`
 
 ## Encryption
@@ -82,7 +76,48 @@ d = inverse(e, phi)
 * Second risk: ability to compute $$x$$ from $$x^e \mod n$$
 
 
-## Reversing
+## Notes on the implementation
+### Efficient multiplication with double-and-add
+* Problem statement and notations: with $$q = \sum_{i=0}^N q_i 2^i$$ compute $$pq = \sum_{i=0}^N q_i (2^i p)$$
+* Double step: compute the $$2^ip$$ for $$i \in \{0, \dots, N \}$$
+
+  $$2^0p = p \rightarrow 0$$ additions
+
+  $$2^1p = p + p \rightarrow 1$$ additions
+
+  $$2^2p = 2p + 2p \rightarrow 1$$ additions
+
+  ...
+
+  $$2^Np = 2^{N-1}p + 2^{N-1} p \rightarrow N$$ additions
+
+  Complexity of the doubling step: $$N$$ additions
+* Add step: let $$i_k$$ the indices such that $$q_{i_k} \neq 0$$.
+  
+  Compute $$p q = \sum_{k} 2^{i_k} p$$. Complexity: $$k \leqslant N$$ additions.
+* Total complexity: $$2 N$$ additions in the worst case
+
+### Efficient exponentiation with square-and-multiply
+* Problem statement: with $$e = \sum_{i=0}^N e_i 2^i$$ compute $$m^e \mod n = m^{\sum_{i=0}^N e_i 2^i} \mod n = \prod_{i=0}^N (m^{2^i})^{e_i} \mod n $$
+* Square step: compute the $$m^{2^i} \mod n$$
+
+  $$m^{2^0} = m \mod n \rightarrow 0$$ squarings
+
+  $$m^{2^1} = m^2 \mod n \rightarrow 1$$ squaring
+
+  $$m^{2^2} = (m^2)^2 \mod n \rightarrow 1$$ squaring
+
+  ...
+
+  $$m^{2^N} = (m^{2^{N-1}})^2 \mod n \rightarrow 1$$ squaring
+
+  Complexity: $$N$$ squarings so $$N$$ multiplications so at most $$2N^2$$ additions
+* Multiply step: let $$i_k$$ the indices such that $$e_{i_k} \neq 0$$.
+  
+  Compute $$m^e = \prod_{k} (m^{2^{i_k}})^{e_{i_k}} \mod n $$. Complexity: $$k \leqslant N$$ multiplications so at most $$2N^2$$ additions.
+* Total complexity: $$4 N^2$$ additions in the worst case
+
+### Reversing tips
 * Large integers represented as arrays
 * Large integers manipulation, so additions and other basic operations will have their own functions.
 * Modular exponentiation -> square exponentiation: to check if an integer is even, check the last digit
