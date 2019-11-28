@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Matrices"
-permalink: "matrices.html"
+permalink: "qm-matrices.html"
 tags: [maths, quantum]
 summary: "Definitions and properties of some particular matrices used in quantum mechanics"
 ---

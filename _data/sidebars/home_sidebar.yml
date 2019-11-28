@@ -7,700 +7,541 @@ entries:
   folders:
 
   - title: Security
-    output: web
     folderitems:
 
     - title: Resources
       url: /index-security.html
-      output: web
+      
       subfolders:
 
       - title: Exploitation
-        output: web
         subfolderitems:
 
         - title: Exploitation tricks
           url: /tricks.html
-          output: web
-
+          
         - title: Protections
           url: /protections.html
-          output: web
 
         - title: Heap exploitation
           url: /heap-exploitation.html
-          output: web
 
         - title: Format strings
           url: /format-strings.html
-          output: web
 
         - title: GDB cheatsheet
           url: /gdb.html
-          output: web
+          
 
       - title: Reversing
-        output: web
+        
         subfolderitems:
 
         - title: ELF format
           url: /elf.html
-          output: web
 
         - title: Glibc heaps
           url: /glibc-heaps.html
-          output: web
 
         - title: PE format
           url: /pe.html
-          output: web
 
         - title: SEH
           url: /seh.html
-          output: web
 
         - title: Embedded reversing
           url: /embedded-re.html
-          output: web
 
         - title: Anti-disassembly techniques
           url: /anti-disassembly.html
-          output: web
 
         - title: Anti-debugging techniques
           url: /anti-debugging.html
-          output: web
 
         - title: Radare2 cheatsheet
           url: /radare2.html
-          output: web
 
         - title: Oneplus 6T Trustzone
           url: /oneplus6t-trustzone.html
-          output: web
 
         - title: Unpacking tips
           url: /unpacking.html
-          output: web
 
         - title: Process hollowing
           url: /process-hollowing.html
-          output: web
 
       - title: Web
-        output: web
         subfolderitems:
 
         - title: Cross Site Request Forgery
           url: /csrf.html
-          output: web
 
         - title: Cross Site Scripting
           url: /xss.html
-          output: web
 
         - title: SQL injections
           url: /sql-injections.html
-          output: web
 
         - title: NoSQL injections
           url: /nosql-injections.html
-          output: web
 
         - title: LDAP injections
           url: /ldap-injections.html
-          output: web
 
         - title: XPath injections
           url: /xpath-injections.html
-          output: web
 
         - title: Include vulnerabilities
           url: /includes.html
-          output: web
 
         - title: Path traversals
           url: /path-traversals.html
-          output: web
 
         - title: Encodings cheatsheet
           url: /web-encodings.html
-          output: web
 
         - title: Some tools
           url: /web-tools.html
-          output: web
 
       - title: Cryptography
-        output: web
         subfolderitems:
 
         - title: Introduction
           url: /introduction.html
-          output: web
 
         - title: One Time Pad
           url: /one-time-pad.html
-          output: web
 
         - title: Block and stream ciphers
           url: /block-stream-ciphers.html
-          output: web
 
         - title: Advanced Encryption Standard
           url: /aes.html
-          output: web
 
         - title: RSA
           url: /rsa.html
-          output: web
 
         - title: Hashes
           url: /hashes.html
-          output: web
 
         - title: Message Authentication Codes
           url: /mac.html
-          output: web
 
         - title: Correlation Power Analysis
           url: /cpa.html
-          output: web
 
       - title: Pentesting
-        output: web
         subfolderitems:
 
         - title: Metasploit
           url: /metasploit.html
-          output: web
-
+          
         - title: Tricks
           url: /pentesting-tricks.html
-          output: web
 
         - title: WIFI hacking
           url: /pentesting-wifi.html
-          output: web
 
       - title: Forensics
-        output: web
         subfolderitems:
 
         - title: Steganography
           url: /steganography.html
-          output: web
 
         - title: File formats
           url: /file-formats.html
-          output: web
 
         - title: Tools
           url: /forensics-tools.html
-          output: web
 
         - title: Volatility
           url: /forensics-volatility.html
-          output: web
 
   - title: Computer science
-    output: web
+    
     folderitems:
-
     - title: Index
       url: /cs.html
-      output: web
 
       subfolders:
       - title: Algorithms
-        output: web
+        
         subfolderitems:
 
         - title: Complexity analysis
           url: /complexity-analysis.html
-          output: web
 
         - title: Merge sort
           url: /merge-sort.html
-          output: web
 
         - title: Quick sort
           url: /quicksort.html
-          output: web
 
         - title: String searching
           url: /string-searching.html
-          output: web
 
       - title: Data structures
-        output: web
         subfolderitems:
 
         - title: Trees
           url: /trees.html
-          output: web
 
         - title: Binary search trees
           url: /binary-search-trees.html
-          output: web
 
         - title: Binary heaps
           url: /binary-heaps.html
-          output: web
-
+          
         - title: AVL trees
           url: /avl-trees.html
-          output: web
-
+          
         - title: Graph theory
           url: /graph-theory.html
-          output: web
-
+          
         - title: Graph algorithms
           url: /graph-algorithms.html
-          output: web
-
+          
         - title: Graph problems
           url: /graph-problems.html
-          output: web
-
+          
       - title: Programming
-        output: web
         subfolderitems:
 
         - title: Python
           url: /python.html
-          output: web
-
+          
         - title: x86 assembly
           url: /x86-assembly.html
-          output: web
-
+          
         - title: SQL
           url: /sql.html
-          output: web
-
+          
         - title: NoSQL
           url: /nosql.html
-          output: web
-
+          
         - title: BASH
           url: /bash.html
-          output: web
-
+          
         - title: Ruby
           url: /ruby.html
-          output: web
-
-
+          
       - title: Theory
-        output: web
         subfolderitems:
 
         - title: Regular languages
           url: /regular-languages.html
-          output: web
-
+          
         - title: Formal grammars
           url: /formal-grammars.html
-          output: web
-
+          
         - title: Finite state automata
           url: /finite-state-automata.html
-          output: web
-
+          
         - title: Cellular automata
           url: /cellular-automata.html
-          output: web
-
+          
         - title: Turing machines
           url: /turing-machines.html
-          output: web
-
+        
         - title: Computability
           url: /computability.html
-          output: web
-
+          
         - title: Formal logic
           url: /formal-logic.html
-          output: web
-
+          
   - title: System
-    output: web
     folderitems:
 
     - title: Windows setup guide
       url: /windows-setup.html
-      output: web
-
+      
     - title: WIndows API
       url: /windows-api.html
-      output: web
-
+      
     - title: Software setup guide
       url: /software-setup.html
-      output: web
-
+      
     - title: PC build guide
       url: /hw-pc.html
-      output: web
-
+    
       subfolders:
-      - title: Architectures
-        output: web
+      - title: Architectures    
         subfolderitems:
 
         - title: Instruction Level Parallelism
           url: /instruction-level-parallelism.html
-          output: web
-
+          
         - title: Pipelined processors
           url: /pipelined-cpus.html
-          output: web
-
+        
         - title: Superscalar processors
           url: /superscalar-cpus.html
-          output: web
-
+          
         - title: Branch processing
           url: /branch-processing.html
-          output: web
-
+          
         - title: ARMv7a
           url: /armv7a.html
-          output: web
-
+          
         - title: ARMv8a
           url: /armv8a.html
-          output: web
-
+          
         - title: x86
           url: /x86.html
-          output: web
-
+          
       - title: Linux
-        output: web
         subfolderitems:
 
         - title: Some utils
           url: /linux-cmd-utils.html
-          output: web
-
+          
         - title: Compression
           url: /compression-cheatsheet.html
-          output: web
-
+          
         - title: Text editing
           url: /text-editing.html
-          output: web
-
+          
         - title: ip command
           url: /ip-command.html
-          output: web
-
+          
         - title: Package management
           url: /package-management.html
-          output: web
-
+          
         - title: Users and permissions
           url: /user-permissions.html
-          output: web
-
+          
         - title: Wifi connection from shell
           url: /wpa-cmd.html
-          output: web
-
+          
         - title: GRUB shell commands
           url: /grub-commands.html
-          output: web
-
+          
         - title: GPG cheatsheet
           url: /gpg.html
-          output: web
 
         - title: Partition management
           url: /partition-management.html
-          output: web
 
         - title: Screen command
           url: /screen-command.html
-          output: web
 
       - title: Virtualization
-        output: web
         subfolderitems:
 
         - title: Docker
           url: /docker.html
-          output: web
 
         - title: Libvirt
           url: /libvirt.html
-          output: web
 
         - title: Hyper-V
           url: /hyper-v.html
-          output: web
 
     - title: Android Debug Bridge
       url: /adb.html
-      output: web
 
   - title: Networks
-    output: web
     folderitems:
 
     - title: Resources
       url: /index-networks.html
-      output: web
 
     - title: OSI model
       url: /osi-model.html
-      output: web
 
     - title: Port numbers
       url: /port-numbers.html
-      output: web
 
     - title: ICMP protocol
       url: /icmp-protocol.html
-      output: web
 
     - title: TCP/IP protocol
       url: /tcp-ip-protocol.html
-      output: web
 
     - title: DNS protocol
       url: /dns-protocol.html
-      output: web
 
     - title: 802.1x standard
       url: /802.1x.html
-      output: web
 
     - title: SSH
       url: /ssh.html
-      output: web
 
     - title: SSL/TLS
       url: /ssl-tls.html
-      output: web
 
     - title: VPNs
       url: /vpn.html
-      output: web
 
     - title: Nmap
       url: /nmap.html
-      output: web
 
     - title: Wireshark
       url: /wireshark.html
-      output: web
 
     - title: Proxies and cie
       url: /proxies.html
-      output: web
+
+  - title: Maths
+
+  - title: Physics
+    folderitems:
+
+    - title: Particles
+      url: /particules.html
+
+    - title: Semiconductors
+      url: /semiconductors.html
+
+      subfolders:
+      - title: Quantum mechanics
+        subfolderitems:
+        - title: Basics
+          url: /qm-basics.html
+
+        - title: Matrix properties
+          url: /qm-matrices.html
+
+        - title: Density operators
+          url: /density-operators.html
+
+        - title: No Signalling
+          url: /no-signalling.html
 
   - title: Information theory
-    output: web
     folderitems:
 
     - title: Introduction
       url: /information-theory-intro.html
-      output: web
 
     - title: Entropy
       url: /entropy.html
-      output: web
 
     - title: Compression theory
       url: /compression-theory.html
-      output: web
 
     - title: Channel capacity
       url: /channel-capacity.html
-      output: web
 
       subfolders:
       - title: Coding theory
-        output: web
         subfolderitems:
 
         - title: Block codes
           url: /block-codes.html
-          output: web
 
         - title: Cyclic codes
           url: /cyclic-codes.html
-          output: web
 
   - title: Quantum Information
-    output: web
     folderitems:
 
     - title: Resources and todos
       url: /quantum-computing-index.html
-      output: web
 
     - title: Cheatsheet
       url: /quantum-cheatsheet.html
-      output: web
 
     - title: Quantum circuits
       url: /quantum-circuits.html
-      output: web
 
     - title: Quantum computers
       url: /quantum-computers.html
-      output: web
 
       subfolders:
       - title: Algorithms
-        output: web
         subfolderitems:
 
         - title: Complexity theory
           url: /quantum-complexity.html
-          output: web
 
         - title: Deutsch-Jozsa algorithm
           url: /deutsch-jozsa.html
-          output: web
 
         - title: Grover's algorithm
           url: /grover-algorithm.html
-          output: web
 
         - title: Simon's problem
           url: /simon-problem.html
-          output: web
-
-        - title: Shor's algorithm
-          url: /shor-algorithm.html
-          output: web
-
-      - title: Quantum mechanics
-        output: web
-        subfolderitems:
-
-        - title: Basics
-          url: /qc-maths.html
-          output: web
-
-        - title: Matrices
-          url: /matrices.html
-          output: web
-
-        - title: Density operators
-          url: /density-operators.html
-          output: web
-
-        - title: No Sgnalling
-          url: /no-signalling.html
-          output: web
 
         - title: Quantum Fourier transform
           url: /qft.html
-          output: web
+
+        - title: Shor's algorithm
+          url: /shor-algorithm.html
 
       - title: Protocols
-        output: web
         subfolderitems:
 
         - title: Superdense coding
           url: /superdense-coding.html
-          output: web
 
         - title: Quantum teleportation
           url: /quantum-teleportation.html
-          output: web
 
         - title: BB84
           url: /bb84-protocol.html
-          output: web
 
   - title: Hardware
-    output: web
     folderitems:
 
     - title: Resources
       url: /index-electronics.html
-      output: web
 
       subfolders:
       - title: Logic
-        output: web
         subfolderitems:
 
         - title: Flip-flops
-          output: web
           url: /flip-flops.html
 
         - title: Registers
-          output: web
           url: /registers.html
 
         - title: Counters
-          output: web
           url: /counters.html
 
         - title: Memories
-          output: web
           url: /memory-technologies.html
 
       - title: Communication systems
-        output: web
         subfolderitems:
 
         - title: Introduction
           url: /communication-systems-intro.html
-          output: web
 
         - title: Amplitude modulation
           url: /amplitude-modulation.html
-          output: web
 
         - title: Frequency modulation
           url: /frequency-modulation.html
-          output: web
 
         - title: Digital communications
           url: /digital-communications.html
-          output: web
-
-        - title: Optical communications
-          url: /optic-communications.html
-          output: web
-
-      - title: Embedded systems
-        output: web
-        subfolderitems:
 
         - title: Amplitude Shift Keying
           url: /ask.html
-          output: web
+
+        - title: Optical communications
+          url: /optic-communications.html
+
+      - title: Embedded systems
+        subfolderitems:
 
         - title: Bluetooth
           url: /bluetooth.html
-          output: web
 
         - title: SPI protocol
           url: /spi.html
-          output: web
 
         - title: UART protocol
           url: /uart.html
-          output: web
 
         - title: CAN bus
           url: /can-bus.html
-          output: web
 
         - title: Arduino
           url: /arduino.html
-          output: web
 
         - title: FPGAs
           url: /fpga.html
-          output: web
