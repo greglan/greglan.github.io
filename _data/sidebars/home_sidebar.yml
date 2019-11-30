@@ -11,12 +11,9 @@ entries:
 
     - title: Resources
       url: /index-security.html
-      
       subfolders:
-
       - title: Exploitation
         subfolderitems:
-
         - title: Exploitation tricks
           url: /tricks.html
           
@@ -31,12 +28,10 @@ entries:
 
         - title: GDB cheatsheet
           url: /gdb.html
-          
 
       - title: Reversing
         
         subfolderitems:
-
         - title: ELF format
           url: /elf.html
 
@@ -105,7 +100,6 @@ entries:
 
       - title: Cryptography
         subfolderitems:
-
         - title: Introduction
           url: /introduction.html
 
@@ -132,7 +126,6 @@ entries:
 
       - title: Pentesting
         subfolderitems:
-
         - title: Metasploit
           url: /metasploit.html
           
@@ -144,7 +137,6 @@ entries:
 
       - title: Forensics
         subfolderitems:
-
         - title: Steganography
           url: /steganography.html
 
@@ -158,16 +150,13 @@ entries:
           url: /forensics-volatility.html
 
   - title: Computer science
-    
     folderitems:
     - title: Index
       url: /cs.html
 
       subfolders:
       - title: Algorithms
-        
         subfolderitems:
-
         - title: Complexity analysis
           url: /complexity-analysis.html
 
@@ -182,7 +171,6 @@ entries:
 
       - title: Data structures
         subfolderitems:
-
         - title: Trees
           url: /trees.html
 
@@ -206,7 +194,6 @@ entries:
           
       - title: Programming
         subfolderitems:
-
         - title: Python
           url: /python.html
           
@@ -227,7 +214,6 @@ entries:
           
       - title: Theory
         subfolderitems:
-
         - title: Regular languages
           url: /regular-languages.html
           
@@ -251,11 +237,10 @@ entries:
           
   - title: System
     folderitems:
-
     - title: Windows setup guide
       url: /windows-setup.html
       
-    - title: WIndows API
+    - title: Windows API
       url: /windows-api.html
       
     - title: Software setup guide
@@ -267,7 +252,6 @@ entries:
       subfolders:
       - title: Architectures    
         subfolderitems:
-
         - title: Instruction Level Parallelism
           url: /instruction-level-parallelism.html
           
@@ -291,7 +275,6 @@ entries:
           
       - title: Linux
         subfolderitems:
-
         - title: Some utils
           url: /linux-cmd-utils.html
           
@@ -327,7 +310,6 @@ entries:
 
       - title: Virtualization
         subfolderitems:
-
         - title: Docker
           url: /docker.html
 
@@ -342,7 +324,6 @@ entries:
 
   - title: Networks
     folderitems:
-
     - title: Resources
       url: /index-networks.html
 
@@ -359,7 +340,7 @@ entries:
       url: /tcp-ip-protocol.html
 
     - title: DNS protocol
-      url: /dns-protocol.html
+      url: /dns.html
 
     - title: 802.1x standard
       url: /802.1x.html
@@ -386,18 +367,23 @@ entries:
 
   - title: Physics
     folderitems:
-
-    - title: Particles
-      url: /particules.html
+    - title: Particle physics
+      url: /particule-physics.html
 
     - title: Semiconductors
       url: /semiconductors.html
 
+    - title: Special relativity
+      url: /special-relativity.html
+
+    - title: General relativity
+      url: /general-relativity.html
+
       subfolders:
       - title: Quantum mechanics
         subfolderitems:
-        - title: Basics
-          url: /qm-basics.html
+        - title: Introduction
+          url: /qm-intro.html
 
         - title: Matrix properties
           url: /qm-matrices.html
@@ -410,7 +396,6 @@ entries:
 
   - title: Information theory
     folderitems:
-
     - title: Introduction
       url: /information-theory-intro.html
 
@@ -426,7 +411,6 @@ entries:
       subfolders:
       - title: Coding theory
         subfolderitems:
-
         - title: Block codes
           url: /block-codes.html
 
@@ -435,9 +419,6 @@ entries:
 
   - title: Quantum Information
     folderitems:
-
-    - title: Resources and todos
-      url: /quantum-computing-index.html
 
     - title: Cheatsheet
       url: /quantum-cheatsheet.html
@@ -451,7 +432,6 @@ entries:
       subfolders:
       - title: Algorithms
         subfolderitems:
-
         - title: Complexity theory
           url: /quantum-complexity.html
 
@@ -472,7 +452,6 @@ entries:
 
       - title: Protocols
         subfolderitems:
-
         - title: Superdense coding
           url: /superdense-coding.html
 
@@ -484,14 +463,12 @@ entries:
 
   - title: Hardware
     folderitems:
-
     - title: Resources
       url: /index-electronics.html
 
       subfolders:
       - title: Logic
         subfolderitems:
-
         - title: Flip-flops
           url: /flip-flops.html
 
@@ -506,7 +483,6 @@ entries:
 
       - title: Communication systems
         subfolderitems:
-
         - title: Introduction
           url: /communication-systems-intro.html
 
@@ -527,7 +503,6 @@ entries:
 
       - title: Embedded systems
         subfolderitems:
-
         - title: Bluetooth
           url: /bluetooth.html
 

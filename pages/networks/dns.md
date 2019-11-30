@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "DNS protocol"
-permalink: "dns-protocol.html"
+permalink: "dns.html"
 tags: [networks]
 summary: "A quick introduction to the DNS protocol"
 ---

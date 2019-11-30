@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Mathematics of quantum mechanics"
-permalink: "qm-basics.html"
+title:  "Introduction to quantum mechanics"
+permalink: "qm-intro.html"
 tags: [maths, quantum]
 summary: "A quick look at different mathematical tools used in quantum mechanics"
 ---
@@ -54,9 +54,20 @@ $$
 * Tensor product of positive operators: positive
 * Tensor product of projectors operators: projectors
 
+## Relation to classical mechanics [5, p109]
+* Average value should behave like classical measurements
+* Evolution with time of the average of an observable $$L$$: 
+  
+  Using Schrodinger's equation $$i \hbar \devd{\ket{\psi}}{t} = H \ket{\psi(t)}$$, we have:
+
+  $$\devd{\average{L}}{t} = \devd{}{t} \bke{\psi(t)}{L}{\psi(t)} = \bke{\devd{\psi}{t}}{L}{\psi(t)} + \bke{\psi(t)}{L}{\devd{\psi}{t}} = \frac{i}{\hbar} \bke{\psi(t)}{HL}{\psi(t)} - \frac{i}{\hbar} \bke{\psi(t)}{LH}{\psi(t)} = - \frac{i}{\hbar} \bke{\psi(t)}{[L,H]}{\psi(t)}$$
+
+* Identification with Poisson brackets: for any pair of observables $$L,H$$ we have $$[L, H] \Leftrightarrow i \hbar \{L, H \}$$
+
 
 ## Resources and references
 * [1] *Nielsen & Chuang*, Quantum computation and quantum information
 * [2] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [3] An Introduction to Quantum Algorithms, Emma Strubell, 2011
 * [4] Quantum computing : lecture notes, Ronald de Wolf
+* [5] *Leonard Susskind*, Quantum Mechanics, The theoretical minimum

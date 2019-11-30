@@ -10,6 +10,12 @@ points that I think I should know by heart. This may very well make no sense to
 someone else. Also, most pages are a WIP, and are sometimes only used as a
 collection of links.
 
+{% comment %}
+{% for page in site.pages %}
+* {{ page.url }}
+{% endfor %}
+{% endcomment %}
+
 ## References
 This blog has been built using [Jekyll](https://jekyllrb.com/showcase/) and the
 [documentation theme](https://idratherbewriting.com/documentation-theme-jekyll/).

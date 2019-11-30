@@ -1,17 +1,48 @@
 $$
-\newcommand{\bra}[1]{\left< #1 \right|}
-\newcommand{\ket}[1]{\left| #1 \right>}
-\newcommand{\bk}[2]{\left< #1 \middle| #2 \right>}
-\newcommand{\bke}[3]{\left< #1 \middle| #2 \middle| #3 \right>}
-
-\DeclareMathOperator{\dimension}{dim}
-\DeclareMathOperator{\tr}{tr}
+\newcommand{\inftyp}{{+ \infty}}
+%\newcommand{\vect}[1]{\overrightarrow{#1}} % Vector alias
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\devp}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\devd}[2]{\frac{d #1}{d #2}}
 
 \newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\renewcommand{\P}{\mathbb{P}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
-\newcommand{\P}{\mathbb{P}}
-\newcommand{\F}{\mathbb{F}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\KX}{\mathbb{K}[X]}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\sgoth}{\mathfrak{S}}
+\renewcommand{\L}{\mathcal{L}}
 
 \newcommand{\s}{\sigma}
+
+\DeclareMathOperator{\trop}{tr} % Trace util
+\newcommand{\tr}[1]{\trop \left( #1 \right)} % Trace
+\DeclareMathOperator{\spop}{Sp} % Spectre util
+\newcommand{\Sp}[1]{\spop \left( #1 \right)} % Spectre
+\DeclareMathOperator{\dimension}{dim} % Dimension
+\DeclareMathOperator{\varop}{Sp} % Variance
+\newcommand{\var}[1]{\varop \left( #1 \right)} % Variance
+
+\DeclareMathOperator{\deg}{deg} % Degree
+\DeclareMathOperator{\mat}{mat} % Matrix
+%\DeclarePairedDelimiter\ceil{\lceil}{\rceil} % Ceil
+%\DeclarePairedDelimiter\floor{\lfloor}{\rfloor} % Floor
+\DeclareMathOperator{\card}{card} % Cardinal
+
+\DeclareMathOperator{\grad}{grad} % Gradient
+\renewcommand{\div}{\text{div} \,} % Divergence
+\newcommand{\rot}{\overrightarrow{\text{rot}} \,} % Curl/rotationnel
+\newcommand{\vnabla}{\vec{\nabla}} % Vecteur nabla
+
+\newcommand{\bra}[1]{\left< #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right>}
+\newcommand{\average}[1]{\left< #1 \right>}
+\newcommand{\bk}[2]{\left< #1 \middle| #2 \right>}
+\newcommand{\bke}[3]{\left< #1 \middle| #2 \middle| #3 \right>}
+\newcommand{\spinup}{\ket{\uparrow}}
+\newcommand{\spindown}{\ket{\downarrow}}
 $$
