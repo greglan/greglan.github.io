@@ -46,7 +46,9 @@ summary: "A quick introduction to particle physics"
   - Carry the *color* ~ charge of the strong force
 * Quantum chromodynamics: theory describing the strong force
 
+
 ## Elementary particles
+
 
 ## References
 * [1] *David McMahon*, Quantum field theory Demystified
