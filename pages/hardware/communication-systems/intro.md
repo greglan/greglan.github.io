@@ -67,3 +67,26 @@ summary: "Introduction to communication systems"
   a center frequency $$f_c$$).
 
   Noise observed after the narrow-band filter: narrow-band noise
+
+## Line codes
+* Non-return-to-zero (NRZ) codes: for a given data signaling rate, i.e., bit rate, require only half the baseband bandwidth required by the 
+  Manchester code (the passband bandwidth is the same). 
+  
+  When used to represent data in an asynchronous communication scheme, the absence of a neutral state requires other mechanisms for bit synchronization when a separate clock signal is not available.
+
+  NRZ-level itself is not a synchronous system but rather an encoding that can be used in either a synchronous or asynchronous transmission environment, that is, with or without an explicit clock signal involved.
+* Unipolar non-return-to-zero level: binary 1 maps to $$+V$$ while binary 0 maps to $$0$$.
+  
+  Disadvantage: power spectrum of the transmitted signal does not approach zero at zero frequency.
+
+  Consequences:
+  - transmitted DC power leads to higher power losses than other encodings 
+  - presence of a DC signal component requires that the transmission line be DC-coupled
+* Bipolar NRZ codes: binary 1 maps to $$+V$$ while binary 0 maps to $$-V$$
+  
+  Example: RS232 standard where binary 1 maps to $$[+5, +12]$$ Volts and binary 0 to $$[-12, -5]$$ Volts.
+
+
+## References
+* [Return-to-zero codes](https://en.wikipedia.org/wiki/Return-to-zero)
+* [NRZ codes](https://en.wikipedia.org/wiki/Non-return-to-zero)

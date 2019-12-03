@@ -68,10 +68,9 @@ $$
 ## Mutual information
 * Mutual information: $$I(X;Y) = H(Y)-H(Y \vert X)$$
 
-  Interpretation: how much information $$X$$ gives about $$Y$$ on average (
-  recall that $$H(Y \vert X) \leqslant H(Y)$$)
+  Interpretation: how much information $$X$$ gives about $$Y$$ on average (recall that $$H(Y \vert X) \leqslant H(Y)$$)
 
-  Expression: $$I(X;Y) =\sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}$$
+  Expression: $$I(X;Y) = \sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}$$
 
 * Symmetry of mutual information: $$I(X;Y) = I(Y;X)$$
 * Positivity of mutual information: $$I(X;Y) \geqslant 0$$
