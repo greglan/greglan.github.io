@@ -9,7 +9,8 @@ summary: "Introduction to superscalar architectures"
 ## Parallel decoding
 * Desirable to decode and issue several instructions at once to keep execution
   units busy
-* Solution: move part of the decoding to a *predecode unit* which partly decodes
+* Problem: fairly complex;, pipeline may need an additional "issue" stage after decoding.
+  Solution: move part of the decoding to a *predecode unit* which partly decodes
   the instructions before writing them to the instruction cache when they are
   loaded from memory (or second-level cache)
 * Principle: add information to each instruction so that it is easy to identify

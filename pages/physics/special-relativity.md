@@ -9,7 +9,7 @@ summary: ""
 {% include latex-commands.html %}
 
 ## Generalities
-### Transformations de Lorentz
+### Lorentz's transformations and consequences
 \begin{equation}
 \gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} = \frac{1}{\sqrt{1-\beta^2}}
 \end{equation}
@@ -29,18 +29,18 @@ c\Delta t' = \gamma \left( c \Delta t - \frac{V}{c} \Delta x \right)
 		v' = \frac{v-V}{1-\frac{vV}{c^2}}
 	\end{equation}
 * Si $$v'=c$$, alors $$v=c$$ aussi
-* Dilatation temporelle [1, Vidéo 2: 35min] 
+* Time dilatation [1, Vidéo 2: 35min] 
   \begin{equation}
 		\Delta t' = \gamma \Delta t
 	\end{equation}
-* Contraction spatiale [1, Vidéo 2: 51min30]. Mesure dans $$\mathcal{R}'$$ au même moment: $$\Delta t'=0$$
+* Spatial contraction [1, Vidéo 2: 51min30]. Measure in $$\mathcal{R}'$$ at the same time: $$\Delta t'=0$$
 
-  D'après tranformation de Lorentz:
+  According to Lorentz's tranformation:
   \begin{equation}
   \Delta x' = \frac{1}{\gamma} \Delta x
   \end{equation}
-	Pas de longueur unique: dépend de l'observateur
-* Temp propre: $$d\tau = \frac{\sqrt{I}}{c}$$ et $$d\tau = \frac{dt}{\gamma}$$
+  No unique length: depends on the observer
+* Proper time: $$d\tau = \frac{\sqrt{I}}{c}$$ et $$d\tau = \frac{dt}{\gamma}$$
 
 
 ### Minkowski space
@@ -75,18 +75,18 @@ c\Delta t' = \gamma \left( c \Delta t - \frac{V}{c} \Delta x \right)
 * Norme: $$v \cdot v = c^2$$
 
 ### Light-cone coordinates
-* Definition: $$(x^+, x^-, x^2, x^3)$$ with $$x^+ = \frac{1}{\sqrt{2}}(x^0 + x^1)$$ and $$x^- = \frac{1}{\sqrt{2}}(x^0 - x^1)$$ [3, p22]
-* Expression of the interval: $$-ds^2 = -2 dx^+ dx^- + (dx^2)^2 + (dx^3)^2 = \hat{\eta}_{\mu \nu} dx^\mu dx^\nu$$ [3, p23]
+* Definition: $$(x^+, x^-, x^2, x^3)$$ with $$x^+ = \frac{1}{\sqrt{2}}(x^0 + x^1)$$ and $$x^- = \frac{1}{\sqrt{2}}(x^0 - x^1)$$ [5, p22]
+* Expression of the interval: $$-ds^2 = -2 dx^+ dx^- + (dx^2)^2 + (dx^3)^2 = \hat{\eta}_{\mu \nu} dx^\mu dx^\nu$$ [5, p23]
 * Light-cone metric: $$\hat{\eta}_{\mu \nu} = \begin{pmatrix}
 	0 & -1 & 0 & 0 \\
 	-1 & 0 & 0 & 0\\
 	0 & 0 & 1 & 0 \\
 	0 & 0 & 0 & 1
-	\end{pmatrix}$$ [3, p24]
+	\end{pmatrix}$$ [5, p24]
 
-### Quadri quantité de mouvement [1, 26min40]
-* Si $$p = mv$$ avec $$v$$ quadi vecteur alors $$p$$ quadri vecteur
-* Si la quantité de mouvement est conservée dans un référentiel $$\R$$, alors elle l'est $$\forall \mathcal{R}'$$
+
+### Four-momentum
+* If $$p = mv$$ with $$v$$ four-vector, then $$p$$ four-vector [1, 26min40]
 * Expressions:
 	- $$p_\mu = (\frac{E}{c}, p_1, p_2, p_3), \quad p^\mu = (\frac{E}{c}, -p_1, -p_2, -p_3)$$ [4, p53]
   - $$\vec{p} = \gamma m \vec{v} = \gamma m \begin{pmatrix}
@@ -94,17 +94,22 @@ c\Delta t' = \gamma \left( c \Delta t - \frac{V}{c} \Delta x \right)
 			v_x\\
 			v_y\\
 			v_z
-			\end{pmatrix}$$ [3, p26]
+			\end{pmatrix}$$ [5, p26]
 
-* $$p^2 = \vec{p} \cdot \vec{p} = -m^2 c^2$$ [3, p27] [1, Vidéo 5: 44min40]
+* $$p^2 = \vec{p} \cdot \vec{p} = -m^2 c^2$$ [5, p27] [1, Vidéo 5: 44min40]
+* Center of momentum frame (CM frame): inertial frame such that the total momentum vanishes [3, p44]
+
+#### Conservation
+* If the four-momentum is conserved in a frame $$\R$$, then it is conserved in any frame $$\mathcal{R}'$$ [1, 26min40]
+* [3, p43]
 
 
 ### Energy and momentum
-* Definition de l'énergie $$E$$: composante temporelle $$p_t$$ de la quantité de mouvement $$p_t = \gamma m c = \frac{E}{c}$$ donc $$E = \gamma m c^2$$. [1, Vidéo 5: 49min20] [3, p26]
-* Limite faibles vitesses: $$E \simeq mc^2 + \frac{1}{2} mv^2 = E_0 + E_{c, \textit{classique}}$$ [1, Vidéo 5: 55min15]
-* Energie de masse $$E_0 = mc^2$$ [1, Vidéo 5: 1h3min40]
-* Energie cinétique relativiste: $$E = \gamma m c^2 = E_0 + (\gamma -1) mc^2 = E_0 + E_{c, \textit{rel}}$$ [1, Vidéo 5: 1h4min25]
-* $$\frac{E^2}{c^2} - \vec{p} \cdot \vec{p} = m^2 c^2$$ [3, p26]
+* Definition of the energy $$E$$: time component $$p_t$$ of the momentum $$p_t = \gamma m c = \frac{E}{c}$$ donc $$E = \gamma m c^2$$. [1, Vidéo 5: 49min20] [5, p26]
+* Limit for low velocities: $$E \simeq mc^2 + \frac{1}{2} mv^2 = E_0 + E_{c, \textit{classic}}$$ [1, Vidéo 5: 55min15]
+* Mass energy (énergie de masse) $$E_0 = mc^2$$ [1, Vidéo 5: 1h3min40]
+* Relastivistic kinematic energy (énergie cinétique): $$E = \gamma m c^2 = E_0 + (\gamma -1) mc^2 = E_0 + E_{c, \textit{rel}}$$ [1, Vidéo 5: 1h4min25]
+* $$\frac{E^2}{c^2} - \vec{p} \cdot \vec{p} = m^2 c^2$$ [5, p26]
 
 
 
@@ -128,10 +133,35 @@ c\Delta t' = \gamma \left( c \Delta t - \frac{V}{c} \Delta x \right)
   Expression [4, p53]: $$E = pv - \L = \gamma m c^2$$
 
 ## Electromagnetism
+* Levi-Civita symbol [6, p18]: $$\epsilon^{ijk} = \begin{cases} 
+	+1 \text{ if } i,j,k \text{ is an even permutation of } 1,2,3\\
+	0 \text{ if two indices repeat}\\
+	-1 \text{ else}
+ \end{cases}$$ 
+* Space-time vector potential: $$A^\mu = (\phi, A_1, A_2, A_3)$$ [6, p20]
 * Tenseur éléctromagnétique: $$F_{\mu \nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$$
+  
+  Symmetry: $$F_{\mu \nu} = - F_{\nu \mu}$$ [6, p19]
+  
+  Matrix expression [6, p19]: 
+
+  $$F_{\mu \nu} = \begin{pmatrix}
+	0 & -E_1 & -E_2 & -E_3 \\
+	E_1 & 0 & B_3 & -B_2\\
+	E_2 & B_3 & 0 & B_1 \\
+	E_3 & B_2 & -B_1 & 0
+  \end{pmatrix}$$
+
+  Relation between $$F^{\mu \nu}$$ and $$E$$: $$F^{0i} = E^i$$ [6, p19]
+
+  Relation between $$F^{\mu \nu}$$ and $$B$$: $$F^{i j} = \epsilon^{ikj} B_k$$  [6, p19]
+* $$\partial_\mu F^{\mu \nu} = J^\nu$$ [6, p19]
+* Relastivistic formulation of Maxwell equations: $$\epsilon^{\sigma \mu \nu \lambda} \partial_\mu F_{\nu \lambda} = 0$$ [6, p19]
 
 ## References
 * [1] *Richard Taillet*, [Introduction à la relativité restreinte](http://podcast.grenet.fr/podcast/introduction-a-la-relativite-restreinte/)
 * [2] *Leonard Susskind & Art Friedman*, Special Relativity and Classical Field Theory, The Theoretical Minimum
-* [3] *Barton Zwiebach*, A First Course in String Theory, 2nd edition
+* [3] *Bernard Schutz*, A First Course in General Relativity, 2nd edition
 * [4] *Lancaster & Blundell*, Quantum Field Theory for the Gifted Amateur
+* [5] *Barton Zwiebach*, A First Course in String Theory, 2nd edition
+* [6] *Rodolfo Gambini, Jorge Pullin*, A First Course in Loop Quantum Gravity

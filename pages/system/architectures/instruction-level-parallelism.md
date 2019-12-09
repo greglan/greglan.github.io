@@ -11,8 +11,11 @@ summary: "An introduction to ILP"
   instructions at the same time.
 * Pipelined operation allows several instructions to be executed at each stage
   of the pipeline
-* Parallel operation: several instructions executed by different execution units
+* Parallel operation: several instructions executed by different execution units.
+  
+  Different from multicore execution: different UEs (for instance 2 ALUs, one load and store unit, and one branch unit) are part of a single core
 
+  
 ## Pipelined execution
 * Typical pipeline: *Fetch -> Decode -> Execute -> Writeback*
 
@@ -100,7 +103,7 @@ div r4, r5, r6
 * Consistency of exceptions: order in which exceptions are processed relative to
   the sequence of instructions which caused them
 * Technique for ensuring sequential execution: start instructions in any order
-  but complete them only in order. Done by reordering buffers
+  but complete them only in order. Done by reordering buffers.
 
 ## VLIW and superscalar
 * VLIW: Very Long Instruction Word. Type of machine where the compiler produces

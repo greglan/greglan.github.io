@@ -368,9 +368,6 @@ entries:
     - title: Particle physics
       url: /particule-physics.html
 
-    - title: Semiconductors
-      url: /semiconductors.html
-
     - title: Special relativity
       url: /special-relativity.html
 
@@ -391,6 +388,12 @@ entries:
 
         - title: No Signalling
           url: /no-signalling.html
+
+    - title: Semiconductors
+      url: /semiconductors.html
+
+    - title: Lasers
+      url: /lasers.html
 
   - title: Information theory
     folderitems:
@@ -514,7 +517,10 @@ entries:
           url: /can-bus.html
 
         - title: Arduino
-          url: /arduino.html
+          url: /arduino.
 
         - title: FPGAs
           url: /fpga.html
+
+        - title: Real time systems
+          url: /real-time-systems.html
