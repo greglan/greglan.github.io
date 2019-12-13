@@ -63,3 +63,9 @@ summary: "Introduction to superscalar architectures"
 * Uses extra physical registers than architecturally available (to the
   programmer/compiler)
 * Mapping between architectural and physical registers performed by a table
+* [Duplicating register values](https://www.youtube.com/watch?v=7dhjLHXSPBI&list=PLAwxTw4SYaPkNw98-MFodLzKgi6bYGjZs&index=9)
+* [Register renaming](https://www.youtube.com/watch?v=_fIho0oeDhc&list=PLAwxTw4SYaPkNw98-MFodLzKgi6bYGjZs&index=10) and [RAT example](https://www.youtube.com/watch?v=-6hEDLf06M4&list=PLAwxTw4SYaPkNw98-MFodLzKgi6bYGjZs&index=11)
+
+
+## References
+* Lecture videos on the Reorder Buffer: [part 1](https://www.youtube.com/watch?v=TnxJA6uyP7Y), [part 2](https://www.youtube.com/watch?v=0w6lXz71eJ8), [part 3](https://www.youtube.com/watch?v=p6clkAsUV7E) and [why we need a reorder buffer](https://www.youtube.com/watch?v=zPd0v6oEFPg&list=PLAwxTw4SYaPnhRXZ6wuHnnclMLfg_yjHs&index=4) for out-of-order execution.

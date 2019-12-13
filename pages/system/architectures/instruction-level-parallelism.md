@@ -32,7 +32,7 @@ summary: "An introduction to ILP"
 ## Dependencies
 ### Data dependencies
 * RAW (read after write) dependency: also called flow-dependencies, arise because
-  of the structure of the algorithm
+  of the structure of the algorithm (true dependencies)
 
   Example where the second instruction is RAW dependent (*load-use dependency* e.g
   shared operand) on the first:
@@ -56,7 +56,7 @@ add r2, r4, r5
 mul r1, r2, r3
 add r1, r4, r5
 ```
-* WAR/WAW dependency: false dependencies, can be eliminated by register renaming
+* WAR/WAW dependency: false dependencies, can be eliminated by register renaming. [Video explanation](https://www.youtube.com/watch?v=GQzvfvNASCk&list=PLAwxTw4SYaPkNw98-MFodLzKgi6bYGjZs&index=8)
 
   Renaming can be performed by the compiler of the CPU itself. Some recent CPUs
   have a much larger number of registers than shown to the programmer/compiler.
