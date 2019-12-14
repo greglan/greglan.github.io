@@ -82,3 +82,4 @@ EXCEPTION_DISPOSITION _cdecl _except_handler
 * [[5] How SafeSEH works](https://reverseengineering.stackexchange.com/questions/11297/how-does-windows-safeseh-mechanism-work)
 * [[6] Article on how SEH works](https://sploitfun.blogspot.com/2012/08/seh-exploit-part1.html)
 * [safeseh-dump tool](https://code.google.com/archive/p/safeseh-dump/)
+* [The need for POP POP RET](https://dkalemis.wordpress.com/2010/10/27/the-need-for-a-pop-pop-ret-instruction-sequence/)

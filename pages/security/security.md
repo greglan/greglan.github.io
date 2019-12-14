@@ -94,3 +94,4 @@ summary: "Various links to good security articles or interesting things to look 
 * [Collection of short security articles](https://medium.com/@int0x33)
 * [GTFO](https://www.alchemistowl.org/pocorgtfo/)
 * [Trail of bits on CTF](https://trailofbits.github.io/ctf/)
+* [A list of interesting Shodan queries](https://github.com/jakejarvis/awesome-shodan-queries/blob/master/readme.md)

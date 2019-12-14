@@ -42,9 +42,14 @@ $$
 * Entropy sign: always positive.
 
 * Maximum value of entropy: maximum entropy for a random variable with $$n$$
-  values is $$\log n$$, which is achieved only by the uniform distribution.
+  values is $$\log n$$, which is achieved only by the uniform distribution. 
+
+  Hence we always have $$H(X) \leqslant \log \vert \mathcal{X} \vert$$ with $$\mathcal X$$ the set in which $$X$$ takes values
 
   Proof.
+* Output distribution is uniform when the input distribution is uniform [3, Q3.8]
+  
+  Proof: $$p(y) = \sum_x p(y \vert x) p(x) = \sum_x p(y \vert x) \frac{1}{\vert \mathcal X \vert} = \frac{1}{\vert \mathcal X \vert} \sum_x p(y \vert x) = \frac{1}{\vert \mathcal X \vert}$$
 * Binary entropy function $$H_2$$:
   
   ![binary-entropy-graph](https://upload.wikimedia.org/wikipedia/commons/2/22/Binary_entropy_plot.svg)

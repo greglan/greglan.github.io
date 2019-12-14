@@ -14,6 +14,13 @@ $$
 ## Introduction
 * Channel definition: conditional probability distribution that describes the channel output $$Y$$ given the channel $$X$$
 * Discrete time channel: defined by $$\P(y_1, \dots y_n \vert x_1, \dots x_n)$$
+* Information capacity [3, Q3.1]: maximum rate R which can be reliably transmitted over the channel $$p(y \vert x)$$.
+  
+  Expression: $$C = \max_{p(x)} I(X;Y)$$ with maximization over the input distribution
+  
+  Units: bits per channel use
+
+  Interpretation [1, 4p8]: maximum number of bits per use of the channel that can reliably be transmitted
 
 ## Channel coding theorem
 * Shannon's theorem: for any transmission rate less or equal to the channel
@@ -31,8 +38,8 @@ $$
   The greater $$n$$ is, the lower the probability of error. But also means
   increasing complexity, so impractical
 
-## Channel types
-### Discret Memoryless Channels (DMC)
+
+## Discret Memoryless Channels (DMC)
 * Noise for each transmitted symbol is independent of previous (or
   next) symbols
 
@@ -44,8 +51,6 @@ $$
   performance.
 * Validity of the model: a often a valid assumption
 * Definition of the information capacity of a DMC [1, 4p8] [2, p24]: $$C = \max_{p(x)} I(X;Y) = \max_{p(x)} \sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}$$
-  
-  Interpretation: maximum number of bits per use of the channel that can reliably be transmitted
 * Capacity calculations strategy: find the conditional entropy that is the easiest to calculate
   
   - Method 1: $$\max_{p(x)} I(X;Y) = \max_{p(x)} H(X) - H(X \vert Y)$$
@@ -57,12 +62,12 @@ $$
   
   Proof: $$I(X;Y) \leqslant H(X) \leqslant \log \vert \mathcal{X} \vert$$ and $$I(X;Y) \leqslant H(Y) \leqslant \log \vert \mathcal{Y} \vert$$
 
-### Noiseless binary channels
+## Noiseless binary channels
 * Definition
 * Conditional entropy
 * Information capacity: $$C = 1$$
 
-### Binary Symmetric Channels (BSC)
+## Binary Symmetric Channels (BSC)
 * Definition (with probability $$p$$ of corruption)
 
   ![bsc](https://upload.wikimedia.org/wikipedia/commons/8/8e/Binary_symmetric_channel_%28en%29.svg)
@@ -70,7 +75,7 @@ $$
 * Information capacity: $$C = 1 - H_2(p)$$
 
 
-### Binary Erasure Channel (BEC)
+## Binary Erasure Channel (BEC)
 * Definition: channel where bits are either received without
   error or lost ($$p_e$$).
 
@@ -88,12 +93,12 @@ $$
   Proof using $$I(X;Y) = H(X) - H(X \vert Y)$$ [1, 4p19]: 
 * Interpretation of the capacity [1, 4p20]: if we send $$n$$ data bits, the channel will erase $$\alpha n$$ bits on average. Hence the remaining number of bits available is $$(1- \alpha)n$$
 
-### Z channels
+## Z channels
 * Definition [1, 4p24] 
 * Expression of the mutual information [1, 4p24]
 * Capacity [1, 4p25]
 
-### Gaussian channels
+## Gaussian channels
 * Gaussian constraint: consider two gaussian centered at -1 and +1 respectively. If the $$\sigma$$ associated with the Gaussian is too large, the Gaussian will spread beyond 0. If it is the case, this can efect decision making
   
   If there are no constraints on the input symbols, arbitrarily many (that is, infinitely many) bits could be sent in one use of the channel with any desired small error probability - simply choose input values far enough apart that there will be small probability of uncertainty (tails of the Gaussian density).
@@ -117,7 +122,7 @@ $$
   - Consequence: $$I(X;Y) = h(Y) - h(Y \vert X) = \frac{1}{2} \log 2 \pi e(P + \sigma_N^2) - \frac{1}{2} \log 2 \pi e\sigma_N^2 $$ 
   $$= \frac{1}{2} \log \frac{P + \sigma_N^2}{\sigma_N^2} = \frac{1}{2} \log \left( 1 + \frac{P}{\sigma_N^2} \right)$$
 
-### Other channels
+## Other channels
 * Symmetric: noise independent of symbol values. Consequence: permutation of
   symbol values doesn't affect performance
 * Non-overlapping output channels: model, conditional probabilities, information capacity [1, 4p22]
@@ -127,6 +132,9 @@ $$
 ## Sphere packing
 * Sphere packing: $$R = \sqrt{\sum_i x_i}$$. If too much noise, a vector in the sphere will overlap with neighboring cells.
 
+## Bandwidth limited channels
+
 ## References
 * [1] *Robert Piechocki*, Communication Systems, Slides
 * [2] *Robert Piechocki*, Communication Systems, Lecture notes
+* [3] *Robert Piechocki*, Communication Systems, Exercise sheet
