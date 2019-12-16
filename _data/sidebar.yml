@@ -389,11 +389,19 @@ entries:
         - title: No Signalling
           url: /no-signalling.html
 
+      - title: Optics
+        subfolderitems:
+        - title: LEDs
+          url: /leds.html
+
+        - title: Lasers
+          url: /lasers.html
+
+        - title: Photodetectors
+          url: /photodetectors.html
+
     - title: Semiconductors
       url: /semiconductors.html
-
-    - title: Lasers
-      url: /lasers.html
 
   - title: Information theory
     folderitems:

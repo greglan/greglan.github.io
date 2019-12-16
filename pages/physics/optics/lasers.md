@@ -71,7 +71,11 @@ summary: ""
 * Fabry-Perot laser
 
 * Output light-current characteritics of a laser
-* SPectral characteristcs
+* Spectral characteristcs
 
 ## Implementations
 * 2 potential geometries: edge-emitting lasers and vertically emitting lasers
+
+
+## References
+* [1] *Dr Edmund Harbord*, Optoelectronics Lecture 
