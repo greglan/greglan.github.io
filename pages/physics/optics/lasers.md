@@ -36,14 +36,19 @@ summary: ""
   - $$g(n-n_0)P$$: stimulated emission
   - $$\beta \frac{n}{\tau_s}$$: spontaneous emission with $$\beta$$ the spontaneous emission coupling coefficient (amount of spontaneous emission that couples to the lasing mode since light is emitted in all directions)
   - $$\frac{P}{\tau_p}$$: laser emission with $$\tau_p$$ the photon lifetime
+* Expression of carrier density of the laser at threshold when neglecting the spontaneous coupling:
+  $$\devd{P}{t} = 0 = g(n-n_0)P - \frac{P}{\tau_p} \Rightarrow n = n_0 + \frac{1}{g \tau_p}$$ providing $$P>0$$ (lasing). However, all terms are constants. Hence carrier threshold density $$n_\text{th} = n_0 + \frac{1}{g \tau_p}, \quad \forall P>0$$
+* Expression of the output power with current in the steady state: $$\devd{n}{t} = 0 = -\frac{n}{\tau_s} + \frac{I}{eV} - g(n-n_0)P$$ hence with $$n = n_\text{th}$$ (lasing $$\forall P>0$$) we have: $$P = \left(\frac{I}{eV} - \frac{n_\text{th}}{\tau_s} \right) \frac{1}{g(n_\text{th}-n_0)} = \frac{I - I_\text{th}}{eVg(n_\text{th}-n_0)} = \frac{\Delta P}{\Delta I} (I - I_\text{th})$$ with $$I_\text{th} = \frac{e V n_\text{th}}{\tau_s}$$
+  
+  Expression below threshold: $$P=0$$ hence $$n_{n < n_\text{th}} = \frac{I \tau_s}{eV}$$
   
 ### Gain
-* Gain in semiconductors
-* Gain spectrum in semiconductors
+* Gain in semiconductors [1p6]
+* Gain spectrum in semiconductors [1p7]
 * Gain as a function of carrier density
-  $$n_0$$: point at which population inversion is achieved and absorption/emission are equally probable
+  $$n_0$$ [1p8]: point at which population inversion is achieved and absorption/emission are equally probable
   Temperature decreases the threshold
-* Gain/Loss per unit length: $$G$$ with units of $$\text{cm}^{-1}$$
+* Gain/Loss per unit length [1p9]: $$G$$ with units of $$\text{cm}^{-1}$$
   
   $$P(x+dx) = P(x) + dP$$ and $$dP = G dx$$, hence $$\devd{P}{x} = GP$$ which brings $$P(x) = P_0 e^{Gx}$$
 
@@ -61,16 +66,21 @@ summary: ""
   Total round trip gain: $$e^{2GL}$$
 
   Gain condition: $$P = P_1 \Rightarrow R_1 R_2 e^{2(G-\alpha)L} > 1$$ hence $$G > \alpha + \frac{1}{2L} \ln\left( \frac{1}{R_1 R_2} \right)$$
-* Phase condition and cavity modes: $$n L = m \frac{\lambda}{2}$$ hence
+* Phase condition and cavity modes: $$n L = m \frac{\lambda}{2}$$ with $$n$$ refractive index (constant for a given mode) hence
   
   $$\Delta \nu_m = \frac{c}{\lambda_m} - \frac{c}{\lambda_{m+1}} = \frac{c}{2 n L}$$
 
   $$\Delta \lambda = \frac{\lambda^2}{2 n L}$$
 
   The longer the cavity, the closer the modes. Hence shorter cavity have less modes than longer ones
-* Fabry-Perot laser
+* Fabry-Perot laser [1p13]: simplest feedback mechanism using 2 cleaved facets. Typical GaAs/AlGaAs. Gain guided laser spectrum. Individual mode widths: ~ few GHz
+  
+  Graph
 
-* Output light-current characteritics of a laser
+* Output light-current characteritics of a laser [1p14]:
+  - lasing occurs at threshold when the gain equal the losses and stimulated emmision becomes more likely than spontaneous absorption.
+  - light output rises quickly: inefficient spontaneous emission, some stimulated emission, efficient stimulated emission (lasing)
+  - In the region above the threshold current, one photon is generated though the recombnation of one hole and electron
 * Spectral characteristcs
 
 ## Implementations
@@ -78,4 +88,6 @@ summary: ""
 
 
 ## References
-* [1] *Dr Edmund Harbord*, Optoelectronics Lecture 
+* [1] *Dr Edmund Harbord*, Optoelectronics Lecture 6
+* [1] *Dr Edmund Harbord*, Optoelectronics Lecture 7
+* [1] *Dr Edmund Harbord*, Optoelectronics Lecture 8
