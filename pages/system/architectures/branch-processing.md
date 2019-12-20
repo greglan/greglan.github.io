@@ -13,24 +13,14 @@ summary: "Architectural view of branch processing"
 
   Exception: if a superscalar CPU can start execution at a branch destination
   before the branch is taken
-* Consequence: performance reduction, because the EU will empty before the
+  
+  Consequence: performance reduction, because the EU will empty before the
   branch is taken and refill just afterwards
-
-## Type of branches
-* Unconditional branches: simple branches, subroutine calls, subroutine returns
-* Conditional branches: loop-closing branches and all other branches
-* Identification of loop-closing branches: pattern decrement/test/branch. Often
+* Type of branches:
+  - Unconditional branches: simple branches, subroutine calls, subroutine returns
+  - Conditional branches: loop-closing branches and all other branches
+  - Identification of loop-closing branches: pattern decrement/test/branch. Often
   assumed to be taken
-* Usually, special state bits (condition codes) record the result of the last
-  instruction executed. Can be tested by conditional branches instructions.
-* Problem for pipelined CPUs: not possible to reschedule instructions by
-  inserting instructions between condition setting and condition testing
-  instructions
-
-  Fix: leave the result of tests in registers (truth values) which can be used
-  by subsequent conditional branch instructions. Allows instruction scheduling
-  to treat conditional evaluation and testing in the same way as
-  arithmetic/logical expression evaluation.
 
 ## Branch prediction
 * General strategy: unconditional branches should not disrupt pipelined
