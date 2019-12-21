@@ -12,6 +12,8 @@ summary: "A introduction to FPGAs"
 * Modelsim: allows to simulate a design (see waveforms)
 
   Xilinx ISE, Vivado: allow to implement a design on a specific FPGA
+* Core license vs architectural license
+* ASIC vs FPGA: FPGA advantage/disadvantage
 
 ## Components
 * DSP cores: can provide multipliers and multiplier accumulate (implements

@@ -262,6 +262,9 @@ entries:
         - title: Branch processing
           url: /branch-processing.html
           
+        - title: ARM
+          url: /arm.html
+          
         - title: ARMv7a
           url: /armv7a.html
           
@@ -270,6 +273,9 @@ entries:
           
         - title: x86
           url: /x86.html
+          
+        - title: Various information
+          url: /architecture-generalities.html
           
       - title: Linux
         subfolderitems:
