@@ -5,14 +5,9 @@ permalink: "rsa.html"
 tags: [security, algorithms, cryptography, maths]
 summary: "Presentation of RSA and its derivatives such as the Diffie-Hellman and ElGamal schemes"
 ---
-$$
-\newcommand{\P}{\mathbb{P}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\N}{\mathbb{N}}
-$$
+{% include latex-commands.html %}
 
 ## RSA
-
 ### Introduction
 * RSA: Rivest Shamir Adleman. Designed in 1977
 * First public-key encryption scheme
@@ -22,10 +17,10 @@ $$
 same range such that computing $$y$$ from $$x$$ is easy using the public key,
 but computing $$x$$ from $$y$$ is practically impossible unless the private key
 is known [1]
-* Euler's $$\varphi$$ function: $$\varphi(n) = \# \{0 < k < n, \; gcd(k,n)=1 \}$$
+* Euler's $$\varphi$$ function [2]: $$\varphi(n) = \# \{0 < k < n, \; gcd(k,n)=1 \}$$
   
   Examples: $$\varphi(7) = \# \{1, 2, 3, 4, 5, 6\} = 6$$, $$\varphi(8) = \# \{1, 3, 5, 7 \} = 4$$
-* Fermat's little theorem: $$\forall a \in \Z, \; \forall n > 1, \; gcd(a,n)=1 \Rightarrow a^{\varphi(n)} = 1 \mod n$$
+* Fermat's little theorem [2]: $$\forall a \in \Z, \; \forall n > 1, \; gcd(a,n)=1 \Rightarrow a^{\varphi(n)+1} = a \mod n$$
 
 
 ### Key generation
@@ -56,7 +51,7 @@ is known [1]
 * Ciphertext $$c = m^e \mod n$$
 
 ### Decryption
-* For $$m$$ invertible with modulo $$n$$, we have $$m^{\varphi(n)} = 1 \mod n$$.
+* For $$m$$ invertible with modulo $$n$$, we have $$m^{\varphi(n)} = 1 \mod n$$ (Fermat's little theorem).
   
   Decryption: $$c^d \mod n = m^{ed} \mod n = m^{1+k \varphi(n)} \mod n = m \mod n$$
 * Inverse calculation in Python (from *pycrypto* package):
@@ -84,7 +79,7 @@ d = inverse(e, phi)
 
 
 ### Notes on the implementation
-#### Efficient multiplication with double-and-add
+#### Efficient multiplication with double-and-add [2]
 * Problem statement and notations: with $$q = \sum_{i=0}^N q_i 2^i$$ compute $$pq = \sum_{i=0}^N q_i (2^i p)$$
 * Double step: compute the $$2^ip$$ for $$i \in \{0, \dots, N \}$$
 
@@ -104,7 +99,7 @@ d = inverse(e, phi)
   Compute $$p q = \sum_{k} 2^{i_k} p$$. Complexity: $$k \leqslant N$$ additions.
 * Total complexity: $$2 N$$ additions in the worst case
 
-#### Efficient exponentiation with square-and-multiply
+#### Efficient exponentiation with square-and-multiply [2]
 * Problem statement: with $$e = \sum_{i=0}^N e_i 2^i$$ compute $$m^e \mod n = m^{\sum_{i=0}^N e_i 2^i} \mod n = \prod_{i=0}^N (m^{2^i})^{e_i} \mod n $$
 * Square step: compute the $$m^{2^i} \mod n$$
 
@@ -132,7 +127,17 @@ d = inverse(e, phi)
 
 
 ## Diffie-Hellman key exchange
-* Allows to compute a shared secret key
+* Allows to compute a shared secret key [3]
+  
+  Uses a large prime $$p$$ and non zero $$g \mod p$$ as a public setup
+* Principle:
+  - choose a large prime $$p$$
+  - chose a generator $$g$$ of $$\Z/p\Z^*$$
+  - Alice generates a key pair $$(sk, pk) = (d \in \Z, g^d \mod p)$$ and sends $$g^d$$ to Bob
+  - Bob generates a key pair $$(sk, pk) = (h \in \Z, g^h \mod p)$$ and sends $$g^h$$ to Alice
+  - Alice computes the shared secret $$ss = (g^h)^d = g^{dh} \mod p$$ 
+  - Bob computes the shared secret $$ss = (g^d)^h = g^{dh} \mod p$$
+
 
 ## ElGamal
 ### Encryption
@@ -145,6 +150,8 @@ d = inverse(e, phi)
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
+* [2] *Chloe Martindale*, Cryptography A lecture 7
+* [3] *Chloe Martindale*, Cryptography A lecture 9
 * [Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 * [LiveOverflow on RSA basics](https://www.youtube.com/watch?v=sYCzu04ftaY)
 * [LiveOverflow on reversing RSA](https://www.youtube.com/watch?v=dcR1dkZJ7iU)

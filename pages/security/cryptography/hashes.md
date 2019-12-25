@@ -13,7 +13,10 @@ message authentication, password protection, key agreement protocols
 * Takes a long input to a short output: *hash value/digest*
 * Provides message integrity
 * Signatures act on hashes instead of the messages themselves (shorter so
-    faster, and most signature algorithm can only work on short inputs)
+  faster, and most signature algorithm can only work on short inputs)
+* Definition [2]: $$H: M \to D$$.
+  
+  Compression requirement: $$\vert D \vert < \vert M \vert$$
 
 ## Security
 * Unpredicatbility: a small variation of the input should lead to a huge
@@ -29,7 +32,9 @@ attempts to find a preimage. Impossible in practice with modern hash because
 $$n=256$$ (SHA-256, BLAKE2) [1, p108]
 * Collision resistance: impossible to find two distinct messages that hash to the
 same digest
+* Description of experiments and their respective advantages [2]
 
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
+* [2] *Francois Dupressoir*, Lecture 3

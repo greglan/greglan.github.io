@@ -42,8 +42,8 @@ toc: false
 ## Noise
 * Performance limited by the SNR. Performance quantified in terms of SNR or receiver sensitivity for a given error performance.
 * Noise sources in optical communications systems:
-  - laser source noise: often termed relative intensity noise (RIN) which is the result of spontaneous emission coupling into the lasing mode
-  - receiver noise: shot noise at the photodiode and thermal noise at the following amplifier.
+  - laser source noise: often termed *relative intensity noise* (RIN) which is the result of spontaneous emission coupling into the lasing mode
+  - receiver noise: shot noise at the photodiode and thermal noise at the following amplifier
 * Typical BER for optical communication systems: must be $$< 10^{-9}$$
 * Shot noise model: equivalent to Poisson distributed electron noise mean square noise current is proportional to photocurrent $$I$$ and bandwidth $$B$$: $$\average{i_s^2} = 2eIB$$. 
   
@@ -61,3 +61,4 @@ toc: false
 
 ## References
 * [1] *Dr Edmund Harbord*, Optoelectronics Lecture 10
+* [3] [Example datasheet](https://www.vishay.com/docs/81503/bpv10nf.pdf)
