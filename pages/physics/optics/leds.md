@@ -6,8 +6,13 @@ tags: [physics]
 summary: ""
 ---
 
-## Operation
-## Spectrum
+## Mode of operation
+* Forward biased PN junction
+* Electrons and holes flow into the depletion region and recombine to emit photons
+* Direct bandgap semicondutctors allow rapid recombination with efficient optical emission
+* Emission wavelength given by $$E_g$$
+  
+  Emission bandwidth set by a few $$k_B T$$
 ## Internal quantum efficiency
 ## Frequency response
 ## Effiency tweaks
@@ -69,3 +74,4 @@ process
 
   ## References
 * [1] *Dr Edmund Harbord*, Optoelectronics Lecture 
+* [Example datasheet](https://docs-emea.rs-online.com/webdocs/0e1b/0900766b80e1b0e4.pdf)

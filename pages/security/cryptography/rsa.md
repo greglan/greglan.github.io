@@ -130,19 +130,50 @@ d = inverse(e, phi)
 * Allows to compute a shared secret key [3]
   
   Uses a large prime $$p$$ and non zero $$g \mod p$$ as a public setup
-* Principle:
+* Principle: Alice sends her public key to Bob, and Bob sends his public key to Alice, and they can deduce a shared secret.
+* Protocol:
   - choose a large prime $$p$$
   - chose a generator $$g$$ of $$\Z/p\Z^*$$
-  - Alice generates a key pair $$(sk, pk) = (d \in \Z, g^d \mod p)$$ and sends $$g^d$$ to Bob
-  - Bob generates a key pair $$(sk, pk) = (h \in \Z, g^h \mod p)$$ and sends $$g^h$$ to Alice
+  - Alice generates a key pair $$(sk_A, pk_A) = (d \in \Z, g^d \mod p)$$ and sends $$g^d$$ to Bob
+  - Bob generates a key pair $$(sk_B, pk_B) = (h \in \Z, g^h \mod p)$$ and sends $$g^h$$ to Alice
   - Alice computes the shared secret $$ss = (g^h)^d = g^{dh} \mod p$$ 
   - Bob computes the shared secret $$ss = (g^d)^h = g^{dh} \mod p$$
 
 
 ## ElGamal
 ### Encryption
+* Setup:
+  - Alice chooses a prime $$p$$ and a generator $$g$$ of $$\Z/p\Z^*$$
+  - Alice chooses a random secret $$d \in \set{1, \dots, p-1}$$ and computes $$pk_A = g^d \mod p$$
+  - Alice sends his public key $$(p, g, pk_A)$$ to Bob
+* Encryption:
+  - Bob chooses a random secret $$h \in \set{1, \dots, p-1}$$ and computes $$pk_B = g^h \mod p$$
+  - Bob computes the shared secret $$ss = pk_A^h \mod p$$
+  - Bob computes the encrypted message $$enc_m = m \cdot ss$$
+  - Bob sends the ciphertext $$(pk_B, enc_m)$$ to Alice
+* Decryption:
+  - Alice computes the shared secret $$ss = pk_B^d \mod p$$
+  - Bob computes the ciphertext $$m = enc_m \cdot ss^{-1} = enc_m \cdot pk_B^{p-1-d} \mod p$$
+* Inverse of the shared secret: $$ss \cdot pk_B^{p-1-d} = g^{dh} \cdot g^{h(p-1-d)} = (g^{p-1})^h = 1 \mod p $$ hence $$ss = pk_B^{p-1-d}$$
+* Secret reuse: if $$m$$ is known, the shared secret $$ss$$ can be recovered from the ciphertext, so use a new secret $$h$$ for each message
 
 ### ElGamal signatures
+* The message $$m$$ is assumed to be public. Similar to a contract to be signed
+* Setup:
+  - Choose a prime $$p$$ and a generator $$g$$ of $$\Z/p\Z^*$$
+  - The signer Alice generates a key pair $$(sk, pk) = (a, g^a \mod p)$$ where $$a \in \set{0, \dots, p-1}$$ is an integer and publishes $$pk$$ as her identity
+  - The verifier generates a message $$m \mod (p-1)$$ to be signed
+* Signing:
+  - Pick a random integer $$k \in \set{0, \dots, p-1}$$
+  - Compute $$r = g^k \mod p$$
+  - Compute $$s = k^{-1}(m-ar) \mod (p-1)$$
+  - Publish a signed message $$(r, s)$$
+* Verify: the verifier checks that $$g^m = g^{ar} \cdot g^{k k^{-1}(m-ar)} = pk^r \cdot r^s \mod p$$
+* Secrecy of the nonce $$k$$: if an attacker knows $$k$$ he can recover $$a$$
+* Nonce reuse: if $$k$$ is used more than once an attacker can recover $$k$$ and hence $$a$$
+  
+  Proof: assume we sign two messages with the same nonce $$k$$. We get rwo signatures $$(r, s_1)$$ and $$(r, s_2)$$ such that $$s_1 = k^{-1}(m_1-ar) \mod (p-1)$$ and $$s_2 = k^{-1}(m_2-ar) \mod (p-1)$$. Then $$k = (m_1-m_2)(s_1-s_2)^{-1} \mod (p-1)$$
+ * Remark on the message: the message is taken modulo $$p-1$$ since it appears in the exponent of $$g$$
 
 
 ## Discrete logarithm problem

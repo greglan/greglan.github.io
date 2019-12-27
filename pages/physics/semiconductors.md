@@ -26,7 +26,8 @@ summary: ""
 
 * Expression of current in a PN junction: $$I = I_s\left(e^{\frac{eV}{nk_b T}} - 1 \right)$$ with:
   - $$I_s$$ the saturation current
-  - $$n$$ an idelaity factor. Usually $$\sim 1$$ in forward bias and up to 2 in reverse bias
+  - $$n$$ an ideality factor. Usually $$\sim 1$$ in forward bias and up to 2 in reverse bias
+  - $$k_B = 8.62 \times 10^{-5} \, \text{eV}\cdot \text{K}^{-1}$$ the Boltzmann constant
 * Light generation: use forward bias, which injects electrons and holes in the depletion region so that then recombine and emit light
   
   The energy of the photon is the energy of the bandgap. hence bandgap determines the emission properties
