@@ -265,12 +265,6 @@ entries:
         - title: ARM
           url: /arm.html
           
-        - title: ARMv7a
-          url: /armv7a.html
-          
-        - title: ARMv8a
-          url: /armv8a.html
-          
         - title: x86
           url: /x86.html
           

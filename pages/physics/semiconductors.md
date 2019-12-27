@@ -13,7 +13,7 @@ summary: ""
 
 ## PN junction
 * Methods to change the number of carriers in a semiconductor:
-  - icnrease the temperature
+  - increase the temperature
   - semiconductor doping: change one in $$10^6$$ atoms with an excess electron (n doping) or hole (p doping)
 * Si can p-dope with boron B and n-dope with phosphorus P. See this [periodic table](https://eenews.cdnartwhere.eu/sites/default/files/styles/inner_article/public/images/01-picture-libraryde/PeterClarke/Research/periodictable600.jpg?itok=aunyL2OT)
 * Forward bias: reduces the depletion region, once large enough to overcome the difference the current flows
