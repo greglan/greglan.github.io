@@ -28,9 +28,9 @@ summary: ""
   - $$I_s$$ the saturation current
   - $$n$$ an ideality factor. Usually $$\sim 1$$ in forward bias and up to 2 in reverse bias
   - $$k_B = 8.62 \times 10^{-5} \, \text{eV}\cdot \text{K}^{-1}$$ the Boltzmann constant
-* Light generation: use forward bias, which injects electrons and holes in the depletion region so that then recombine and emit light
+* Light generation: use forward bias, which injects electrons and holes in the depletion region so that they recombine and emit light
   
-  The energy of the photon is the energy of the bandgap. hence bandgap determines the emission properties
+  The energy of the photon is the energy of the bandgap. Hence bandgap determines the emission properties
 * Light detection: use reverse bias so that the photons are absorbed in the depletion region to produce electrons and holes.
   
   Electrons and holes travel in opposite directions which form a current. 

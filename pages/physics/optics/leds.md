@@ -15,13 +15,13 @@ $$
 ### Mode of operation
 * Forward biased PN junction
 * Electrons and holes flow into the depletion region and recombine to emit photons
-* Direct bandgap semicondutctors allow rapid recombination with efficient optical emission
+* Direct bandgap semiconductors allow rapid recombination with efficient optical emission
 
 ### Spectrum characteristics
 * Emission wavelength given by $$E_g$$
-* Peak emission wavelength sloghtly below $$E_g + k_BT$$
+* Peak emission wavelength slightly below $$E_g + k_BT$$
 * Emission bandwidth: a few $$k_BT$$.
-* Emission width: $$\Delta E_\text{ph} \sim 1.5-3.5 k_BT$$. Usually $$2.4 k_BT$$
+* Emission width: $$\Delta E_\text{ph} \sim 1.5-3.5 \, k_BT$$. Usually $$2.4 \, k_BT$$
 * Wavelength spread: $$\Delta \lambda = \frac{-hc}{E^2_\text{photon}} \Delta E_\text{photon}$$ since $$\lambda = \frac{hc}{E_\text{photon}}$$
 * Wavelength spread at 0.85 $$\mu$$m assuming a $$2.4 \, k_BT$$ energy spread: $$\Delta \lambda \sim 36$$ nm
   
@@ -86,6 +86,7 @@ $$
 * Fresnel losses: losses on reflection at the interface between the surface and the outside world
 
 ## Implementation
+### Coupling with optical fibers
 ### Double heterostructure
 
 ![pn-junction-vs-double-heterostructure](/images/physics/pn-junction-double-heterostructure.png)
@@ -98,7 +99,6 @@ $$
   - device manufacture: etch stop layer, ohmic contacts
   - optical guidance as active layer refractive index is higher (see lasers)
 
-### Coupling with optical fibers
 ### Liquid phase epitaxy
 * *Epitaxy*: to grow something layer-by-layer
 * Advantages:
@@ -112,10 +112,8 @@ $$
 
 ### Metal-organic chemical vapour deposition (MOCVD)
 * Advantages:
- - Faster growth possible than e.g.
-MBE
- - Flow process rather than batch
-process
+  - Faster growth possible than e.g. MBE
+  - Flow process rather than batch process
 * Disadvantages:
   - Phosphene and other precursors are nerve gases
   - More difficult to monitor what is going on (pressure too high for electron gun to measure thickness)
