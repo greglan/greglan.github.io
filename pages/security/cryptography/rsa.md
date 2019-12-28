@@ -177,7 +177,7 @@ d = inverse(e, phi)
 
 
 ## Discrete logarithm problem
-
+* Elements of order $$d$$ in $$\Z/p\Z$$ with $$p \in \P$$: if $$g$$ is a generator of $$\Z/p\Z$$, then $$g^\frac{p-1}{d}$$ is of order $$d$$
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
