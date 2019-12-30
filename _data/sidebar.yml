@@ -98,8 +98,8 @@ entries:
 
       - title: Cryptography
         subfolderitems:
-        - title: Introduction
-          url: /introduction.html
+        - title: Generalities
+          url: /generalities.html
 
         - title: One Time Pad
           url: /one-time-pad.html

@@ -1,13 +1,19 @@
 ---
 layout: page
 title:  "Some cryptography concepts"
-permalink: "introduction.html"
+permalink: "generalities.html"
 tags: [security, cryptography]
 summary: "Presentation of some basic concepts of cryptography"
 ---
 $$
 \newcommand{\P}{\mathbb{P}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\adv}{\text{Adv}}
+\newcommand{\exp}{\text{Edv}}
 $$
+{% comment %}
+Move Adv and Exp to latex macros
+{% endcomment %}
 
 ## Encryption scheme
 * Encryption scheme: encryption algorithm $$E$$, decryption algorithm $$D$$ and
@@ -31,27 +37,56 @@ $$
 ## Cryptanalysis
 * Kerckhoff's principle: the security of the cipher should rely only on the key,
 and not on the secrecy of the cipher.
+  
+  Consequence: always assume an attacker knows the algorithm used
 * If we want a good cryptanalysis to be done on the cipher, we have to publish
   it so that we can perform the most comprehensive cryptanalysis.
+
 ### Key recovery
-Security is always defined relative to the two following questions:
-* What are the opponent's capabilities ?
-* What are the goals of the adversary ? One of them is key recovery, according
+* Security is always defined relative to the two following questions:
+  - What are the opponent's capabilities ?
+  - What are the goals of the adversary ? One of them is key recovery, according
   to Kerchoff's principle
+* Advantage of an adversary [2, p5]: probability that an adversary outputs a correct key
+  
+  Interpretation [2, p7]: if advantage is close to zero, the adversary is ineffective, if it is close to 1, the adversary successfully breaks the scheme
 
+  Insecure scheme [2, p7]: scheme such that there exists an adversary that successfully break the scheme. 
+  
+  Method to prove a scheme is unsecure [2, p7]: suffices to describe an adversary and show that the corresponding advantage is high enough
+* kr-pas [2, p5]: *passive key recovery under passive attack*
+  
+  Expression of the game $$\text{Exp}_E^\text{kr-pas}(\A)$$
+  
+  Expression of the advantage $$\text{Adv}_E^\text{kr-pas}(\A)$$
+* Guessing attack. Advantage. [2, p5]
+* 1kca/okca [2, p6]: the adversary intercepts one cipher text, known as *known ciphertext attack* or *one time known ciphertext attack*
+  
+  kr-1kca/kr-okca [2, p6]: *key recovery against under one time known ciphertext attack*
 
-* Security game $$KR-PAS_E(A)$$ with $$A$$ adversary.
-  The normal person generates a key $$K^* \leftarrow Kg$$
-  The adversary wins the game if the guessed
-  key $$R$$ of $$A$$ is equal to $$K$$
+  Expression of $$\text{Exp}_E^\text{kr-1kca}(\A)$$ [2, p6]
+* kr-1kpa [2, p6]: *key recovery under known plaintext attack*
 
-  KR-OKCA/KR-1KCA: Key recovery against One Time Known ciphertext Attack
-* KR-1KPA: Key recovery against known Plaintext Attack
-* KR-AKCA is stronger than KR-PAS, because if we have the first one, we have the
+  The adversary has access to the plaintext and the corresponding ciphertext
+
+  Expression of $$\text{Exp}_E^\text{kr-1kpa}(\A)$$ [2, p6]
+* kr-cpa [2, p6]: *key recovery against chosen plaintext attack*
+  
+  The adversary chooses the plaintext and has access to the corresponding ciphertext
+
+  Expression of $$\text{Exp}_E^\text{kr-1cpa}(\A)$$ [2, p6]
+* kr-akca is stronger than kr-pas, because if we have the first one, we have the
   other
-* The One-Time pad is not KR-AKPA secure, because if we have both the message
+* The One-Time pad is not kr-akpa secure, because if we have both the message
   and the ciphertext, then we have the key
-* KR-ACPA: Key recovery against one time chosen plaintext attack
+
+
+### One-way security
+* One way experiment [2, p8]: also called *plaintext recovery* experiment and *(weak) secrecy* experiment
+* ow-pas [2, p8]: *passive one-time one-way security*
+  
+  Expression of $$\adv_E^\text{ow-pas}(\A)$$ [2, p8]
+* Optimal strategy for an attacker [2, p8]: output the MAP (maximum a posteriori) estimate $$\text{argmax}_\hat{M} \P(\hat{M}=M^* \, \vert \, C^*)$$
 
 
 ### Black box models [1, p11]
@@ -126,7 +161,7 @@ numbers as the relationship between the two keys
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
-* [2] *Francois Dupressoir*
+* [2] *Francois Dupressoir*, Lecture 1
 * [Confusion and diffusion properties](https://en.wikipedia.org/wiki/Confusion_and_diffusion)
 * [Attack models fro cryptanalysis](https://www.hackers-arise.com/single-post/2019/04/30/Cryptography-Basics-Part-2-Attack-Models-for-Cryptanalysis)
 * [Cryptography basics](https://www.hackers-arise.com/cryptography-basics)

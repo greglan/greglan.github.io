@@ -185,13 +185,20 @@ d = inverse(e, phi)
 * [3] *Chloe Martindale*, Cryptography A lecture 9
 * [Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 * [LiveOverflow on RSA basics](https://www.youtube.com/watch?v=sYCzu04ftaY)
-* [LiveOverflow on reversing RSA](https://www.youtube.com/watch?v=dcR1dkZJ7iU)
+
+### Tools
+* [Openssl commands](https://raymii.org/s/tutorials/Encrypt_and_decrypt_files_to_public_keys_via_the_OpenSSL_Command_Line.html)
+* [FactorDB](http://factordb.com/)
+* [Python pycrypto lib](https://pypi.org/project/pycrypto/)
+* [RSA CTF tool](https://github.com/Ganapati/RsaCtfTool/blob/master/README.md)
+* [RSA tool example use](https://m0x39.blogspot.com/2012/12/0x00-introduction-this-post-is-going-to.html)
+
+### CTF tasks
+* [Crypto CTF writeups](https://www.youtube.com/watch?v=bAlF22mIYNk)
+* [Another example of solving a RSA CTF](https://www.youtube.com/watch?v=Ovi33rfaLLk)
+* [Solving multiexponent RSA](https://www.youtube.com/watch?v=EiW0YQDp2Yc&list=WL&index=90)
 * [LiveOverflow on RSA CPA](https://www.youtube.com/watch?v=bFfyROX7V0s)
 * [Another CPA attack](https://wiki.newae.com/Tutorial_B11_Breaking_RSA)
+* [LiveOverflow on reversing RSA](https://www.youtube.com/watch?v=dcR1dkZJ7iU)
 * [RSA reversing](https://resources.infosecinstitute.com/breaking-software-protection-rsa/)
-* [RSA CTF tool](https://github.com/Ganapati/RsaCtfTool/blob/master/README.md)
-* [FactorDB](http://factordb.com/)
-* [RSA tool example use](https://m0x39.blogspot.com/2012/12/0x00-introduction-this-post-is-going-to.html)
-* [Crypto CTF writeups](https://www.youtube.com/watch?v=bAlF22mIYNk)
-* [Python pycrypto lib](https://pypi.org/project/pycrypto/)
-* [Openssl commands](https://raymii.org/s/tutorials/Encrypt_and_decrypt_files_to_public_keys_via_the_OpenSSL_Command_Line.html)
+
