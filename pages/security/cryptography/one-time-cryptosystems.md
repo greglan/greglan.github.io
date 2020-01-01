@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "The One-Time Pad (OTP)"
-permalink: "one-time-pad.html"
+title:  "The One-Time Cryptosystems"
+permalink: "one-time-cryptosystems.html"
 tags: [security, cryptography]
 summary: ""
 ---
@@ -12,7 +12,7 @@ summary: ""
 * Key generation *K*: key of the same length as the message *M*
 * Encryption/decryption $$E_K(M) / D_K(C)$$: $$C = M \oplus K / M = C \oplus K$$
 
-## Security proof
+## Security proof of the One-Time-Pad (OTP)
 * Focus on a single bit: it is either encrypted to the same bit, or flipped
   depending on the key (probability 1/2 for each case).
 * In other words, the probability that the encrypted bit takes a specific value

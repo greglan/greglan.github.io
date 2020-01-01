@@ -101,7 +101,7 @@ entries:
         - title: Generalities
           url: /generalities.html
 
-        - title: One Time Pad
+        - title: One Time cryptosystems
           url: /one-time-pad.html
 
         - title: Block and stream ciphers
@@ -250,6 +250,15 @@ entries:
       subfolders:
       - title: Architectures    
         subfolderitems:
+        - title: Generalities
+          url: /architecture-generalities.html
+          
+        - title: ARM
+          url: /arm.html
+          
+        - title: x86
+          url: /x86.html
+      
         - title: Instruction Level Parallelism
           url: /instruction-level-parallelism.html
           
@@ -261,15 +270,6 @@ entries:
           
         - title: Branch processing
           url: /branch-processing.html
-          
-        - title: ARM
-          url: /arm.html
-          
-        - title: x86
-          url: /x86.html
-          
-        - title: Various information
-          url: /architecture-generalities.html
           
       - title: Linux
         subfolderitems:

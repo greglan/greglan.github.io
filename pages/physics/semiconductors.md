@@ -20,9 +20,9 @@ summary: ""
   
   Reverse bias: increases the size of the depletion region, so no current flows
 
-![pn-junction](/images/physics/pn-junction.png)
+{% include centered-image.html file="physics/pn-junction.png" alt="pn-junction" %}
 
-![iv-curve-wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Diode-IV-Curve.svg/320px-Diode-IV-Curve.svg.png)
+{% include centered-image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Diode-IV-Curve.svg/320px-Diode-IV-Curve.svg.png" alt="iv-curve" %}
 
 * Expression of current in a PN junction: $$I = I_s\left(e^{\frac{eV}{nk_b T}} - 1 \right)$$ with:
   - $$I_s$$ the saturation current
@@ -42,13 +42,14 @@ summary: ""
   
   Examples: GaAs, InAs
 
-  ![direct-bandgap](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Direct.svg/300px-Direct.svg.png)
+{% include centered-image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Direct.svg/600px-Direct.svg.png" alt="direct-bandgap" %}
+
 
 * *Indirect bandgap semiconductors*: conduction band minimum is displaced in momentum the valence band minimum
   
   Examples: Si, Ge, AlAs. Bandgap of Si: $$1 \mu$$m
 
-  ![indirect-bandgap](https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Indirect_Bandgap.svg/300px-Indirect_Bandgap.svg.png)
+ {% include centered-image.html url="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Indirect_Bandgap.svg/600px-Indirect_Bandgap.svg.png" alt="indirect-bandgap" %}
 
 ## Compound semiconductors
 * Used to tune the emission wavelength.

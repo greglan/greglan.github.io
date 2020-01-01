@@ -18,6 +18,7 @@ Move Adv and Exp to latex macros
 ## Encryption scheme
 * Encryption scheme: encryption algorithm $$E$$, decryption algorithm $$D$$ and
   key generation algorithm $$Kg$$
+* Encryption vs enciphering [12, 2.1.1]: enciphering requires that the output space is the same as the message space
 * *Correctness*: $$m = D(E(m, k), k)$$
 * *Security*: $$\P(M=m \vert C = c) = \P(M=m)$$ (an eavesdropper gain no
   information)
@@ -162,6 +163,7 @@ numbers as the relationship between the two keys
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
 * [2] *Francois Dupressoir*, Lecture 1
+* [12] *Francois Dupressoir*, Lecture 2
 * [Confusion and diffusion properties](https://en.wikipedia.org/wiki/Confusion_and_diffusion)
 * [Attack models fro cryptanalysis](https://www.hackers-arise.com/single-post/2019/04/30/Cryptography-Basics-Part-2-Attack-Models-for-Cryptanalysis)
 * [Cryptography basics](https://www.hackers-arise.com/cryptography-basics)

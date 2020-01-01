@@ -24,7 +24,7 @@ summary: ""
   - solid based: ruby, [YAG](https://en.wikipedia.org/wiki/Nd:YAG_laser), semiconductors
 * Principle [4]: ampliying medium + resonant cavity
 
-![laser-principle](/images/physics/laser.png)
+{% include centered-image.html alt="laser" file="physics/laser.png" %}
 
 
 ## Theory
@@ -79,10 +79,9 @@ summary: ""
   - If $$G=0$$: transparency (no gain)
   - If $$G > 0$$: $$P>P_0$$ so gain
   - If $$G < 0$$: $$P<P_0$$ so loss
+
 * Roundtrip condition for feedback: let $$G$$ be the gain per unit length, $$\alpha$$ the loss per unit length and $$R = \left( \frac{n_1-n_2}{n_1+n_2}\right)^2$$ reflection coefficient
-  
-  ![roundtrip-condition](/images/physics/laser-roundtrip-condition.png)
-  
+    
   Total roundtrip: $$P_1 R_1 e^{(G-\alpha)L} R_2 e^{(G-\alpha)L}$$
 
   Total round trip loss: $$R_1 R_2 e^{2\alpha L}$$
@@ -90,6 +89,9 @@ summary: ""
   Total round trip gain: $$e^{2GL}$$
 
   Gain condition: $$P = P_1 \Rightarrow R_1 R_2 e^{2(G-\alpha)L} > 1$$ hence $$G > \alpha + \frac{1}{2L} \ln\left( \frac{1}{R_1 R_2} \right)$$
+
+{% include centered-image.html alt="roundtrip-condition" file="physics/laser-roundtrip-condition.png" %}
+
 * Phase condition and cavity modes: $$n L = m \frac{\lambda}{2}$$ with $$n$$ refractive index (constant for a given mode) hence
   
   $$\Delta \nu_m = \frac{c}{\lambda_m} - \frac{c}{\lambda_{m+1}} = \frac{c}{2 n L}$$
