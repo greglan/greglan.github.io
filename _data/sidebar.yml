@@ -400,6 +400,9 @@ entries:
         - title: Photodetectors
           url: /photodetectors.html
 
+        - title: Optic fibers
+          url: /optic-fibers.html
+
     - title: Semiconductors
       url: /semiconductors.html
 

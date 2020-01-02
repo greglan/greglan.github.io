@@ -111,6 +111,23 @@ summary: ""
 
 ## Implementations
 * 2 potential geometries: edge-emitting lasers and vertically emitting lasers
+* VCSEL surface emitting laser characteristics [4, p9]: laser à émission par la surface 
+  - small gain
+  - high mirror reflectivity
+  - short cavity length: monomode laser
+  - Gaussian mode
+
+{% include centered-image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Simple_vcsel.svg/320px-Simple_vcsel.svg.png" alt="vcsel-laser" %}
+
+* Edge-emitting lasers characteristics [4, p9]: laser à émission par la tranche
+  - high gain
+  - small mirror reflectivity
+  - long cavity length: multimode laser
+  - non-Gaussian mode: weak coupling with optic fibers
+
+{% include centered-image.html url="http://academic.hep.com.cn/foe/article/2016/2095-2759/2095-2759-9-2-225/foe-16034-mjm-fig3.jpg" alt="edge-emitting-laser" %}
+
+
 * Relaxation oscillations (optical "ringing") [3]. Usually undesirable phenomena. Exception: to get an ultra fast pulse
 * Quantum wells, wires and dots [3]: 
   - purpose: improve $$T_0$$ and lower the threshold. Can also be used to build single photon emitters
@@ -126,4 +143,4 @@ summary: ""
 * [1] *Dr Edmund Harbord*, Optoelectronics Lecture 6
 * [2] *Dr Edmund Harbord*, Optoelectronics Lecture 7
 * [3] *Dr Edmund Harbord*, Optoelectronics Lecture 8
-* [4] *Laurent Dupont*, ELP201
+* [4] *Laurent Dupont*, ELP201 2017 Les Lasers
