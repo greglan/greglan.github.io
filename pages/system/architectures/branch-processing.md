@@ -66,11 +66,24 @@ summary: "Architectural view of branch processing"
   need to be aborted in the even of the branch being taken.
 * Modern CPUs must detect branches as soon as possible and also try to predict
   the outcome of conditional branches
-
-## Branch prediction
+  
 ### Fixed prediction
 * Two fixed prediction schemes: assume all conditional branches are taken, or
   assume all conditional branches are not taken
+* Always not taken: continue with the execution of the sequential path, but in preparation for a wrong guess start with the execution of the taken path (e.g calculate the branch target address) in parallel
+
+  If the guess is incorrect, delete the speculative processing along the sequential path and continue with the processing of the taken path
+
+  Taken penalty is higher than the not-taken penalty
+
+  Easier to implement than the *always taken* approach but worse performance
+* Always taken approach: in preparation for a wrong guess, save processing status (e.g PC/EIP) and start with the execution of the taken path
+
+  If the guess is incorrect, delete the speculative processing along the taken path and continue executing the sequential path using the saved processing status
+
+  Taken penalty is usually less than the not-taken penalty
+
+  Requires more complex implementation than the *always not taken* approach
 
 ### Static prediction
 * *Opcode based*: some branches opcode are assumed to be taken
@@ -86,18 +99,30 @@ summary: "Architectural view of branch processing"
 * Branch history composed of a variable number of bits which can be stored
   alongside the entries in the instruction cache or in a *branch address cache*
   if one is present
+* Single-bit prediction: if last branch was taken, then assume next branch is also taken, and if last branch was not taken, assume next branch is also not taken
 * 2-bit prediction scheme: Smith algorithm
-* 3-bit prediction scheme: record the last 3 branches. TO predict the next
+
+{% include centered-image.html file="system/architectures/smith-algorithm.png" alt="smith-algorithm" %}
+
+* 3-bit prediction scheme: record the last 3 branches. To predict the next
   branch, simply use a majority rule
 
 ## Speculative execution
 * Deals with technique to recover as efficiently as possible from a misprediction.
-* To recover from a mispredicted taken path, CPU must remember the address of
-  the sequential continuation. Even better if the sequential instructions have
-  already been fetched
-* Same desired features in case of a mispredicted sequential path: remember the
-  address of the target branch, and even have the target branch instructions
-  prefetched.
-* Solution: provide several instruction buffers for each path
+* To successfully recover from a mispredicted taken path, CPU must save the address of
+  the sequential continuation (the first instruction after the branch) before speculatively fetching the branch target instructions. Recovery can be optimised by also saving the prefetched sequential instructions
+* To successfully recover from a mispredicted sequential path, CPU must calculate and save the address of the branch target before speculatively executing the sequential instructions. Recovery can be optimised by also prefetching the branch target instructions
+* Requirement: provide two instruction address registers (PC/IP register on ARM/x86)
+  
+  Requirement for optimizing branch recovery: if prefecthing both paths, need additional instruction buffers. Can be 2 instruction buffers (one for sequential path, the other for target branch) or even three I-buffers (sequential buffer, target 1 buffer and target 2 buffer)
+
+
+## Multiway branching
+Some architectures have tried to support multiway branching, in which both the sequential and the taken paths are both pursued until the branch condition is resolved. It is possible that one or both of these paths will itself contain further branches, so that even more paths can be pursued. These schemes have drawbacks, in that each path requires significant hardware resources, including program counters, instruction buffers, and even execution units. Further, there are increasing complications in cancelling all of the speculative instructions as more paths are pursued
 
 ## Guarded execution
+* Aim: eliminate some confitional branches by replacing them with conditional instruction execution
+  
+  Advantage: conditional instructions can be issued and executed in a normal way, but the resutls will be discarded if the guard condition (one of the operands) is false
+* Guarded instructions set: either a small number of them (usually `mov` instructions) or all of them
+* Relevance: decreases the frequency of branches and increases the basic block size which is good for taking advantage of parallelism
