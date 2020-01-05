@@ -1,13 +1,12 @@
 ---
 layout: page
-title:  "Block and stream ciphers"
-permalink: "block-stream-ciphers.html"
+title:  "Block ciphers"
+permalink: "block-ciphers.html"
 tags: [security, cryptography]
 summary: ""
 ---
 {% include latex-commands.html %}
 
-## Block ciphers
 * Block length
 * Non adaptive CPA (using vectors): 
   - KR \line_{na} CPA
@@ -19,6 +18,7 @@ summary: ""
 * If the key space is too small, vulnerable
 * KR-1CPA: $$K^* \leftarrow^$ Kg, M^* \leftarrow^$ \mathbb{A}, C^* \leftarrow E_{K^*}(M^*), \hat{K} \leftarrow^$ \mathbb{A}(C^*)$$
 * KR-1CPA: $$K^* \leftarrow^$ Kg, hat{K} \leftarrow^$ \mathbb{A}^{\epsilon_\text{1cpa}}, \epsilon_\text{1cpa}(M) = \epsilon_\text{cpa}$$ but with the restriction that it can only be called once
+
 ### Introduction
 * Problem addfessed by block ciphers: short reusable key. Consequence: no perfect secrecy, but relaxed form of secrecy achievable and acceptable [2, 2.1]
 * Operate on a block of data at a time
@@ -89,15 +89,6 @@ summary: ""
 * Advantage: allows some error correcting codes to work when applied before encryption
 * Drawback: no parallel decryption possible
 
-## Stream ciphers
-* Encrypt one bit or byte at a time
-* Faster than block ciphers
-* Easier/cheaper to implement in hardware than block ciphers
-* Harder to implement "securely" than block ciphers
-* Often used when plaintext comes in quantities of unknowable length (such as secure wireless connection)
-* Less susceptible to noise than block ciphers
-* No integrity or authentication
-* Examples: Trivium, ChaCha/Salsa20, RC4
 
 
 ## Resources and references
@@ -105,9 +96,6 @@ summary: ""
 * [5] *Francois Dupressoir*, Lecture 5
 * [Stack overflow question](https://security.stackexchange.com/questions/334/advantages-and-disadvantages-of-stream-versus-block-ciphers)
 * [Wikipedia on block ciphers modes of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
-* [Trivium](https://en.wikipedia.org/wiki/Trivium_(cipher))
-* [ChaCha](https://en.wikipedia.org/wiki/Salsa20)
-* [RC4](https://en.wikipedia.org/wiki/RC4)
 * [Blowfish](https://en.wikipedia.org/wiki/Blowfish_(cipher))
 * [Symmetric Block Cipher Versus Stream Cipher](https://blogs.getcertifiedgetahead.com/symmetric-block-cipher-versus-stream-cipher/)
 * [GCM vs CBC mode of operation](https://www.privateinternetaccess.com/helpdesk/kb/articles/what-s-the-difference-between-aes-cbc-and-aes-gcm)

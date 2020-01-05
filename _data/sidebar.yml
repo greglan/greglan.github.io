@@ -107,8 +107,8 @@ entries:
         - title: One Time cryptosystems
           url: /one-time-cryptosystems.html
 
-        - title: Block and stream ciphers
-          url: /block-stream-ciphers.html
+        - title: Block ciphers
+          url: /block-ciphers.html
 
         - title: Advanced Encryption Standard
           url: /aes.html

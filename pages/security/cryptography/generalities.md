@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Some cryptography concepts"
+title:  "Introduction and generalities"
 permalink: "generalities.html"
 tags: [security, cryptography]
 summary: "Presentation of some basic concepts of cryptography"
@@ -17,6 +17,7 @@ Move Adv and Exp to latex macros
 
 
 ## Introduction
+### Definitions
 * Cryptology = cryptography + cryptanalysis
 * 2 levels of confidentiality: the content of the messages or no information at all
   
@@ -29,8 +30,70 @@ Move Adv and Exp to latex macros
   have the parties met before, how/what/why do they communicate
 * Cryptogram: ciphertext
 
+### Cryptographic properties
+* Confusion: each binary digit/bit of the ciphertext should depend on
+several parts of the key, obscuring the connections between the two.
+* Diffusion: if we change a single bit of the plaintext, then
+(statistically) half of the bits in the ciphertext should change, and similarly,
+ if we change one bit of the ciphertext, then approximately one half of the
+ plaintext bits should change. Since a bit can have only two states, when they
+ are all re-evaluated and changed from one seemingly random position to another,
+ half of the bits will have changed state.
+* Malleability: given a cipher text, the attacker can build another valid cipher
+text that is related to the original plain text. Undesirable property
 
-## Encryption scheme
+### Stream ciphers
+* Encrypt one bit or byte at a time
+* Faster than block ciphers
+* Easier/cheaper to implement in hardware than block ciphers
+* Harder to implement "securely" than block ciphers
+* Often used when plaintext comes in quantities of unknowable length (such as secure wireless connection)
+* Less susceptible to noise than block ciphers
+* No integrity or authentication
+* Examples: [Trivium](https://en.wikipedia.org/wiki/Trivium_(cipher)), [ChaCha/Salsa20](https://en.wikipedia.org/wiki/Salsa20), [RC4](https://en.wikipedia.org/wiki/RC4)
+
+### Hash functions
+* MD5: most widely used. 128-bit and produces a 32-character message digest
+* SHA1: developed by the NSA. More secure than MD5, but not as widely used.
+ 160-bit digest usually rendered in 40-character hexadecimal. Often used for
+ certificate exchanges in SSL, but because of recently discovered flaws, is being
+ deprecated for that purpose
+
+### Symmetric and asymmetric encryption
+#### Symmetric encryption
+* Faster than asymmetric encryption. Problem: exchange of the secret key
+* DES: one of the original and oldest encryption schemes developed by IBM.
+Flawed and breakable. Was used in the original hashing system of LANMAN hashes
+in early (pre-2000) Windows systems
+* 3DES: developed in response to the flaws in DES. Applies the DES algorithm
+three times making it slightly more secure than DES
+* AES: not a encryption algorithm but rather a standard developed by National
+Institute for Standards and Technology (NIST). Used in WPA2, SSL/TLS
+* RC4: developed by Ronald Rivest. Used in VoIP and WEP
+* Blowfish: designed by Bruce Schneier. Uses a variable key length. Very secure.
+Not patented (public domain), so can be used without license
+* Twofish: stronger version of Blowfish using 128/256-bit key. Used in Cryptcat
+and OpenPGP. Public domain
+
+#### Asymmetric encryption
+* Around 1000 times slower that symmetric encryption. Advantage: good for
+sharing keys
+* Trapdoor function: function that takes a number $$x$$ to another number
+$$y$$ in the same range such that computing $$x \to y$$ is easy but $$y \to x$$
+is practically impossible without the private key [1, p182]
+* Diffie-Hellman: allows to generate keys without having to exchange the keys
+* RSA: by Rivest, Shamir, and Adleman. Uses factorization of very large prime
+numbers as the relationship between the two keys
+* PKI: Public key infrastructure
+* ECC: Elliptical curve cryptography. Efficient: requires less computing power and
+ energy consumption for the same level of security. Relies upon the shared
+ relationship of two functions being on the same elliptical curve. Becoming
+ increasing popular in mobile computing
+* PGP: Pretty Good Privacy
+
+
+
+## Security considerations
 * Encryption scheme: encryption algorithm $$E$$, decryption algorithm $$D$$ and
   key generation algorithm $$Kg$$ (specify how keys are to be drawn)
 * Symmetric enciphering scheme $$E$$: $$E =(Kg, E, D)$$ algorithms where
@@ -44,19 +107,6 @@ Move Adv and Exp to latex macros
 * *Security*: $$\P(M=m \vert C = c) = \P(M=m)$$ (an eavesdropper gain no
   information)
 
-### Perfect secrecy [2]
-* Captures the idea that an attacker doesn't learn anything from the ciphertext
-* Hypothesis: the message space is the cipher space and the length of the
-  message is known to the attacker
-* Formal definition: $$\forall m,c, \quad \P(M^*=m \vert C^* = c) = \P(M^* = m)$$
-* Equivalent definition: we have
-  $$\P(m \vert c) = \frac{\P(m,c)}{\P(c)} = \frac{\P(c \vert m) \P(m)}{\P(c)}$$
-  and $$\P(m \vert c) = \P(m)$$, so that
-  $$\frac{\P(c \vert m) \P(m)}{\P(c)} = \P(m)$$
-  which amounts to $$\P(c \vert m) = \P(c)$$
-
-
-## Cryptanalysis
 * Kerckhoff's principle: the security of the cipher should rely only on the key,
 and not on the secrecy of the cipher.
   
@@ -73,6 +123,18 @@ and not on the secrecy of the cipher.
   ind: indistinguishability
 * Ind$: indistinguishability from random
 * In $$\text{Exp}\text{ind-real/ideal}$$ the key is not used
+
+### Perfect secrecy [2]
+* Captures the idea that an attacker doesn't learn anything from the ciphertext
+* Hypothesis: the message space is the cipher space and the length of the
+  message is known to the attacker
+* Formal definition: $$\forall m,c, \quad \P(M^*=m \vert C^* = c) = \P(M^* = m)$$
+* Equivalent definition: we have
+  $$\P(m \vert c) = \frac{\P(m,c)}{\P(c)} = \frac{\P(c \vert m) \P(m)}{\P(c)}$$
+  and $$\P(m \vert c) = \P(m)$$, so that
+  $$\frac{\P(c \vert m) \P(m)}{\P(c)} = \P(m)$$
+  which amounts to $$\P(c \vert m) = \P(c)$$
+
 
 ### Key recovery
 * Security is always defined relative to the two following questions:
@@ -139,57 +201,9 @@ ciphers (time, power consumption, noise...)
 (laser fault injections, chip reversing...)
 
 
-## Cryptographic properties
-* Confusion: each binary digit/bit of the ciphertext should depend on
-several parts of the key, obscuring the connections between the two.
-* Diffusion: if we change a single bit of the plaintext, then
-(statistically) half of the bits in the ciphertext should change, and similarly,
- if we change one bit of the ciphertext, then approximately one half of the
- plaintext bits should change. Since a bit can have only two states, when they
- are all re-evaluated and changed from one seemingly random position to another,
- half of the bits will have changed state.
-* Malleability: given a cipher text, the attacker can build another valid cipher
-text that is related to the original plain text. Undesirable property
 
 
-## Symmetric and asymmetric encryption
-### Symmetric encryption
-* Faster than asymmetric encryption. Problem: exchange of the secret key
-* DES: one of the original and oldest encryption schemes developed by IBM.
-Flawed and breakable. Was used in the original hashing system of LANMAN hashes
-in early (pre-2000) Windows systems
-* 3DES: developed in response to the flaws in DES. Applies the DES algorithm
-three times making it slightly more secure than DES
-* AES: not a encryption algorithm but rather a standard developed by National
-Institute for Standards and Technology (NIST). Used in WPA2, SSL/TLS
-* RC4: developed by Ronald Rivest. Used in VoIP and WEP
-* Blowfish: designed by Bruce Schneier. Uses a variable key length. Very secure.
-Not patented (public domain), so can be used without license
-* Twofish: stronger version of Blowfish using 128/256-bit key. Used in Cryptcat
-and OpenPGP. Public domain
 
-### Asymmetric encryption
-* Around 1000 times slower that symmetric encryption. Advantage: good for
-sharing keys
-* Trapdoor function: function that takes a number $$x$$ to another number
-$$y$$ in the same range such that computing $$x \to y$$ is easy but $$y \to x$$
-is practically impossible without the private key [1, p182]
-* Diffie-Hellman: allows to generate keys without having to exchange the keys
-* RSA: by Rivest, Shamir, and Adleman. Uses factorization of very large prime
-numbers as the relationship between the two keys
-* PKI: Public key infrastructure
-* ECC: Elliptical curve cryptography. Efficient: requires less computing power and
- energy consumption for the same level of security. Relies upon the shared
- relationship of two functions being on the same elliptical curve. Becoming
- increasing popular in mobile computing
-* PGP: Pretty Good Privacy
-
-## Hash functions
-* MD5: most widely used. 128-bit and produces a 32-character message digest
-* SHA1: developed by the NSA. More secure than MD5, but not as widely used.
- 160-bit digest usually rendered in 40-character hexadecimal. Often used for
- certificate exchanges in SSL, but because of recently discovered flaws, is being
- deprecated for that purpose
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
@@ -199,3 +213,5 @@ numbers as the relationship between the two keys
 * [Attack models fro cryptanalysis](https://www.hackers-arise.com/single-post/2019/04/30/Cryptography-Basics-Part-2-Attack-Models-for-Cryptanalysis)
 * [Cryptography basics](https://www.hackers-arise.com/cryptography-basics)
 * [A crypto cheatsheet](https://pequalsnp-team.github.io/cheatsheet/crypto-101)
+* [Stack overflow question](https://security.stackexchange.com/questions/334/advantages-and-disadvantages-of-stream-versus-block-ciphers)
+* [Symmetric Block Cipher Versus Stream Cipher](https://blogs.getcertifiedgetahead.com/symmetric-block-cipher-versus-stream-cipher/)
