@@ -29,6 +29,9 @@ entries:
         - title: GDB cheatsheet
           url: /gdb.html
 
+        - title: Hardware vulnerabilities
+          url: /hardware-vulnerabilities.html
+
       - title: Reversing
         subfolderitems:
         - title: ELF format
