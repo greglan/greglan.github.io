@@ -8,6 +8,17 @@ summary: ""
 {% include latex-commands.html %}
 
 ## Block ciphers
+* Block length
+* Non adaptive CPA (using vectors): 
+  - KR \line_{na} CPA
+  - K^* \leftarrow^$ Kg
+  - \vec{M}^* \leftarrow^$ \mathbb{A}
+  - \vec{C}^* \leftarrow \vec{E_{K^*}(\vec{M})} 
+  - \hat{K} \leftarrow^$ \mathbb{A}(\vec{C}^*)
+* KR-CPA: $$K^* \leftarrow^$ Kg, hat{K} \leftarrow^$ \mathbb{A}^{\epsilon_\text{cpa}(.)}$$ where $$\epsilon_\text{cpa}(M) : C \leftarrow E_{K^*}(M), return C$$ is the Oracle
+* If the key space is too small, vulnerable
+* KR-1CPA: $$K^* \leftarrow^$ Kg, M^* \leftarrow^$ \mathbb{A}, C^* \leftarrow E_{K^*}(M^*), \hat{K} \leftarrow^$ \mathbb{A}(C^*)$$
+* KR-1CPA: $$K^* \leftarrow^$ Kg, hat{K} \leftarrow^$ \mathbb{A}^{\epsilon_\text{1cpa}}, \epsilon_\text{1cpa}(M) = \epsilon_\text{cpa}$$ but with the restriction that it can only be called once
 ### Introduction
 * Problem addfessed by block ciphers: short reusable key. Consequence: no perfect secrecy, but relaxed form of secrecy achievable and acceptable [2, 2.1]
 * Operate on a block of data at a time

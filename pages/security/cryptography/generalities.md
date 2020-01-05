@@ -5,8 +5,8 @@ permalink: "generalities.html"
 tags: [security, cryptography]
 summary: "Presentation of some basic concepts of cryptography"
 ---
+{% include latex-commands.html %}
 $$
-\newcommand{\P}{\mathbb{P}}
 \newcommand{\A}{\mathbb{A}}
 \newcommand{\adv}{\text{Adv}}
 \newcommand{\exp}{\text{Edv}}
@@ -15,11 +15,32 @@ $$
 Move Adv and Exp to latex macros
 {% endcomment %}
 
+
+## Introduction
+* Cryptology = cryptography + cryptanalysis
+* 2 levels of confidentiality: the content of the messages or no information at all
+  
+  Privacy: hide that messages are being exchanged
+* Metadata: everythnig apart from the contents of the message
+* Authenticity: ~ integrity of identity, an adversary cannot cause 
+  a non original message to be accepted. 
+  Hence the recipient can be certain of where the message came from
+* Some questions: parties involved, their resources (computing, people, cash...),
+  have the parties met before, how/what/why do they communicate
+* Cryptogram: ciphertext
+
+
 ## Encryption scheme
 * Encryption scheme: encryption algorithm $$E$$, decryption algorithm $$D$$ and
-  key generation algorithm $$Kg$$
+  key generation algorithm $$Kg$$ (specify how keys are to be drawn)
+* Symmetric enciphering scheme $$E$$: $$E =(Kg, E, D)$$ algorithms where
+  - $$Kg$$ generates $$K \in \mathcal K$$ with $$K$$ a key and $$\mathcal K$$ the keyspace
+  - $$C \leftarrow E_k(M \in \mathcal M) \in \mathcal C = \mathcal M$$ with $$\mathcal M$$ the message space and $$\mathcal C$$ the ciphertext space
+  - $$M' \leftarrow D_k(C)$$ deciphers the message
+* Additional parameters: related to the kind of messages the scheme suppports or level of security. usually fed into $$Kg$$ only. Example message length
 * Encryption vs enciphering [12, 2.1.1]: enciphering requires that the output space is the same as the message space
-* *Correctness*: $$m = D(E(m, k), k)$$
+* Correct enciphering scheme/correctness: $$\forall K \in \mathcal K, \, \forall M \in \mathcal M, \quad D_k(E_k(M))=M$$
+
 * *Security*: $$\P(M=m \vert C = c) = \P(M=m)$$ (an eavesdropper gain no
   information)
 
@@ -42,6 +63,16 @@ and not on the secrecy of the cipher.
   Consequence: always assume an attacker knows the algorithm used
 * If we want a good cryptanalysis to be done on the cipher, we have to publish
   it so that we can perform the most comprehensive cryptanalysis.
+* Cryptanalysis: assume $$K_g, E, D$$ are known. Definition of $$\text{Adv}_E^\text{kr-pas}(A)$$
+* Guessing attack: $$\mathbb{A}_\text{guess}$$. Value for the one-time pad
+
+* Blackboard: $$\text{Exp}_E^\text{ind-0} = \text{Exp}_E^\text{1lor-1*} \Leftrightarrow \text{Exp}_E^\text{ind-b} = \text{Exp}_E^\text{1lor-b*}$$ for $$b \in \set{0, 1}$$
+  
+  $$\text{Adv}(\mathbb{A}) = \P(\text{Exp}_E^\text{ind-0}(\mathbb{A}): \hat{b} = 1) - \P(\text{Exp}_E^\text{ind-1}(\mathbb{A}) : \hat{b} = 1)$$
+
+  ind: indistinguishability
+* Ind$: indistinguishability from random
+* In $$\text{Exp}\text{ind-real/ideal}$$ the key is not used
 
 ### Key recovery
 * Security is always defined relative to the two following questions:

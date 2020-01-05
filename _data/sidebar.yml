@@ -102,7 +102,7 @@ entries:
           url: /generalities.html
 
         - title: One Time cryptosystems
-          url: /one-time-pad.html
+          url: /one-time-cryptosystems.html
 
         - title: Block and stream ciphers
           url: /block-stream-ciphers.html
