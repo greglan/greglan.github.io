@@ -200,8 +200,39 @@ d = inverse(e, phi)
       $$(g^{\frac{p-1}{q_i^{k+1}}})^a = $$ 
       $$\left( g^{\frac{p-1}{q_i^{k+1}}} \right)^{a_0 + a_1 q_1 + \dots + a_{k-1} q_i^{k-1}} \cdot \left( g^{\frac{p-1}{q_i^k}} \right)^{a_k q_i^k} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{q_i(a_{k+1} + a_{k+2} q_i\dots} \mod p$$
   - using Euclid's algorithm, compute $$a \mod p-1$$ from the values of $$a \mod q_i^{e_i}$$
+* Example: solve $$2^a = 17 \mod 37$$
+  - factorize $$p-1 = 36 = 4 \times 9 = 2^2 \times 3^2$$
+  - for $$i=0$$:
+    * write $$a = a_0 + 2 a_1 + 4 a_2 + \dots$$
 * Complexity: polynomial in $$l$$ with $$l$$ the largest prime dividing $$p-1$$
 * Attack thwarted by choosing $$p \in \P$$ such that there is at least one large prime dividing $$p-1$$
+
+### Baby-step-giant-step
+* Problem statement: given $$g \in \F_q^*$$ of order $$l$$, $$g$$ and $$g^a$$, find $$a$$
+
+  Enough to compute $$a \mod l$$
+* Algorithm:
+  - for $$i \in \set{0, \dots, \lfloor \sqrt l \rfloor}$$, compute and save $$b_i = g^i \mod q$$
+  - for $$j \in \set{0, \dots, \lfloor \sqrt l + 1\rfloor}$$, compute $$c_j = g^a g^{-j \lfloor \sqrt l \rfloor} \mod q$$ and stop if there is an $$i$$ such that $$c_j = b_i$$
+  - return $$a = i + j \lfloor \sqrt l \rfloor$$
+* Maximum number of multiplications: $$2 \sqrt l$$ multiplications
+  
+  Time complexity: $$\mathcal O (\sqrt l)$$
+
+  Storage complexity: $$\mathcal O (\sqrt l)$$
+
+### Pollard's $$\rho$$ method
+* Algorithm:
+  - initialization: $$(G_0, b_0, c_0) = (g, 1, 0)$$
+  - compute iteratively $$(G_0, b_0, c_0) = \begin{cases}(g G_i, b_i+1, c_i) \text{ if } G_i=0 \mod 3\\ (g^a G_i, b_i, c_i+1) \text{ if } G_i=1 \mod 3\\ (G_i^2, 2b_i, 2c_i) \text{ if } G_i=2 \mod 3 \end{cases}$$
+  - stop when we there is $$i\neq j$$ such that $$G_i = G_j$$
+* Number of steps: $$\sqrt{\frac{\pi}{2}l}$$
+  
+  Average time complexity: $$\mathcal O (\sqrt l)$$
+
+  Storage complexity: $$\mathcal O (1)$$
+
+### Index calculus
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
