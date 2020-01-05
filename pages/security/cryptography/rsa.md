@@ -20,7 +20,11 @@ is known [1]
 * Euler's $$\varphi$$ function [2]: $$\varphi(n) = \# \{0 < k < n, \; gcd(k,n)=1 \}$$
   
   Examples: $$\varphi(7) = \# \{1, 2, 3, 4, 5, 6\} = 6$$, $$\varphi(8) = \# \{1, 3, 5, 7 \} = 4$$
-* Fermat's little theorem [2]: $$\forall a \in \Z, \; \forall n > 1, \; gcd(a,n)=1 \Rightarrow a^{\varphi(n)+1} = a \mod n$$
+* [Euler's theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem): $$\forall a,n \in \Z, \; \gcd(a,n)=1, \quad a^{\varphi(n)} = 1 \mod n$$
+* [Fermat's little theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem): $$\forall a \in \Z, \; \forall p \in \P, \quad a^p = a \mod p$$
+  
+  If $$a$$ not divisible by $$p$$, then $$a^{p-1} = 1 \mod p$$
+
 
 
 ### Key generation
@@ -176,8 +180,28 @@ d = inverse(e, phi)
  * Remark on the message: the message is taken modulo $$p-1$$ since it appears in the exponent of $$g$$
 
 
-## Discrete logarithm problem
+## Attacks on the discrete logarithm problem
+### Pohlig-Hellman
 * Elements of order $$d$$ in $$\Z/p\Z$$ with $$p \in \P$$: if $$g$$ is a generator of $$\Z/p\Z$$, then $$g^\frac{p-1}{d}$$ is of order $$d$$
+* Problem statement: given $$p \in \P$$, $$g \in \Z/p\Z^*$$ of order $$p-1$$ and $$g^a$$, find $$a$$
+* Algorithm:
+  - factorize $$p-1$$ into primes powers: $$p-1 = q_1^{e_1} \dots q_r^{e_r}$$
+  - for each $$i \in \set{1, \dots, r}$$:
+    * write $$a = \sum_k a_k q_i^k$$ with $$a_k \in \set{0, \dots, q_i-1}$$
+    * compute $$a_0$$ which amounts to computing $$a \mod q_i$$ using $$(g^a)^{\frac{p-1}{q_i}} = \left( g^{\frac{p-1}{q_i}} \right)^{a_0} \mod p$$
+      
+      Indeed: $$(g^a)^{\frac{p-1}{q_i}} = \left( g^{\frac{p-1}{q_i}} \right)^a = $$ 
+      $$\left( g^{\frac{p-1}{q_i}} \right)^{a_0} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{q_i(a_1 + a_2 q_i + \dots)} = $$
+      $$\left( g^{\frac{p-1}{q_i}} \right)^{a_0} \cdot \left( g^{p-1} \right)^{a_1 + a_2 q_i + \dots} = $$
+      $$\left( g^{\frac{p-1}{q_i}} \right)^{a_0}\mod p$$
+    * for each $$k \in \set{1, \dots, e_i -1}$$: given $$a_0, \dots, a_{k-1}$$, compute $$a_k$$ i.e compute $$a \mod q_i^{k+1}$$ using $$(g^a)^{\frac{p-1}{q_i^{k+1}}} = \left( g^{\frac{p-1}{q_i^{k+1}}} \right)^{a_0 + a_1 q_1 + \dots + a_{k-1} q_i^{k-1}} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{a_k} \mod p$$
+
+      Indeed: $$(g^a)^{\frac{p-1}{q_i^{k+1}}} = $$ 
+      $$(g^{\frac{p-1}{q_i^{k+1}}})^a = $$ 
+      $$\left( g^{\frac{p-1}{q_i^{k+1}}} \right)^{a_0 + a_1 q_1 + \dots + a_{k-1} q_i^{k-1}} \cdot \left( g^{\frac{p-1}{q_i^k}} \right)^{a_k q_i^k} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{q_i(a_{k+1} + a_{k+2} q_i\dots} \mod p$$
+  - using Euclid's algorithm, compute $$a \mod p-1$$ from the values of $$a \mod q_i^{e_i}$$
+* Complexity: polynomial in $$l$$ with $$l$$ the largest prime dividing $$p-1$$
+* Attack thwarted by choosing $$p \in \P$$ such that there is at least one large prime dividing $$p-1$$
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
