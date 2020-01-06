@@ -35,6 +35,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Writeup of a Dell local escalation vulnerability](https://d4stiny.github.io/Local-Privilege-Escalation-on-most-Dell-computers/)
 * [Java Serialization exploitation](https://www.rapid7.com/research/report/exploiting-jsos/)
 * [A great blog about exploitation](https://ctf-wiki.github.io/ctf-wiki/)
+* [Injection tool for Linux](https://github.com/DavidBuchanan314/dlinject)
 
 ## Reversing
 * [Distinguishing between encrypted and compressed data](http://www.devttys0.com/2013/06/differentiate-encryption-from-compression-using-math/)
@@ -60,6 +61,7 @@ summary: "Various links to good security articles or interesting things to look 
 ## Web
 * [Web security](https://portswigger.net/web-security)
 * [XML External Entity injections](https://portswigger.net/web-security/xxe)
+* [A review of SSL vulnerabilities](https://github.com/bojanisc/Presentations?files=1)
 
 ## General
 * [Hackndo](https://beta.hackndo.com/archives/)

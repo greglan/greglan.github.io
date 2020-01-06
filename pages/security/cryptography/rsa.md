@@ -188,13 +188,17 @@ d = inverse(e, phi)
   - factorize $$p-1$$ into primes powers: $$p-1 = q_1^{e_1} \dots q_r^{e_r}$$
   - for each $$i \in \set{1, \dots, r}$$:
     * write $$a = \sum_k a_k q_i^k$$ with $$a_k \in \set{0, \dots, q_i-1}$$
-    * compute $$a_0$$ which amounts to computing $$a \mod q_i$$ using $$(g^a)^{\frac{p-1}{q_i}} = \left( g^{\frac{p-1}{q_i}} \right)^{a_0} \mod p$$
+    * compute $$a_0$$ which amounts to computing $$a \mod q_i$$ using 
+      
+      $$(g^a)^{\frac{p-1}{q_i}} = \left( g^{\frac{p-1}{q_i}} \right)^{a_0} \mod p$$
       
       Indeed: $$(g^a)^{\frac{p-1}{q_i}} = \left( g^{\frac{p-1}{q_i}} \right)^a = $$ 
       $$\left( g^{\frac{p-1}{q_i}} \right)^{a_0} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{q_i(a_1 + a_2 q_i + \dots)} = $$
       $$\left( g^{\frac{p-1}{q_i}} \right)^{a_0} \cdot \left( g^{p-1} \right)^{a_1 + a_2 q_i + \dots} = $$
       $$\left( g^{\frac{p-1}{q_i}} \right)^{a_0}\mod p$$
-    * for each $$k \in \set{1, \dots, e_i -1}$$: given $$a_0, \dots, a_{k-1}$$, compute $$a_k$$ i.e compute $$a \mod q_i^{k+1}$$ using $$(g^a)^{\frac{p-1}{q_i^{k+1}}} = \left( g^{\frac{p-1}{q_i^{k+1}}} \right)^{a_0 + a_1 q_1 + \dots + a_{k-1} q_i^{k-1}} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{a_k} \mod p$$
+    * for each $$k \in \set{1, \dots, e_i -1}$$: given $$a_0, \dots, a_{k-1}$$, compute $$a_k$$ i.e compute $$a \mod q_i^{k+1}$$ using 
+      
+      $$(g^a)^{\frac{p-1}{q_i^{k+1}}} = \left( g^{\frac{p-1}{q_i^{k+1}}} \right)^{a_0 + a_1 q_1 + \dots + a_{k-1} q_i^{k-1}} \cdot \left( g^{\frac{p-1}{q_i}} \right)^{a_k} \mod p$$
 
       Indeed: $$(g^a)^{\frac{p-1}{q_i^{k+1}}} = $$ 
       $$(g^{\frac{p-1}{q_i^{k+1}}})^a = $$ 
@@ -203,7 +207,53 @@ d = inverse(e, phi)
 * Example: solve $$2^a = 17 \mod 37$$
   - factorize $$p-1 = 36 = 4 \times 9 = 2^2 \times 3^2$$
   - for $$i=0$$:
-    * write $$a = a_0 + 2 a_1 + 4 a_2 + \dots$$
+    * write $$a = a_0 + 2 a_1 + 4 a_2 + \dots$$ with $$a_k \in \set{0, 1}$$
+    * compute $$a_0$$:
+
+      $$\begin{align*} 
+      (2^a)^{36/2} &= (2^{36/2})^{a_0} \\ 
+      (2^a)^{18} &= (2^{18})^{a_0} \\ 
+      (17)^{18} &= (36)^{a_0} \\ 
+      36 &= 36^{a_0}
+      \end{align*}$$
+
+      Hence $$a_0 = 1$$
+    * compute $$a_1$$:
+
+      $$\begin{align*} 
+      (2^a)^{36/2^2} &= (2^{36/2^2})^{a_0} (2^{36/2})^{a_1} \\ 
+      (2^a)^{9} &= (2^9)^{1} (2^{18})^{a_1} \\ 
+      (17)^{9} &= 31 \cdot (36)^{a_1} \\ 
+      6 &= (-6) \cdot (-1)^{a_1}
+      \end{align*}$$
+
+      Hence $$a_1 = 1$$
+    * hence $$a = 1 + 2 = 3 \mod 4$$
+  - for $$i=1$$:
+    * write $$a = a_0 + 3 a_1 + 9 a_2 + \dots$$ with $$a_k \in \set{0, 1, 2}$$
+    * compute $$a_0$$:
+
+      $$\begin{align*} 
+      (2^a)^{36/3} &= (2^{36/3})^{a_0} \\ 
+      (2^a)^{12} &= (2^{12})^{a_0} \\ 
+      (17)^{12} &= (26)^{a_0} \\ 
+      26 &= 26^{a_0}
+      \end{align*}$$
+
+      Hence $$a_0 = 1$$
+    * compute $$a_1$$:
+
+      $$\begin{align*} 
+      (2^a)^{36/3^2} &= (2^{36/3^2})^{a_0} (2^{36/3})^{a_1} \\ 
+      (2^a)^{4} &= (2^4)^{1} (2^{12})^{a_1} \\ 
+      (17)^{4} &= 16 \cdot (26)^{a_1} \\ 
+      12 &= 16 \cdot (26)^{a_1} \\ 
+      -25 &= (-21) \cdot (26)^{a_1}
+      \end{align*}$$
+
+      We have $$21 \cdot 26^2 = 25 \mod 37$$, hence $$a_1 = 2$$
+    * hence $$a = 1 + 3 \cdot 2 = 7 \mod 9$$
+  - compute $$a \mod 36$$: we have $$\gcd(9,4) = 1 = - 4 \cdot 2 + 9 \cdot 1$$, hence $$a = -4 \cdot 2 \cdot 7 + 9 \cdot 1 \cdot 3 = -29 = 7 \mod 36$$
 * Complexity: polynomial in $$l$$ with $$l$$ the largest prime dividing $$p-1$$
 * Attack thwarted by choosing $$p \in \P$$ such that there is at least one large prime dividing $$p-1$$
 
@@ -222,10 +272,15 @@ d = inverse(e, phi)
   Storage complexity: $$\mathcal O (\sqrt l)$$
 
 ### Pollard's $$\rho$$ method
+* Problem statement: given $$g \in \F_q^*$$ of order $$l$$ and $$g^a$$, find $$a$$
+* Alternative problem: find integers $$b,b',c,c' \in \set{1, \dots, l}$$ such that $$g^b(g^a)^c = g^{b'}(g^a)^{c'}$$
+
+  By taking logarithms we have $$b + ac = b' + ac'$$ and hence $$a = \frac{b-b'}{c'-c} \mod l$$
 * Algorithm:
   - initialization: $$(G_0, b_0, c_0) = (g, 1, 0)$$
   - compute iteratively $$(G_0, b_0, c_0) = \begin{cases}(g G_i, b_i+1, c_i) \text{ if } G_i=0 \mod 3\\ (g^a G_i, b_i, c_i+1) \text{ if } G_i=1 \mod 3\\ (G_i^2, 2b_i, 2c_i) \text{ if } G_i=2 \mod 3 \end{cases}$$
   - stop when we there is $$i\neq j$$ such that $$G_i = G_j$$
+  - return $$(b,c,b',c') = (b_i, c_i, b_j, c_j)$$
 * Number of steps: $$\sqrt{\frac{\pi}{2}l}$$
   
   Average time complexity: $$\mathcal O (\sqrt l)$$
@@ -233,6 +288,18 @@ d = inverse(e, phi)
   Storage complexity: $$\mathcal O (1)$$
 
 ### Index calculus
+* Problem statement: given $$g \in \F_q$$ and $$g^a$$, find $$a$$
+* Algorithm:
+  - choose a factor base $$\mathcal B = \set{p_1, \dots, p_n}$$ of prime numbers
+  - for each $$i \in \set{1, \dots, n}$$:
+    * for each $$j \geqslant 1$$ factorize $$g^j$$. 
+      
+      Stop when there are $$n$$ values of $$j$$ for which all the factors $$g^j$$ are in $$\mathcal B$$
+    * take logarithms of the $$n$$ equations for values $$g^j$$ in $$\mathcal B$$ and solve them for $$\log_{g}(p_i)$$
+  - for each $$j \geqslant 1$$ factorize $$g^j \cdot g^a$$.
+    
+    Stop when all factors of $$j$$ are in $$\mathcal B$$
+  - take logarithms of the equations from the previous step and solve for $$a$$
 
 ## Resources and references
 * [1] *Jean-Philippe Aumasson*, Serious Cryptography
