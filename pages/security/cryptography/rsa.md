@@ -173,7 +173,8 @@ d = inverse(e, phi)
   - Compute $$s = k^{-1}(m-ar) \mod (p-1)$$
   - Publish a signed message $$(r, s)$$
 * Verify: the verifier checks that $$g^m = g^{ar} \cdot g^{k k^{-1}(m-ar)} = pk^r \cdot r^s \mod p$$
-* Secrecy of the nonce $$k$$: if an attacker knows $$k$$ he can recover $$a$$
+* Secrecy of the nonce $$k$$: if an attacker knows $$k$$ he can recover $$a$$ because $$s = k^{-1}(m-ar) \mod (p-1)$$ and $$r,s,p$$ and $$m$$ are public values.
+  Then $$a = (m-sk) \cdot r^{-1}$$
 * Nonce reuse: if $$k$$ is used more than once an attacker can recover $$k$$ and hence $$a$$
   
   Proof: assume we sign two messages with the same nonce $$k$$. We get rwo signatures $$(r, s_1)$$ and $$(r, s_2)$$ such that $$s_1 = k^{-1}(m_1-ar) \mod (p-1)$$ and $$s_2 = k^{-1}(m_2-ar) \mod (p-1)$$. Then $$k = (m_1-m_2)(s_1-s_2)^{-1} \mod (p-1)$$
@@ -291,14 +292,14 @@ d = inverse(e, phi)
 * Problem statement: given $$g \in \F_q$$ and $$g^a$$, find $$a$$
 * Algorithm:
   - choose a factor base $$\mathcal B = \set{p_1, \dots, p_n}$$ of prime numbers
-  - for each $$i \in \set{1, \dots, n}$$:
+  - compute the $$\log(p_i)$$:
     * for each $$j \geqslant 1$$ factorize $$g^j$$. 
       
       Stop when there are $$n$$ values of $$j$$ for which all the factors $$g^j$$ are in $$\mathcal B$$
     * take logarithms of the $$n$$ equations for values $$g^j$$ in $$\mathcal B$$ and solve them for $$\log_{g}(p_i)$$
   - for each $$j \geqslant 1$$ factorize $$g^j \cdot g^a$$.
     
-    Stop when all factors of $$j$$ are in $$\mathcal B$$
+    Stop when all factors of $$g^j \cdot g^a$$ are in $$\mathcal B$$
   - take logarithms of the equations from the previous step and solve for $$a$$
 
 ## Resources and references
