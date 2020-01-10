@@ -6,6 +6,10 @@ tags: [electronics]
 summary: "Introduction to communication systems"
 ---
 
+$$
+\newcommand{\snr}{\text{SNR}}
+$$
+
 ## Design of a communication system:
 * QoS required: data rate, SNR/BER, delays
 * Depend on the application: video, voice, real time data...
@@ -61,12 +65,35 @@ summary: "Introduction to communication systems"
 * External noise: ignition interference,mains Hum, thunderstorms, galactic radio
   noise, interference from other spectrum users...
 * White noise: noise that has the same power for every frequency
-* Gaussian noise: probability of the noise having a given amplitude follows a
+  
+  Gaussian noise: probability of the noise having a given amplitude follows a
   Gaussian probability distribution
+  
+  Additive noise: noise independent of the signal
+
+  Frequency domain graph
+
+{% include centered-image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/White_noise.svg/640px-White_noise.svg.png" alt="white-gaussian-noise-wiki" %}
+
 * To obtain the signal usually a narrow-band is used ($$B$$ Hz centered around
   a center frequency $$f_c$$).
 
-  Noise observed after the narrow-band filter: narrow-band noise
+  Noise observed after the narrow-band filter: *narrow-band noise*
+
+  Narrowband noise model: contain an In-phase component and a Quadrature
+  component. Centered around $$f_c$$
+
+  Expression:
+
+  $$n_c(t) = X_I(t) \cos 2 \pi f_c t + X_Q(t) \sin 2 \pi f_c t$$
+
+  with $$X_I,X_Q$$ Gaussian Amplitude weights representing low-pass random
+  processes
+
+  Spectral density graph, time domain graph
+* Figure of merit: $$\frac{(\snr)_{\text{out}}}{(\snr)_C}$$ with
+  $$(\snr)_C = \frac{\text{Average power of the transmitted signal at the Rx input}}{\text{Average power of noise at the Rx input measured in message bandwidth}}$$
+  the SNR of the channel
 
 ## Line codes
 * Non-return-to-zero (NRZ) codes: for a given data signaling rate, i.e., bit rate, require only half the baseband bandwidth required by the 

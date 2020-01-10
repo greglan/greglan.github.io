@@ -9,21 +9,8 @@ $$
 \newcommand{\snr}{\text{SNR}}
 $$
 
-## Introduction
 * IF filter: intermediate frequency filter
-* Figure of merit: $$\frac{(\snr)_{\text{out}}}{(\snr)_C}$$ with
-  $$(\snr)_C = \frac{\text{Average power of the transmitted signal at the Rx input}}{\text{Average power of noise at the Rx input measured in message bandwidth}}$$
-  the SNR of the channel
-* Input signal $$m(t)$$ of bandwidth $$B$$
-* Narrowband noise model: contain an In-phase component and a Quadrature
-  component. Centered around $$f_c$$
-
-  Expression:
-
-  $$n_c(t) = X_I(t) \cos 2 \pi f_c t + X_Q(t) \sin 2 \pi f_c t$$
-
-  with $$X_I,X_Q$$ Gaussian Amplitude weights representing low-pass random
-  processes
+* In what follows, assume an input signal $$m(t)$$ of bandwidth $$B$$
 
 ## Double Sideband with Suppressed Carrier (DSB-SC)
 * Expression of modulated signal: $$s(t) = A_c m(t) \cos 2 \pi f_c t$$

@@ -62,7 +62,11 @@ $$
 	
 	Expression of the error probability: 
 
-	$$P_e = \int_{VT/\tau}^{+ \infty} f(n_0(T))dn_0(T) = \frac{1}{\sqrt{\pi}} \int_{V\sqrt{T/N_0}}^{+ \infty} e^{-x^2}dx = \frac{1}{2} \erfc \left( V \sqrt{\frac{T}{N_0}} \right) = \frac{1}{2} \erfc \left(\sqrt{\frac{V^2 T}{N_0}}\right) = \frac{1}{2} \erfc \left(\sqrt{\frac{E_s}{N_0}}\right)$$
+	$$\begin{align}
+	P_e =& 
+	\int_{VT/\tau}^{+ \infty} f(n_0(T))dn_0(T) = \frac{1}{\sqrt{\pi}} \int_{V\sqrt{T/N_0}}^{+ \infty} e^{-x^2}dx\\ 
+	=& \frac{1}{2} \erfc \left( V \sqrt{\frac{T}{N_0}} \right) = \frac{1}{2} \erfc \left(\sqrt{\frac{V^2 T}{N_0}}\right) \\
+	=& \frac{1}{2} \erfc \left(\sqrt{\frac{E_s}{N_0}}\right)\end{align}$$
 
 	using $$x = \frac{n_0(T)}{\sqrt{2}\sigma}$$ and the fact that $$\sigma^2 = \frac{N_0 T}{2\tau^2}$$
 
@@ -77,12 +81,12 @@ $$
 * Optimum filter definition: filter that maximises the SNR (e.g minimises the effect of noise)
 * For unfiltered rectangular data pulses in white noise, the integrate and dump filter is the *optimum detector*.
   
-  Also called *matched detector*.
+  Also called *matched detector*
+	
+	For coherent reception, also called *correlation receiver*
 * In the case of filtered data transmission, detection filter must be matched to the pulse shaping employed
   
   If $$s(t)$$ is the signal then $$h_\text{opt} = s(T-t)$$
-* SNR: same value as before $$\snr = \frac{2 E_s}{N_0}$$
-* For coherent reception, also called *correlation receiver*
 * Convolution in the time-domain corresponds to mutiplication in the frequency (Fourier) domain
   
   Fourier transform of the matched filter: $$H_\text{opt}(f) = S^* (f) e^{-2j \pi f T}$$

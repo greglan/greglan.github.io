@@ -102,25 +102,28 @@ $$
   $$p=q$$
 
 ## Continuous formulation
-* Differential entropy of a continuous variable $$X$$ with density function $$f$$: [1, 4p27] $$h(X) = - \int_{\inftym}^{\inftyp} f(x) \log f(x) dx$$
-* Differential entropy of a uniform variable over $$[a,b]$$: $$h(X) = \int_{\inftym}^{\inftyp} -f(x) \log f(x) dx = - \int_a^b  \frac{1}{b-a} \log \frac{1}{b-a} dx = - \log \frac{1}{b-a} = \log (b-a)$$
+* Differential entropy of a continuous variable $$X$$ with density function $$f$$: [1, 4p27] $$h(X) = - \int_{\inftym}^{\inftyp} f(x) \ln f(x) dx$$
+* Differential entropy of a uniform variable over $$[a,b]$$: $$h(X) = \int_{\inftym}^{\inftyp} -f(x) \ln f(x) dx = - \int_a^b  \frac{1}{b-a} \ln \frac{1}{b-a} dx = - \ln \frac{1}{b-a} = \ln (b-a)$$
   
   Dependence: only on the size of the interval, not its location. Consequence: translation invariant.
 
-  If $$[a,b] = [0, 1]$$, then $$h(X) = \log 1 = 0$$. Similarly, if $$b-a < 1$$, then $$h(X) < 0$$
+  If $$[a,b] = [0, 1]$$, then $$h(X) = \ln 1 = 0$$. Similarly, if $$b-a < 1$$, then $$h(X) < 0$$
 * Differential entropy of a centered Gaussian variable: $$X$$ follows $$\mathcal{N}(\mu, \sigma) = \mathcal{N}(0, \sigma)$$ so $$f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{- \frac{(x-\mu)^2}{2 \sigma^2}} = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{- \frac{x^2}{2 \sigma^2}} $$.
   
   Hence $$h(X) = -\int_{\inftym}^{\inftyp} f(x) \ln f(x) dx = - \int_{\inftym}^{\inftyp} f(x) \left(\ln(\frac{1}{\sqrt{2 \pi \sigma^2}}) -\frac{x^2}{2 \sigma^2} \right) dx$$ 
   $$ = \int_{\inftym}^{\inftyp} f(x) \ln \sqrt{2 \pi \sigma^2} dx + \int_{\inftym}^{\inftyp} f(x) \frac{x^2}{2 \sigma^2} dx = \ln (\sqrt{2 \pi \sigma^2}) + \frac{1}{2 \sigma^2} \int_{\inftym}^{\inftyp} x^2 f(x) dx $$
-  $$ = \frac{1}{2} \ln (2 \pi \sigma^2) + \frac{1}{2 \sigma^2} \var X = \frac{1}{2}( 1 + \ln 2 \pi \sigma^2) = \frac{1}{2} \ln 2 \pi e \sigma^2$$ nats $$ = \frac{1}{2} \log 2 \pi e \sigma^2$$ bits
+  $$ = \frac{1}{2} \ln (2 \pi \sigma^2) + \frac{1}{2 \sigma^2} \var X = \frac{1}{2}( 1 + \ln 2 \pi \sigma^2) = \frac{1}{2} \ln 2 \pi e \sigma^2$$ nats $$ = \frac{1}{2} \ln 2 \pi e \sigma^2$$ bits
 * Natural extension for the differential conditional entropy and differential relative entropy
-* Maximum differential entropy: for any random variable with variance bounded by $$\ßigma^2$$, the Gaussian density $$\phi(x) =  \frac{1}{\sqrt{2 \pi \sigma^2}} e^{- \frac{x^2}{2 \sigma^2}}$$ has the largest differential entropy.
+* Maximum differential entropy: for any random variable with variance bounded by $$\sigma^2$$, the Gaussian density $$\phi(x) =  \frac{1}{\sqrt{2 \pi \sigma^2}} e^{- \frac{x^2}{2 \sigma^2}}$$ has the largest differential entropy.
   
   Proof: assume random variable $$X$$ and associated density function $$f$$ such that $$\var X \leqslant \sigma^2$$. By translation invariance of differential entropy, we can assume that the mean is zero: $$\E(X) = \int_{\inftym}^{\inftyp} x f(x) dx = 0$$
 
   $$D(f \vert \vert \phi) = \int_{\inftym}^{\inftyp} f(x) \ln \frac{f(x)}{\phi(x)} dx = \int_{\inftym}^{\inftyp} f(x) \ln \left( f(x) \sqrt{2 \pi \sigma^2} e^\frac{x^2}{2 \sigma^2} \right) dx $$
-  $$ = \int_{\inftym}^{\inftyp} f(x) \ln f(x) dx + \int_{\inftym}^{\inftyp} f(x) \ln \sqrt{2 \pi \sigma^2} dx + \int_{\inftym}^{\inftyp} f(x) \frac{x^2}{2 \sigma^2} dx = -h(f(x)) + \frac{1}{2} \ln 2 \pi \sigma^2 + \frac{1}{2 \sigma^2} \var X $$ 
-  $$= -h(f(x)) + \frac{1}{2} \ln 2 \pi \sigma^2 + \frac{1}{2} = -h(f(x)) + h(\phi(x)) \geqslant 0$$ because $$D(f \vert \vert \phi) \geqslant 0$$. Hence $$h(f) \leqslant h(\phi)$$.
+  $$ = \int_{\inftym}^{\inftyp} f(x) \ln f(x) dx + \int_{\inftym}^{\inftyp} f(x) \ln \sqrt{2 \pi \sigma^2} dx + \int_{\inftym}^{\inftyp} f(x) \frac{x^2}{2 \sigma^2} dx =$$
+  $$ -h(f(x)) + \frac{1}{2} \ln 2 \pi \sigma^2 + \frac{1}{2 \sigma^2} \var X =$$ 
+  $$-h(f(x)) + \frac{1}{2} \ln 2 \pi \sigma^2 + \frac{1}{2} = $$
+  $$-h(f(x)) + h(\phi(x)) \geqslant 0$$ because $$D(f \vert \vert \phi) \geqslant 0$$. 
+  Hence $$h(f) \leqslant h(\phi)$$.
 
 
 
