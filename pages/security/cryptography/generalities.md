@@ -126,14 +126,19 @@ and not on the secrecy of the cipher.
 
 ### Perfect secrecy [2]
 * Captures the idea that an attacker doesn't learn anything from the ciphertext
+
+  In other words, prevents the attacker from learning partial information 
 * Hypothesis: the message space is the cipher space and the length of the
   message is known to the attacker
-* Formal definition: $$\forall m,c, \quad \P(M^*=m \vert C^* = c) = \P(M^* = m)$$
-* Equivalent definition: we have
-  $$\P(m \vert c) = \frac{\P(m,c)}{\P(c)} = \frac{\P(c \vert m) \P(m)}{\P(c)}$$
-  and $$\P(m \vert c) = \P(m)$$, so that
-  $$\frac{\P(c \vert m) \P(m)}{\P(c)} = \P(m)$$
-  which amounts to $$\P(c \vert m) = \P(c)$$
+* Formal definition: $$\forall C \in \mathcal C, \forall M \in \mathcal M, \quad \P(M^*= M \vert C^* = C) = \P(M^* = M)$$
+* Ciphertext-oriented definition: $$\forall C \in \mathcal C, \forall M \in \mathcal M, \quad \P(C^*= C \vert M^* = M) = \P(C^* = C)$$
+  
+  Proof: we have $$\P(M^* = M \vert C^* =C) = \frac{\P(M^* = M, C^* = C)}{\P(C^* = C)} = \frac{\P(C^* =C \vert M^* = M) \P(M^* = M)}{\P(C^* = C)}$$
+  and $$\P(m \vert C^* =C) = \P(M^* = M)$$, so that $$\frac{\P(C^* =C \vert M^* = M) \P(M^* = M)}{\P(C^* =C)} = \P(M^* = M)$$
+  which amounts to $$\P(C^* = C \vert M^* = M) = \P(C^* = C)$$
+* Another equivalent definition: $$\forall C \in \mathcal C, \forall M_0,M_1 \in \mathcal M, \quad \P(C^*= C \vert M^* = M_0) =  \P(C^*= C \vert M^* = M_1)$$
+* Equivalent definition for uniform message distributions: 
+  $$\forall C \in \mathcal C, \forall M \in \mathcal M, \quad \P(C^*= C \vert M^* = M) = \frac{1}{\vert \mathcal C \vert}$$
 
 
 ### Key recovery
