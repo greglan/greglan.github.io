@@ -130,9 +130,30 @@ $$
 
 
 ## Sphere packing
+* Output density of a codeword $$X_n$$ assuming identically and independently distributed Gaussian $$\mathcal N (0, \sigma_N^2)$$ noise: sperically symmetric and concentrated in a sphere of radius $$\sqrt{n \sigma_N^2}$$
+* Output density of codewords whose average power is $$P$$: the received $$n$$-tuples will have a Gaussian density radius $$\sqrt{n(P + \sigma_N^2)}$$
+* Condition for reliable decoding: the spheres of radius $$\sqrt{n \sigma_N^2}$$ surrounding codewords should be disjoint
 * Sphere packing: $$R = \sqrt{\sum_i x_i}$$. If too much noise, a vector in the sphere will overlap with neighboring cells.
+* Denote by $$V_n(r) = A_n r^n$$ the volume of a sphere of radius $$r$$ ($$A_n$$ is a dimension only dependent constant)$$
+
+  Total number of codewords is bounded above by:
+  $$M \leqslant \frac{V_n((n(P + \sigma_N^2))^{n/2})}{V_n((n \sigma_N^2)^{n/2})} = \frac{(n(P + \sigma_N^2))^{n/2}}{(n \sigma_N^2)^{n/2}} = \left( 1 + \frac{P}{\sigma_N^2} \right)^{n/2}$$
+* Rate of the code: 
+  $$R = \frac{1}{n} \log M \leqslant \frac{1}{2} \log \left(1 + \frac{P}{\sigma_N^2} \right)$$
+
 
 ## Bandwidth limited channels
+* Continuous channel conversion to discret channel: a continuous channel with
+  - power spectral density $$\frac{N_0}{2}$$
+  - bandwidth $$B$$
+  - signal power $$P$$
+  can be converted to a discrete channel by sampling it at the Nyquist rate
+* Noise sample power: $$P_N = \int_{_B}^{B} \frac{N_0}{2} df = N_0 B$$
+* Capacity per sample: $$C_S = \frac{1}{2} \log \left( 1 + \frac{P}{N_0 B} \right)$$
+* A given signal with bandwidth $$B$$ transmitted through this
+  channel and sampled at the Nyquist rate will be represented by
+  $$2B$$ samples per second
+* $$C = 2 B C_S = B \log \left( 1 + \frac{P}{N_0 B} \right)$$ bps
 
 ## References
 * [1] *Robert Piechocki*, Communication Systems, Slides
