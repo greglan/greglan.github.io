@@ -11,7 +11,7 @@ toc: false
 ## Generalities
 
 * Principle:
-  - when light wavelength shorter that $$\lambda_\text{th} = \frac{hc}{E_g} = \frac{1.24}{E_g}$$
+  - when light wavelength shorter that $$\lambda_\text{th} = \frac{hc}{E_g} = \frac{1.24 \text{ eV} \cdot \mu \text{m}}{E_g}$$
   - each photon absorbed implies an electron/hole pair excited across the bandgap in the depletion region
   - from there they diffuse to become minority carriers and induce a photocurrent
   - photodetectors can operate at both zero bias and reverse bias
@@ -31,7 +31,7 @@ toc: false
   Indirect bandgap: rise slower due to need for accompanying phonons
 * Quantum efficiency of a photodiode: $$\eta = (1-R) e^{- \alpha_1 L_1}(1 - e^{-\alpha_2 L_2})$$ with $$\alpha_1$$ absorption coefficient in the P section and $$\alpha_2$$ the absorption coefficient in the depletion region
   
-  Maximization of the effiency: use a double heterostructure
+  Maximization of the efficiency: use a double heterostructure
   - minimise $$L_1$$
   - maximise $$L_2$$ i.e need $$L_2 \gg \frac{1}{\alpha_2}$$
   - minimise $$R$$ (anti reflection coating)

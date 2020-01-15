@@ -25,6 +25,8 @@ $$
 * Expression of the signal after the low pass filtering:
   $$\frac{1}{2} A_c m(t) + \frac{1}{2} X_I (t)$$
 * Average RX power of the signal: $$S_\text{out} = \frac{A_c^2}{4}P$$
+
+  Proof: $$P/2$$ power distributed over the in-phase and quadrature signals. For the in-phase-signal, $$P/4$$ power distributed over the frequencies $$f_c$$ and $$2 f_c$$
 * Total noise power at the demodulated output: $$\frac{N_0 B}{2}$$
 * Expression of $$(\snr)_{\text{out}}$$:
   $$(\snr)_{\text{out}} = \frac{A_c^2 P}{2B N_0}$$

@@ -16,7 +16,7 @@ $$
   Expression of an angle modulated signal: $$s(t) = A \cos(\omega_c t + m(t))$$
 
   Two types of angle modulation: phase modulation and frequency modulation
-* FM: cheap tehcnology, efficient RF power amplifier.
+* FM: cheap technology, efficient RF power amplifier.
 * Expression of an FM modulated signal: $$s(t) = A \cos (\omega_c t + \theta(t))$$ with $$\theta(t) = \beta \sin(\omega_m t)$$ 
   which depends only on the message and $$\beta$$ the modulation index
 * Maximum frequency deviation: $$\Delta f = f_\text{dev} = \beta f_m$$ with $$f_m = B$$ the maximum frequency of a message (and hence bandwidth $$B$$).
@@ -31,7 +31,7 @@ $$
 
 * Expression of the modulated signal: $$s(t) = A \cos(\omega_c t + \frac{K_f A_m}{\omega_m} \sin(\omega_m t)) = A \cos(\omega_c t + \beta \sin\omega_m t))$$
 
-* Expression of the modulation index: $$\beta = \frac{K_f A_m}{\omega_m}$$
+  Expression of the modulation index: $$\beta = \frac{K_f A_m}{\omega_m}$$
 * Expression of the instantaneous frequency: 
   $$\frac{d\theta}{dt} = \omega_c + \beta \omega_m \cos(\omega_m t) \sim f_c + \beta f_m \cos(\omega_m t)$$
 
@@ -64,6 +64,13 @@ $$
 * FM signal power: $$\frac{A^2}{2}$$. 
   
   Dependence: doesn't depend on $$\beta$$ because the modulation process doesn't affect the amplitude, and hence doesn't influence the power
+* Signal expression: $$s(t) = A_c \cos (\omega_c t + \theta(t))$$
+* Discriminator (slope detector) output: $$\frac{1}{2 \pi} \frac{d \theta}{dt}$$ Hz
+
+  Discriminator function: converts the phase shift $$\theta(t)$$ back to the message signal
+* Output voltage from the discriminator: $$ v_\text{out}(t) = K \frac{1}{2\pi} \frac{d \ŧheta}{dt} = K \frac{\beta \omega_m}{2 \pi} \cos \omega_m t = K \Delta f \cos \omega_m t$$ with $$K$$ the sensitivity of discriminator
+
+  Average output power: $$S_0 = \frac{K^2 \Delta f ^2}{2}$$
 * Expression $$\snr_c$$: $$\snr_c = \frac{A^2}{2 B N_0}$$
 
 ## Comparison with AM
