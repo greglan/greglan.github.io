@@ -32,7 +32,7 @@ is known [1]
   Should differ in length by a few digits to make factoring harder
 * Key length $$n = pq$$. Also called *modulus*.
 * Compute $$\varphi(n) = (p-1) (q-1)$$
-* Choose a random *public key exponent* $$e$$ prime in $$\mathbb{Z}_n^*$$ (hence $$e$$
+* Choose a random *public key exponent* $$e$$ in $$\mathbb{Z}_n^*$$ (hence $$e$$
   has an inverse modulo $$\varphi(n)$$ because coprime with $$\varphi(n)$$).
 
   Note that this means that $$e \leq \varphi(n)$$
@@ -55,7 +55,7 @@ is known [1]
 * Ciphertext $$c = m^e \mod n$$
 
 ### Decryption
-* For $$m$$ invertible with modulo $$n$$, we have $$m^{\varphi(n)} = 1 \mod n$$ (Fermat's little theorem).
+* For $$m$$ invertible with modulo $$n$$, we have $$m^{\varphi(n)} = 1 \mod n$$ (Euler's theorem).
   
   Decryption: $$c^d \mod n = m^{ed} \mod n = m^{1+k \varphi(n)} \mod n = m \mod n$$
 * Inverse calculation in Python (from *pycrypto* package):
@@ -166,19 +166,20 @@ d = inverse(e, phi)
 * Setup:
   - Choose a prime $$p$$ and a generator $$g$$ of $$\Z/p\Z^*$$
   - The signer Alice generates a key pair $$(sk, pk) = (a, g^a \mod p)$$ where $$a \in \set{0, \dots, p-1}$$ is an integer and publishes $$pk$$ as her identity
-  - The verifier generates a message $$m \mod (p-1)$$ to be signed
+  - The verifier generates a message $$m \mod (p-1)$$ to be signed (modulo $$p-1$$ because it will appear as exponent)
 * Signing:
   - Pick a random integer $$k \in \set{0, \dots, p-1}$$
   - Compute $$r = g^k \mod p$$
   - Compute $$s = k^{-1}(m-ar) \mod (p-1)$$
   - Publish a signed message $$(r, s)$$
 * Verify: the verifier checks that $$g^m = g^{ar} \cdot g^{k k^{-1}(m-ar)} = pk^r \cdot r^s \mod p$$
-* Secrecy of the nonce $$k$$: if an attacker knows $$k$$ he can recover $$a$$ because $$s = k^{-1}(m-ar) \mod (p-1)$$ and $$r,s,p$$ and $$m$$ are public values.
-  Then $$a = (m-sk) \cdot r^{-1}$$
+* Secrecy of the nonce $$k$$: if an attacker knows $$k$$ he can recover $$a$$
+  
+  Proof: $$s = k^{-1}(m-ar) \mod (p-1)$$ and $$r,s,p$$ and $$m$$ are public values.
+  Hence $$a = (m-sk) \cdot r^{-1}$$
 * Nonce reuse: if $$k$$ is used more than once an attacker can recover $$k$$ and hence $$a$$
   
   Proof: assume we sign two messages with the same nonce $$k$$. We get rwo signatures $$(r, s_1)$$ and $$(r, s_2)$$ such that $$s_1 = k^{-1}(m_1-ar) \mod (p-1)$$ and $$s_2 = k^{-1}(m_2-ar) \mod (p-1)$$. Then $$k = (m_1-m_2)(s_1-s_2)^{-1} \mod (p-1)$$
- * Remark on the message: the message is taken modulo $$p-1$$ since it appears in the exponent of $$g$$
 
 
 ## Attacks on the discrete logarithm problem
