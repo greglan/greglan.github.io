@@ -52,3 +52,4 @@ permalink: "software-setup.html"
 ## Resources and references
 * [Example setup](http://jasonwryan.com/blog/2010/10/04/the-setup/)
 * [MySQL installation on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
+* [Move line up/down in Visual studio](https://www.jflh.ca/2016-07-10-move-lines-up-and-down-in-visual-studio-code)

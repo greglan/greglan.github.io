@@ -438,17 +438,17 @@ entries:
     - title: Cheatsheet
       url: /quantum-cheatsheet.html
 
-    - title: Quantum circuits
-      url: /quantum-circuits.html
-
     - title: Quantum computers
       url: /quantum-computers.html
 
       subfolders:
-      - title: Algorithms
+      - title: Computation
         subfolderitems:
         - title: Complexity theory
           url: /quantum-complexity.html
+
+        - title: Quantum circuits
+          url: /quantum-circuits.html
 
         - title: Deutsch-Jozsa algorithm
           url: /deutsch-jozsa.html
@@ -473,8 +473,8 @@ entries:
         - title: Quantum teleportation
           url: /quantum-teleportation.html
 
-        - title: BB84
-          url: /bb84-protocol.html
+        - title: Key distribution
+          url: /qkd.html
 
   - title: Hardware
     folderitems:
