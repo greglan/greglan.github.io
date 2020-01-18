@@ -1,13 +1,16 @@
 ---
 layout: page
 title:  "The BB84 protocol"
-permalink: "bb84-protocol.html"
+permalink: "qkd.html"
 tags: [security, quantum]
-summary: "A simple key distribution protocol"
+summary: "An introduction to quantum key distribution protocols"
 ---
 {% include latex-commands.html %}
 
 ## Introduction
+
+## BB84
+### Introduction
 * BB84: comes from the inventors (Bennet and Brassard) and the year it was invented (1984)
 * Permits to create a secret classical key that is secret with high probability
 * Does not guarantee that the establishment of the key succeeds
@@ -21,7 +24,7 @@ summary: "A simple key distribution protocol"
     - 0 $$\to \ket{\nearrow} = \frac{1}{\sqrt{2}} \left( \ket{\uparrow} + \ket{\rightarrow}\right)$$
     - 1 $$\to \ket{\searrow} = \frac{1}{\sqrt{2}} \left( \ket{\uparrow} - \ket{\rightarrow}\right)$$
 
-## Protocol
+### Protocol
 * Alice generates a secret key by classical means
 * Alice encodes each bit by randomly choosing one of two basis and remembers the choice
 * Alice sends the sequence over the quantum channel
@@ -30,7 +33,7 @@ summary: "A simple key distribution protocol"
 * Discard every photon for which Alice's emitting basis is different from Bob's measuring basis
 * Repeat the operation for the remaining bits
 
-## Analysis
+### Analysis
 * Probability that the two basis used by Alice and Bob differ: $$\frac{1}{2}$$
 * Average percentage of bits transfered at the first try: 50%
 * Vérification de la présence d'un espion : comparaison d'une liste de bits choisis aléatoirement
@@ -39,7 +42,9 @@ summary: "A simple key distribution protocol"
 
   Tend vers 0 pour $$n$$ grand.
 
+## Bennett 92 (B92)
 
-# Resources and references
+
+## Resources and references
 * [1] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
 * [3] Introduction à l'information quantique, Y.Leroyer and G.Sénizergues

@@ -31,11 +31,15 @@ summary: ""
   - Apply $$H \otimes H$$
   - Apply $$U_f$$
   - Apply $$H \otimes I$$
-  - Measure the first qubit in the computational basis: if outcome 0,
-    then $$f(0) + f(1) = 0$$ ($$f$$ constant).
-    If outcome 1, then $$f(0) + f(1) = 1$$ ($$f$$ even)
+  - Measure the first qubit in the computational basis: this gives the value of $$f(0)+f(1)$$
 * Expression of the state before application of $$U_f$$:
   $$(H \otimes H)(I \otimes X) \ket{00} = \ket{+}\ket{-}$$
-* Expression of the state after application of $$U_f$$
+* Expression of the state after application of $$U_f$$: 
+  
+  $$\frac{(-1)^{f(0)}\ket{0} + (-1)^{f(1)} \ket{1}}{\sqrt{2}}\frac{\ket{0} - \ket{1}}{\sqrt{2}} = 
+  \begin{cases} \pm \ket{+} \ket{-} \text{ if } f(0) + f(1) = 0\\ \pm \ket{-} \ket{-} \text{ if } f(0) + f(1) = 1\end{cases}$$
+* Expression of the state after the final step: 
+
+  $$\begin{cases} \pm \ket{0} \ket{-} \text{ if } f(0) + f(1) = 0\\ \pm \ket{1} \ket{-} \text{ if } f(0) + f(1) = 1\end{cases}$$
 
 ## Deutsch-Jozsa's algorithm
