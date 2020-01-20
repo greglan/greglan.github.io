@@ -19,7 +19,8 @@ summary: "A protocol for sending two classical bit using one qubit and a previou
 |$$2 = 0b10$$| $$Z \otimes I$$ | $$\frac{1}{\sqrt{2}} \left( \ket{00} - \ket{11} \right)$$ |
 |$$3 = 0b11$$| $$Y \otimes I$$ | $$\frac{1}{\sqrt{2}} \left( \ket{01} - \ket{10} \right)$$ |
 
-* Decoding procedure: apply $$(H \otimes I) Cnot$$ and measurement in the standard basis
+* Encoding variation: it is possible to change the mapping from bits to operators.
+* Decoding procedure: apply $$(H \otimes I) \text{ Cnot}$$ and measurement in the standard basis
 
 ## Resources and references
 * *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction p81

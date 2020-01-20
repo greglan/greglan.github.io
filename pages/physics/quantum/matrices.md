@@ -17,6 +17,8 @@ summary: "Definitions and properties of some particular matrices used in quantum
 * Hermitian/self-adjoint matrix: $$A = A^\dagger$$
 * Projectors are Hermitian
 * Normal matrix: $$AA^\dagger = A^\dagger A$$
+* Degenerate eigenvalue: more than one orthogonal state correspond to the same eigenvalue. The associated eigenspace is of dimension the number of orthogonal eigenvectors
+* Non-degenerate operator: operator which does not have any degenerate eigenvalues 
 * Spectral decomposition: an operator $$M$$ is normal iff it is diagonalizable. Then, $$M = \sum_i \lambda_i \ket{i} \bra{i}$$ with $$\lambda_i$$ eigenvalues of $$M$$
 * A normal matrix $$A$$ is Hermitian iff $$Sp(A) \subset \mathbb{R}$$
 * Measurement operators are hermitian matrices. The observable values are the eigenvalues of the matrix

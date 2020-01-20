@@ -54,7 +54,7 @@ summary: "An introduction to quantum key distribution protocols"
 
   Limit: 0 for $$n$$ big enough
 
-## Bennett 92 (B92)
+## Bennett 92 (B92) [2]
 ### Introduction
 * Alice sends a qubit either in state $$\ket{0}$$ or $$\ket{+}$$
 * If Bob measures $$Z$$ and gets $$\lambda=1$$, he can't discern the state Alice sent
@@ -83,4 +83,5 @@ summary: "An introduction to quantum key distribution protocols"
 
 ## Resources and references
 * [1] *Eleanor Rieffel and Wolfgang Polak*, Quantum computing, a gentle introduction
+* [2] *Noah Linden*, Quantum Information 2019, Handout O
 * [3] Introduction à l'information quantique, Y.Leroyer and G.Sénizergues
