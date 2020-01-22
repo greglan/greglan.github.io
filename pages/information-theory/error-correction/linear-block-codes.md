@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Block codes"
-permalink: "block-codes.html"
+title:  "Linear block codes"
+permalink: "linear-block-codes.html"
 tags: []
 summary: "Introduction to block codes"
 ---
@@ -25,8 +25,10 @@ summary: "Introduction to block codes"
   - hard to find good codes as $$n,k$$ increase
 * Solution: use good mathematical structures
 
-## Linear block
+## Linear block codes
 * Definition of a $$(n,k)$$ linear block code: $$\F_q^k \subset \F_q^n$$
+
+  Thus, the 0 codeword always belong to a linear block code
 * Number of valid codewords: $$q^k$$ among $$q^n$$ possible codewords
 * Generator matrix: matrix whose rows are the basis of the linear code.
   Dimension: $$(n,k)$$
@@ -78,20 +80,33 @@ summary: "Introduction to block codes"
 * The lower the coderate the better the error correction capabilities
 
 ### Specific codes
-* Dual codes: $$n-k$$ dimensional subspace
+* Shortened codes
+* Extended codes
+* Dual codes: $$n-k$$ dimensional subspace. 
+  Codewords corresponds to the dual space of the original code
 
-  Generator matrix: parity matrix. Parity matrix: generator matrix. Can be made
-  systematic using regular techniques.
-* Number of possible syndromes:
+  Generator matrix: parity matrix. 
+  
+  Parity matrix: generator matrix.
 
-  Number of possible patterns with $$t$$ errors:
-* Hamming bound: $$(n,k)$$ with $$t$$ error case, binary case
+  Can be made systematic using regular techniques.
 
+  Examples: single parity check codes are dual codes for repetition codes and vice-versa
+
+### Performance bounds
+* Number of possible syndromes: $$q^{n-k}$$
+
+  Number of possible patterns with $$t$$ errors: $$ {n \choose t} (q-1)^t$$. 
   $$q-1$$ error patterns because $$0$$ is not an error
-* Perfect code: code with equality in the Hamming Bound
+  
+  Hamming bound: $$q^{n-k} \geqslant \sum_{i=0}^t {n \choose i} (q-1)^i$$
 
-  Example of perfect binary codes
-* Singleton bound. Example of codes meeting the Singleton Bound.
+  Perfect codes: codes that meet the Hamming bound (equality)
+
+  Examples of perfect binary codes: trivial single bit repetition codes, single error-correcting Hamming codes and the Golay code
+* Singleton bound: $$d_\min \leqslant n - k + 1$$
+  
+  Examples: trivial repetition codes, Reed Solomon codes
 * Probability of $$r$$ errors in $$n$$ bits in a BSC
 
   Probability of codeword failure: $$\P(r >t)$$. Limit for small $$p$$.

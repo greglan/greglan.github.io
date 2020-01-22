@@ -426,11 +426,14 @@ entries:
       subfolders:
       - title: Coding theory
         subfolderitems:
-        - title: Block codes
-          url: /block-codes.html
+        - title: Linear block codes
+          url: /linear-block-codes.html
 
         - title: Cyclic codes
           url: /cyclic-codes.html
+
+        - title: Convolutional codes
+          url: /convolutional-codes.html
 
   - title: Quantum information theory
     folderitems:

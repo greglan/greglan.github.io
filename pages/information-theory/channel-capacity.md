@@ -86,8 +86,14 @@ $$
 * Definition for error rate $$\alpha$$ [1, 4p17]: $$p(y \vert x) = \begin{pmatrix} 1-\alpha & 0 & \alpha \\ 0 & 1 - \alpha & \alpha \end{pmatrix}$$
 * Capacity: $$C = 1 - \alpha$$.
   
-  Proof using $$I(X;Y) = H(X) - H(X \vert Y)$$ [1, 4p18]: $$H(X \vert Y) = p(y=0)H(X \vert Y=0) + p(y=1) H(X \vert Y=1) + p(y=E) H(X \vert Y=E) \\ = p(y=E) H(X \vert Y=E) = \alpha H(X)$$
-  $$C = \max_{p(x)} I(X;Y) = \max_{p(x)} H(X) - H(X \vert Y) = \max_{p(x)} H(X) - \alpha H(x) \\ = (1 - \alpha) \max_{p(x)} H(X) = 1 - \alpha$$
+  Proof using $$I(X;Y) = H(X) - H(X \vert Y)$$ [1, 4p18]: 
+  
+  $$H(X \vert Y)$$
+  $$ = p(y=0)H(X \vert Y=0) + p(y=1) H(X \vert Y=1) + p(y=E) H(X \vert Y=E)$$
+  $$ = p(y=E) H(X \vert Y=E) = \alpha H(X)$$
+
+  $$C = \max_{p(x)} I(X;Y) = \max_{p(x)} H(X) - H(X \vert Y) = \max_{p(x)} H(X) - \alpha H(x)$$
+  $$= (1 - \alpha) \max_{p(x)} H(X) = 1 - \alpha$$
 
 
   Proof using $$I(X;Y) = H(X) - H(X \vert Y)$$ [1, 4p19]: 

@@ -1,12 +1,13 @@
 ---
 layout: page
 title:  "Convolutionnal codes"
-permalink: "convolutionnal-codes.html"
+permalink: "convolutional-codes.html"
 tags: []
 summary: "Introduction to convolutionnal codes"
 ---
 {% include latex-commands.html %}
 
+## Introduction
 * Also called treillis code. Convolution ~ filter for encoding
   
   Very flexible in terms of input and output lengths. Still a linear block code
@@ -19,4 +20,4 @@ summary: "Introduction to convolutionnal codes"
   Memory constraint length $$u$$: total number of delay terms exluding buffering
 
 ## Resources and references
-* [1] *Pierre Wassef*, Coding Theory 4
+* [1] Coding Theory 4 lecture notes
