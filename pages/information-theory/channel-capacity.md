@@ -87,7 +87,7 @@ $$
 * Capacity: $$C = 1 - \alpha$$.
   
   Proof using $$I(X;Y) = H(X) - H(X \vert Y)$$ [1, 4p18]: 
-  
+
   $$H(X \vert Y)$$
   $$ = p(y=0)H(X \vert Y=0) + p(y=1) H(X \vert Y=1) + p(y=E) H(X \vert Y=E)$$
   $$ = p(y=E) H(X \vert Y=E) = \alpha H(X)$$
@@ -122,9 +122,9 @@ $$
 * Proof of the information capacity: 
   - assume the noise $$Z$$ is independent of the input $$X$$
   - conditionnal differential entropy: $$f(Y \vert X) = f_Z(y-x) = f_z(z)$$ hence $$h(Y \vert X) = h(Z)$$
-  - Variance: $$\var Y = \var X + Z = \var X + \var Z = \E(X^2) + \E(Z^2) = P + \sigma_N^2$$
-  - $$h(Y) \leqslant h(\mathcal{N}(0, P + \sigma_N^2)) = \frac{1}{2} \log 2 \pi e(P + \sigma_N^2)$$ because for a fixed variance, a Guassian density has the largest differential entropy
-  - the sum of two independent Gaussian random variables is also Gaussian, so we can obtain a Gaussian output density by using an input with Gassian density $$\mathcal{N}(0, P)$$
+  - Variance: $$\var Y = \var X + \var Z = \E(X^2) + \E(Z^2) = P + \sigma_N^2$$
+  - $$h(Y) \leqslant h(\mathcal{N}(0, P + \sigma_N^2)) = \frac{1}{2} \log 2 \pi e(P + \sigma_N^2)$$ because for a fixed variance, a Gaussian density has the largest differential entropy
+  - the sum of two independent Gaussian random variables is also Gaussian, so we can obtain a Gaussian output density by using an input with Gaussian density $$\mathcal{N}(0, P)$$
   - Consequence: $$I(X;Y) = h(Y) - h(Y \vert X) = \frac{1}{2} \log 2 \pi e(P + \sigma_N^2) - \frac{1}{2} \log 2 \pi e\sigma_N^2 $$ 
   $$= \frac{1}{2} \log \frac{P + \sigma_N^2}{\sigma_N^2} = \frac{1}{2} \log \left( 1 + \frac{P}{\sigma_N^2} \right)$$
 
@@ -140,7 +140,7 @@ $$
 * Output density of codewords whose average power is $$P$$: the received $$n$$-tuples will have a Gaussian density radius $$\sqrt{n(P + \sigma_N^2)}$$
 * Condition for reliable decoding: the spheres of radius $$\sqrt{n \sigma_N^2}$$ surrounding codewords should be disjoint
 * Sphere packing: $$R = \sqrt{\sum_i x_i}$$. If too much noise, a vector in the sphere will overlap with neighboring cells.
-* Denote by $$V_n(r) = A_n r^n$$ the volume of a sphere of radius $$r$$ ($$A_n$$ is a dimension only dependent constant)$$
+* Denote by $$V_n(r) = A_n r^n$$ the volume of a sphere of radius $$r$$ ($$A_n$$ is a dimension only dependent constant)
 
   Total number of codewords is bounded above by:
   $$M \leqslant \frac{V_n((n(P + \sigma_N^2))^{n/2})}{V_n((n \sigma_N^2)^{n/2})} = \frac{(n(P + \sigma_N^2))^{n/2}}{(n \sigma_N^2)^{n/2}} = \left( 1 + \frac{P}{\sigma_N^2} \right)^{n/2}$$

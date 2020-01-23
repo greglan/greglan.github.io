@@ -68,7 +68,7 @@ $$
 * Discriminator (slope detector) output: $$\frac{1}{2 \pi} \frac{d \theta}{dt}$$ Hz
 
   Discriminator function: converts the phase shift $$\theta(t)$$ back to the message signal
-* Output voltage from the discriminator: $$ v_\text{out}(t) = K \frac{1}{2\pi} \frac{d \ŧheta}{dt} = K \frac{\beta \omega_m}{2 \pi} \cos \omega_m t = K \Delta f \cos \omega_m t$$ with $$K$$ the sensitivity of discriminator
+* Output voltage from the discriminator: $$ v_\text{out}(t) = K \frac{1}{2\pi} \frac{d \theta}{dt} = K \frac{\beta \omega_m}{2 \pi} \cos \omega_m t = K \Delta f \cos \omega_m t$$ with $$K$$ the sensitivity of discriminator
 
   Average output power: $$S_0 = \frac{K^2 \Delta f ^2}{2}$$
 * Expression $$\snr_c$$: $$\snr_c = \frac{A^2}{2 B N_0}$$
