@@ -142,12 +142,5 @@ div r4, r5, r6
   processing of several instructions at the same time.
 * Superscalar approach: dynamically issue individual instructions to the execution units 
 
-## Benchmarking
-
-## Other
-* [TLB](https://en.wikipedia.org/wiki/Translation_lookaside_buffer): Translation Lookaside Buffer. Part of the MMU, caches the memory locations
-* NPU: Neural Processing Unit
-* Reason for the shift from CISC to RISC: easier to spot dependencies
-
 ## Resources and references
 * [Superscalar architectures on Wikipedia](https://en.wikipedia.org/wiki/Superscalar_processor)

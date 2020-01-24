@@ -24,7 +24,7 @@ summary: "Architectural view of branch processing"
 
 ## Branch prediction
 * General strategy: unconditional branches should not disrupt pipelined
-  execution so the branch destination is fetched, decoded ans issued in time to
+  execution so the branch destination is fetched, decoded and issued in time to
   keep the EU busy.
 
   Loop-closing branches can be assumed to be always taken, so strategy similar
@@ -91,7 +91,7 @@ summary: "Architectural view of branch processing"
   branches are not. Usefulness: loop-closing branches are all taken except for
   the last iteration
 * *Compiler based*: compiler makes prediction according to the control structure
-  of the program. Information encoded in a special *predict bit* in each branche
+  of the program. Information encoded in a special *predict bit* in each branch
   instruction
 
 ### Dynamic prediction

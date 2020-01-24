@@ -18,7 +18,9 @@ summary: "Various information about computer architectures"
 * Cache coherency: if data cached in L2, another CPU may not see that change unless it is reflected to L3.
   
   Potential fix: write-through, i.e update the value in all the caches. However, increases the cache trafic
-* SCU: Snoop Control unit: chech data bus for its own address space in caches. used in multicore systems to ensure cache coherency
+* Snoop Control Unit (SCU): checks data bus for its own address space in caches. Used in multicore systems to ensure cache coherency
+* [TLB](https://en.wikipedia.org/wiki/Translation_lookaside_buffer): Translation Lookaside Buffer. Part of the MMU, caches the memory locations
+
 
 ## Trends
 * Moore's law evolution: twice as much transistors every 3 years
@@ -33,7 +35,7 @@ summary: "Various information about computer architectures"
   - bandwidth: ~30% per annum and potentially slowing down
   - latency: very small compared to memory bandwidth increase
 * Clock speeds can't keep going up, same for parallel computing (not enough instructions to execute in parallel)
-* Transistor count is increasing faster than memory. Bandwidth and latency us also not increasing as much
+* Transistor count is increasing faster than memory. Bandwidth and latency is also not increasing as much
 * Power consumption dependence parameters [1, p10]:
   - clock frequency
   - number of transitors (chip area) and as a consequence the number of cores
@@ -84,6 +86,8 @@ Reference: openai website, Jeff Dean (arxiv)
 * Google TPU v1: first custom chip for ML. Inference only (make predictions only, doesn't perform trainin)
 * Google TPU v2/v3: can do inference and training 
 
+
+## Benchmarking
 
 
 ## Branches ?
