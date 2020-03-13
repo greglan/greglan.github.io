@@ -98,3 +98,4 @@ summary: "Various links to good security articles or interesting things to look 
 * [Trail of bits on CTF](https://trailofbits.github.io/ctf/)
 * [A list of interesting Shodan queries](https://github.com/jakejarvis/awesome-shodan-queries/blob/master/readme.md)
 * [Search for videos](https://ippsec.rocks/)
+* [Quarkslab internships](https://blog.quarkslab.com/quarkslab-internship-offers-for-2019-2020.html), which give a lot of funny things to look at

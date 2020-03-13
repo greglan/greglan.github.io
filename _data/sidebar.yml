@@ -58,9 +58,6 @@ entries:
         - title: Radare2 cheatsheet
           url: /radare2.html
 
-        - title: Oneplus 6T Trustzone
-          url: /oneplus6t-trustzone.html
-
         - title: Unpacking tips
           url: /unpacking.html
 
@@ -276,38 +273,17 @@ entries:
           
       - title: Linux
         subfolderitems:
-        - title: Some utils
-          url: /linux-cmd-utils.html
-          
-        - title: Compression
-          url: /compression-cheatsheet.html
-          
-        - title: Text editing
-          url: /text-editing.html
-          
-        - title: ip command
-          url: /ip-command.html
-          
-        - title: Package management
-          url: /package-management.html
+        - title: Commands cheatsheet
+          url: /commands-cheatsheet.html
           
         - title: Users and permissions
           url: /user-permissions.html
-          
-        - title: Wifi connection from shell
-          url: /wpa-cmd.html
-          
-        - title: GRUB shell commands
-          url: /grub-commands.html
-          
-        - title: GPG cheatsheet
-          url: /gpg.html
 
         - title: Partition management
           url: /partition-management.html
-
-        - title: Screen command
-          url: /screen-command.html
+          
+        - title: GRUB shell commands
+          url: /grub-commands.html
 
       - title: Virtualization
         subfolderitems:
@@ -368,14 +344,17 @@ entries:
 
   - title: Physics
     folderitems:
-    - title: Particle physics
-      url: /particule-physics.html
+    - title: Cheatsheet
+      url: /physics-cheatsheet.html
 
-    - title: Special relativity
-      url: /special-relativity.html
-
-    - title: General relativity
-      url: /general-relativity.html
+    - title: Classical mechanics
+      url: /classical-mechanics.html
+      
+    - title: Analytical mechanics
+      url: /analytical-mechanics.html
+      
+    - title: Classical field theory
+      url: /classical-field-theory.html
 
       subfolders:
       - title: Quantum mechanics
@@ -408,6 +387,15 @@ entries:
 
     - title: Semiconductors
       url: /semiconductors.html
+
+    - title: Special relativity
+      url: /special-relativity.html
+
+    - title: General relativity
+      url: /general-relativity.html
+
+    - title: Particle physics
+      url: /particule-physics.html
 
   - title: Information theory
     folderitems:

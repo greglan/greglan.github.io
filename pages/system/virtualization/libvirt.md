@@ -53,6 +53,8 @@ select *Browser* and goto *disk:/driver_name/w10/amd64*:
  * Once rebooted, choose the correct region.
  * Update
 
+## Windows 10 VM with passthrough
+* [Passing devices to the VM](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Swap_peripherals_to_and_from_the_Host)
 
 ## Resources and references
 * [Snapshot backing with qcow2 format](https://dustymabe.com/2015/01/11/qemu-img-backing-files-a-poor-mans-snapshotrollback/)
