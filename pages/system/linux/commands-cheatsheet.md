@@ -23,6 +23,13 @@ summary: "A cheatsheet of commands used in bash/zsh terminals"
 * ^: goto beginning of line
 * Shift+i: goto beginning of line and switch to insert mode
 * u: undo last change
+* [Tab configuration](https://stackoverflow.com/questions/2054627/how-do-i-change-tab-size-in-vim) settings example:
+```
+set tabstop=4
+set shiftwidth=4
+set expandtab
+```
+
 
 ### Grep
 * Usage: `grep -A n -B m -i expr file` with
@@ -92,7 +99,7 @@ rar a ArchiveName File_1 File_2 Dir_1 Dir_2 # Compress
 ### xz
 ```bash
 xz -k file    # Create file.xz and keep file (without -k flag, file is deleted)
-xz -d file.xz # Create file
+xz -d file.xz # Decompress
 ```
 
 
@@ -291,3 +298,4 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 
 ## References
 * [GPG Signatures](https://www.gnupg.org/gph/en/manual/x135.html)
+* [Parallel commands or programs in BASH](https://www.cyberciti.biz/faq/how-to-run-command-or-code-in-parallel-in-bash-shell-under-linux-or-unix/)

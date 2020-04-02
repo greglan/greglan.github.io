@@ -341,6 +341,10 @@ entries:
       url: /proxies.html
 
   - title: Maths
+    folderitems:
+    - title: Gaussian integrals
+      url: /gaussian-integrals.html
+          
 
   - title: Physics
     folderitems:

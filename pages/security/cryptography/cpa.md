@@ -70,3 +70,4 @@ Note that we're only working with absolute values here because we don't care abo
 * [RSA example](https://wiki.newae.com/Tutorial_B11_Breaking_RSA)
 * [Difference between perfoming CPA in the first and last AES round](https://crypto.stackexchange.com/questions/47680/what-is-the-difference-between-perfoming-correlation-power-analysis-cpa-in-the)
 * [CPA example on AES 128](https://www.tandfonline.com/doi/full/10.1080/23742917.2016.1231523)
+* [An example of faut injection to break AES128 on ATMega128p](https://rot256.io/post/glitch/)

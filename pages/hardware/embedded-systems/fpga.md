@@ -31,4 +31,7 @@ summary: "A introduction to FPGAs"
 
 ## Resources and references
 * [An introductory course in VHDL](https://seis.bristol.ac.uk/~eeidbp/courses/ECAD/index.htm)
+* [Tutorialspoint page](https://www.tutorialspoint.com/vlsi_design/index.htm)
+* [A lot of examples of VHDL codes](http://esd.cs.ucr.edu/labs/tutorial/)
 * [A guide to testbenches in VHDL](https://vhdlguide.readthedocs.io/en/latest/vhdl/testbench.html)
+* [Generics in VHDL](https://www.nandland.com/vhdl/examples/example-generic.html)

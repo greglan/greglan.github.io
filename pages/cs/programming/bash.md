@@ -17,6 +17,9 @@ then
 elif [ -z "$var" ]
 then
     echo "Var is empty of set to empty string"
+elif [ ! -z "$var" ]
+then
+    echo "Var is not empty"
 else
   echo "Less than 100"
 fi
