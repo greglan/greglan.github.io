@@ -28,6 +28,11 @@ version of packages
 * Remove a kernel: `jupyter kernelspec uninstall kernel_name`
 * [A short guide to Jupyter extensions](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231)
 * [Official guide for Jupyter contrib nbextensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
+* Error "no module named jupyter_nbextensions_configurator" 
+  solved from [this](https://github.com/ipython-contrib/jupyter_contrib_nbextensions/issues/1115):
+    * Switch to virutalenv
+    * `pip install jupyter_contrib_nbextensions`
+    * `pip install jupyter_nbextensions_configurator`
 
 ## Arguments passing to functions
 * [Object reference passing](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)

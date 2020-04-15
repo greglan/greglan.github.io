@@ -7,6 +7,7 @@ summary: "Various links to good security articles or interesting things to look 
 
 
 ## Exploitation
+* [Azeria Labs ARM exploitation series](https://azeria-labs.com/writing-arm-shellcode/)
 * [Binary exploitation tutorial on GitHub](https://github.com/Bretley/how2exploit_binary)
 * [Insecure programming by example](https://web.archive.org/web/20120401214722/http://community.coresecurity.com/~gera/InsecureProgramming/)
 * [Hyper-V fuzzing](https://labs.mwrinfosecurity.com/blog/ventures-into-hyper-v-part-1-fuzzing-hypercalls)

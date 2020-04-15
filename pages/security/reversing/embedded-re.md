@@ -44,3 +44,6 @@ Some instructions are privileged, while others are not. On ARM, the software int
 
 ### Privileged memory accesses
 If the permissions associated to the memory mappings are accessible, an access to a privileged region gives an indication of the privilege of the code performing that access
+
+## Resources and references
+* [Emulating ARM Router firmware](https://azeria-labs.com/emulating-arm-firmware/)
