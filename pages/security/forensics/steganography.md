@@ -86,3 +86,5 @@ for channel in img.mode:
 * [Some stega writeups](https://0day.work/sunshine-ctf-2016-writeups/)
 * [A writeup about a PNG stega chall](https://blog.rootshell.be/2015/04/29/hack-in-paris-challenge-wrap-up/)
 * [Collection of techniques](https://www.reddit.com/r/crypto/comments/5l2i40/detecting_png_steganography/)
+* [Writeup on image manipulation](https://www.youtube.com/watch?v=iQxLsURS1Mo)
+* [A GIF steganography writeup](https://www.youtube.com/watch?v=ueE0nsSHRK0)
