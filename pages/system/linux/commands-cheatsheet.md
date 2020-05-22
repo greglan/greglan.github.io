@@ -22,7 +22,9 @@ summary: "A cheatsheet of commands used in bash/zsh terminals"
 * A: goto end of line and switch to insert mode
 * ^: goto beginning of line
 * Shift+i: goto beginning of line and switch to insert mode
+* Search: same as man pages
 * u: undo last change
+* Multiple line edit:
 * [Tab configuration](https://stackoverflow.com/questions/2054627/how-do-i-change-tab-size-in-vim) settings example:
 ```
 set tabstop=4

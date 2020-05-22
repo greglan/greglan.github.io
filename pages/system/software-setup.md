@@ -6,6 +6,9 @@ tags: [system]
 permalink: "software-setup.html"
 ---
 
+## Visual Studio Code
+* [Python support](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
 ## Atom
 * Core: uncheck "Auto hide menu bar"
 * Editor: Setup tabs as soft tabs
@@ -41,6 +44,7 @@ permalink: "software-setup.html"
 * HTTPS everywhere module
 * Noscript module
 * Proxy changer: [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) module
+* Enable DNS-over-https in settings
 
 
 ### Chrome
@@ -48,6 +52,12 @@ permalink: "software-setup.html"
 * Use MSI intaller for system wide installation: reduces the risk of a malware modifying the binaries
 * Ublock Origin
 * Keyboard security (keypresses frequency)
+
+## Other
+* [Hack font](https://sourcefoundry.org/hack/)
+
+## List of software of interest
+* [fhex (GUI hex editor)](https://github.com/echo-devim/fhex)
 
 ## Resources and references
 * [Example setup](http://jasonwryan.com/blog/2010/10/04/the-setup/)

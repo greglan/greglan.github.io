@@ -29,7 +29,7 @@ entries:
         - title: GDB cheatsheet
           url: /gdb.html
 
-        - title: Hardware vulnerabilities
+        - title: Hardware vulnerabilities review
           url: /hardware-vulnerabilities.html
 
       - title: Reversing
@@ -190,7 +190,7 @@ entries:
         - title: Graph problems
           url: /graph-problems.html
           
-      - title: Programming
+      - title: Languages
         subfolderitems:
         - title: Python
           url: /python.html
@@ -345,7 +345,6 @@ entries:
     - title: Gaussian integrals
       url: /gaussian-integrals.html
           
-
   - title: Physics
     folderitems:
     - title: Cheatsheet

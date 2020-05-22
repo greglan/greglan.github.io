@@ -12,6 +12,17 @@ $$
 $$
 
 ## Generalities
+* Sperical coordinates
+
+	![sperical-coordinates](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/3D_Spherical.svg/260px-3D_Spherical.svg.png)
+  
+	$$\theta \in [0,\pi]$$: inclination/polar angle/colatitude/angle zénithal. Measured from $$z$$ axis to the point. Latitude: $$\pi-\theta$$
+
+	$$\varphi \in [0,2\pi]$$: azimuth/azimuthal angle/longitude.
+
+	$$z$$ axis: zenith direction
+
+	$$x$$ axis: azimuth direction
 * Line element in spherical coordinates: $$\vec{dl} = dr \,\vec{e_r} + rd \theta \,\vec{e_\theta} + r \sin \theta \, d\varphi \,\vec{e_\varphi}$$
 * Acceleration in cylindrical coordinates: $$\vec{dl} = \left( \ddot{r}-r \, \dot{\theta}^2 \right) \, \vec{e_r} + \left( r \, \ddot{\theta} + 2 \, \dot{r} \dot{\theta} \right) \,\vec{e_\theta} + \ddot{z} \,\vec{e_z}$$
 * [Vector triple product](https://en.wikipedia.org/wiki/Triple_product#Vector_triple_product): $$\vec{a} \wedge (\vec{b} \wedge \vec{c}) = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{a} \cdot \vec{b}) \, \vec{c}$$

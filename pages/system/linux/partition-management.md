@@ -77,6 +77,8 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 * [This](https://searchdatacenter.techtarget.com/tip/Access-and-repair-an-ext3-file-system-with-the-superblock)
   is also a good read
 
+## LVM memo
+
 ## Resources and references
 * [Encrypted /boot and a detached LUKS header on USB](https://wiki.archlinux.org/index.php/Dm-crypt/Specialties#Encrypted_/boot_and_a_detached_LUKS_header_on_USB)
 * [Background info on LUKS](https://wiki.archlinux.org/index.php/Disk_encryption)

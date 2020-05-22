@@ -50,3 +50,4 @@ Host *
 * [SSH hardening with 2FA](https://gist.github.com/lizthegrey/9c21673f33186a9cc775464afbdce820)
 * [SSH agent highjacking](https://xorl.wordpress.com/2018/02/04/ssh-hijacking-for-lateral-movement/)
 * [SSH agent highjacking](https://www.clockwork.com/news/2012/09/28/602/ssh_agent_hijacking/)
+* [FIDO OpenSSH](https://thehackernews.com/2020/02/openssh-fido-security-keys.html)

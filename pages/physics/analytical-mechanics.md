@@ -3,7 +3,7 @@ layout: page
 title:  "Analytical mechanics"
 permalink: "analytical-mechanics.html"
 tags: [physics]
-summary: ""
+summary: "A review of analytical mechanics"
 ---
 
 {% include latex-commands.html %}
@@ -11,7 +11,7 @@ summary: ""
 
 ## Lagrangian mechanics
 ## Hamiltonian mechanics
-* 	Hamiltonian: $$H = p_i \dot{q_i} - \L$$ with $$p_i$$ the canonical momentum and $$q_i$$ the coordinates.
+* Hamiltonian: $$H = p_i \dot{q_i} - \L$$ with $$p_i$$ the canonical momentum and $$q_i$$ the coordinates.
 * Conservation of $$H$$ and identification with the energy:
 
 	$$\begin{align*}
@@ -32,7 +32,8 @@ summary: ""
   \devp{H}{q_i} = -\dot{p_i},& \qquad  \devp{H}{p_i} = \dot{q_i}
   \end{align*}$$
 * Poisson brackets: $$\{A, B\} = \devp{A}{q_i} \devp{B}{p_i} + \devp{A}{p_i}  \devp{B}{q_i}$$
-* Constant of the motion for a time independent quantity $$F(q_i, p_i)$$: if $$\{F, H\}=0$$, then $$F$$ is a constant of the motion. 
+* Constant of the motion for a time independent quantity $$F(q_i, p_i)$$: 
+  if $$\{F, H\}=0$$, then $$F$$ is a constant of the motion. 
 
   Geometric interpretation
 
