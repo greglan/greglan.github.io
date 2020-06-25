@@ -32,6 +32,7 @@ unzip the items already pinned
 * Customize contextual menu
 * Disable Onedrive at startup
 * Goto settings, privacy, background apps, and disable all the crap
+* Setup SSH service in Powershell: `Set-Service ssh-agent -StartupType Manual` and then `Start-Service ssh-agent`
 
 
 

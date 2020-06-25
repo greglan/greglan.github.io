@@ -93,6 +93,12 @@ numbers as the relationship between the two keys
 
 
 
+## Homomorphic encryption
+* Additively homomorphic encryption scheme: $$f(x_1+x_2) = f(x_1)\oplusf(x_2)$$ for $$f \in \{E, D\}$$
+* Multiplicatively homomorphic encryption scheme: $$f(x_1\times x_2) = f(x_1)\otimes f(x_2)$$ for $$f \in \{E, D\}$$
+* Fully homomorphic encryption scheme: scheme which is both additively and multiplicatively homomorphic
+* Examples: RSA/ElGamal are multiplicatively homomorphic
+
 ## Security considerations
 * Encryption scheme: encryption algorithm $$E$$, decryption algorithm $$D$$ and
   key generation algorithm $$Kg$$ (specify how keys are to be drawn)

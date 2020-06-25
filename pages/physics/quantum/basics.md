@@ -54,7 +54,7 @@ $$
 * Tensor product of positive operators: positive
 * Tensor product of projectors operators: projectors
 
-## Relation to classical mechanics [5, p109]
+## Relation with classical mechanics [5, p109]
 * Average value should behave like classical measurements
 * Evolution with time of the average of an observable $$L$$: 
   
@@ -63,6 +63,8 @@ $$
   $$\devd{\average{L}}{t} = \devd{}{t} \bke{\psi(t)}{L}{\psi(t)} = \bke{\devd{\psi}{t}}{L}{\psi(t)} + \bke{\psi(t)}{L}{\devd{\psi}{t}} = \frac{i}{\hbar} \bke{\psi(t)}{HL}{\psi(t)} - \frac{i}{\hbar} \bke{\psi(t)}{LH}{\psi(t)} = - \frac{i}{\hbar} \bke{\psi(t)}{[L,H]}{\psi(t)}$$
 
 * Identification with Poisson brackets: for any pair of observables $$L,H$$ we have $$[L, H] \Leftrightarrow i \hbar \{L, H \}$$
+
+## ANgular momentum
 
 
 ## Resources and references

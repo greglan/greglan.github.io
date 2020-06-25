@@ -2,7 +2,7 @@
 layout: page
 title:  "BASH cheatsheet"
 permalink: "bash.html"
-tags: [programming]
+tags: [linux]
 summary: "A collection of useful BASH scripts."
 ---
 

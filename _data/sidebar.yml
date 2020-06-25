@@ -204,9 +204,6 @@ entries:
         - title: NoSQL
           url: /nosql.html
           
-        - title: BASH
-          url: /bash.html
-          
         - title: Ruby
           url: /ruby.html
           
@@ -235,12 +232,6 @@ entries:
           
   - title: System
     folderitems:
-    - title: Windows setup guide
-      url: /windows-setup.html
-      
-    - title: Windows API
-      url: /windows-api.html
-      
     - title: Software setup guide
       url: /software-setup.html
       
@@ -276,6 +267,9 @@ entries:
         - title: Commands cheatsheet
           url: /commands-cheatsheet.html
           
+        - title: BASH
+          url: /bash.html
+          
         - title: Users and permissions
           url: /user-permissions.html
 
@@ -284,6 +278,17 @@ entries:
           
         - title: GRUB shell commands
           url: /grub-commands.html
+
+      - title: Windows
+        subfolderitems:
+        - title: Windows setup guide
+          url: /windows-setup.html
+
+        - title: Batch and Powershell
+          url: /batch-powershell.html
+          
+        - title: Windows API
+          url: /windows-api.html
 
       - title: Virtualization
         subfolderitems:

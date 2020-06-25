@@ -32,3 +32,4 @@ summary: ""
 ## Resources and references
 * [Example of finding an XSS bug](https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff)
 * [Toole for easy XSS](https://github.com/chinarulezzz/pixload/blob/master/README.md)
+* [A reflected XSS on Facebook](https://medium.com/@win3zz/simple-story-of-some-complicated-xss-on-facebook-8a9c0d80969d)

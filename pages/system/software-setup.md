@@ -55,6 +55,7 @@ permalink: "software-setup.html"
 
 ## Other
 * [Hack font](https://sourcefoundry.org/hack/)
+* [Latex It thunderbird extensions](https://addons.thunderbird.net/en-US/thunderbird/addon/latex-it/)
 
 ## List of software of interest
 * [fhex (GUI hex editor)](https://github.com/echo-devim/fhex)
