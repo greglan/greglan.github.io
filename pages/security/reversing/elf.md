@@ -66,6 +66,7 @@ address for later uses
 
 ## Resources and references
 * [ELF format](https://greek0.net/elf.html)
+* [ELF headers quick reference](http://www.ouah.org/RevEng/x430.htm)
 * [[2] ELF relocation](https://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html)
 * [[3] ELF relocation in x64](http://www.mindfruit.co.uk/2012/06/relocations-relocations.html)
 * [Program layout in memory](https://manybutfinite.com/post/anatomy-of-a-program-in-memory/)

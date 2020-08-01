@@ -8,23 +8,19 @@ summary: "A cheatsheet of commands used in bash/zsh terminals"
 
 ## Text editing
 ### VIM
-* v: select chars
-* V: select lines
+* v: select chars (character mode)
+* V: select lines (line mode)
+* Crtl+v: select blocks (block mode)
 * yy: copy line
 * d: cut/delete
 * p: past line
-* w: goto beginning of next word
 * dw: delete/cut word
 * d$: delete/cut from cursor until end of line
 * D: delete/cut from cursor until end of line
 * dd: delete/cut line
-* $: goto end of line
-* A: goto end of line and switch to insert mode
-* ^: goto beginning of line
-* Shift+i: goto beginning of line and switch to insert mode
 * Search: same as man pages
 * u: undo last change
-* Multiple line edit:
+* Indentation: `>` or `<` when block of lines selected
 * [Tab configuration](https://stackoverflow.com/questions/2054627/how-do-i-change-tab-size-in-vim) settings example:
 ```
 set tabstop=4
@@ -32,6 +28,14 @@ set shiftwidth=4
 set expandtab
 ```
 
+Movement:
+* w: goto beginning of next word
+* $: goto end of line
+* A: goto end of line and switch to insert mode
+* ^: goto beginning of line
+* Shift+i: goto beginning of line and switch to insert mode
+* gg/1G: move to beginning of file
+* G: move to end of file
 
 ### Grep
 * Usage: `grep -A n -B m -i expr file` with

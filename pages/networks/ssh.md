@@ -19,7 +19,13 @@ summary: "Configuration of an SSH server and useful commands"
 * `PasswordAuthentication`: set to no
 * `PasswordAuthentication`: set to no
 
-## User configuration through ssh_config
+## User configuration
+### Key generation
+* Ed25519 is the algorithm of choiceeven though it may not yet be deployed everywhere
+* Recommended key generation: `ssh-keygen -o -a 100 -t ed25519 -C "comment like user@computer"`
+* See [this article](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54), this [answer on StackExchange](https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices) and the [ArchWiki article](https://wiki.archlinux.org/index.php/SSH_keys#Choosing_the_authentication_key_type)
+
+### ssh_config example
 ```
 # A remote desktop supporting X11 forwarding
 Host remote-desktop     

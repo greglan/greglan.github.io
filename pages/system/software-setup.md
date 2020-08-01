@@ -45,6 +45,7 @@ permalink: "software-setup.html"
 * Noscript module
 * Proxy changer: [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) module
 * Enable DNS-over-https in settings
+* In `Options`, search for `tab`, and uncheck `Crtl+Tab cycles through tabs in recently used order`
 
 
 ### Chrome

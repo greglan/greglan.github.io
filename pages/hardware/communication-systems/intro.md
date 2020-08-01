@@ -36,7 +36,7 @@ $$
 * Shannon-Hartley equation: relate the bandwidth efficiency to the SNR or power
   efficiency
 
-  $$\frac{C}{B} = \log_2(1 + \frac{E_b}{N_0} \frac{C}{B})$$
+  $$\frac{C}{B} = \log_2(1 + \frac{S}{N})= \log_2(1 + \frac{E_b}{N_0} \frac{C}{B})$$
 * BER: Bit Error Rate. Measure of error in digital systems
 * PER: Packet Error Rate. Useful measure when communication is performed using
   packets.
@@ -117,3 +117,4 @@ $$
 ## References
 * [Return-to-zero codes](https://en.wikipedia.org/wiki/Return-to-zero)
 * [NRZ codes](https://en.wikipedia.org/wiki/Non-return-to-zero)
+* [Shannon-Hartley theorem](https://en.wikipedia.org/wiki/Shannon%E2%80%93Hartley_theorem)

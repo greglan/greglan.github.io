@@ -347,6 +347,9 @@ entries:
 
   - title: Maths
     folderitems:
+    - title: Trigonometry
+      url: /trigonometry.html
+
     - title: Gaussian integrals
       url: /gaussian-integrals.html
           
