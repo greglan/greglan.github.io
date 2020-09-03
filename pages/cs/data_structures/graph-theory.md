@@ -18,7 +18,7 @@ relation on $$V^2$$ [2, p135]
 eulérien [2, p136]
 * Caractérisation de l'existence d'un cycle eulérien. Algorithm for detection.
 Complexity [2, p136]
-* Clique d'un graphe [2, p136]
+* Clique d'un graphe: ensemble de sommets induisant un sous-graphe complet [1, p10] [2, p136]
 * Composante fortement connexe. Algorithme de calcul, complexité [2, p136]
 * Graphe non orienté [2, p137]
 * Connected components
