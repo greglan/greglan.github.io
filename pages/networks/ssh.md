@@ -9,6 +9,11 @@ summary: "Configuration of an SSH server and useful commands"
 
 ## Useful commands
 * Use `$SERVER` as a SOCKS5 proxy on local port `$PORT`: `ssh -D $PORT -f -C -q -N $SERVER`
+* Nice [visual explanation of port forwarding](https://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot) possibilities.
+  
+  Optionally add the `-Nf` flags: 
+  - `-f`: goto background
+  - `-N`: do not execute any commands
 
 ## Server configuration
 * `HostKey`: generate RSA/ECDSA keys and specify the path. Only use RSA/ECDSA: DSA is unsecure and ED25519 is useless
@@ -24,6 +29,7 @@ summary: "Configuration of an SSH server and useful commands"
 * Ed25519 is the algorithm of choiceeven though it may not yet be deployed everywhere
 * Recommended key generation: `ssh-keygen -o -a 100 -t ed25519 -C "comment like user@computer"`
 * See [this article](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54), this [answer on StackExchange](https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices) and the [ArchWiki article](https://wiki.archlinux.org/index.php/SSH_keys#Choosing_the_authentication_key_type)
+* Edit a key comment: `ssh-keygen -c -C "New comment" -f ~/.ssh/key`
 
 ### ssh_config example
 ```

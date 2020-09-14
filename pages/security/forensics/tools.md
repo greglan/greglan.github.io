@@ -25,3 +25,6 @@ steghide --help
 
 ## Resources and references
 * [DumpIt for Windows memory dumps](https://www.aldeid.com/wiki/Dumpit)
+* [Pattern lock in Android 1](https://resources.infosecinstitute.com/android-forensics-cracking-the-pattern-lock-protection/)
+* [Pattern lock in Android 2](https://www.forensicfocus.com/articles/android-forensics-study-of-password-and-pattern-lock-protection/)
+* [Pattern lock in Android 3](https://www.digitalforensics.com/blog/extracting-data-from-a-locked-android-device/)

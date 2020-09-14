@@ -38,6 +38,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Zombieload attack](https://zombieloadattack.com/)
 * [MDS hadware vulnerability in Intel CPUs](https://mdsattacks.com/)
 * [AMD and EPYC CVEs](https://thehackernews.com/2018/03/amd-processor-vulnerabilities.html)
+* [Ken Shirriff's blog on hardware reversing](http://www.righto.com/?m=0)
 
 ### Windows specific
 * [Great collection of resources](https://github.com/FULLSHADE/WindowsExploitationResources)
@@ -57,6 +58,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Compiler Explorer](https://godbolt.org/)
 * [Many file formats illustrated](https://github.com/corkami/pics/tree/master/binary)
 * [UEFI reversing](https://www.synacktiv.com/posts/reverse-engineering/a-journey-in-reversing-uefi-lenovo-passwords-management.html)
+* [Diary of a reverse engineer](https://doar-e.github.io/index.html)
 
 ### Malware
 * [Analysis of Gootkit](https://connect.ed-diamond.com/MISC/MISC-100/Analyse-du-malware-bancaire-Gootkit-et-de-ses-mecanismes-de-protection)

@@ -33,6 +33,7 @@ version of packages
     * Switch to virutalenv
     * `pip install jupyter_contrib_nbextensions`
     * `pip install jupyter_nbextensions_configurator`
+* Convert notebook into plain Python script: `jupyter nbconvert --to script filename.ipynb`
 
 ## Arguments passing to functions
 * [Object reference passing](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)

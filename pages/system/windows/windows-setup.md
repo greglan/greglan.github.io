@@ -33,6 +33,7 @@ unzip the items already pinned
 * Disable Onedrive at startup
 * Goto settings, privacy, background apps, and disable all the crap
 * Setup SSH service in Powershell: `Set-Service ssh-agent -StartupType Manual` and then `Start-Service ssh-agent`
+* [Installing OpenSSH server](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 
 
 

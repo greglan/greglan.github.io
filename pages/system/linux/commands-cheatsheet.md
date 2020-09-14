@@ -18,7 +18,7 @@ summary: "A cheatsheet of commands used in bash/zsh terminals"
 * d$: delete/cut from cursor until end of line
 * D: delete/cut from cursor until end of line
 * dd: delete/cut line
-* Search: same as man pages
+* [Searching](https://vim.fandom.com/wiki/Searching)
 * u: undo last change
 * Indentation: `>` or `<` when block of lines selected
 * [Tab configuration](https://stackoverflow.com/questions/2054627/how-do-i-change-tab-size-in-vim) settings example:
@@ -175,6 +175,9 @@ add-apt-repository --remove ppa:PPA_Name/ppa  # Remove a PPA
 ```
 dpkg --reconfigure
 ./configure -prefix=/usr/bin; make; sudo make install
+yum check-update && yum update # CentOS and other Red-Hat derivative
+dnf install zsh # CentOS
+chsh -s /bin/zsh root # Change default shell on CentOS
 ```
 
 

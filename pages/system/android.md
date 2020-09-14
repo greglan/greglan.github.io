@@ -1,11 +1,16 @@
 ---
 layout: page
-title:  "Android Debug bridge cheatsheet"
-summary: "A cheatsheet of useful commands in ADB"
-tags: [system, android]
-permalink: "adb.html"
+title: Android 
+summary: "A description of the internals of the Android system"
+tags: [system]
+permalink: "android.html"
 ---
 
+
+## Android architecture
+
+
+## ADB (Android Debug bridge)
 ```
 adb shell
 
@@ -24,3 +29,7 @@ adb reboot
 adb kill-server
 exit
 ```
+
+
+# Resources and references
+* [General information about Android apps](https://ragingrock.com/AndroidAppRE/app_fundamentals.html)

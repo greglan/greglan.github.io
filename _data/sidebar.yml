@@ -440,6 +440,9 @@ entries:
     - title: Cheatsheet
       url: /quantum-cheatsheet.html
 
+    - title: QC industry
+      url: /qc-industry.html
+
     - title: Quantum computers
       url: /quantum-computers.html
 
