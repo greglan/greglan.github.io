@@ -350,6 +350,9 @@ entries:
     - title: Trigonometry
       url: /trigonometry.html
 
+    - title: Integrals cheatsheet
+      url: /integrals.html
+
     - title: Gaussian integrals
       url: /gaussian-integrals.html
           

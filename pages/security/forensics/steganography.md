@@ -75,6 +75,14 @@ for channel in img.mode:
     * [ExifReader](https://exif-reader.en.softonic.com/)
 
 
+## Audio files
+* Software choices:
+  - [DeepSound](http://jpinsoft.net/DeepSound/) (Windows only)
+  - [QuickStego](http://quickcrypto.com/free-steganography-software.html) (Windows only)
+  - [BitCrypt](http://bitcrypt.moshe-szweizer.com) (Windows only)
+  - [MP3Stego](https://www.petitcolas.net/steganography/mp3stego/) (Windows only)
+  - [Steghide](http://steghide.sourceforge.net/) (multi-platform)
+  - [AudioStego](https://github.com/danielcardeenas/AudioStego) (seemingly multi-plqtform)
 
 ## Resources and references
 * [LSB encodings](http://www.eiron.net/thesis/)
@@ -88,3 +96,4 @@ for channel in img.mode:
 * [Collection of techniques](https://www.reddit.com/r/crypto/comments/5l2i40/detecting_png_steganography/)
 * [Writeup on image manipulation](https://www.youtube.com/watch?v=iQxLsURS1Mo)
 * [A GIF steganography writeup](https://www.youtube.com/watch?v=ueE0nsSHRK0)
+* [Hiding data in Audio files on hackers-rise.com](https://www.hackers-arise.com/mr-robot-hacks-hiding-data-in-audio)

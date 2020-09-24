@@ -74,3 +74,9 @@ $$
 * Expression $$\snr_c$$: $$\snr_c = \frac{A^2}{2 B N_0}$$
 
 ## Comparison with AM
+
+
+
+## References
+* [Analysis of FM signals](https://www.johndcook.com/blog/2016/02/17/analyzing-an-fm-signal/)
+* [Energy in FM signals](https://www.johndcook.com/blog/2016/02/25/energy-in-frequency-modulated-signals/)

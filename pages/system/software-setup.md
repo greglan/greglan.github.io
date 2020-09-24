@@ -36,6 +36,16 @@ permalink: "software-setup.html"
 * Setup keyboard shortcut to move a line up/down
 * Setup keyboard shortcut to duplicate a line
 
+## KeePass
+* Lock workspace after KeePass inactivity
+* Lock workspace after global user inactivity
+* Do not remember master password of a database while it is open
+* Lock workspace when locking computer or switching the user
+* Lock workspace when the computer is about to be suspended 
+* Do not automatically search for keyfiles
+* Do not remember key sources
+* Do not remember working directories
+
 
 ## Web browsers
 ### Firefox

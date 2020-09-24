@@ -27,6 +27,13 @@ summary: "Overview of the Quantum computing industry"
   Photons are sent down pathways placed on a silicon chip. Partially reflective mirrors bounce the photons
 * GlobalFoundries (one of the world’s top chipmakers) already started producing early versions of PsiQuantum’s chips using its standard manufacturing facilities
 
+
+### Nu Quantum
+* Cambridge, UK. Created in 2018.
+* Plans first quantum product for 2021
+* Quantum optics (photons manipulations), Quantum Random Numbers Generators (QRNG)
+* [According to open positions](https://nu-quantum.com/jobs), works both on theory and experiments
+
 ### Google
 
 

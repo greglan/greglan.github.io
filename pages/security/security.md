@@ -41,7 +41,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Ken Shirriff's blog on hardware reversing](http://www.righto.com/?m=0)
 
 ### Windows specific
-* [Great collection of resources](https://github.com/FULLSHADE/WindowsExploitationResources)
+* [Advanced Windows exploitation resources](https://github.com/FULLSHADE/WindowsExploitationResources)
 * [Hyper-V fuzzing](https://labs.mwrinfosecurity.com/blog/ventures-into-hyper-v-part-1-fuzzing-hypercalls)
 
 
