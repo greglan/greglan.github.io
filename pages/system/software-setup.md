@@ -56,6 +56,9 @@ permalink: "software-setup.html"
 * Proxy changer: [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) module
 * Enable DNS-over-https in settings
 * In `Options`, search for `tab`, and uncheck `Crtl+Tab cycles through tabs in recently used order`
+* [Profiles vs containers](https://discourse.mozilla.org/t/containers-vs-profiles/23568/3)
+* [Tip for using containers and configuring them](https://superuser.com/questions/1396464/firefox-shortcut-to-open-a-particular-account-container)
+* [A hack to have different profiles on Android](https://discourse.mozilla.org/t/multiple-profiles-for-mobile-firefox/31660)
 
 
 ### Chrome

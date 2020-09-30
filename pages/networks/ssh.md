@@ -25,6 +25,8 @@ summary: "Configuration of an SSH server and useful commands"
 * `PasswordAuthentication`: set to no
 
 ## User configuration
+* Permissions should be set to 600 according to [this](https://serverfault.com/questions/253313/ssh-returns-bad-owner-or-permissions-on-ssh-config/710453)
+
 ### Key generation
 * Ed25519 is the algorithm of choiceeven though it may not yet be deployed everywhere
 * Recommended key generation: `ssh-keygen -o -a 100 -t ed25519 -C "comment like user@computer"`
