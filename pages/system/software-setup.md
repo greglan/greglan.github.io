@@ -46,9 +46,12 @@ permalink: "software-setup.html"
 * Do not remember key sources
 * Do not remember working directories
 
+## Thunderbird
+* Install language dictionnaries
 
 ## Web browsers
 ### Firefox
+* Disable offering to remember passwords and logins
 * Disable Flash and other extension: ELABORATE.
 * Cookies module
 * HTTPS everywhere module
