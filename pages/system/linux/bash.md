@@ -83,3 +83,4 @@ done
 
 
 ## Resources and references
+* [Parallel commands or programs in BASH](https://www.cyberciti.biz/faq/how-to-run-command-or-code-in-parallel-in-bash-shell-under-linux-or-unix/)

@@ -183,7 +183,6 @@ dpkg --reconfigure
 ./configure -prefix=/usr/bin; make; sudo make install
 yum check-update && yum update # CentOS and other Red-Hat derivative
 dnf install zsh # CentOS
-chsh -s /bin/zsh root # Change default shell on CentOS
 ```
 
 
@@ -286,31 +285,15 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 * Clear the copy and cache buffers: `sysctl --write vm.drop_caches=3`
 * List enabled unit files: `systemctl list-unit-files | grep enabled`
 * View logs of a specific unit: `journalctl -u nginx.service -u php-fpm.service --since today`
+* Change default shell on CentOS: `chsh -s /bin/zsh root`
 
 
 ### TODO
-* cat
-* grep (exr rationnelles)
-* sort
-* uniq
-* sed
-* tee
-* cut
-* tr
-* split
-* paste
-* printf
-* comm
-* cmp
-* diff
-* patch
-* w
-* ps
-* finger
-* mail
+* Commands to research: `cat, grep, sort, uniq, sed, tee, cut, tr, split, paste, printf, comm, cmp, diff, patch, w, ps, finger, mail`
 * [Hard links](https://bertvv.github.io/notes-to-self/2015/10/18/the-number-of-hard-links-in-ls--l/)
 
 
 ## References
 * [GPG Signatures](https://www.gnupg.org/gph/en/manual/x135.html)
-* [Parallel commands or programs in BASH](https://www.cyberciti.biz/faq/how-to-run-command-or-code-in-parallel-in-bash-shell-under-linux-or-unix/)
+* [A guide about GPG and Yubikeys](https://github.com/drduh/YubiKey-Guide)
+* [A Debian conf video about GPG keys and Yubikeys](https://www.youtube.com/watch?v=xGsixSh6sC4)

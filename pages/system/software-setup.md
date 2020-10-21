@@ -53,16 +53,25 @@ permalink: "software-setup.html"
 ### Firefox
 * Disable offering to remember passwords and logins
 * Disable Flash and other extension: ELABORATE.
-* Cookies module
-* HTTPS everywhere module
-* Noscript module
-* Proxy changer: [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) module
 * Enable DNS-over-https in settings
 * In `Options`, search for `tab`, and uncheck `Crtl+Tab cycles through tabs in recently used order`
+* Interesting add-ons:
+    * [HTTPS everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
+    * [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
+    * [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) to easily change proxy settings
+    * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+    * [Temporary containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/) with the wiki [here](https://github.com/stoically/temporary-containers/wiki) and an article [here](https://medium.com/@stoically/enhance-your-privacy-in-firefox-with-temporary-containers-33925cd6cd21). Enable Automatic mode, and reuse available numbers in configuration.
+    * [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) to remove tracking elements from URLs
+    * [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/) to automatically get rid of cookie warnings from almost all websites 
+    * Noscript module
+    * Cookies manipulation module
+    * [Simple Modify Headers](https://addons.mozilla.org/en-US/firefox/addon/simple-modify-header/) to modify HTTP headers
 * [Profiles vs containers](https://discourse.mozilla.org/t/containers-vs-profiles/23568/3)
 * [Tip for using containers and configuring them](https://superuser.com/questions/1396464/firefox-shortcut-to-open-a-particular-account-container)
 * [A hack to have different profiles on Android](https://discourse.mozilla.org/t/multiple-profiles-for-mobile-firefox/31660)
-
+* [First-party isolation](https://www.ghacks.net/2017/11/22/how-to-enable-first-party-isolation-in-firefox/)
+* A [guide](https://github.com/arkenfox/user.js/wiki/1.1-Overview) on Firefox configuration/hardening
+* [Another article](https://medium.com/free-code-camp/the-beginners-guide-to-online-privacy-7149b33c4a3e) about configurating Firefox fro privacy and explaining the risks.
 
 ### Chrome
 * Disable Flash and other extension: ELABORATE
@@ -73,6 +82,8 @@ permalink: "software-setup.html"
 ## Other
 * [Hack font](https://sourcefoundry.org/hack/)
 * [Latex It thunderbird extensions](https://addons.thunderbird.net/en-US/thunderbird/addon/latex-it/)
+* [Set Matlab default folder](https://au.mathworks.com/matlabcentral/answers/40319-matlab-default-directory): `userpath('/path/to/default/matlab/files/)`
+* [Set Matlab initial working folder](https://au.mathworks.com/matlabcentral/answers/350696-how-do-i-set-the-default-initial-working-folder-for-matlab)
 
 ## List of software of interest
 * [fhex (GUI hex editor)](https://github.com/echo-devim/fhex)
