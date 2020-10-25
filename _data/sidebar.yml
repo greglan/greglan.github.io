@@ -64,6 +64,46 @@ entries:
         - title: Process hollowing
           url: /process-hollowing.html
 
+      - title: Cryptography
+        subfolderitems:
+        - title: Generalities
+          url: /generalities.html
+
+        - title: One Time cryptosystems
+          url: /one-time-cryptosystems.html
+
+        - title: Block ciphers
+          url: /block-ciphers.html
+
+        - title: Advanced Encryption Standard
+          url: /aes.html
+
+        - title: RSA and derivatives
+          url: /rsa.html
+
+        - title: Hashes
+          url: /hashes.html
+
+        - title: Message Authentication Codes
+          url: /mac.html
+
+        - title: Correlation Power Analysis
+          url: /cpa.html
+
+      - title: Forensics
+        subfolderitems:
+        - title: Steganography
+          url: /steganography.html
+
+        - title: File formats
+          url: /file-formats.html
+
+        - title: Tools and tricks
+          url: /forensics-tools.html
+
+        - title: Volatility
+          url: /forensics-volatility.html
+      
       - title: Web
         subfolderitems:
         - title: Cross Site Request Forgery
@@ -95,33 +135,7 @@ entries:
 
         - title: Some tools
           url: /web-tools.html
-
-      - title: Cryptography
-        subfolderitems:
-        - title: Generalities
-          url: /generalities.html
-
-        - title: One Time cryptosystems
-          url: /one-time-cryptosystems.html
-
-        - title: Block ciphers
-          url: /block-ciphers.html
-
-        - title: Advanced Encryption Standard
-          url: /aes.html
-
-        - title: RSA and derivatives
-          url: /rsa.html
-
-        - title: Hashes
-          url: /hashes.html
-
-        - title: Message Authentication Codes
-          url: /mac.html
-
-        - title: Correlation Power Analysis
-          url: /cpa.html
-
+      
       - title: Pentesting
         subfolderitems:
         - title: Metasploit
@@ -133,19 +147,10 @@ entries:
         - title: WIFI hacking
           url: /pentesting-wifi.html
 
-      - title: Forensics
-        subfolderitems:
-        - title: Steganography
-          url: /steganography.html
 
-        - title: File formats
-          url: /file-formats.html
 
-        - title: Tools
-          url: /forensics-tools.html
 
-        - title: Volatility
-          url: /forensics-volatility.html
+
 
   - title: Computer science
     folderitems:

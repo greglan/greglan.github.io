@@ -78,8 +78,16 @@ Number  Start (sector)    End (sector)  Size       Code  Name
   is also a good read
 
 ## LVM memo
+* [Removing a disk from a RAID1 to use it alone](https://superuser.com/questions/971549/how-to-convert-a-software-raid-1-partition-to-non-raid-partition)
+* [Removing a disk from a RAID1](https://wiki.archlinux.org/index.php/RAID#Removing_devices_from_an_array)
+* [Adding a disk to a RAID1](https://wiki.archlinux.org/index.php/RAID#Adding_a_new_device_to_an_array)
+* [Scrubbing, or how to check for sync errors](https://wiki.archlinux.org/index.php/RAID#Scrubbing)
 
 ## Resources and references
 * [Encrypted /boot and a detached LUKS header on USB](https://wiki.archlinux.org/index.php/Dm-crypt/Specialties#Encrypted_/boot_and_a_detached_LUKS_header_on_USB)
 * [Background info on LUKS](https://wiki.archlinux.org/index.php/Disk_encryption)
 * [Resizing LUKS partitions](https://help.ubuntu.com/community/ResizeEncryptedPartitions)
+* [Closing a LVM-on-LUKS container: error device still in use](https://linux-blog.anracom.com/tag/device-still-in-use/)
+* [A short guide on plausible deniability with LUKS](https://blog.linuxbrujo.net/posts/plausible-deniability-with-luks/)
+* [A not-so-reliable guide about securing laptops](https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop)
+* [Fast methods to write randomness to a drive](https://wiki.archlinux.org/index.php/Dm-crypt/Drive_preparation#dm-crypt_specific_methods)
