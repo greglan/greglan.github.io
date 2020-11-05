@@ -86,7 +86,9 @@ permalink: "software-setup.html"
 * [Set Matlab initial working folder](https://au.mathworks.com/matlabcentral/answers/350696-how-do-i-set-the-default-initial-working-folder-for-matlab)
 
 ## List of software of interest
-* [fhex (GUI hex editor)](https://github.com/echo-devim/fhex)
+* Linux: [okteta](https://apps.kde.org/en/okteta), [GHex](https://wiki.gnome.org/Apps/Ghex) and [fhex (GUI hex editor)](https://github.com/echo-devim/fhex)
+* [A non-free but great hex editor in Windows](http://www.hexworkshop.com/overview.html)
+* [A good enough hex editor for Windows](https://mh-nexus.de/en/hxd/)
 
 ## Resources and references
 * [Example setup](http://jasonwryan.com/blog/2010/10/04/the-setup/)

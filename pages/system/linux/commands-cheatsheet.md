@@ -19,8 +19,11 @@ summary: "A cheatsheet of commands used in bash/zsh terminals"
 * D: delete/cut from cursor until end of line
 * dd: delete/cut line
 * [Searching](https://vim.fandom.com/wiki/Searching)
-* u: undo last change
-* Indentation: `>` or `<` when block of lines selected
+* Undo/redo:
+  - u: undo last change
+  - Crtl+r: redo last undo
+  - `:undolist` list changes
+* Indentation: `>>` or `<<` when block of lines selected
 * [Tab configuration](https://stackoverflow.com/questions/2054627/how-do-i-change-tab-size-in-vim) settings example:
 ```
 set tabstop=4

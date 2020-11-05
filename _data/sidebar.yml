@@ -239,6 +239,9 @@ entries:
     folderitems:
     - title: Software setup guide
       url: /software-setup.html
+    
+    - title: Filesystems
+      url: /filesystems.html
       
     - title: PC build guide
       url: /hw-pc.html

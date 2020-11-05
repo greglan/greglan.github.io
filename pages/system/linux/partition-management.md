@@ -84,10 +84,13 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 * [Scrubbing, or how to check for sync errors](https://wiki.archlinux.org/index.php/RAID#Scrubbing)
 
 ## Resources and references
-* [Encrypted /boot and a detached LUKS header on USB](https://wiki.archlinux.org/index.php/Dm-crypt/Specialties#Encrypted_/boot_and_a_detached_LUKS_header_on_USB)
+* [Advice on LUKS on RAID](https://superuser.com/questions/1193290/best-order-of-raid-lvm-and-luks)
+* [Encrypted /boot and detached LUKS header on USB on Archlinux from wiki.archlinux.org](https://wiki.archlinux.org/index.php/Dm-crypt/Specialties#Encrypted_/boot_and_a_detached_LUKS_header_on_USB) and [another one from Reddit](https://www.reddit.com/r/archlinux/comments/7np36m/detached_luks_header_full_disk_encryption_with/)
+* [Encrypted /boot and detached LUKS header on USB on Kali Linux](https://docs.j7k6.org/kali-linux-fde-luks-plausible-deniability-detached-header-usb/)
 * [Background info on LUKS](https://wiki.archlinux.org/index.php/Disk_encryption)
+* [A FAQ about LUKS worth reading](https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions)
 * [Resizing LUKS partitions](https://help.ubuntu.com/community/ResizeEncryptedPartitions)
 * [Closing a LVM-on-LUKS container: error device still in use](https://linux-blog.anracom.com/tag/device-still-in-use/)
 * [A short guide on plausible deniability with LUKS](https://blog.linuxbrujo.net/posts/plausible-deniability-with-luks/)
-* [A not-so-reliable guide about securing laptops](https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop)
 * [Fast methods to write randomness to a drive](https://wiki.archlinux.org/index.php/Dm-crypt/Drive_preparation#dm-crypt_specific_methods)
+* [A not-so-reliable guide about securing laptops](https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop)
