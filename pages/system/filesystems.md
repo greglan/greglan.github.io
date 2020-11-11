@@ -196,14 +196,27 @@ parted gpt_example.bin mklabel gpt
   
   Note that the last LBA is included (and usually odd), hence the partition is 3 sectors long corresponding to a size of 512*3 = 1536 bytes. Additionaly, it is worth noting that the partition name has null bytes separating the characters since it doesn't use ASCII encoding but UTF-16 in Little Endian.
 
+
+## Software RAID using mdadm
+* Providing GPT is used, create a RAID partition using `fdisk`:
+  - Create a gpt table
+  - Create a new partition
+  - Change the partition type to *Linux RAID*
   
 
 ## Useful commands
 * Find filesystem information: `fdisk -l, blkid, fsck`
 * Create new MBR partition table: `parted device mklabel msdos` or `parted device mktable msdos`
+* Mount a file as a loopback device: `sudo losetup -fP file.bin`
+* List all loopback devices: `sudo losetup -a`
+* Detach loopback device: `sudo losetup -d /dev/loop_device`
+* Detach all loopback devices: `sudo losetup -D`
+* Creating a RAID1 device from a single disk: `mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 /dev/md10 /dev/disk0 missing`
 
 ## Resources and references
 * [MBR article on Wikipedia](https://en.wikipedia.org/wiki/Master_boot_record)
 * [MBR article on wiki.osdev.org](https://wiki.osdev.org/MBR_(x86))
 * [GPT article on Wikipedia](https://en.wikipedia.org/wiki/GUID_Partition_Table)
 * [GPT article on wiki.osdev.org](https://wiki.osdev.org/GPT)
+* [RAID superblock format](https://raid.wiki.kernel.org/index.php/RAID_superblock_formats)
+* [A good overview of losetup](https://www.thegeekdiary.com/how-to-create-virtual-block-device-loop-device-filesystem-in-linux/)

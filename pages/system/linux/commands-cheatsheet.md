@@ -289,6 +289,7 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 * List enabled unit files: `systemctl list-unit-files | grep enabled`
 * View logs of a specific unit: `journalctl -u nginx.service -u php-fpm.service --since today`
 * Change default shell on CentOS: `chsh -s /bin/zsh root`
+* Search command history in terminal: Crtl+r
 
 
 ### TODO
@@ -297,6 +298,7 @@ for s in /etc/rc${R}.d/*; do  basename $s | grep '^S' | sed 's/S[0-9].//g' ;done
 
 
 ## References
+* [Man pages navigation](https://www.cyberciti.biz/faq/howto-use-linux-unix-man-pages/)
 * [GPG Signatures](https://www.gnupg.org/gph/en/manual/x135.html)
 * [A guide about GPG and Yubikeys](https://github.com/drduh/YubiKey-Guide)
 * [A Debian conf video about GPG keys and Yubikeys](https://www.youtube.com/watch?v=xGsixSh6sC4)
