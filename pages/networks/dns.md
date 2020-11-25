@@ -47,3 +47,4 @@ dig @192.168.1.1 -x 10.10.10.10 # Reverse lookup DNS query to determine the name
 * [Overview of DNS security](https://www.cloudflare.com/learning/dns/dns-security/)
 * [Setting up CloudFlare's DNS](https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/)
 * [DNS resolver supporting various security extensions](https://wiki.archlinux.org/index.php/Dnscrypt-proxy)
+* [Setting up a local DNS resolver](https://superuser.com/questions/410053/how-can-i-set-up-a-local-domain-so-that-everyone-on-my-local-network-can-view)

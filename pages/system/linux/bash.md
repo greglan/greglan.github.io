@@ -23,6 +23,13 @@ then
 else
   echo "Less than 100"
 fi
+
+if [ "$filename" != even ] && [ "$filename" != odd ]
+  echo "Comparison for strings and AND example"
+elif [ -z "$var" ] || [ ! -z "$var" ]
+then
+  echo "OR example"
+fi
 ```
 
 ## Some useful tricks
@@ -85,3 +92,4 @@ done
 ## Resources and references
 * [Parallel commands or programs in BASH](https://www.cyberciti.biz/faq/how-to-run-command-or-code-in-parallel-in-bash-shell-under-linux-or-unix/)
 * [Arithmetic in BASH](https://bash.cyberciti.biz/guide/Perform_arithmetic_operations)
+* [String comparison](https://linuxize.com/post/how-to-compare-strings-in-bash/)

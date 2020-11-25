@@ -118,3 +118,8 @@ file.close()
 * [Tree plots in Python](https://plot.ly/python/tree-plots/)
 * [Jupyter Docker stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
 * [5 advanced features of Python](https://towardsdatascience.com/5-advanced-features-of-python-and-how-to-use-them-73bffa373c84)
+* [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/)
+
+### Python internals
+* [Class attribute vs instance attribute](https://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide)
+* [Modules import and the *__name__* special variable](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)

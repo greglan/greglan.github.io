@@ -77,11 +77,17 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 * [This](https://searchdatacenter.techtarget.com/tip/Access-and-repair-an-ext3-file-system-with-the-superblock)
   is also a good read
 
-## LVM memo
+## RAID using mdadm
 * [Removing a disk from a RAID1 to use it alone](https://superuser.com/questions/971549/how-to-convert-a-software-raid-1-partition-to-non-raid-partition)
 * [Removing a disk from a RAID1](https://wiki.archlinux.org/index.php/RAID#Removing_devices_from_an_array)
 * [Adding a disk to a RAID1](https://wiki.archlinux.org/index.php/RAID#Adding_a_new_device_to_an_array)
 * [Scrubbing, or how to check for sync errors](https://wiki.archlinux.org/index.php/RAID#Scrubbing)
+* Creating a RAID1 device from a single disk: `mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 /dev/md10 /dev/disk0 missing`
+* Steps for creating a RAID partition using `fdisk`:
+  - Create a gpt table
+  - Create a new partition
+  - Change the partition type to *Linux RAID*
+  
 
 ## Resources and references
 * [Advice on LUKS on RAID](https://superuser.com/questions/1193290/best-order-of-raid-lvm-and-luks)

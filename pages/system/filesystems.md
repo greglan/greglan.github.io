@@ -197,12 +197,6 @@ parted gpt_example.bin mklabel gpt
   Note that the last LBA is included (and usually odd), hence the partition is 3 sectors long corresponding to a size of 512*3 = 1536 bytes. Additionaly, it is worth noting that the partition name has null bytes separating the characters since it doesn't use ASCII encoding but UTF-16 in Little Endian.
 
 
-## Software RAID using mdadm
-* Providing GPT is used, create a RAID partition using `fdisk`:
-  - Create a gpt table
-  - Create a new partition
-  - Change the partition type to *Linux RAID*
-  
 
 ## Useful commands
 * Find filesystem information: `fdisk -l, blkid, fsck`
@@ -211,12 +205,18 @@ parted gpt_example.bin mklabel gpt
 * List all loopback devices: `sudo losetup -a`
 * Detach loopback device: `sudo losetup -d /dev/loop_device`
 * Detach all loopback devices: `sudo losetup -D`
-* Creating a RAID1 device from a single disk: `mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 /dev/md10 /dev/disk0 missing`
 
 ## Resources and references
+### Partition tables
 * [MBR article on Wikipedia](https://en.wikipedia.org/wiki/Master_boot_record)
 * [MBR article on wiki.osdev.org](https://wiki.osdev.org/MBR_(x86))
 * [GPT article on Wikipedia](https://en.wikipedia.org/wiki/GUID_Partition_Table)
 * [GPT article on wiki.osdev.org](https://wiki.osdev.org/GPT)
+
+### Filesystems
+* [An overview of various filesystems](https://www.howtogeek.com/howto/33552/htg-explains-which-linux-file-system-should-you-choose/)
 * [RAID superblock format](https://raid.wiki.kernel.org/index.php/RAID_superblock_formats)
+* [A performance comparison between EXT4 and ZFS with default settings](https://www.phoronix.com/scan.php?page=article&item=ubuntu1910-ext4-zfs&num=2)
+
+### Tools
 * [A good overview of losetup](https://www.thegeekdiary.com/how-to-create-virtual-block-device-loop-device-filesystem-in-linux/)
