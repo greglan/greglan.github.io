@@ -33,6 +33,7 @@ summary: "Various links to good security articles or interesting things to look 
 * [Java Serialization exploitation](https://www.rapid7.com/research/report/exploiting-jsos/)
 * [A great blog about exploitation](https://ctf-wiki.github.io/ctf-wiki/)
 * [Injection tool for Linux](https://github.com/DavidBuchanan314/dlinject)
+* [A blog with many cool articles spanning kernel, ELFs, symbolic execution and more](https://blog.k3170makan.com/)
 
 ### Hardware
 * [Zombieload attack](https://zombieloadattack.com/)

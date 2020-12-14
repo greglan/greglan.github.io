@@ -118,8 +118,14 @@ file.close()
 * [Tree plots in Python](https://plot.ly/python/tree-plots/)
 * [Jupyter Docker stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
 * [5 advanced features of Python](https://towardsdatascience.com/5-advanced-features-of-python-and-how-to-use-them-73bffa373c84)
+
+### Documentations
+* [Overview of docstrings format on stackoverflow.com](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)
+* [A good guide about documenting code in Python](https://realpython.com/documenting-python-code/)
 * [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/)
+* [PEP257 docstring conventions](https://www.python.org/dev/peps/pep-0257/)
 
 ### Python internals
 * [Class attribute vs instance attribute](https://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide)
 * [Modules import and the *__name__* special variable](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+* [Blog post series on CPython internals](https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/)

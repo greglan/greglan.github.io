@@ -150,8 +150,6 @@ entries:
 
 
 
-
-
   - title: Computer science
     folderitems:
     - title: Index
@@ -234,7 +232,10 @@ entries:
           
         - title: Formal logic
           url: /formal-logic.html
-          
+
+
+
+
   - title: System
     folderitems:
     - title: Software setup guide
@@ -312,6 +313,9 @@ entries:
     - title: Android Debug Bridge
       url: /adb.html
 
+
+
+
   - title: Networks
     folderitems:
     - title: Resources
@@ -353,6 +357,9 @@ entries:
     - title: Proxies and cie
       url: /proxies.html
 
+
+
+
   - title: Maths
     folderitems:
     - title: Trigonometry
@@ -364,6 +371,9 @@ entries:
     - title: Gaussian integrals
       url: /gaussian-integrals.html
           
+
+
+
   - title: Physics
     folderitems:
     - title: Cheatsheet
@@ -419,6 +429,9 @@ entries:
     - title: Particle physics
       url: /particule-physics.html
 
+
+
+
   - title: Information theory
     folderitems:
     - title: Introduction
@@ -444,6 +457,9 @@ entries:
 
         - title: Convolutional codes
           url: /convolutional-codes.html
+
+
+
 
   - title: Quantum information theory
     folderitems:
@@ -491,6 +507,9 @@ entries:
 
         - title: Key distribution
           url: /qkd.html
+
+
+
 
   - title: Hardware
     folderitems:

@@ -8,20 +8,47 @@ summary: "A cheatsheet of commands used in bash/zsh terminals"
 
 ## Text editing
 ### VIM
-* v: select chars (character mode)
-* V: select lines (line mode)
-* Crtl+v: select blocks (block mode)
-* yy: copy line
-* d: cut/delete
-* p: past line
-* dw: delete/cut word
-* d$: delete/cut from cursor until end of line
-* D: delete/cut from cursor until end of line
-* dd: delete/cut line
+* `w`: goto beginning of next word
+
+  `$`: goto end of line
+
+  `A`: goto end of line and switch to insert mode
+
+  `^`: goto beginning of line
+
+  `Shift+i`: goto beginning of line and switch to insert mode
+
+  `gg/1G`: move to beginning of file
+
+  `G`: move to end of file
+* `v`: select chars (character mode)
+  
+  `V`: select lines (line mode)
+  
+  `Crtl+v`: select blocks (block mode)
+* `yy`: copy line
+* `d`: cut/delete
+  
+  `dw`: delete/cut word
+  
+  `d$`: delete/cut from cursor until end of line
+  
+  `D`: delete/cut from cursor until end of line
+  
+  `dd`: delete/cut line
+
+  `40,45d`: delete lines 40 to 45
+
+  `40,45d | 1,15d`: delete lines 40 to 45 and lines 1 to 15 
+* `p`: past line
+* Insert 16 caracters 'f' while in INSERT mode: `Crtl+o, :norm 16if, Esc`
+  
+  Insert 8 caracters 'f' while in NORMAL mode: `8if, Esc`
+* [Insert something on several lines at a time](https://stackoverflow.com/questions/9549729/vim-insert-the-same-characters-across-multiple-lines/9549765#9549765)
 * [Searching](https://vim.fandom.com/wiki/Searching)
 * Undo/redo:
-  - u: undo last change
-  - Crtl+r: redo last undo
+  - `u`: undo last change
+  - `Crtl+r`: redo last undo
   - `:undolist` list changes
 * Indentation: `>>` or `<<` when block of lines selected
 * [Tab configuration](https://stackoverflow.com/questions/2054627/how-do-i-change-tab-size-in-vim) settings example:
@@ -30,15 +57,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 ```
+* Display line numbers: `set number`
+* VIM on windows: [fix the conflict between VIM visual block mode and clipboard paste](https://stackoverflow.com/questions/61824177/visual-block-mode-not-working-in-vim-with-c-v-on-wslwindows-10/62956033#62956033)
+* [NERD commenter script](https://www.vim.org/scripts/script.php?script_id=1218)
 
-Movement:
-* w: goto beginning of next word
-* $: goto end of line
-* A: goto end of line and switch to insert mode
-* ^: goto beginning of line
-* Shift+i: goto beginning of line and switch to insert mode
-* gg/1G: move to beginning of file
-* G: move to end of file
+
 
 ### Grep
 * Usage: `grep -A n -B m -i expr file` with

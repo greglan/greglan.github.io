@@ -190,3 +190,5 @@ summary: "Introduction to the ARM architecture throught ARMv7-A and ARMv8-A"
 * [Condition codes](https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes)
 * [Introduction to AArch64](https://quequero.org/2014/04/introduction-to-arm-architecture/)
 * ARM architecture reference manual ARMv8
+* [ARM calling conventions on Wikipedia](https://en.wikipedia.org/wiki/Calling_convention#ARM_(A32))
+* [ARM calling conventions on stackoverflow.com](https://stackoverflow.com/questions/261419/what-registers-to-save-in-the-arm-c-calling-convention)

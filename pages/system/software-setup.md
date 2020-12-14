@@ -8,6 +8,7 @@ permalink: "software-setup.html"
 
 ## Visual Studio Code
 * [Python support](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+* [Matlab support](https://marketplace.visualstudio.com/items?itemName=Gimly81.matlab)
 
 ## Atom
 * Core: uncheck "Auto hide menu bar"
@@ -66,6 +67,8 @@ permalink: "software-setup.html"
     * Noscript module
     * Cookies manipulation module
     * [Simple Modify Headers](https://addons.mozilla.org/en-US/firefox/addon/simple-modify-header/) to modify HTTP headers
+    * [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/): see [this video tutorial](https://www.youtube.com/watch?v=TVozpo3zUBk)
+    * [PrivacyBadger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
 * [Profiles vs containers](https://discourse.mozilla.org/t/containers-vs-profiles/23568/3)
 * [Tip for using containers and configuring them](https://superuser.com/questions/1396464/firefox-shortcut-to-open-a-particular-account-container)
 * [A hack to have different profiles on Android](https://discourse.mozilla.org/t/multiple-profiles-for-mobile-firefox/31660)

@@ -9,6 +9,7 @@ summary: ""
 * Binary type: `rabin2 -I filename`
 * Entrypoint: `ie`
 * List functions: `afl`
+* Print value as binary: `?b 0xff`
 
 ## Flags
 ### Strings
@@ -55,3 +56,7 @@ summary: ""
 ## Others
 * Save project: `Ps name`
 * Open project: `Po name`
+
+
+## Resources and references
+* [Official radare2 book](https://book.rada.re/index.html)
