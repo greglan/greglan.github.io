@@ -556,6 +556,9 @@ entries:
         - title: Bluetooth
           url: /bluetooth.html
 
+        - title: I2C protocol
+          url: /i2c.html
+
         - title: SPI protocol
           url: /spi.html
 
@@ -566,7 +569,7 @@ entries:
           url: /can-bus.html
 
         - title: Arduino
-          url: /arduino.
+          url: /arduino.html
 
         - title: FPGAs
           url: /fpga.html
