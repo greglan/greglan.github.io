@@ -273,6 +273,9 @@ entries:
           
       - title: Linux
         subfolderitems:
+        - title: Text processing
+          url: /text-processing.html
+          
         - title: Commands cheatsheet
           url: /commands-cheatsheet.html
           
