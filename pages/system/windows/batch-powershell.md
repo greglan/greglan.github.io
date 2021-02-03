@@ -18,7 +18,7 @@ permalink: "batch-powershell.html"
 * Grepping: `command | Select-String "pattern"`
 * Display PATH in Powershell: `$Env:Path`, `$Env:Path -split ";"` or `Get-ChildItem Env:Path`
 * Equivalent of `whereis` in CMD: `where command`
-* Get help on a command: `Get-Help command`
+* Get help on a command (equivalent of `man` in Linux): `Get-Help command`
 * Execute a cmd command in Powershell: `cmd /c where command`
 
 ### Configurations

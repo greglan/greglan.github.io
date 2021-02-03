@@ -192,3 +192,5 @@ ret             ; and return to it
 * *Practical Malware Analysis*, Chapter 16
 * [Anti-debugging with ptrace](https://www.aldeid.com/wiki/Ptrace-anti-debugging)
 * [Two solutions to ptrace anti-debug](https://aaronyoo.github.io/ptrace-anti-debug.html)
+* [Software vs hardware breakpoints](http://www.nynaeve.net/?p=80)
+* [Software vs hardware breakpoints and how to detect HW breakpoints](https://reverseengineering.stackexchange.com/questions/16544/detecting-hardware-breakpoints/16547#16547)

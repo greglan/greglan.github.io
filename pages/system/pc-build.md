@@ -103,3 +103,5 @@ permalink: "hw-pc.html"
 * [2] [GPU and deep learning](https://blog.slavv.com/picking-a-gpu-for-deep-learning-3d4795c273b9)
 * RGB lightning guides on [pcgamer.com](https://www.pcgamer.com/a-beginners-guide-to-rgb-lighting-your-pc/), [ArsTechnica](https://arstechnica.com/gadgets/2017/09/how-to-build-rgb-pc/) and [Linus Tech Tips](https://linustechtips.com/main/topic/927212-ultimate-guide-to-fan-rpm-rgb-ecosystems/)
 * [Add new hard drive to mirror existing LVM drive with RAID1](https://askubuntu.com/questions/55968/add-new-hard-drive-to-mirror-existing-lvm-drive-with-raid1)
+* [An overview of M2 SSDs](https://www.dell.com/support/kbdoc/en-au/000144170/how-to-distinguish-the-differences-between-m-2-cards)
+* [Another overview of M2 SSDs](https://rog.asus.com/articles/guides/buying-an-m-2-ssd-how-to-tell-which-is-which/)

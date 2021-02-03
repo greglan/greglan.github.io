@@ -39,6 +39,11 @@ nouser, async.
 `_netdev`: this is a network device, mount it after bringing up the network.
 Only valid with fstype nfs.
 
+The atime vs relatime options are explained [here](https://blog.confirm.ch/mount-options-atime-vs-relatime/)
+
+
+
+
 ## Resizing a LUKS partition
 ### KDE partition manager
 * Open the LUKS container with `cryptsetup`
@@ -100,3 +105,4 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 * [A short guide on plausible deniability with LUKS](https://blog.linuxbrujo.net/posts/plausible-deniability-with-luks/)
 * [Fast methods to write randomness to a drive](https://wiki.archlinux.org/index.php/Dm-crypt/Drive_preparation#dm-crypt_specific_methods)
 * [A not-so-reliable guide about securing laptops](https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop)
+* [https://infosec-handbook.eu/blog/yubikey-luks/](https://infosec-handbook.eu/blog/yubikey-luks/)

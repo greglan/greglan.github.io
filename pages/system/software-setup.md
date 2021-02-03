@@ -37,6 +37,10 @@ permalink: "software-setup.html"
 * Setup keyboard shortcut to move a line up/down
 * Setup keyboard shortcut to duplicate a line
 
+## Visual Studio
+* Intelishare: real time collaborative dev (useless)
+* Intellicode: AI assist for code. Seems ok
+
 ## KeePass
 * Lock workspace after KeePass inactivity
 * Lock workspace after global user inactivity

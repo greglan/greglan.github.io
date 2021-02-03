@@ -7,43 +7,46 @@ summary: "Various links to good security articles or interesting things to look 
 
 
 ## Exploitation
-* [Azeria Labs ARM exploitation series](https://azeria-labs.com/writing-arm-shellcode/)
-* [Binary exploitation tutorial on GitHub](https://github.com/Bretley/how2exploit_binary)
-* [Insecure programming by example](https://web.archive.org/web/20120401214722/http://community.coresecurity.com/~gera/InsecureProgramming/)* [Frame pointer overwrite](http://phrack.org/issues/55/8.html)
 * [Xen exploitation](https://blog.quarkslab.com/xen-exploitation-part-1-xsa-105-from-nobody-to-root.html)
 * [A Virtualbox CVE writeup](https://github.com/MorteNoir1/virtualbox_e1000_0day/blob/master/README.md)
 * [AMD SEV exploitation](https://thehackernews.com/2018/05/amd-sev-encryption.html?m=1)
-* [Sploitfun exploitation tutorial](https://sploitfun.wordpress.com/2015/06/26/linux-x86-exploit-development-tutorial-series/)
-* [Binary exploitation course](https://github.com/RPISEC/MBE)
 * [Some CVEs PoC](https://github.com/mirchr/security-research)
 * [Collection of CVEs exploits](https://github.com/niklasb/sploits)
 * [Password-Protected Reverse Shell ARM Linux shellcode](https://medium.com/syscall59/shellcode-for-iot-a-password-protected-reverse-shell-linux-arm-a18fcda4853b)
 * [Introduction to AFL](https://m.habr.com/en/company/dsec/blog/449134/)
-* [Collection of vulnerable binaries](https://github.com/atxsinn3r/VulnCases)
 * [LLVM sanitizer tutorial](https://github.com/trailofbits/llvm-sanitizer-tutorial)
 * [EFI exploitation](https://m.habr.com/ru/post/446238/)
 * [Bugbounty targets](https://nedwill.github.io/blog/jekyll/update/2019/04/08/picking-a-target.html)
-* [Apache CVE poc](https://github.com/cfreal/exploits/tree/master/CVE-2019-0211-apache)
 * [Reverse shell tool using OpenSSL](https://github.com/TheSecondSun/Revssl)
 * [OpenSSL reverse shell tutorial](https://medium.com/@int0x33/day-43-reverse-shell-with-openssl-1ee2574aa998)
 * [Examples of bug bounty scenarios](https://medium.com/a-bugz-life/the-bugs-are-out-there-hiding-in-plain-sight-12d056613ea3)
 * [Tips about bug bounties](https://gynvael.coldwind.pl/?id=659)
-* [Pwndbg plugin for GDB](https://github.com/pwndbg/pwndbg)
 * [Writeup of a Dell local escalation vulnerability](https://d4stiny.github.io/Local-Privilege-Escalation-on-most-Dell-computers/)
 * [Java Serialization exploitation](https://www.rapid7.com/research/report/exploiting-jsos/)
-* [A great blog about exploitation](https://ctf-wiki.github.io/ctf-wiki/)
 * [Injection tool for Linux](https://github.com/DavidBuchanan314/dlinject)
 * [A blog with many cool articles spanning kernel, ELFs, symbolic execution and more](https://blog.k3170makan.com/)
+
+### Binary exploitation
+* [A massive course using CTFs as examples](https://guyinatuxedo.github.io/)
+* [Binary exploitation tutorial on GitHub](https://github.com/Bretley/how2exploit_binary)
+* [A great blog about exploitation](https://ctf-wiki.github.io/ctf-wiki/)
+* [Collection of vulnerable binaries](https://github.com/atxsinn3r/VulnCases)
+* [Sploitfun exploitation tutorial](https://sploitfun.wordpress.com/2015/06/26/linux-x86-exploit-development-tutorial-series/)
+* [Binary exploitation course](https://github.com/RPISEC/MBE)
+* [Azeria Labs ARM exploitation series](https://azeria-labs.com/writing-arm-shellcode/)
+* [Insecure programming by example](https://web.archive.org/web/20120401214722/http://community.coresecurity.com/~gera/InsecureProgramming/)
+* [Frame pointer overwrite](http://phrack.org/issues/55/8.html)
+
 
 ### Hardware
 * [Zombieload attack](https://zombieloadattack.com/)
 * [MDS hadware vulnerability in Intel CPUs](https://mdsattacks.com/)
 * [AMD and EPYC CVEs](https://thehackernews.com/2018/03/amd-processor-vulnerabilities.html)
-* [Ken Shirriff's blog on hardware reversing](http://www.righto.com/?m=0)
 
 ### Windows specific
 * [Advanced Windows exploitation resources](https://github.com/FULLSHADE/WindowsExploitationResources)
 * [Hyper-V fuzzing](https://labs.mwrinfosecurity.com/blog/ventures-into-hyper-v-part-1-fuzzing-hypercalls)
+
 
 
 ## Reversing
@@ -60,9 +63,14 @@ summary: "Various links to good security articles or interesting things to look 
 * [Many file formats illustrated](https://github.com/corkami/pics/tree/master/binary)
 * [UEFI reversing](https://www.synacktiv.com/posts/reverse-engineering/a-journey-in-reversing-uefi-lenovo-passwords-management.html)
 * [Diary of a reverse engineer](https://doar-e.github.io/index.html)
+* [Ken Shirriff's blog on hardware reversing](http://www.righto.com/?m=0)
 
 ### Malware
+* [Malware development series](https://0xpat.github.io/Malware_development_part_1/)
 * [Analysis of Gootkit](https://connect.ed-diamond.com/MISC/MISC-100/Analyse-du-malware-bancaire-Gootkit-et-de-ses-mecanismes-de-protection)
+* [Example of Malware for air-gapped systems](https://medium.com/@nedheesh.hasija/making-a-malware-approaching-isolated-systems-40743e187841)
+
+#### Tools
 * [PE-sieve](https://github.com/hasherezade/pe-sieve) [and Hollows Hunter tools](https://github.com/hasherezade/hollows_hunter)
 * [mXtract tool](https://github.com/rek7/mXtract)
 * [Smokeloader](https://research.checkpoint.com/2019-resurgence-of-smokeloader/)

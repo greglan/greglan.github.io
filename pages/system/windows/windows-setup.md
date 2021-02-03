@@ -19,7 +19,7 @@ than the ones natively installed
 * Follow the "Hardening" subsection below. Can be done while waiting for the previous point to finish.
 * Follow the "System customization" below. Can be done while waiting for the previous points to finish.
 * Start installing softwares available in "Software list" and continue on the [software setup](/software-setup.html) page. Can be done while waiting for the previous points to finish.
-
+* [Setup Windows to use UTC instead of localtime](https://wiki.archlinux.org/index.php/System_time#UTC_in_Windows): `reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_QWORD /f` in an administrator command prompt.
 
 ### Hardening
 * No Microsoft account

@@ -3,8 +3,7 @@ layout: page
 title:  "x86 assembly cheatsheet"
 permalink: "x86-assembly.html"
 tags: [programming, architectures]
-summary: "This page mostly gives examples of some assembly programs. The aim is
-to demonstrate all the main structures and how to use them. By default, the
+summary: "This page gives examples of some assembly programs. By default, the
 syntax used is the NASM syntax. Unless stated otherwise, the target OS is Linux"
 ---
 
@@ -49,6 +48,16 @@ rep stosb
 ; Syntax: [Hex code] [number of bytes to jump]
 ```
 
+### Jump instructions
+
+|Instruction| Meaning|
+|:---------:|:--------:|
+| JA | Jump if above (unsigned) |
+| JG | Jump if greater (signed) |
+| JG | Jump if less (signed) |
+| JB | Jump if below (signed) |
+
+
 ## Hexadecimal encoding of some instructions
 
 |Instruction|Hexdecimal|
@@ -61,16 +70,6 @@ rep stosb
 | NOP | 0x90 |
 | PUSH | 0x68 |
 | PUSH 0x76543210 | 0x6801325476 |
-
-
-## Jumps
-
-|Instruction| Meaning|
-|:---------:|:--------:|
-| JA | Jump if above (unsigned) |
-| JG | Jump if greater (signed) |
-| JG | Jump if less (signed) |
-| JB | Jump if below (signed) |
 
 
 
@@ -175,8 +174,15 @@ _start:
 
 ## Resources and references
 * [Intel x86 architecture](/x86.html)
-* [A pretty good AT&T syntax cheatsheet](http://tuttlem.github.io/2014/03/25/assembly-syntax-intel-at-t.html)
+
+### Linux syscalls
+* [List of syscalls number](https://faculty.nps.edu/cseagle/assembly/sys_call.html)
+* [Prototype and explanation of each syscall](https://linuxhint.com/list_of_linux_syscalls)
+* [A technical view of syscalls](https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system-calls/)
 
 ### Instructions cheatsheets
+* [A pretty good AT&T syntax cheatsheet](http://tuttlem.github.io/2014/03/25/assembly-syntax-intel-at-t.html)
 * [Move string instructions](http://faculty.kfupm.edu.sa/COE/aimane/assembly/pagegen.aspx-ThemeID=1&m185_20.htm)
 * [MUL and DIV instructions](https://www.tutorialspoint.com/assembly_programming/assembly_arithmetic_instructions.htm)
+* [ROR instruction](https://www.aldeid.com/wiki/X86-assembly/Instructions/ror)
+* [Jump instructions](https://faydoc.tripod.com/cpu/jns.htm)

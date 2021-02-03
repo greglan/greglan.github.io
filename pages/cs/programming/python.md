@@ -19,13 +19,22 @@ version of packages
 * [A comparison between tools for virtual environments](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
 
 ### Jupyter
-* [Method for Jupyter inside a venv](https://www.codingforentrepreneurs.com/blog/install-jupyter-notebooks-virtualenv). Deactivate and reactivate the venv before launching the Jupyter notebook for the first time.
-* [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
 * Launch jupyter notebook: `jupyter notebook`
   
   Launch jupyter notebook using a virtualenv: `workon venv_name && jupyter notebook`
 * Change the kernel of a notebook: launch the notebook, then *kernel->Change kernel*
 * Remove a kernel: `jupyter kernelspec uninstall kernel_name`
+* Convert notebook into plain Python script: `jupyter nbconvert --to script filename.ipynb`
+* [Jupyter notebook shortcuts](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330?gi=761bbe19c02c) and [other tips and tricks](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+
+#### Installation
+* For Windows, go [here](https://www.python.org/downloads/windows/) and download/install the latest version. Then using an Admin command prompt:
+```
+pip install --upgrade pip
+pip install matplotlib numpy sympy ipython jupyterlab notebook autopep8 jupyter_contrib_nbextensions jupyter_nbextensions_configurator
+```
+* [Archwiki article](https://wiki.archlinux.org/index.php/Jupyter)
+* [Method for Jupyter inside a venv](https://www.codingforentrepreneurs.com/blog/install-jupyter-notebooks-virtualenv). Deactivate and reactivate the venv before launching the Jupyter notebook for the first time.
 * [A short guide to Jupyter extensions](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231)
 * [Official guide for Jupyter contrib nbextensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 * Error "no module named jupyter_nbextensions_configurator" 
@@ -33,7 +42,7 @@ version of packages
     * Switch to virutalenv
     * `pip install jupyter_contrib_nbextensions`
     * `pip install jupyter_nbextensions_configurator`
-* Convert notebook into plain Python script: `jupyter nbconvert --to script filename.ipynb`
+
 
 ## Arguments passing to functions
 * [Object reference passing](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)

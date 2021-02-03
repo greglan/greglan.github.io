@@ -205,6 +205,8 @@ parted gpt_example.bin mklabel gpt
 * List all loopback devices: `sudo losetup -a`
 * Detach loopback device: `sudo losetup -d /dev/loop_device`
 * Detach all loopback devices: `sudo losetup -D`
+* List all partitions/devices: `lsblk`
+* Find the UUIDs of the partitions: `blkid`
 
 ## Resources and references
 ### Partition tables

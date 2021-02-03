@@ -13,7 +13,7 @@ summary: "Presentation of RSA and its derivatives such as the Diffie-Hellman and
 * First public-key encryption scheme
   
   Can also be used for digital signing
-* Base on a *trap-door* function: transforms an input $$x$$ into an $$y$$ in the
+* Based on a *trap-door* function: transforms an input $$x$$ into an $$y$$ in the
 same range such that computing $$y$$ from $$x$$ is easy using the public key,
 but computing $$x$$ from $$y$$ is practically impossible unless the private key
 is known [1]

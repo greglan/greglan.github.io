@@ -237,10 +237,7 @@ entries:
 
 
   - title: System
-    folderitems:
-    - title: Software setup guide
-      url: /software-setup.html
-    
+    folderitems:    
     - title: Filesystems
       url: /filesystems.html
       
@@ -293,9 +290,6 @@ entries:
 
       - title: Windows
         subfolderitems:
-        - title: Windows setup guide
-          url: /windows-setup.html
-
         - title: Batch and Powershell
           url: /batch-powershell.html
           
