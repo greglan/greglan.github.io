@@ -32,7 +32,15 @@ summary: "Overview of the Quantum computing industry"
 * Cambridge, UK. Created in 2018.
 * Plans first quantum product for 2021
 * Quantum optics (photons manipulations), Quantum Random Numbers Generators (QRNG)
+* Achieve single-photon detection using a proprietary semiconductor structure. [Source](https://quantiki.org/position/scientist-%E2%80%93-semiconductor-devices-rd)
 * [According to open positions](https://nu-quantum.com/jobs), works both on theory and experiments
+
+### aQuantum
+* R&D and consulting in quantum software
+* Aims to abstract the development of quantum software
+* Has its own APIs, that can talk with other popular quantum tech providers (Google, IBM, etc...)
+* Based in Spain
+* [Presentation](https://www.aquantum.es/aquantum-presents-quantumpath/)
 
 ### Google
 

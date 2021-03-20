@@ -52,5 +52,5 @@ Should be unique per session. Added as hidden field or GET parameter.
 
 
 ## Resources
-* https://www.owasp.org/index.php/Testing_for_CSRF_(OTG-SESS-005)
-* https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet
+* [Testing for CSRF ](https://www.owasp.org/index.php/Testing_for_CSRF_(OTG-SESS-005))
+* [CSRF prevention cheatsheet](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)

@@ -66,6 +66,7 @@ unzip the items already pinned
 * Microsoft Office
 * VLC
 * Deluge
+* [Jekyll](https://jekyllrb.com/docs/installation/windows/)
 
 ### Hacking
 * Ollydbg 1.10 & 2.01. Default to execute as admin
@@ -97,3 +98,6 @@ unzip the items already pinned
 * Hijackthis: useful?
 * Adware Removal Tool by TSA: useful?
 * Bleachbit
+
+## References
+* [How to run programs at startup](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)

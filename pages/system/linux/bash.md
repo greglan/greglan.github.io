@@ -93,3 +93,4 @@ done
 * [Parallel commands or programs in BASH](https://www.cyberciti.biz/faq/how-to-run-command-or-code-in-parallel-in-bash-shell-under-linux-or-unix/)
 * [Arithmetic in BASH](https://bash.cyberciti.biz/guide/Perform_arithmetic_operations)
 * [String comparison](https://linuxize.com/post/how-to-compare-strings-in-bash/)
+* [While loops](https://www.cyberciti.biz/faq/bash-while-loop/)

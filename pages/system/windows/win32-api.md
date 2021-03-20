@@ -26,3 +26,4 @@ actions
 
 ## Resources and references
 * [Windows data types](https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types)
+* [PEB structure](https://www.geoffchappell.com/studies/windows/win32/ntdll/structs/peb/index.htm)

@@ -55,6 +55,9 @@ entries:
         - title: Anti-debugging techniques
           url: /anti-debugging.html
 
+        - title: Windows reversing VM setup
+          url: /windows-reversing-vm.html
+
         - title: Radare2 cheatsheet
           url: /radare2.html
 
@@ -309,6 +312,9 @@ entries:
 
     - title: Android Debug Bridge
       url: /adb.html
+
+    - title: VIM
+      url: /vim.html
 
 
 

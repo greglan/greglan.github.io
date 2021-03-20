@@ -75,3 +75,4 @@ summary: ""
 
 ## Resources and references
 * [1] *Yannis Haralambous*, Logique INF424 2017
+* [A course on logic](https://m.logic-text.eu/index.html)

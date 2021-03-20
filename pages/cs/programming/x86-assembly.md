@@ -186,3 +186,4 @@ _start:
 * [MUL and DIV instructions](https://www.tutorialspoint.com/assembly_programming/assembly_arithmetic_instructions.htm)
 * [ROR instruction](https://www.aldeid.com/wiki/X86-assembly/Instructions/ror)
 * [Jump instructions](https://faydoc.tripod.com/cpu/jns.htm)
+* [`repe scasb` to implememt the memchr function](https://stackoverflow.com/questions/58121065/im-trying-to-understand-the-rep-scasb-byte-edi-instruction)

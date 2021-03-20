@@ -57,10 +57,17 @@ select *Browser* and goto *disk:/driver_name/w10/amd64*:
 * [Passing devices to the VM](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Swap_peripherals_to_and_from_the_Host)
 
 ## Resources and references
+### Disks
 * [Snapshot backing with qcow2 format](https://dustymabe.com/2015/01/11/qemu-img-backing-files-a-poor-mans-snapshotrollback/)
 * [Guide to snapshot with qcow2](http://azertech.net/content/kvm-qemu-qcow2-qemu-img-and-snapshots)
 * [Reclaiming qcow2 space](https://www.jamescoyle.net/how-to/323-reclaim-disk-space-from-a-sparse-image-file-qcow2-vmdk)
+
+### Virtio
 * [Short descriptions of the Virtio drivers](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-iso-contents)
 * [Virtio Balloon driver](https://rwmj.wordpress.com/2010/07/17/virtio-balloon/)
+
+### Libvirt configuration
+* [Passing arguments to QEMU through the XML file](https://libvirt.org/kbase/qemu-passthrough-security.html)
 * [Networking options](https://wiki.libvirt.org/page/Networking)
 * [Networking handbook](https://jamielinux.com/docs/libvirt-networking-handbook/)
+* [Reference of the XML options](https://libvirt.org/formatdomain.html)

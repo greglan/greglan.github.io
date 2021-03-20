@@ -14,7 +14,7 @@ summary: ""
 * Sanitized/decoded/modified input can still be enough for exploitation
 
 ## Tactics
-* Chack the page source code, not only the page rendered by the browser
+* Check the page source code, not only the page rendered by the browser
 * URL encode payload ?
 * Remain within a tag using `onload` attribute: `" onload=alert()`
 * If input returned inside a JS quoted string, ensure injected payload valid. Can comment the remainder using `//`
