@@ -406,23 +406,6 @@ entries:
         - title: No Signalling
           url: /no-signalling.html
 
-      - title: Optics
-        subfolderitems:
-        - title: LEDs
-          url: /leds.html
-
-        - title: Lasers
-          url: /lasers.html
-
-        - title: Photodetectors
-          url: /photodetectors.html
-
-        - title: Optic fibers
-          url: /optic-fibers.html
-
-    - title: Semiconductors
-      url: /semiconductors.html
-
     - title: Special relativity
       url: /special-relativity.html
 
@@ -519,7 +502,24 @@ entries:
     - title: Resources
       url: /index-electronics.html
 
+    - title: Semiconductors
+      url: /semiconductors.html
+
       subfolders:
+      - title: Optoelectronics
+        subfolderitems:
+        - title: LEDs
+          url: /leds.html
+
+        - title: Lasers
+          url: /lasers.html
+
+        - title: Photodetectors
+          url: /photodetectors.html
+
+        - title: Optic fibers
+          url: /optic-fibers.html
+
       - title: Logic
         subfolderitems:
         - title: Flip-flops
@@ -550,9 +550,6 @@ entries:
 
         - title: Amplitude Shift Keying
           url: /ask.html
-
-        - title: Optical communications
-          url: /optic-communications.html
 
       - title: Embedded systems
         subfolderitems:
