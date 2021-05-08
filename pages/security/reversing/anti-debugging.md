@@ -190,6 +190,9 @@ ret             ; and return to it
 
 ## Resources and references
 * *Practical Malware Analysis*, Chapter 16
+* [A list of techniques from the Unprotect project](https://search.unprotect.it/category/anti-debugging/)
+* [Anti-debugging protection techniques with examples](https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software)
+* [Anti-debugging techniques on Windows with ASM source](https://github.com/invictus1306/Anti-debugging-techniques)
 * [Anti-debugging with ptrace](https://www.aldeid.com/wiki/Ptrace-anti-debugging)
 * [Two solutions to ptrace anti-debug](https://aaronyoo.github.io/ptrace-anti-debug.html)
 * [Software vs hardware breakpoints](http://www.nynaeve.net/?p=80)

@@ -174,6 +174,7 @@ _start:
 
 ## Resources and references
 * [Intel x86 architecture](/x86.html)
+* [TutorialsPoint series using NASM](https://www.tutorialspoint.com/assembly_programming/index.htm)
 
 ### Linux syscalls
 * [List of syscalls number](https://faculty.nps.edu/cseagle/assembly/sys_call.html)

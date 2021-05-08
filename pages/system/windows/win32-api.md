@@ -27,3 +27,4 @@ actions
 ## Resources and references
 * [Windows data types](https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types)
 * [PEB structure](https://www.geoffchappell.com/studies/windows/win32/ntdll/structs/peb/index.htm)
+* [TEB, PEB and API loading](https://rvsec0n.wordpress.com/2019/09/13/routines-utilizing-tebs-and-pebs/)

@@ -42,6 +42,11 @@ Only valid with fstype nfs.
 The atime vs relatime options are explained [here](https://blog.confirm.ch/mount-options-atime-vs-relatime/)
 
 
+## Booting from a USB drive
+* Speed is important and using USB 3.0 is a great help.
+  
+  See also the [hardware recommendations from Ubuntu](https://help.ubuntu.com/community/Installation/FromUSBStick/pre#Notes_about_speed)
+
 
 
 ## Resizing a LUKS partition

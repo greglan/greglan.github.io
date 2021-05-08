@@ -28,7 +28,7 @@ summary: "Configuration of an SSH server and useful commands"
 * Permissions should be set to 600 according to [this](https://serverfault.com/questions/253313/ssh-returns-bad-owner-or-permissions-on-ssh-config/710453)
 
 ### Key generation
-* Ed25519 is the algorithm of choiceeven though it may not yet be deployed everywhere
+* Ed25519 is the algorithm of choice, even though it may not yet be deployed everywhere
 * Recommended key generation: `ssh-keygen -o -a 100 -t ed25519 -C "comment like user@computer"`
 * See [this article](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54), this [answer on StackExchange](https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices) and the [ArchWiki article](https://wiki.archlinux.org/index.php/SSH_keys#Choosing_the_authentication_key_type)
 * Edit a key comment: `ssh-keygen -c -C "New comment" -f ~/.ssh/key`

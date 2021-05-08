@@ -127,6 +127,10 @@ file.close()
 * [Tree plots in Python](https://plot.ly/python/tree-plots/)
 * [Jupyter Docker stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
 * [5 advanced features of Python](https://towardsdatascience.com/5-advanced-features-of-python-and-how-to-use-them-73bffa373c84)
+* [A short guide explaining the differences between threads and processes](https://timber.io/blog/multiprocessing-vs-multithreading-in-python-what-you-need-to-know/)
+* [A more extensive guide with example code](https://medium.com/@bfortuner/python-multithreading-vs-multiprocessing-73072ce5600b)
+* [A precise guide including a use case for asyncio](https://leimao.github.io/blog/Python-Concurrency-High-Level/)
+* [A thorough guide of processes and threads with a design perspective](https://blog.floydhub.com/multiprocessing-vs-threading-in-python-what-every-data-scientist-needs-to-know/)
 
 ### Documentations
 * [Overview of docstrings format on stackoverflow.com](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)

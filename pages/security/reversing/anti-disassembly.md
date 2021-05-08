@@ -74,3 +74,4 @@ normal_code:
 
 ## Resources and references
 * Practical Malware Analysis, Chapter 15
+* [A list of techniques from the Unprotect project](https://search.unprotect.it/category/anti-disassembly/)

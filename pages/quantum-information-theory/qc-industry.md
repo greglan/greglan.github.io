@@ -14,6 +14,13 @@ summary: "Overview of the Quantum computing industry"
 ### Zapata QC
 * Software for QC, consultancy
 
+
+### ID Quantique
+* Based in Switzerland
+* Design quantum random number generators (QRNG) and photon couting devices.
+* Offer chips and PCIe cards.
+* [A news article about the Galaxy Quantum 2](https://www.zdnet.com/google-amp/article/samsungs-new-galaxy-quantum-2-uses-quantum-cryptography-to-secure-apps/), which implements a QRNG chip from ID quantique.
+
 ### PhaseCraft
 * Ashley Montanaro
 
