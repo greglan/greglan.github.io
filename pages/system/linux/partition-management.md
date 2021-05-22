@@ -42,11 +42,39 @@ Only valid with fstype nfs.
 The atime vs relatime options are explained [here](https://blog.confirm.ch/mount-options-atime-vs-relatime/)
 
 
-## Booting from a USB drive
-* Speed is important and using USB 3.0 is a great help.
+## OS on a USB drive
+* Speed is important and using USB 3.0 is recommended.
   
   See also the [hardware recommendations from Ubuntu](https://help.ubuntu.com/community/Installation/FromUSBStick/pre#Notes_about_speed)
 
+
+## Booting with a detached LUKS header on a USB
+In this section, we show how to boot an Arch Linux system using a detached LUKS header on a USB drive. See also the file `00-install_live.sh` in the configs directory.
+* Overwrite the drive with random data:
+```
+cryptsetup open --type plain -d /dev/urandom /dev/usb_to_wipe
+dd if=/dev/zero of=/dev/mapper/usb_to_wipe status=progress &
+cryptsetup close usb_to_wipe
+```
+* Partition the USB drive as follows using *fdisk*:
+```
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048         1050623   512.0 MiB   EF00  EFI System
+   2         1050624         1460223   200.0 MiB   8300  Linux filesystem
+```
+* Format the partitions and mount them:
+```
+mkfs.fat -F32 /dev/usb1
+mkfs.ext3 /dev/usb2 -L boot
+mount /dev/usb1 /mnt/efi
+mount /dev/usb2 /mnt/boot
+```
+* If this is a clean install, proceed with the regular installation. Else, copy the existing contents of `/boot` and `/efi` on the new partitions.
+* Use `sudo blkid` to figure out the proper UUID/PARTUUID and adjust `/etc/fstab` accordingly.
+* Adjust the kernel options as follows:
+`root=UUID=the_uid_of_the_decrypted_luks_root rw cryptdevice=/dev/disk/by-id/nvme-ref-number:decrypted-root:header root=dev/mapper/decrypted-root`
+* Finally, with `/boot` mounted from the proper USB drive, regenerate the GRUB config file: `grub-mkconfig -o /boot/grub/grub.cfg`
+* If necessary, adjust the boot order in the BIOS.
 
 
 ## Resizing a LUKS partition
@@ -67,13 +95,6 @@ The atime vs relatime options are explained [here](https://blog.confirm.ch/mount
   by `df -h`.
 * Resize the LUKS container: `cryptsetup resize luks -b new_sec`
 
-## Booting from an USB encrypted partition
-* Partition the USB drive as follows using *fdisk*:
-```
-Number  Start (sector)    End (sector)  Size       Code  Name
-   1            2048         1050623   512.0 MiB   EF00  EFI System
-   2         1050624         1460223   200.0 MiB   8300  Linux filesystem
-```
 
 ## Corrupt filesystem recovery
 * Check this [guide](https://www.slashroot.in/understanding-file-system-superblock-linux)
