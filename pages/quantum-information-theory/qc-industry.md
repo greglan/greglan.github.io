@@ -65,3 +65,4 @@ summary: "Overview of the Quantum computing industry"
 
 ## References
 * [A Bloomberg article about PsiQuantum](https://www.bloomberg.com/news/articles/2020-04-06/quantum-computing-startup-raises-215-million-for-faster-device)
+* [A Youtube video by Sabine Hossenfelder](https://www.youtube.com/watch?v=OGsu5MIzruw)
