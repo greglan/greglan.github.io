@@ -288,8 +288,8 @@ entries:
         - title: Partition management
           url: /partition-management.html
           
-        - title: GRUB shell commands
-          url: /grub-commands.html
+        - title: GRUB
+          url: /grub.html
 
       - title: Windows
         subfolderitems:
@@ -373,6 +373,9 @@ entries:
 
     - title: Gaussian integrals
       url: /gaussian-integrals.html
+
+    - title: Matrix properties
+      url: /matrix-properties.html
           
 
 
@@ -396,9 +399,6 @@ entries:
         subfolderitems:
         - title: Introduction
           url: /qm-intro.html
-
-        - title: Matrix properties
-          url: /qm-matrices.html
 
         - title: Density operators
           url: /density-operators.html

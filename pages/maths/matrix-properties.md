@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "Matrices"
-permalink: "qm-matrices.html"
+title:  "A few matrix properties"
+permalink: "matrix-properties.html"
 tags: [maths, quantum]
-summary: "Definitions and properties of some particular matrices used in quantum mechanics"
+summary: "A quick overview of some special properties of matrices"
 ---
 
 {% include latex-commands.html %}
