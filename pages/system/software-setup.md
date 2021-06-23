@@ -9,6 +9,7 @@ permalink: "software-setup.html"
 ## Visual Studio Code
 * [Python support](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [Matlab support](https://marketplace.visualstudio.com/items?itemName=Gimly81.matlab)
+* [Allow the VIM extension to use the system clipboard](https://stackoverflow.com/a/61066089)
 
 ## Atom
 * Core: uncheck "Auto hide menu bar"
