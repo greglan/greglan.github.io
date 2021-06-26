@@ -64,7 +64,7 @@ $$
 
 * Identification with Poisson brackets: for any pair of observables $$L,H$$ we have $$[L, H] \Leftrightarrow i \hbar \{L, H \}$$
 
-## ANgular momentum
+## Angular momentum
 
 
 ## Resources and references

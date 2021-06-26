@@ -76,8 +76,6 @@ set expandtab
 * [Installing Vundle and Pathogen](https://medium.com/usevim/vim-101-using-vundle-and-pathogen-in-windows-7cc11a0a9e63)
 
 
-## Using VIM for Latex
-
 
 ### References
 * [vim-latex](https://github.com/vim-latex/vim-latex)

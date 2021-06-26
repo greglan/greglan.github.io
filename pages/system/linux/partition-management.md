@@ -81,7 +81,9 @@ This can be done by just using `dd` to clone the drive, providing the backup is 
 
 However, dd'ing the paritions each time there is an update is inefficient. 
 Instead, `rsync` can be used to commit the changes to the backup drive USB drive.
-Just mount both `/boot` partitions and `rsync -arRv --delete /boot /mnt/backup_boot`
+Just mount both `/boot` partitions and run `rsync -Arvn --delete /boot/ /mnt/backup_boot`. 
+Make sure you include the ending slash in `/boot/`, else `rsync` will create a `boot` directory in `/mnt/backup_boot`.
+The `-A` will preserve the permissions, `-r` will recurse through directories, `-v` will list the changes, and `-n` will perform a dry-run (it won't do anything). Once satisfied, rerun this command omitting the `-n` flag.
 
 
 

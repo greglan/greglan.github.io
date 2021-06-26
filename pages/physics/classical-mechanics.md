@@ -40,7 +40,7 @@ summary: ""
   \end{align*}$$
 * Generic expression of acceleration: $$\vec a = (\ddot r - r \dot \theta^2) \vec e_r$$
 			 
-	La force étant centrale, l'accélération est dirigée selon $\vec e_r$ et donc sa composante selon 
+	La force étant centrale, l'accélération est dirigée selon $$\vec e_r$$ et donc sa composante selon 
 	$$\vec{e_\theta}$$ est nulle
 * Expression of $$\ddot r$$:
 
@@ -57,23 +57,23 @@ summary: ""
 	$$\vec v = -C {du \over d\theta} \vec e_r + Cu \vec{e_\theta}, \qquad \vec a = -C^2u^2\left({d^2u\over d\theta^2} +u \right) \vec e_r$$
 
 #### Conservation of mechanical energy
-\[
-	\delta W( \vec{f} ) = \frac{K}{r^2} \vec{e_r} \, dr \vec{e_r} = -d\left( \frac K r \right)
+
+$$\delta W( \vec{f} ) = \frac{K}{r^2} \vec{e_r} \, dr \vec{e_r} = -d\left( \frac K r \right)
 	\Rightarrow
 	E_p = \frac{K}{r} + cste
-\]
-On choisit $E_p(r \to +\infty)= 0 \Rightarrow cste = 0$:
-\[
-	\boxed{ E_p = \frac{K}{r} }
-\]
+$$
 
-\[
+On choisit $$E_p(r \to +\infty)= 0 \Rightarrow cste = 0$$:
+$$\boxed{ E_p = \frac{K}{r} }$$
+
+$$
 	\boxed{ E_m = \frac 1 2 m \dot{r}^2 + \frac 1 2 m \frac{C^2}{r^2} + E_p(r) 
 	= \frac 1 2 m \dot{r}^2 + E_{p,eff}(r) }
-\]
-\[
+$$
+
+$$
 	\boxed{  E_{p,eff}(r) = \frac 1 2 m \frac{C^2}{r^2} + E_p(r)  }
-\]
+$$
 
 
 ### Circular motion

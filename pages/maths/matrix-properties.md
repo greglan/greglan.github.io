@@ -9,7 +9,8 @@ summary: "A quick overview of some special properties of matrices"
 {% include latex-commands.html %}
 
 
-## Adjoints and Hermitians operators [1]
+## Adjoints and Hermitians operators
+The reference for the whole section is [1]
 * If $$A$$ linear operator on Hilbert space $$V$$, there exists a unique linear operator $$A^\dagger$$ such that $$\forall \ket{v}, \ket{w} \in V, \; (\ket{v}, A \ket{w}) = (A^\dagger \ket{v}, \ket{w})$$ [2, p69]
 * Adjoint/Hermitian conjugate of $$A$$: $$A^\dagger$$
 * By definition: $$\ket{v}^\dagger = \bra{v}$$
@@ -25,21 +26,24 @@ summary: "A quick overview of some special properties of matrices"
 * Average value of an operator $$A$$ over the state $$\ket{\psi}$$: $$\bke{\psi}{A}{\psi}$$
 
 
-## Unitary matrices [1]
+## Unitary matrices
+The reference for the whole section is [1]
 * $$U$$ unitary: $$U^\dagger U = U U^\dagger = I$$
 * A unitary matrix is normal
 * Inner product preservation
 * All eigenvalues of a unitary matrix have modulus 1
 
 
-## Positive operators [1]
+## Positive operators
+The reference for the whole section is [1]
 * Positive operator: $$\forall \ket{v}, \bke{v}{A}{v} \geqslant 0$$
 * Positive definite operator: $$\forall \ket{v}, \bke{v}{A}{v} > 0$$
 * Positive operators are Hermitian
 * Positive operators have positive eigenvalues
 * For all operators $$A$$, $$A^\dagger A$$ positive
 
-## Polar and singular value decompositions [1, p78]
+## Polar and singular value decompositions
+For this section, see page 78 of [1]
 ### Polar decomposition
 * If $$A$$ linear operator, then there exists unitary $$U$$ and unique positive operators $$J, K$$ such that
 
@@ -55,7 +59,9 @@ summary: "A quick overview of some special properties of matrices"
   $$A = UDV$$
 * Singular values: diagonal elements of $$D$$
 
-## Schmidt decomposition [1, p109]
+## Schmidt decomposition
+See page 109 of ref [1]
+
 
 
 ## Resources and references

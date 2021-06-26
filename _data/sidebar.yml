@@ -310,8 +310,8 @@ entries:
         - title: Hyper-V
           url: /hyper-v.html
 
-    - title: Android Debug Bridge
-      url: /adb.html
+    - title: Android
+      url: /android.html
 
     - title: VIM
       url: /vim.html
